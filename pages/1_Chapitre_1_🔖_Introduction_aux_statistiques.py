@@ -151,13 +151,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     with col1:
        st.markdown("dossiers du personnel")
-       st.code("st.image('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/dossiers_employes.jpg')") 
-       st.image('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/dossiers_employes.jpg')
+       st.image("https://raw.githubusercontent.com/ChrisMuba/Cours_Stats_RH/main/dossiers_employes.jpg") 
 
     with col2:
        st.markdown("quelques SIRH")
-       st.code("st.image('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg')")
-       st.image('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg')
+       st.image("https://raw.githubusercontent.com/ChrisMuba/Cours_Stats_RH/main/photos_sirh.jpg")
 
     
 
