@@ -5,7 +5,7 @@
 
 
 import streamlit as st
-import plotly as py
+
 import pandas as pd
 
 st.markdown("# Chapitre 1")
