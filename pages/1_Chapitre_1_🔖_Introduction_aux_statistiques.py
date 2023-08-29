@@ -155,7 +155,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     with col2:
        st.markdown("quelques SIRH")
-       st.image("photos_sirh.JPG")
+       st.image("https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg")
 
     
 
