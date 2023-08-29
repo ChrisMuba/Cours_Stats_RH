@@ -147,15 +147,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
 # Afficher les images
 
+    from PIL import Image
     col1, col2 = st.columns(2)
 
     with col1:
        st.markdown("dossiers du personnel")
-       st.image("https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/dossiers_employes.jpg") 
+       image = Image.open('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/dossiers_employes.jpg')
+       st.image(image)
+       #st.image("https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/dossiers_employes.jpg") 
 
     with col2:
        st.markdown("quelques SIRH")
-       st.image("https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg")
+       image = Image.open('https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg')
+       #st.image("https://github.com/ChrisMuba/Cours_Stats_RH/blob/master/photos_sirh.jpg")
 
     
 
