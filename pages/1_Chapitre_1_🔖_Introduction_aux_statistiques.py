@@ -101,13 +101,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data)
 
 # Frequency table: Number of employees in each department
-    st.header('Number of Employees in Each Department')
+    st.markdown("🚨Exemple de **tableau de fréquences**:")
     department_counts = df['Department'].value_counts().reset_index()
     department_counts.columns = ['Department', 'Count']
     st.table(department_counts)
 
 # Bar chart: Gender distribution in the organization
-    st.header('Gender Distribution in the Organization')
+    st.markdown("🚨Exemple de **diagramme à barres**:")
     gender_distribution = df['Gender'].value_counts().reset_index()
     gender_distribution.columns = ['Gender', 'Count']
 
