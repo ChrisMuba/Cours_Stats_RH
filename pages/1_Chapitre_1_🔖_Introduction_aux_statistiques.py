@@ -94,29 +94,29 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 # Sample HR dataset
     data = {
         'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
-        'Department': ['Sales', 'Finance', 'HR', 'IT', 'Marketing', 'Operations', 'Finance', 'HR', 'IT', 'Marketing'],
-        'Gender': ['Male', 'Female', 'Male', 'Female', 'Male', 'Male', 'Female', 'Female', 'Male', 'Female']
+        'Service': ['Ventes', 'Finance', 'RH', 'IT', 'Marketing', 'Operations', 'Finance', 'RH', 'IT', 'Marketing'],
+        'Genre': ['Homme', 'Femme', 'Homme', 'Femme', 'Homme', 'Homme', 'Femme', 'Femme', 'Homme', 'Femme']
 }
 
     df = pd.DataFrame(data)
 
 # Frequency table: Number of employees in each department
-    st.markdown("🚨Exemple de **tableau de fréquences**:")
-    department_counts = df['Department'].value_counts().reset_index()
-    department_counts.columns = ['Department', 'Count']
+    st.markdown("🚨Exemple de **tableau de fréquences** :")
+    department_counts = df['Service'].value_counts().reset_index()
+    department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
 
 # Bar chart: Gender distribution in the organization
     st.markdown("🚨Exemple de **diagramme à barres**:")
-    gender_distribution = df['Gender'].value_counts().reset_index()
-    gender_distribution.columns = ['Gender', 'Count']
+    gender_distribution = df['Genre'].value_counts().reset_index()
+    gender_distribution.columns = ['Genre', 'Effectif']
 
 # Color mapping
-    colors = {'Male': 'blue', 'Female': 'orange'}
-    gender_distribution['Color'] = gender_distribution['Gender'].map(colors)
+    colors = {'Homme': 'blue', 'Femme': 'orange'}
+    gender_distribution['Color'] = gender_distribution['Genre'].map(colors)
 
-    fig = px.bar(gender_distribution, x='Gender', y='Count', color='Gender',
-             color_discrete_map=colors, title='Gender Distribution')
+    fig = px.bar(gender_distribution, x='Genre', y='Effectif', color='Genre',
+             color_discrete_map=colors, title='Répartition selon le genre')
     st.plotly_chart(fig)
 
     
