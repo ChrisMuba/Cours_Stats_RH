@@ -82,9 +82,46 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🎯**Poste**: Variable catégorielle nominale indiquant le poste du salarié : par exemple **Responsable formation**, **contrôleur de gestion sociale**, **gestionnaire paie**, etc")
     st.markdown("🎯**Rattachement**: Variable catégorielle nominale indiquant le domaine d'activité auquel se rattache le poste : par exemple **Développement des RH**, **Administration des RH**, **Direction des RH**")
     st.markdown("🎯**Diplôme**: Variable catégorielle **ordinale** indiquant le diplôme du salarié : par exemple **BTS / DUT**, **Bachelor**, **Maîtrise**, **Master**")     
-        
-        
-    st.markdown("")    
+
+       
+    st.markdown("")   
+
+
+    import streamlit as st
+    import plotly.express as px
+    import pandas as pd
+
+# Sample HR dataset
+    data = {
+        'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
+        'Department': ['Sales', 'Finance', 'HR', 'IT', 'Marketing', 'Operations', 'Finance', 'HR', 'IT', 'Marketing'],
+        'Gender': ['Male', 'Female', 'Male', 'Female', 'Male', 'Male', 'Female', 'Female', 'Male', 'Female']
+}
+
+   df = pd.DataFrame(data)
+
+# Frequency table: Number of employees in each department
+   st.header('Number of Employees in Each Department')
+   department_counts = df['Department'].value_counts().reset_index()
+   department_counts.columns = ['Department', 'Count']
+   st.table(department_counts)
+
+# Bar chart: Gender distribution in the organization
+   st.header('Gender Distribution in the Organization')
+   gender_distribution = df['Gender'].value_counts().reset_index()
+   gender_distribution.columns = ['Gender', 'Count']
+
+# Color mapping
+   colors = {'Male': 'blue', 'Female': 'orange'}
+   gender_distribution['Color'] = gender_distribution['Gender'].map(colors)
+
+   fig = px.bar(gender_distribution, x='Gender', y='Count', color='Gender',
+             color_discrete_map=colors, title='Gender Distribution')
+   st.plotly_chart(fig)
+
+    
+    
+    st.markdown("") 
     
     st.markdown("**b/ Les données numériques**")
     
