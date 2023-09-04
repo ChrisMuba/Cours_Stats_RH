@@ -10,7 +10,7 @@ st.title("Cours de Statistiques appliquées à la fonction RH")
 
 st.header("Auteur : Christian MUBA - HR Data analyst sur mon temps libre")
 
-st.caption("Vous souhaitez faire analyser vos data RH et prendre des décisions éclairées ? contactez-moi 🌍https://www.linkedin.com/in/chris-muba-io 🌍")
+st.caption("Vous souhaitez faire analyser vos data RH et prendre des décisions éclairées ? contactez-moi 📧https://www.linkedin.com/in/chris-muba-io 🌍")
 
 # st.markdown("Ce projet porte sur l'étude d'un jeu de données RH comportant 13 colonnes & 8336 lignes")
 
