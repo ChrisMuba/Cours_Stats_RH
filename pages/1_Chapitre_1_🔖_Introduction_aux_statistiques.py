@@ -98,26 +98,26 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         'Gender': ['Male', 'Female', 'Male', 'Female', 'Male', 'Male', 'Female', 'Female', 'Male', 'Female']
 }
 
-   df = pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
 # Frequency table: Number of employees in each department
-   st.header('Number of Employees in Each Department')
-   department_counts = df['Department'].value_counts().reset_index()
-   department_counts.columns = ['Department', 'Count']
-   st.table(department_counts)
+    st.header('Number of Employees in Each Department')
+    department_counts = df['Department'].value_counts().reset_index()
+    department_counts.columns = ['Department', 'Count']
+    st.table(department_counts)
 
 # Bar chart: Gender distribution in the organization
-   st.header('Gender Distribution in the Organization')
-   gender_distribution = df['Gender'].value_counts().reset_index()
-   gender_distribution.columns = ['Gender', 'Count']
+    st.header('Gender Distribution in the Organization')
+    gender_distribution = df['Gender'].value_counts().reset_index()
+    gender_distribution.columns = ['Gender', 'Count']
 
 # Color mapping
-   colors = {'Male': 'blue', 'Female': 'orange'}
-   gender_distribution['Color'] = gender_distribution['Gender'].map(colors)
+    colors = {'Male': 'blue', 'Female': 'orange'}
+    gender_distribution['Color'] = gender_distribution['Gender'].map(colors)
 
-   fig = px.bar(gender_distribution, x='Gender', y='Count', color='Gender',
+    fig = px.bar(gender_distribution, x='Gender', y='Count', color='Gender',
              color_discrete_map=colors, title='Gender Distribution')
-   st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
     
     
