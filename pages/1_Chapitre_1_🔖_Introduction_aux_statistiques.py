@@ -32,7 +32,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
                 
     st.markdown("Les données **catégorielles** sont des données qui peuvent être **triées en catégories ou en groupes**. Ces catégories sont non numériques et peuvent être **qualitatives** ou **quantitatives**.")
 
-    st.markdown("⚠️Des données **catégorielles** peuvent être **quantitatives** car elles peuvent être quantifiées ou décrites à l'aide de méthodes numériques : calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser les données catégorielles ; l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans les données catégorielles.")  
+    st.markdown("⚠️Des données **catégorielles** peuvent être **quantitatives** car elles peuvent être quantifiées ou décrites à l'aide de méthodes numériques : calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser les données ; l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans les données catégorielles.")  
     
     st.markdown("Des exemples de données catégorielles en Ressources Humaines incluent par exemple **le genre** : 👦🏾/👧 ; le **titre du poste**: **contrôleur de gestion sociale**, **responsable formation**, etc... ; le **rattachement du poste** : **administration des RH**, **développement des RH**, etc...") 
     
