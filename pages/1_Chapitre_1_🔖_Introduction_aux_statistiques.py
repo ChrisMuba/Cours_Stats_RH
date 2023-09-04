@@ -116,7 +116,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     gender_distribution['Color'] = gender_distribution['Genre'].map(colors)
 
     fig = px.bar(gender_distribution, x='Genre', y='Effectif', color='Genre',
-             color_discrete_map=colors, title='Répartition selon le genre')
+             color_discrete_map=colors, title='Effectif selon le genre')
     st.plotly_chart(fig)
 
     
