@@ -236,7 +236,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     with col1:
        st.markdown("dossiers du personnel")
-       image = Image.open('dossiers_employes.jpg')
+       image = Image.open('cartoon_of_personnel_files.png')
        st.image(image)
 
     with col2:
