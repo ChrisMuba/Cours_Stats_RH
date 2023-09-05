@@ -193,7 +193,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 # Sample HR dataset
     data = {
     'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
-    'Age': [30, 28, 35, 42, 29, 36, 27, 31, 40, 33],
+    'Âge': [30, 28, 35, 42, 29, 36, 27, 31, 40, 33],
     'Salaire (€)': [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000],
     'Note de performance': [3, 4, 3, 2, 4, 2, 3, 4, 2, 4]
 }
@@ -207,10 +207,10 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 # Scatter plot: Age vs. Performance Rating with correlation line
     st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
-    correlation_coefficient = np.corrcoef(df['Age'], df['Note de performance'])[0, 1]
-    fig_scatter = px.scatter(df, x='Age', y='Note de performance', title='Age vs. Note de performance')
-    fig_scatter.add_traces(px.scatter(x=df['Age'], y=df['Note de performance']).data)
-    fig_scatter.add_traces(px.line(x=df['Age'], y=np.polyval(np.polyfit(df['Age'], df['Note de performance'], 1), df['Age'])).data)
+    correlation_coefficient = np.corrcoef(df['Âge'], df['Note de performance'])[0, 1]
+    fig_scatter = px.scatter(df, x='Âge', y='Note de performance', title='Age vs. Note de performance')
+    fig_scatter.add_traces(px.scatter(x=df['Âge'], y=df['Note de performance']).data)
+    fig_scatter.add_traces(px.line(x=df['Âge'], y=np.polyval(np.polyfit(df['Âge'], df['Note de performance'], 1), df['Âge'])).data)
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
