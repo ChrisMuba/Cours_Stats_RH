@@ -208,7 +208,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 # Scatter plot: Age vs. Performance Rating with correlation line
     st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
     correlation_coefficient = np.corrcoef(df['Âge'], df['Note de performance'])[0, 1]
-    fig_scatter = px.scatter(df, x='Âge', y='Note de performance', title='Age vs. Note de performance')
+    fig_scatter = px.scatter(df, x='Âge', y='Note de performance', title='Âge vs. Note de performance')
     fig_scatter.add_traces(px.scatter(x=df['Âge'], y=df['Note de performance']).data)
     fig_scatter.add_traces(px.line(x=df['Âge'], y=np.polyval(np.polyfit(df['Âge'], df['Note de performance'], 1), df['Âge'])).data)
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
