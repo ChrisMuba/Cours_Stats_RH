@@ -185,7 +185,40 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("")     
         
-        
+    import streamlit as st
+    import plotly.express as px
+    import pandas as pd
+    import numpy as np
+
+# Sample HR dataset
+    data = {
+    'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
+    'Age': [30, 28, 35, 42, 29, 36, 27, 31, 40, 33],
+    'Salary (USD)': [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000],
+    'Performance Rating': [3, 4, 3, 2, 4, 2, 3, 4, 2, 4]
+}
+
+    df = pd.DataFrame(data)
+
+# Histogram: Distribution of Salaries
+    st.header('Distribution of Salaries')
+    fig_histogram = px.histogram(df, x='Salary (USD)', title='Salary Distribution')
+    st.plotly_chart(fig_histogram)
+
+# Scatter plot: Age vs. Performance Rating with correlation line
+    st.header('Relationship between Age and Performance Rating')
+    correlation_coefficient = np.corrcoef(df['Age'], df['Performance Rating'])[0, 1]
+    fig_scatter = px.scatter(df, x='Age', y='Performance Rating', title='Age vs. Performance Rating')
+    fig_scatter.add_traces(px.scatter(x=df['Age'], y=df['Performance Rating']).data)
+    fig_scatter.add_traces(px.line(x=df['Age'], y=np.polyval(np.polyfit(df['Age'], df['Performance Rating'], 1), df['Age'])).data)
+    fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
+    st.plotly_chart(fig_scatter)
+
+
+
+
+
+    
     st.markdown("")
     
     
