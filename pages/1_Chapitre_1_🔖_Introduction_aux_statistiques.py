@@ -201,22 +201,18 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data)
 
 # Histogram: Distribution of Salaries
-    st.header('Distribution of Salaries')
+    st.markdown("🚨Exemple d' **histogramme** :")
     fig_histogram = px.histogram(df, x='Salary (USD)', title='Salary Distribution')
     st.plotly_chart(fig_histogram)
 
 # Scatter plot: Age vs. Performance Rating with correlation line
-    st.header('Relationship between Age and Performance Rating')
+    st.markdown("🚨Exemple de **nuage de points** :")
     correlation_coefficient = np.corrcoef(df['Age'], df['Performance Rating'])[0, 1]
     fig_scatter = px.scatter(df, x='Age', y='Performance Rating', title='Age vs. Performance Rating')
     fig_scatter.add_traces(px.scatter(x=df['Age'], y=df['Performance Rating']).data)
     fig_scatter.add_traces(px.line(x=df['Age'], y=np.polyval(np.polyfit(df['Age'], df['Performance Rating'], 1), df['Age'])).data)
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
-
-
-
-
 
     
     st.markdown("")
