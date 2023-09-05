@@ -127,7 +127,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Les données **numériques** sont des données qui peuvent être **mesurées** ou **comptées**. Les données numériques peuvent ensuite être classées en données **discrètes** et **continues**.") 
     
-    st.markdown("Les données **discrètes** sont des données qui ne peuvent prendre que des valeurs spécifiques, par exemple : le nombre d'employés dans un service.")
+    st.markdown("Les données **discrètes** sont des données qui ne peuvent prendre que des valeurs spécifiques (sans virgule), par exemple : le nombre d'employés dans un service.")
 
     df = pd.DataFrame(data)
 
