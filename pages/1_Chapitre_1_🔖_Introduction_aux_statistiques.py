@@ -146,14 +146,14 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨Exemple de **données numériques continues** dans un service RH :")    
     
     data_2 = [
-        ["001", 32, 50000, 5, 9.5],
-        ["002", 43, 72000, 12, 9.2],
-        ["003", 35, 40000, 7, 9.1],
-        ["004", 41, 65000, 12, 8.9],
-        ["005", 39, 58000, 6, 7.8],
+        ["001", 32.5, 50000, 5, 9.5],
+        ["002", 43, 72000, 12.5, 9.2],
+        ["003", 35.5, 40000, 7, 9.1],
+        ["004", 41, 65000, 12.5, 8.9],
+        ["005", 39.5, 58000, 6, 7.8],
         ["006", 36, 40000, 8, 9.4],
         ["007", 38, 55000, 6, 8.7],
-        ["008", 27, 36000, 3, 6.9],
+        ["008", 27.5, 36000, 3.5, 6.9],
         ["009", 49, 75000, 15, 8.7],
         ["010", 35, 45000, 5, 8.5],
 ]
@@ -183,44 +183,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Les données **numériques** sont souvent présentées sous forme **d'histogrammes** ou de **nuages de points**. Par exemple, un histogramme peut montrer la répartition des salaires dans l'organisation, tandis qu'un nuage de points peut montrer la relation entre l'âge et la performance au travail.")
     
-    st.markdown("") 
-    
-### Affichage tableau au format tabulaire    
-    
-    st.markdown("🚨Exemple de données numériques **continues** dans un service RH :")    
-    
-    data_2 = [
-        ["001", 32, 50000, 5, 9.5],
-        ["002", 43, 72000, 12, 9.2],
-        ["003", 35, 40000, 7, 9.1],
-        ["004", 41, 65000, 12, 8.9],
-        ["005", 39, 58000, 6, 7.8],
-        ["006", 36, 40000, 8, 9.4],
-        ["007", 38, 55000, 6, 8.7],
-        ["008", 27, 36000, 3, 6.9],
-        ["009", 49, 75000, 15, 8.7],
-        ["010", 35, 45000, 5, 8.5],
-]
-
-    headers_2 = ["⚠️Matricule RH⚠️", "Âge", "Salaire annuel (€)", "Ancienneté", "Note de performance"]
-
-    df_2 = pd.DataFrame(data_2, columns=headers_2)
-    
-# Format Performance Score column
-    
-    df_2["Note de performance"] = df_2["Note de performance"].map(lambda x: "{:.2f}".format(x))
-
-    st.table(df_2)
-    
-    
-    st.markdown("Comme pour l'exemple précédent concernant les variables catégorielles, le jeu de données suivant comprend **diverses variables numériques liées aux RH**.") 
-    st.markdown("Chaque ligne représente également un employé différent ; les colonnes représentent différents attributs :")
-    
-    st.markdown("⚠️**Matricule RH**⚠️: idem **identifiant unique pour chaque employé**")
-    st.markdown("🎯**Âge**: Variable numérique indiquant l'âge du salarié")
-    st.markdown("🎯**Salaire annuel**: Variable numérique indiquant le salaire annuel du salarié")
-    st.markdown("🎯**Ancienneté**: Variable numérique indiquant le nombre d'années d'expérience professionnelle")
-    st.markdown("🎯**Note de performance**: Variable numérique indiquant le score d'évaluation (échelle de 1 à 10) du rendement du salarié")     
+    st.markdown("")     
         
         
     st.markdown("")
