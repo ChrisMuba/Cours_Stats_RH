@@ -128,6 +128,15 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("Les données **numériques** sont des données qui peuvent être **mesurées** ou **comptées**. Les données numériques peuvent ensuite être classées en données **discrètes** et **continues**.") 
     
     st.markdown("Les données **discrètes** sont des données qui ne peuvent prendre que des valeurs spécifiques, par exemple : le nombre d'employés dans un service.")
+
+    df = pd.DataFrame(data)
+
+# Frequency table: Number of employees in each department
+    st.markdown("🚨Exemple de **tableau de fréquences** :")
+    department_counts = df['Service'].value_counts().reset_index()
+    department_counts.columns = ['Service', 'Effectif']
+    st.table(department_counts)
+    
     
     st.markdown("Les données **continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une plage, par exemple l'âge ou le salaire.")
     
