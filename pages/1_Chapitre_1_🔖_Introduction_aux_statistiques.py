@@ -137,6 +137,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
     
+    st.markdown("")
     
     st.markdown("Les données **continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une plage, par exemple l'âge ou le salaire.")
     
