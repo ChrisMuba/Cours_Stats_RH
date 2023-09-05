@@ -132,7 +132,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data)
 
 # Frequency table: Number of employees in each department
-    st.markdown("🚨Exemple de **tableau de fréquences** :")
+    st.markdown("🚨Exemple de **données numériques discrètes** :")
     department_counts = df['Service'].value_counts().reset_index()
     department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
