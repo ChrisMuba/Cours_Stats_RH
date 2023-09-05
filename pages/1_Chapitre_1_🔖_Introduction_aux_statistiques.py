@@ -216,7 +216,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     
     st.markdown("")
-    
+
+    st.markdown("**c/ Les sources des données**")
     
     st.markdown("Les données peuvent être collectées à partir de diverses sources, telles que :")
     
