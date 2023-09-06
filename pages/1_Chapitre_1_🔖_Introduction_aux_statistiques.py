@@ -222,13 +222,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
 
 
     st.markdown("")
 
 
-    st.markdown("Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
 
 
     st.markdown("Les données peuvent être collectées à partir de diverses sources, telles que :")
