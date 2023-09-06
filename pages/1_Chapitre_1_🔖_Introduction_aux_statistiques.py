@@ -250,7 +250,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+    st.markdown("🚨Un **SIRH** est un système logiciel qui gère des données RH. Il peut fournir une **base de données centralisée** pour les informations sur les employés, y compris les informations personnelles, l'historique professionnel, etc. Le SIRH peut également fournir des outils d’analyse des données et de reporting : c'est une excellente source de données catégorielles et numériques.")
 
     
 
