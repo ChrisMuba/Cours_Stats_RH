@@ -221,7 +221,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Les données peuvent être collectées à partir de diverses sources, telles que :")
     
-    st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale**")
+    st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée)")
     
     st.markdown("- le système d'information de gestion des ressources humaines (**SIRH**).")
     
