@@ -146,14 +146,14 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨Exemple de **données numériques continues** dans un service RH :")    
     
     data_2 = [
-        ["001", 32, 50.5, 5, 9.5],
-        ["002", 43, 72.3, 12, 9.2],
-        ["003", 35, 40.1, 7, 9.1],
+        ["001", 32, 50.5, 5.5, 9.5],
+        ["002", 43.5, 72.3, 12, 9.2],
+        ["003", 35.5, 40.1, 7.5, 9.1],
         ["004", 41, 65.9, 12, 8.9],
-        ["005", 39, 58, 6, 7.8],
-        ["006", 36, 40, 8, 9.4],
+        ["005", 39, 58, 6.5, 7.8],
+        ["006", 36.5, 40, 8, 9.4],
         ["007", 38, 55.5, 6, 8.7],
-        ["008", 27, 36.8, 3, 6.9],
+        ["008", 27, 36.8, 3.5, 6.9],
         ["009", 49, 75, 15, 8.7],
         ["010", 35, 45.4, 5, 8.5],
 ]
@@ -162,8 +162,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     df_2 = pd.DataFrame(data_2, columns=headers_2)
     
-# Format Performance Score column
+# Formater les colonnes pour afficher 2 chiffres après la virgule : "Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"
     
+    df_2["Âge"] = df_2["Âge"].map(lambda x: "{:.2f}".format(x))
+    df_2["Salaire annuel (k€)"] = df_2["Salaire annuel (k€)"].map(lambda x: "{:.2f}".format(x))
+    df_2["Ancienneté"] = df_2["Ancienneté"].map(lambda x: "{:.2f}".format(x))
     df_2["Note de performance"] = df_2["Note de performance"].map(lambda x: "{:.2f}".format(x))
 
     st.table(df_2)
