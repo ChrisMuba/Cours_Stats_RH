@@ -164,7 +164,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
 # Formater les colonnes pour afficher 2 chiffres après la virgule : "Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"
     
-    df_2["Âge"] = df_2["Âge"].map(lambda x: "{:.2f}".format(x))
+    df_2["Âge"] = df_2["Âge"].map(lambda x: "{:.1f}".format(x))
     df_2["Salaire annuel (k€)"] = df_2["Salaire annuel (k€)"].map(lambda x: "{:.2f}".format(x))
     df_2["Ancienneté"] = df_2["Ancienneté"].map(lambda x: "{:.2f}".format(x))
     df_2["Note de performance"] = df_2["Note de performance"].map(lambda x: "{:.2f}".format(x))
