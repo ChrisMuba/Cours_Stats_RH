@@ -146,19 +146,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨Exemple de **données numériques continues** dans un service RH :")    
     
     data_2 = [
-        ["001", 32, 50000, 5, 9.5],
-        ["002", 43, 72000, 12, 9.2],
-        ["003", 35, 40000, 7, 9.1],
-        ["004", 41, 65000, 12, 8.9],
-        ["005", 39, 58000, 6, 7.8],
-        ["006", 36, 40000, 8, 9.4],
-        ["007", 38, 55000, 6, 8.7],
-        ["008", 27, 36000, 3, 6.9],
-        ["009", 49, 75000, 15, 8.7],
-        ["010", 35, 45000, 5, 8.5],
+        ["001", 32, 50.5, 5, 9.5],
+        ["002", 43, 72.3, 12, 9.2],
+        ["003", 35, 40.1, 7, 9.1],
+        ["004", 41, 65.9, 12, 8.9],
+        ["005", 39, 58, 6, 7.8],
+        ["006", 36, 40, 8, 9.4],
+        ["007", 38, 55.5, 6, 8.7],
+        ["008", 27, 36.8, 3, 6.9],
+        ["009", 49, 75, 15, 8.7],
+        ["010", 35, 45.4, 5, 8.5],
 ]
 
-    headers_2 = ["⚠️Matricule RH⚠️", "Âge", "Salaire annuel (€)", "Ancienneté", "Note de performance"]
+    headers_2 = ["⚠️Matricule RH⚠️", "Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
 
     df_2 = pd.DataFrame(data_2, columns=headers_2)
     
