@@ -252,38 +252,20 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("🚨Un **SIRH** est un système logiciel qui gère des données RH. Il peut fournir une **base de données centralisée** pour les informations sur les employés, y compris les informations personnelles, l'historique professionnel, etc...") 
 
-    st.markdown("")
-    
+   
     st.markdown("Le SIRH peut également fournir des outils d’analyse des données et de reporting : c'est une excellente source de données catégorielles et numériques.")
-
     
 
     st.markdown("")
 
 
+    st.markdown("Bien que les dossiers des employés constituent une source précieuse de données RH, un SIRH offre plusieurs avantages par rapport aux dossiers traditionnels.") 
     
-    ### Affichage tableau au format tabulaire    
+    st.mardown("Le SIRH fournit une base de données centralisée accessible simultanément à plusieurs utilisateurs, ce qui facilite le partage d'informations entre les utilisateurs autorisés.") 
     
-    st.markdown("🚨Exemple de données accessibles à partir  **dossiers du personnel** et **SIRH** :")
+    st.markdown("Le SIRH fournit également des données RH en temps réel, permettant de prendre rapidement des décisions éclairées.") 
     
-    data = [
-        ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
-        ["002", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
-        ["003", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
-        ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
-        ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
-        ["006", "👩‍🦰 F", "Assistante RH", "Administration des RH", "BTS"],
-        ["007", "🧔🏽 H", "Responsable formation", "Développement des RH", "Master"],
-        ["008", "👱🏽‍♀️ F", "Chargée de marketing RH", "Développement des RH", "DUT"],
-        ["009", "👩🏼‍🦳 F", "Directrice RH", "Direction des RH", "Maîtrise"],
-        ["010", "🧑🏻 H", "Contrôleur de gestion sociale", "Administration des RH", "Master"]
-]
-
-    headers = ["Matricule RH","Genre H/F", "Poste", "Rattachement", "Diplôme"]
-
-    df = pd.DataFrame(data, columns=headers)
-
-    st.table(df)
+    st.markdown("Un autre avantage du SIRH est qu’il peut automatiser de nombreux processus RH, ce qui peut permettre de gagner du temps et de réduire les erreurs, améliorant ainsi l'efficacité globale d'un service RH.")
     
     
     st.markdown("")
