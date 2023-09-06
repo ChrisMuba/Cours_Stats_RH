@@ -244,7 +244,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("- Dossier de candidature, contrat de travail, documents relatifs à la gestion des arrêts maladie, compte-rendus d'entretiens annuels et autres évaluations, dossier « disciplinaire », etc...")
 
+    
     st.markdown("")
+
+
+    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (**Art. L1221-6 du CT**)")
 
                 
     st.markdown("")
