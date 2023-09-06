@@ -232,6 +232,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("- copie carte vitale pour le NIR et attestation de securité sociale pour vérifier l'ouverture des droits à une complémentaire santé (mutuelle)")
 
+    st.markdown("- Dossier de candidature, contrat de travail, documents relatifs à la gestion des arrêts maladie, compte-rendus d'entretiens annuels et autres évaluations, dossier « disciplinaire », etc...")
+
     st.markdown("")
 
                 
