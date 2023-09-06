@@ -234,7 +234,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (**Art. L1221-6 du CT**)")
 
-    st.markdown("Ainsi pour assurer la gestion du personnel les informations collectées et traitées sont généralement :")
+    st.markdown("Ainsi pour assurer la gestion du personnel les données collectées et traitées sont généralement :")
 
     st.markdown("- copie pièce d'identité pour renseigner nom, prénoms, sexe, date et lieu de naissance")
 
@@ -247,18 +247,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
                 
-
     st.markdown("")
 
 
     st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
 
-
-    st.markdown("Les données peuvent être collectées à partir de diverses sources, telles que :")
-    
-    st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée)")
-    
-    st.markdown("- le système d'information de gestion des ressources humaines (**SIRH**).")
     
 
     st.markdown("")
