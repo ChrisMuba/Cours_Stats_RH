@@ -224,11 +224,14 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée)")
     
     st.markdown("- le système d'information de gestion des ressources humaines (**SIRH**).")
+    
+
+    st.markdown("")
 
 
     ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨Exemple de données **catégorielles** dans un service RH :")
+    st.markdown("🚨Exemple de données accessibles à partir  **dossiers du personnel** et **SIRH** :")
     
     data = [
         ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
