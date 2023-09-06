@@ -261,7 +261,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("Bien que les dossiers des employés constituent une source précieuse de données RH, un SIRH offre plusieurs avantages par rapport aux dossiers traditionnels.") 
     
-    st.mardown("Le SIRH fournit une base de données centralisée accessible simultanément à plusieurs utilisateurs, ce qui facilite le partage d'informations entre les utilisateurs autorisés.") 
+    st.markdown("Le SIRH fournit une base de données centralisée accessible simultanément à plusieurs utilisateurs, ce qui facilite le partage d'informations entre les utilisateurs autorisés.") 
     
     st.markdown("Le SIRH fournit également des données RH en temps réel, permettant de prendre rapidement des décisions éclairées.") 
     
@@ -373,7 +373,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig_scatter = px.scatter(df, x='Length of Employment (Years)', y='Turnover Rate (%)', hover_data=['Job Title', 'Department'],
                          title='fig.3 : Relationship between Length of Employment and Turnover Rate')
     fig_scatter.add_traces(px.scatter(x=df['Length of Employment (Years)'], y=df['Turnover Rate (%)']).data)
-    fig_scatter.add_traces(px.line(x=df['Length of Employment (Years)'], y=np.polyval(np.polyfit(df['Length of Employment (Years)'],         df['Turnover Rate (%)'], 1), df['Length of Employment (Years)'])).data)
+    fig_scatter.add_traces(px.line(x=df['Length of Employment (Years)'], y=np.polyval(np.polyfit(df['Length of Employment (Years)'], df['Turnover Rate (%)'], 1), df['Length of Employment (Years)'])).data)
     fig_scatter.update_layout(annotations=[dict(x=4, y=14, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
