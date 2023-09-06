@@ -95,7 +95,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     data = {
         'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
         'Service': ['Ventes', 'Finance', 'RH', 'IT', 'Marketing', 'Operations', 'Finance', 'RH', 'IT', 'Marketing'],
-        'Genre': ['Homme', 'Femme', 'Homme', 'Femme', 'Homme', 'Homme', 'Femme', 'Femme', 'Homme', 'Femme']
+        'Genre': ['Femme', 'Femme', 'Homme', 'Femme', 'Homme', 'Homme', 'Femme', 'Femme', 'Homme', 'Femme']
 }
 
     df = pd.DataFrame(data)
