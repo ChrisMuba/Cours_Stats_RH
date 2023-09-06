@@ -218,7 +218,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
     st.markdown("**c/ Les sources des données**")
-    
+
+    st.markdown("")
+
+
+    st.markdown("Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+
+
+    st.markdown("")
+
+
+    st.markdown("Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+
+
     st.markdown("Les données peuvent être collectées à partir de diverses sources, telles que :")
     
     st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée)")
@@ -229,9 +241,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
-
-
+    
     ### Affichage tableau au format tabulaire    
     
     st.markdown("🚨Exemple de données accessibles à partir  **dossiers du personnel** et **SIRH** :")
