@@ -248,7 +248,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (**Art. L1221-6 du CT**)")
+    st.markdown("🚨Pour certains agents de la fonction publique de l'État, la liste des données à recueillir par les RH est précisée dans l'annexe du **décret n° 2019-612 du 19 juin 2019** portant création d'un traitement automatisé de données à caractère personnel (**RenoiRH**)")
 
                 
     st.markdown("")
