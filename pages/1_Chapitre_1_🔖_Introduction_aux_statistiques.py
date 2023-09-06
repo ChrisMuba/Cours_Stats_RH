@@ -222,8 +222,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations demandées doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
+    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (Art. L1221-6 du CT)")
 
+    St.markdown("Ainsi pour assurer la gestion du personnel les informations collectées et traitées sont généralement :")
+
+    st.markdown("- copie pièce d'identité pour renseigner nom, prénoms, sexe, date et lieu de naissance")
+
+    st.markdown("- coordonnées : adresse et téléphone")
+
+    st.markdown("- copie carte vitale pour le NIR et attestation de securité sociale pour vérifier l'ouverture des droits à une complémentaire santé (mutuelle)")
+
+    st.markdown("
+
+                
 
     st.markdown("")
 
