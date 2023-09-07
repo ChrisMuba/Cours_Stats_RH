@@ -315,8 +315,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     forecast_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
     réalisé_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
 
-    forecast_2022 = [100, 110, 105, 108, 112, 115, 118, 120, 122, 125, 128, 130]
-    réalisé_2022 = [132, 135, 138, 140, 142, 145, 148, 150]
+    forecast_2022 = [1154300, 1200010, 1235205, 1305008, 1778120, 1263150, 1208180, 1240000, 1275002, 1299250, 2356280, 1251300]
+    réalisé_2022 = [1152003, 1185350, 1113880, 1205008, 1677420, 1121245, 1148000, 1165000]
 
 # Create a DataFrame for plotting
     df = pd.DataFrame({'Mois': forecast_months_2022 + réalisé_months_2022,
