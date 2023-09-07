@@ -340,12 +340,17 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     import plotly.graph_objs as go
     import numpy as np
 
+# Define age intervals
+    age_intervals = ['[0-20]', '[21-40]', '[41-60]', '[61-80]']
+
+# Corresponding y values for the intervals
+    y = [10, 30, 50, 70]
+
     women_bins = np.array([-600, -623, -653, -650, -670, -578, -541, -411, -322, -230])
     men_bins = np.array([600, 623, 653, 650, 670, 578, 541, 360, 312, 170])
-    y = list(range(0, 100, 10))
 
     layout = go.Layout(
-    yaxis=go.layout.YAxis(title='Age'),
+    yaxis=go.layout.YAxis(title='Age Intervals', tickvals=y, ticktext=age_intervals),
     xaxis=go.layout.XAxis(
         range=[-1200, 1200],
         tickvals=[-1000, -700, -300, 0, 300, 700, 1000],
@@ -379,6 +384,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig = go.Figure(data=data, layout=layout)
 
     st.plotly_chart(fig)
+
 
 
 
