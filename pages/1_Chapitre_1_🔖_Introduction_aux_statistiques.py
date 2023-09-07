@@ -336,6 +336,11 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
 
+
+    st.markdown("")
+
+    
+
     st.markdown("Ci-dessous un exemple de pyramide des âges en **pelote de laine**")
 
     import streamlit as st
