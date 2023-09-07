@@ -336,8 +336,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
 
-    import chart_studio.plotly as py
-    import chart_studio.graph_objs as go
+    import streamlit as st
+    import plotly.graph_objs as go
     import numpy as np
 
     women_bins = np.array([-600, -623, -653, -650, -670, -578, -541, -411, -322, -230])
@@ -377,7 +377,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 ]
 
     fig = go.Figure(data=data, layout=layout)
-    py.iplot(fig, filename='bar-chart-overlay')
+
+    st.plotly_chart(fig)
+
 
 
     st.markdown("- **Et enfin remplir les obligations légales**, notamment : **bilan social, NAO, rapport social, index égalité 👦🏾/👧, déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
