@@ -324,10 +324,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
                    'Réalisé 2022': [None] * len(forecast_months_2022) + réalisé_2022})
 
 # Create an interactive line plot
-    st.header('Payroll Budget Evolution (2021 vs. 2022)')
+    #st.header('Payroll Budget Evolution (2021 vs. 2022)')
     fig = px.line(df, x='Mois', y=['Forecast 2022 (Prévision)', 'Réalisé 2022'],
               labels={'value': 'Payroll Expenses (in $k)'},
-              title='Payroll Budget Evolution (2021 vs. 2022)')
+              title='Suivi de la masse salariale (Prévision 2022 vs. Réalisé 2022)')
     st.plotly_chart(fig)
 
     
