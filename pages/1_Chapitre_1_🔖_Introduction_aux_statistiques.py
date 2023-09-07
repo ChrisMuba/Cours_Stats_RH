@@ -335,6 +335,47 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
+
+    import plotly.plotly as py
+    import plotly.graph_objs as go
+    import numpy as np
+
+    women_bins = np.array([-600, -623, -653, -650, -670, -578, -541, -411, -322, -230])
+    men_bins = np.array([600, 623, 653, 650, 670, 578, 541, 360, 312, 170])
+
+    y = list(range(0, 100, 10))
+
+    layout = go.Layout(yaxis=go.layout.YAxis(title='Age'),
+                   xaxis=go.layout.XAxis(
+                       range=[-1200, 1200],
+                       tickvals=[-1000, -700, -300, 0, 300, 700, 1000],
+                       ticktext=[1000, 700, 300, 0, 300, 700, 1000],
+                       title='Number'),
+                   barmode='overlay',
+                   bargap=0.1)
+
+    data = [go.Bar(y=y,
+               x=men_bins,
+               orientation='h',
+               name='Men',
+               hoverinfo='x',
+               marker=dict(color='powderblue')
+               ),
+        go.Bar(y=y,
+               x=women_bins,
+               orientation='h',
+               name='Women',
+               text=-1 * women_bins.astype('int'),
+               hoverinfo='text',
+               marker=dict(color='seagreen')
+               )]
+
+
+
+
+
+
+    
     
     st.markdown("- **Et enfin remplir les obligations légales**, notamment : **bilan social, NAO, rapport social, index égalité 👦🏾/👧, déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
     
