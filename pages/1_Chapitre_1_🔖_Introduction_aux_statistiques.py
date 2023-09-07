@@ -368,7 +368,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         orientation='h',
         name='👦🏿 Homme',
         hoverinfo='x',
-        marker=dict(color='powderblue')
+        marker=dict(color='blue')
     ),
     go.Bar(
         y=y,
@@ -377,7 +377,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         name='👩‍🦰 Femme',
         text=-1 * women_bins.astype('int'),
         hoverinfo='text',
-        marker=dict(color='seagreen')
+        marker=dict(color='pink')
     )
 ]
 
