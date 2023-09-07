@@ -1,2 +1,1 @@
 plotly
-chart_studio
