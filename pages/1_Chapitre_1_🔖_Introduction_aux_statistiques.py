@@ -333,45 +333,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("")
 
-
-    import streamlit as st
-    import plotly.express as px
-    import pandas as pd
-
-# Monthly payroll data (in thousands of dollars)
-    months_2021 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    months_2022 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug']
-
-    payroll_2021 = [100, 110, 105, 108, 112, 115, 118, 120, 122, 125, 128, 130]
-    payroll_2022 = [132, 135, 138, 140, 142, 145, 148, 150]
-
-# Calculate monthly variation rates (in %)
-    monthly_variation_rates = [(p2 - p1) / p1 * 100 if p1 != 0 else 0 for p1, p2 in zip(payroll_2021, payroll_2022)]
-
-# Make sure the lengths are the same
-    months_2021 = months_2021[:len(payroll_2022)]
-
-# Create a DataFrame for plotting
-    df = pd.DataFrame({'Month': months_2021 + months_2022,
-                   'Payroll 2021': payroll_2021 + [None] * len(months_2022),
-                   'Payroll 2022': [None] * len(months_2021) + payroll_2022,
-                   'Variation Rate (%)': monthly_variation_rates})
-
-# Create an interactive line plot with variation rates
-    st.header('Payroll Budget Evolution (2021 vs. 2022)')
-    fig = px.line(df, x='Month', y=['Payroll 2021', 'Payroll 2022'],
-              labels={'value': 'Payroll Expenses (in $k)'},
-              title='Payroll Budget Evolution (2021 vs. 2022)')
-
-# Add variation rates as a bar chart on a second y-axis
-    fig.add_bar(x=df['Month'], y=df['Variation Rate (%)'], yaxis="y2", name="Variation Rate (%)")
-    fig.update_traces(marker_color='rgba(255, 0, 0, 0.5)', selector=dict(type='bar'))
-
-# Update y-axes labels
-    fig.update_layout(yaxis2=dict(title="Variation Rate (%)", side="right"))
-    st.plotly_chart(fig)
-
-
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
     
