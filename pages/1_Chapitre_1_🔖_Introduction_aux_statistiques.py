@@ -319,13 +319,13 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     réalisé_2022 = [132, 135, 138, 140, 142, 145, 148, 150]
 
 # Create a DataFrame for plotting
-    df = pd.DataFrame({'Month': forecast_months_2022 + réalisé_months_2022,
-                   'Payroll 2021': forecast_2022 + [None] * len(réalisé_months_2022),
-                   'Payroll 2022': [None] * len(forecast_months_2022) + réalisé_2022})
+    df = pd.DataFrame({'Mois': forecast_months_2022 + réalisé_months_2022,
+                   'Forecast 2022 (Prévision)': forecast_2022 + [None] * len(réalisé_months_2022),
+                   'Réalisé 2022': [None] * len(forecast_months_2022) + réalisé_2022})
 
 # Create an interactive line plot
     st.header('Payroll Budget Evolution (2021 vs. 2022)')
-    fig = px.line(df, x='Month', y=['Payroll 2021', 'Payroll 2022'],
+    fig = px.line(df, x='Mois', y=['Forecast 2022 (Prévision)', 'Réalisé 2022'],
               labels={'value': 'Payroll Expenses (in $k)'},
               title='Payroll Budget Evolution (2021 vs. 2022)')
     st.plotly_chart(fig)
