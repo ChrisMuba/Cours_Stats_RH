@@ -348,6 +348,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Calculate monthly variation rates (in %)
     monthly_variation_rates = [(p2 - p1) / p1 * 100 if p1 != 0 else 0 for p1, p2 in zip(payroll_2021, payroll_2022)]
 
+# Make sure the lengths are the same
+    months_2021 = months_2021[:len(payroll_2022)]
+
 # Create a DataFrame for plotting
     df = pd.DataFrame({'Month': months_2021 + months_2022,
                    'Payroll 2021': payroll_2021 + [None] * len(months_2022),
@@ -368,6 +371,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig.update_layout(yaxis2=dict(title="Variation Rate (%)", side="right"))
     st.plotly_chart(fig)
 
+
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
     
@@ -378,8 +382,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("Par exemple, si on souhaite analyser l'écart de rémunération entre les 👦🏾/👧 dans une entreprise, on peut utiliser des données **numériques** (salaire **€**) et des données **catégorielles** (genre 👦🏾/👧).")
     
     st.markdown("On pourrait utiliser un **boxplot** pour montrer la répartition des salaires selon le genre (**fig.1**) et un **graphique à barres** pour montrer le salaire moyen par genre(**fig.2**).")
+
     
     st.markdown("")
+
     
     import streamlit as st
     import plotly.express as px
