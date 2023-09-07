@@ -336,20 +336,20 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
 
-   import streamlit as st
-   import plotly.graph_objs as go
-   import numpy as np
+    import streamlit as st
+    import plotly.graph_objs as go
+    import numpy as np
 
 # Define age intervals
-   age_intervals = ['[< 25]', '[25-29]', '[30-34]', '[35-39]', '[40-44]', '[45-49]', '[50-54]', '[55-59]', '[60 >=]']
+    age_intervals = ['[< 25]', '[25-29]', '[30-34]', '[35-39]', '[40-44]', '[45-49]', '[50-54]', '[55-59]', '[60 >=]']
 
 # Corresponding y values for the intervals
-   y = list(range(len(age_intervals)))
+    y = list(range(len(age_intervals)))
 
-   women_bins = np.array([-1686, -3868, -3463, -2346, -2074, -3037, -3495, -4194, -228])
-   men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
+    women_bins = np.array([-1686, -3868, -3463, -2346, -2074, -3037, -3495, -4194, -228])
+    men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
 
-   layout = go.Layout(
+    layout = go.Layout(
     yaxis=go.layout.YAxis(title='Age Intervals', tickvals=y, ticktext=age_intervals),
     xaxis=go.layout.XAxis(
         range=[-5000, 5000],
