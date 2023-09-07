@@ -1,2 +1,2 @@
 plotly
-chart_studio.plotly
+chart_studio
