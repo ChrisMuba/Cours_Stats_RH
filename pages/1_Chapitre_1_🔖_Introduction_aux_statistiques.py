@@ -305,7 +305,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
                 
     st.markdown("- **Créer des indicateurs**, concernant par exemple le **suivi de la masse salariale**, le **turn-over**, **l'absentéisme**, la **qualité du recrutement** et le **climat interne**.") 
 
-
     st.markdown("")
 
 
@@ -313,16 +312,16 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     import plotly.express as px
 
 # Monthly payroll data (in thousands of dollars)
-    months_2021 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    months_2022 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug']
+    forecast_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+    réalisé_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
 
     payroll_2021 = [100, 110, 105, 108, 112, 115, 118, 120, 122, 125, 128, 130]
     payroll_2022 = [132, 135, 138, 140, 142, 145, 148, 150]
 
 # Create a DataFrame for plotting
-    df = pd.DataFrame({'Month': months_2021 + months_2022,
-                   'Payroll 2021': payroll_2021 + [None] * len(months_2022),
-                   'Payroll 2022': [None] * len(months_2021) + payroll_2022})
+    df = pd.DataFrame({'Month': forecast_months_2022 + réalisé_months_2022,
+                   'Payroll 2021': payroll_2021 + [None] * len(réalisé_months_2022),
+                   'Payroll 2022': [None] * len(forecast_months_2022) + payroll_2022})
 
 # Create an interactive line plot
     st.header('Payroll Budget Evolution (2021 vs. 2022)')
