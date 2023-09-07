@@ -1,1 +1,2 @@
 plotly
+chart_studio.plotly
