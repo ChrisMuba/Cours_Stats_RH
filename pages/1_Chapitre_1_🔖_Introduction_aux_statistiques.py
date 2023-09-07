@@ -336,17 +336,18 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
 
-    import chart_studio.plotly as py
-    import plotly.graph_objs as go
+    import chart_studio.plotly as plt
     import numpy as np
 
+# Define the data
     women_bins = np.array([-600, -623, -653, -650, -670, -578, -541, -411, -322, -230])
     men_bins = np.array([600, 623, 653, 650, 670, 578, 541, 360, 312, 170])
     y = list(range(0, 100, 10))
 
-    layout = go.Layout(
-    yaxis=go.layout.YAxis(title='Age'),
-    xaxis=go.layout.XAxis(
+# Define the layout
+    layout = plt.Layout(
+    yaxis=plt.YAxis(title='Age'),
+    xaxis=plt.XAxis(
         range=[-1200, 1200],
         tickvals=[-1000, -700, -300, 0, 300, 700, 1000],
         ticktext=[1000, 700, 300, 0, 300, 700, 1000],
@@ -356,8 +357,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     bargap=0.1
 )
 
+# Define the data traces
     data = [
-    go.Bar(
+    plt.Bar(
         y=y,
         x=men_bins,
         orientation='h',
@@ -365,7 +367,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         hoverinfo='x',
         marker=dict(color='powderblue')
     ),
-    go.Bar(
+    plt.Bar(
         y=y,
         x=women_bins,
         orientation='h',
@@ -376,17 +378,15 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     )
 ]
 
-    fig = go.Figure(data=data, layout=layout)
-    py.iplot(fig)
+# Create the figure
+    fig = plt.Figure(data=data, layout=layout)
+
+# Display the figure
+    fig.show()
 
 
 
 
-
-
-
-    
-    
     st.markdown("- **Et enfin remplir les obligations légales**, notamment : **bilan social, NAO, rapport social, index égalité 👦🏾/👧, déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
     
     st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** et permettront la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
