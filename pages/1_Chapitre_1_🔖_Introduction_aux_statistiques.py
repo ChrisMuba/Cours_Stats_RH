@@ -338,6 +338,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 
     st.markdown("")
+    
 
     st.markdown("Ci-dessous un exemple de pyramide des âges en **pelote de laine**")
 
@@ -389,9 +390,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig = go.Figure(data=data, layout=layout)
     
     st.plotly_chart(fig)
-
-
-
 
 
     st.markdown("- **Et enfin remplir les obligations légales**, notamment : **bilan social, NAO, rapport social, index égalité 👦🏾/👧, déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
