@@ -319,7 +319,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     réalisé_2023 = [1152003, 1185350, 1113880, 1205008, 1677420, 1121245, 1148000, 1165000]
 
 # Create a DataFrame for plotting
-    df = pd.DataFrame({'Mois': forecast_months_2022 + réalisé_months_2022,
+    df = pd.DataFrame({'Mois': forecast_months_2023 + réalisé_months_2023,
                    'Forecast 2023 (Prévision)': forecast_2023 + [None] * len(réalisé_months_2023),
                    'Réalisé 2023': [None] * len(forecast_months_2023) + réalisé_2023})
 
