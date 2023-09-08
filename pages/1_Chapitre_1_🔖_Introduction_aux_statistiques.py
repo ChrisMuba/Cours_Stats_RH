@@ -392,7 +392,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.plotly_chart(fig)
 
 
-    st.markdown("- **Et enfin remplir les obligations légales**, notamment :construire le **bilan social**, préparer et mettre à dsposition les données necessaires aux **négociation annuelle obligatoire** (NAO), calculer l'**index égalité** 👦🏾/👧, effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
+    st.markdown("- **Et enfin remplir les obligations légales**, notamment construire le **bilan social**, préparer et mettre à dsposition les données necessaires à la **négociation annuelle obligatoire** (NAO) ; ") 
+    
+    st.markdown("- Calculer l'**index égalité** 👦🏾/👧 ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH).") 
     
     st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** et permettront la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
     
