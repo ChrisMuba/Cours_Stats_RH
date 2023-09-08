@@ -484,7 +484,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.plotly_chart(fig_scatter)
 
     import streamlit as st
-    from st_functions import st_button, load_css
+    from st_functions import st_button
     st_button('Quiz du chapitre 1', 'https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉')
 
 
