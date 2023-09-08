@@ -492,9 +492,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 
     url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
-    st.write("Acceder au quiz du chapitre 1 [lien](%s)" % url)
+    st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
 
-    st.markdown("Aller directement au chap.2  [link](%s)" % url)
+    st.markdown("Aller directement au chap.2  [ici](%s)" % url)
 
 
                 
