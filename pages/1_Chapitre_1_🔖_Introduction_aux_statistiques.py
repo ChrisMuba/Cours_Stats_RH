@@ -483,6 +483,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig_scatter.update_layout(annotations=[dict(x=4, y=14, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
+    import streamlit as st
+    from st_functions import st_button, load_css
     st_button('Quiz du chapitre 1', 'https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉')
 
 
