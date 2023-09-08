@@ -477,7 +477,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     # Scatter plot: Length of Employment vs. Turnover Rate with correlation line
    
     fig_scatter = px.scatter(df, x='Durée Emploi (Années)', y='Taux de turnover (%)', hover_data=['Job Title', 'Service'],
-                         title='fig.3 : Relation entre durée de l'emploi et taux de turnover')
+                         title='fig.3 : Relation entre durée Emploi et taux de turnover')
     fig_scatter.add_traces(px.scatter(x=df['Durée Emploi (Années)'], y=df['Taux de turnover (%)']).data)
     fig_scatter.add_traces(px.line(x=df['Durée Emploi (Années)'], y=np.polyval(np.polyfit(df['Durée Emploi (Années)'], df['Taux de turnover (%)'], 1), df['Durée Emploi (Années)'])).data)
     fig_scatter.update_layout(annotations=[dict(x=4, y=14, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
