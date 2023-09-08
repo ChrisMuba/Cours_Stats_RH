@@ -462,24 +462,24 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     data = {
     'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
     'Job Title': ['Manager', 'Analyst', 'Specialist', 'Technician', 'Associate', 'Manager', 'Analyst', 'Specialist', 'Technician', 'Associate'],
-    'Department': ['Sales', 'Finance', 'HR', 'IT', 'Marketing', 'Operations', 'Finance', 'HR', 'IT', 'Marketing'],
-    'Length of Employment (Years)': [5, 3, 2, 1, 4, 6, 2, 3, 2, 3],
-    'Turnover Rate (%)': [8, 4, 12, 16, 6, 10, 9, 7, 15, 5]
+    'Service': ['Sales', 'Finance', 'HR', 'IT', 'Marketing', 'Operations', 'Finance', 'HR', 'IT', 'Marketing'],
+    'Durée Emploi (Années)': [5, 3, 2, 1, 4, 6, 2, 3, 2, 3],
+    'Taux de turnover (%)': [8, 4, 12, 16, 6, 10, 9, 7, 15, 5]
     }
 
     df = pd.DataFrame(data)
 
     # Calculate correlation coefficient
-    correlation_coefficient = np.corrcoef(df['Length of Employment (Years)'], df['Turnover Rate (%)'])[0, 1]
+    correlation_coefficient = np.corrcoef(df['Durée Emploi (Années)'], df['Taux de turnover (%)'])[0, 1]
 
     st.markdown("")
     
     # Scatter plot: Length of Employment vs. Turnover Rate with correlation line
    
-    fig_scatter = px.scatter(df, x='Length of Employment (Years)', y='Turnover Rate (%)', hover_data=['Job Title', 'Department'],
-                         title='fig.3 : Relationship between Length of Employment and Turnover Rate')
-    fig_scatter.add_traces(px.scatter(x=df['Length of Employment (Years)'], y=df['Turnover Rate (%)']).data)
-    fig_scatter.add_traces(px.line(x=df['Length of Employment (Years)'], y=np.polyval(np.polyfit(df['Length of Employment (Years)'], df['Turnover Rate (%)'], 1), df['Length of Employment (Years)'])).data)
+    fig_scatter = px.scatter(df, x='Durée Emploi (Années)', y='Taux de turnover (%)', hover_data=['Job Title', 'Service'],
+                         title='fig.3 : Relation entre durée de l'emploi et taux de turnover')
+    fig_scatter.add_traces(px.scatter(x=df['Durée Emploi (Années)'], y=df['Taux de turnover (%)']).data)
+    fig_scatter.add_traces(px.line(x=df['Durée Emploi (Années)'], y=np.polyval(np.polyfit(df['Durée Emploi (Années)'], df['Taux de turnover (%)'], 1), df['Durée Emploi (Années)'])).data)
     fig_scatter.update_layout(annotations=[dict(x=4, y=14, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
