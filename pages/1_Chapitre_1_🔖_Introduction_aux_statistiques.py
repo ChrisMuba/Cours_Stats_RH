@@ -486,14 +486,15 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
                 
     #st.markdown("Mais aussi de **mesurer et anticiper les coûts financiers de la gestion et de la politique RH** d'une entreprise.")
+
     
     st.markdown("")
 
 
     url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
-    st.write("check out this [link](%s)" % url)
+    st.write("Acceder au quiz du chapitre 1 [lien](%s)" % url)
 
-    st.markdown("check out this [link](%s)" % url)
+    st.markdown("Aller directement au chap.2  [link](%s)" % url)
 
 
                 
