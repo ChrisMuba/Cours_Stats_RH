@@ -347,7 +347,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     import numpy as np
 
 # Define age intervals
-    age_intervals = ['[< 25]', '[25 - 29]', '[30 - 34]', '[35 - 39]', '[40 - 44]', '[45 - 49]', '[50 - 54]', '[55 - 59]', '[60 >=]']
+    age_intervals = ['[ < 25]', '[25 - 29]', '[30 - 34]', '[35 - 39]', '[40 - 44]', '[45 - 49]', '[50 - 54]', '[55 - 59]', '[60 et +]']
 
 # Corresponding y values for the intervals
     y = list(range(len(age_intervals)))
