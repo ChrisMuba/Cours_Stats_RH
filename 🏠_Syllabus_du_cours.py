@@ -51,7 +51,7 @@ def redirect_button(url: str, text: str= None, color="#FD504D"):
         """,
         unsafe_allow_html=True
         )
-redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 1")
+redirect_button("https://cours-stats-rh.streamlit.app/Chapitre_1_%F0%9F%94%96_Introduction_aux_statistiques","Aller au chapitre 1")
 
 
 
