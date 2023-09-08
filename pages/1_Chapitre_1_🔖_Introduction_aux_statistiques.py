@@ -312,22 +312,22 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     import plotly.express as px
 
 # Monthly payroll data (in thousands of dollars)
-    forecast_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
-    réalisé_months_2022 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
+    forecast_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+    réalisé_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
 
-    forecast_2022 = [1154300, 1200010, 1235205, 1305008, 1778120, 1263150, 1208180, 1240000, 1275002, 1299250, 2356280, 1251300]
-    réalisé_2022 = [1152003, 1185350, 1113880, 1205008, 1677420, 1121245, 1148000, 1165000]
+    forecast_2023 = [1154300, 1200010, 1235205, 1305008, 1778120, 1263150, 1208180, 1240000, 1275002, 1299250, 2356280, 1251300]
+    réalisé_2023 = [1152003, 1185350, 1113880, 1205008, 1677420, 1121245, 1148000, 1165000]
 
 # Create a DataFrame for plotting
     df = pd.DataFrame({'Mois': forecast_months_2022 + réalisé_months_2022,
-                   'Forecast 2022 (Prévision)': forecast_2022 + [None] * len(réalisé_months_2022),
-                   'Réalisé 2022': [None] * len(forecast_months_2022) + réalisé_2022})
+                   'Forecast 2023 (Prévision)': forecast_2023 + [None] * len(réalisé_months_2023),
+                   'Réalisé 2023': [None] * len(forecast_months_2023) + réalisé_2023})
 
 # Create an interactive line plot
     #st.header('Payroll Budget Evolution (2021 vs. 2022)')
-    fig = px.line(df, x='Mois', y=['Forecast 2022 (Prévision)', 'Réalisé 2022'],
+    fig = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
               labels={'value': 'Masse salariale brute (Millions €)'},
-              title='Exemple de suivi de la masse salariale (Prévision 2022 vs. Réalisé 2022)')
+              title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
     st.plotly_chart(fig)
 
     
