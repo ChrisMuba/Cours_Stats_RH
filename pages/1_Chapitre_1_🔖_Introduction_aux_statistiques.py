@@ -514,6 +514,29 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     unsafe_allow_html=True)
 
 
+    #st.markdown("**Une solide compréhension des statistiques va donc aider les professionnels RH à prendre des décisions impactantes fondées sur des données**.")
+
+
+    def redirect_button(url: str, text: str= None, color="#FD504D"):
+    st.markdown(
+    f"""
+    <a href="{url}" target="_self">
+        <div style="
+            display: inline-block;
+            padding: 0.5em 1em;
+            color: #FFFFFF;
+            background-color: {color};
+            border-radius: 3px;
+            text-decoration: none;">
+            {text}
+        </div>
+    </a>
+    """,
+    unsafe_allow_html=True
+    )
+    redirect_button("http://stackoverflow.com","this leads to SO")
+
+
                 
     
 
