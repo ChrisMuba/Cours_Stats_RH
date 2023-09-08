@@ -31,6 +31,29 @@ st.markdown("🎯Évaluer la validité des conclusions statistiques basées sur 
 st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux RH")
 
 
+st.markdown("")
+
+
+def redirect_button(url: str, text: str= None, color="#FD504D"):
+        st.markdown(
+        f"""
+        <a href="{url}" target="_blank">
+            <div style="
+                display: inline-block;
+                padding: 0.5em 1em;
+                color: #FFFFFF;
+                background-color: {color};
+                border-radius: 3px;
+                text-decoration: none;">
+                {text}
+            </div
+        </a>
+        """,
+        unsafe_allow_html=True
+        )
+redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 1")
+
+
 
 # In[ ]:
 
