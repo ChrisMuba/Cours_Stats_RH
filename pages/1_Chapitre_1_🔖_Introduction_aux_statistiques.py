@@ -397,12 +397,20 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("- Calculer l'**index égalité** 👦🏾/👧 ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH), etc...") 
     
     st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** issues de la GRH.")
+
+
+    st.markdown("")
+    
     
     st.markdown("Les statistiques appliquées aux RH permettent aussi la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
     
+
+    st.markdown("")
+    
+    
     st.markdown("Par exemple, si on souhaite analyser l'écart de rémunération entre les 👦🏾/👧 dans une entreprise, on peut utiliser des données **numériques** (salaire **€**) et des données **catégorielles** (genre 👦🏾/👧).")
     
-    st.markdown("On pourrait utiliser un **boxplot** pour montrer la répartition des salaires selon le genre (**fig.1**) et un **graphique à barres** pour montrer le salaire moyen par genre(**fig.2**).")
+    st.markdown("On pourrait utiliser un **boxplot** pour montrer la répartition des salaires selon le genre (**fig.1**) et un **graphique à barres** pour montrer le salaire moyen par genre (**fig.2**).")
 
     
     st.markdown("")
@@ -442,8 +450,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("")
     
-    st.markdown("**Autre exemple :** utiliser des données catégorielles (intitulé du poste, département) et des données numériques (durée de l'emploi) pour identifier les tendances du roulement.") 
-    st.markdown("On pourrait utiliser un **nuage de points** pour montrer la relation entre la durée de l'emploi et le taux de roulement (**fig.3**).")
+    st.markdown("**Autre exemple : utiliser des **données catégorielles** (intitulé du poste, département) et des **données numériques** (durée de l'emploi) pour identifier les tendances dans le **turnover** (départ et entrée de personnel).") 
+    st.markdown("On pourrait utiliser un **nuage de points** pour montrer la **relation entre la durée de l'emploi et le taux de renouvellement des effectifs** (**fig.3**).")
     
     import streamlit as st
     import plotly.express as px
