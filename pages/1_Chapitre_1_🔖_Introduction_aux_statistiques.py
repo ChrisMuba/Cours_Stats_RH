@@ -518,6 +518,26 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 1")
 
 
+    def redirect_button(url: str, text: str = None, color: str = "#FD504D"):
+        st.markdown(
+        f"""
+        <a href="{url}" target="_blank">
+            <div style="
+                display: inline-block;
+                padding: 0.5em 1em;
+                color: #FFFFFF;
+                background-color: {color};
+                border-radius: 3px;
+                text-decoration: none;">
+                {text}
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+    redirect_button("http://stackoverflow.com", "This leads to SO")
+
+
                 
     
 
