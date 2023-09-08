@@ -494,25 +494,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
     st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
 
-    
-    #st.markdown("**Une solide compréhension des statistiques va donc aider les professionnels RH à prendre des décisions impactantes fondées sur des données**.")
-
-
-    link = '[GitHub](http://github.com)'
-    st.markdown(link, unsafe_allow_html=True)
-    
-
-    #st.markdown("**Une solide compréhension des statistiques va donc aider les professionnels RH à prendre des décisions impactantes fondées sur des données**.")
-
-
-
-    url = 'https://stackoverflow.com'
-
-    st.markdown(f'''
-    <a href={url}><button style="background-color:GreenYellow;">Stackoverflow</button></a>
-    ''',
-    unsafe_allow_html=True)
-
 
     #st.markdown("**Une solide compréhension des statistiques va donc aider les professionnels RH à prendre des décisions impactantes fondées sur des données**.")
 
@@ -534,7 +515,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         """,
         unsafe_allow_html=True
         )
-    redirect_button("http://stackoverflow.com","this leads to SO")
+    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Continuer vers la suite")
 
 
                 
