@@ -396,7 +396,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Calculer l'**index égalité** 👦🏾/👧 ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH), etc...") 
     
-    st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** et permettront la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
+    st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** issues de la GRH.")
+    
+    st.markdown("Les statistiques appliquées aux RH permettent aussi la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
     
     st.markdown("Par exemple, si on souhaite analyser l'écart de rémunération entre les 👦🏾/👧 dans une entreprise, on peut utiliser des données **numériques** (salaire **€**) et des données **catégorielles** (genre 👦🏾/👧).")
     
