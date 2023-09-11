@@ -59,7 +59,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 )
 
 # Display the calculated mean
-    st.write(f"Salaire moyen: {mean_salary:.2f} (en €)")
+    st.write(f"**Salaire moyen: {mean_salary:.2f} (en €)**")
 
 # Create a histogram
     fig_hist = px.histogram(df, x='Salaire (en milliers €)', title='Distribution des salaires')
