@@ -35,21 +35,17 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Calculate the mean
     mean_salary = np.mean(df['Salary (in 1000s)'])
 
-# Create a Streamlit App
-    #st.title("Introduction to Statistics for HR Professionals")
-    #st.header("Measures of Central Tendency: Mean")
-
 # Display the theoretical formula for calculating the mean
     st.subheader("Formule théorique de la **moyenne**")
     st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
 # Display the steps for calculating the mean
-    st.subheader("Steps to Calculate Mean")
+    st.subheader("Étapes pour calculer la moyenne")
     st.markdown(
     """
-    1. **Sum all the values:** Add up all the salary values in the dataset.
-    2. **Count the number of values (n):** Determine the total number of salaries in the dataset.
-    3. **Apply the formula:** Divide the sum by the number of values to get the mean.
+    1. **Sommez toutes les valeurs:** additionnez toutes les valeurs de salaire dans l’ensemble de données.
+    2. ** Comptez le nombre de valeurs (n):** déterminez le nombre total de salaires dans l'ensemble de données.
+    3. **Appliquez la formule:** Divisez la somme par le nombre de valeurs pour obtenir la moyenne.
     """
 )
 
