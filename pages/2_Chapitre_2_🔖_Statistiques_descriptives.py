@@ -27,13 +27,13 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     import numpy as np
 
 # Sample employee salary data (in thousands of dollars)
-    salaries = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]  # Includes an outlier (610000 salary)
+    salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]  # Includes an outlier (610000 salary)
 
 # Create a DataFrame
-    df = pd.DataFrame({'Salary (in 1000s)': salaries})
+    df = pd.DataFrame({'Salaire (en milliers €)': salaires})
 
 # Calculate the mean
-    mean_salary = np.mean(df['Salary (in 1000s)'])
+    mean_salary = np.mean(df['Salaire (en milliers €)'])
 
 # Display the theoretical formula for calculating the mean
     st.subheader("Formule théorique de la **moyenne**")
@@ -59,17 +59,17 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 )
 
 # Display the calculated mean
-    st.write(f"Salaire moyen: {mean_salary:.2f} (en milliers d'€)")
+    st.write(f"Salaire moyen: {mean_salary:.2f} (en €)")
 
 # Create a histogram
-    fig_hist = px.histogram(df, x='Salary (in 1000s)', title='Salary Distribution')
+    fig_hist = px.histogram(df, x='Salaire (en milliers €)', title='Distribution des salaires')
 
 # Display the histogram
     st.plotly_chart(fig_hist)
 
 
 # Create a density plot
-    fig_density = px.density_contour(df, x='Salary (in 1000s)', title='Salary Density Plot')
+    fig_density = px.density_contour(df, x='Salaire (en milliers €)', title='Graphique de densité salariale')
 
 # Display the density plot
     st.plotly_chart(fig_density)
