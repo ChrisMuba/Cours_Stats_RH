@@ -36,11 +36,11 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     mean_salary = np.mean(df['Salary (in 1000s)'])
 
 # Create a Streamlit App
-    st.title("Introduction to Statistics for HR Professionals")
-    st.header("Measures of Central Tendency: Mean")
+    #st.title("Introduction to Statistics for HR Professionals")
+    #st.header("Measures of Central Tendency: Mean")
 
 # Display the theoretical formula for calculating the mean
-    st.subheader("Theoretical Formula for Mean")
+    st.subheader("Formule théorique de la **moyenne**")
     st.latex(r'\text{Mean} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
 # Display the steps for calculating the mean
