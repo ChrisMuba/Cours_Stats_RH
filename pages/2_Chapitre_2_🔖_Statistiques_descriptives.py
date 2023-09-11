@@ -86,10 +86,15 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
     st.markdown("La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian (environ 61 000 €).")
 
+
+    st.markdown(")
+
     
+    st.markdown("- **Médiane** : la valeur médiane est le point milieu d'un ensemble de données numériques. Elle est calculée en organisant les données dans l'ordre croissant, de sorte que la moitié des valeurs soient inférieures ou égales à la médiane et l'autre moitié supérieures ou égales. Ainsi la médiane se trouve être le point milieu.") 
+    st.markdown("Comparativement à la moyenne, la médiane est moins sensible aux valeurs aberrantes ou extrêmes ; et fournit une meilleure représentation de la⚡**valeur typique**⚡de l'ensemble de données.") 
 
 
-# Import necessary libraries
+    # Import necessary libraries
     import streamlit as st
     import plotly.express as px
 
@@ -107,23 +112,33 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig)
 
 
+    st.markdown("")
 
 
+    st.markdown("**Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
 
 
+    st.markdown("Le **box plot**fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.")
 
+    st.markdown("La boite représente l'intervalle interquartile (IQR), les bords inférieur (à gauche) et supérieur (à droite) de la case marquant respectivement le premier quartile (Q1) et le troisième quartile (Q3).")
+
+    st.markdown("Intervalle interquartile (IQR) : la moitié moyenne des salaires (de Q1 à Q3) se situe entre environ 56 000 € et 65 000 €.")
+
+    st.markdown("La ligne verticale à l’intérieur de la boite représente le salaire médian (Q2) : environ 61 000 €.")
+
+    st.markdown("Les « moustaches » s'étendent des bords de la boîte jusqu'aux salaires minimum et maximum dans une fourchette raisonnable : il n'y a pas de valeurs aberrantes dans l'ensemble de données, car tous les salaires se situent dans la fourchette raisonnable des « moustaches ».")
+
+    st.markdown("
+
+
+    st.markdown(")
 
     
 
 
 
 
-
-    
-    
-    st.markdown("- **Médiane** : la valeur médiane est le point milieu d'un ensemble de données numériques. Elle est calculée en organisant les données dans l'ordre croissant,") 
-    st.markdown("de sorte que la moitié des valeurs soient inférieures ou égales à la médiane et l'autre moitié supérieures ou égales. Ainsi la médiane se trouve être le point milieu.") 
-    st.markdown("Comparativement à la moyenne, la médiane est moins sensible aux valeurs aberrantes ou extrêmes ; et fournit une meilleure représentation de la⚡**valeur typique**⚡de l'ensemble de données.") 
+                
     
     st.markdown("- **Mode** : c'est la valeur la plus courante dans un ensemble de données. Le mode est calculé en identifiant la valeur qui se produit le plus fréquemment.") 
     st.markdown("Il s'agit d'une mesure simple qui peut être utilisée pour résumer et décrire des données, en conjonction avec la moyenne et la médiane pour obtenir une image plus complète des données.") 
