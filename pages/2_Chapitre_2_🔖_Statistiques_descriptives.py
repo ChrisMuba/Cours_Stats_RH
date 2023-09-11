@@ -27,7 +27,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     import numpy as np
 
 # Sample employee salary data (in thousands of dollars)
-    salaries = [35, 40, 45, 50, 55, 60, 65, 500]  # Includes an outlier (500k salary)
+    salaries = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 610000]  # Includes an outlier (610000 salary)
 
 # Create a DataFrame
     df = pd.DataFrame({'Salary (in 1000s)': salaries})
