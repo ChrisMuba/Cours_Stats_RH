@@ -131,7 +131,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown(")
+    st.markdown("")
 
     
 
