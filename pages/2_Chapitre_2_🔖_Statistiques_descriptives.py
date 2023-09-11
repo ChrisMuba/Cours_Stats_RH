@@ -19,6 +19,77 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("**Il existe trois principales mesures de tendance centrale** :")
     
     st.markdown("- **Moyenne** : il s'agit de la moyenne arithmétique d'un ensemble de valeurs. Elle est calculée en additionnant toutes les valeurs et en divisant par le nombre de valeurs. La moyenne est sensible aux valeurs aberrantes et aux valeurs extrêmes, et peut ne pas être représentative des données s'il existe des valeurs extrêmes.")
+
+
+    import streamlit as st
+    import plotly.express as px
+    import pandas as pd
+    import numpy as np
+
+# Sample employee salary data (in thousands of dollars)
+    salaries = [35, 40, 45, 50, 55, 60, 65, 500]  # Includes an outlier (500k salary)
+
+# Create a DataFrame
+    df = pd.DataFrame({'Salary (in 1000s)': salaries})
+
+# Calculate the mean
+    mean_salary = np.mean(df['Salary (in 1000s)'])
+
+# Create a Streamlit App
+    st.title("Introduction to Statistics for HR Professionals")
+    st.header("Measures of Central Tendency: Mean")
+
+# Display the theoretical formula for calculating the mean
+    st.subheader("Theoretical Formula for Mean")
+    st.latex(r'\text{Mean} = \frac{\sum_{i=1}^{n}X_i}{n}')
+
+# Display the steps for calculating the mean
+    st.subheader("Steps to Calculate Mean")
+    st.markdown(
+    """
+    1. **Sum all the values:** Add up all the salary values in the dataset.
+    2. **Count the number of values (n):** Determine the total number of salaries in the dataset.
+    3. **Apply the formula:** Divide the sum by the number of values to get the mean.
+    """
+)
+
+# Display the calculated mean
+   st.write(f"Mean Salary: {mean_salary:.2f} (in 1000s of dollars)")
+
+# Create a histogram
+   fig_hist = px.histogram(df, x='Salary (in 1000s)', title='Salary Distribution')
+
+# Display the histogram
+   st.plotly_chart(fig_hist)
+
+
+# Create a density plot
+   fig_density = px.density_contour(df, x='Salary (in 1000s)', title='Salary Density Plot')
+
+# Display the density plot
+   st.plotly_chart(fig_density)
+
+   st.markdown(
+    """
+    In this HR context, we've explained the theoretical formula for calculating the mean salary 
+    and the steps involved in the calculation. The presence of an outlier can significantly 
+    affect the mean, as shown in the histogram and density plot.
+    """
+)
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
     
     st.markdown("- **Médiane** : la valeur médiane est le point milieu d'un ensemble de données numériques. Elle est calculée en organisant les données dans l'ordre croissant, de sorte que la moitié des valeurs soient inférieures ou égales à la médiane et l'autre moitié supérieures ou égales. Ainsi la médiane se trouve être le point milieu. Comparativement à la moyenne, la médiane est moins sensible aux valeurs aberrantes ou extrêmes ; et fournit une meilleure représentation de la⚡**valeur typique**⚡de l'ensemble de données.") 
     
