@@ -97,6 +97,61 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("Comparativement à la moyenne, la médiane est moins sensible aux valeurs aberrantes ou extrêmes ; et fournit une meilleure représentation de la⚡**valeur typique**⚡de l'ensemble de données.") 
 
 
+
+    import streamlit as st
+    import pandas as pd
+
+# Sample employee salary data (in dollars)
+    salaries = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
+
+# Create a Streamlit App
+    st.title("Introduction to Statistics for HR Professionals")
+    st.header("Measures of Central Tendency: Median")
+
+# Display the theoretical formula for calculating the median
+    st.subheader("Theoretical Formula for Median")
+    st.latex(r'\text{Median} = \frac{N+1}{2}^{th}\ \text{value in the ordered data}')
+
+# Display the steps for calculating the median
+    st.subheader("Steps to Calculate Median")
+    st.markdown(
+    """
+    1. **Order the data:** First, arrange the salary data in ascending order.
+    2. **Find the middle value:** If the dataset has an odd number of values (N), the median is the middle value.
+       If it has an even number of values, the median is the average of the two middle values.
+    """
+)
+
+# Calculate the median
+    sorted_salaries = sorted(salaries)
+    n = len(sorted_salaries)
+
+    if n % 2 == 1:
+    # Odd number of values
+        median = sorted_salaries[n // 2]
+    else:
+    # Even number of values
+        middle1 = sorted_salaries[(n - 1) // 2]
+        middle2 = sorted_salaries[n // 2]
+        median = (middle1 + middle2) / 2
+
+# Display the calculated median
+    st.write(f"Median Salary: ${median}")
+
+# Display the sorted salary data
+    st.subheader("Sorted Salary Data")
+    st.write(sorted_salaries)
+
+    st.markdown(
+    """
+    In this HR context, we've explained the theoretical formula for calculating the median salary 
+    and the steps involved in the calculation. The median is especially useful when dealing with 
+    skewed datasets or when outliers may significantly affect the mean.
+    """
+)
+
+
+
     # Import necessary libraries
     import streamlit as st
     import plotly.express as px
