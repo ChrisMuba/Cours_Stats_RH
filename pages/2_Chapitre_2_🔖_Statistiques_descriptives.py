@@ -44,7 +44,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown(
     """
     1. **Sommez toutes les valeurs:** additionnez toutes les valeurs de salaire dans l’ensemble de données.
-    2. ** Comptez le nombre de valeurs (n):** déterminez le nombre total de salaires dans l'ensemble de données.
+    2. **Comptez le nombre de valeurs (n) :** déterminez le nombre total de salaires dans l'ensemble de données.
     3. **Appliquez la formule:** Divisez la somme par le nombre de valeurs pour obtenir la moyenne.
     """
 )
