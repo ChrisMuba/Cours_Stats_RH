@@ -66,6 +66,14 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 # Display the histogram
     st.plotly_chart(fig_hist)
+    
+
+    st.markdown("")
+
+
+    st.markdown("**Interpretation**")
+
+    
 
 
 # Create a density plot
