@@ -128,7 +128,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
     st.markdown("Les « moustaches » s'étendent des bords de la boîte jusqu'aux salaires minimum et maximum dans une fourchette raisonnable : il n'y a pas de valeurs aberrantes dans l'ensemble de données, car tous les salaires se situent dans la fourchette raisonnable des « moustaches ».")
 
-    st.markdown("
+    st.markdown("")
 
 
     st.markdown(")
