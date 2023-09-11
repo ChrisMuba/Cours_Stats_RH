@@ -43,7 +43,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("Application")
+    st.markdown("**Application**")
     st.markdown("Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]")
 
     
@@ -59,7 +59,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 )
 
 # Display the calculated mean
-    st.write(f"Mean Salary: {mean_salary:.2f} (in 1000s of dollars)")
+    st.write(f"Salaire moyen: {mean_salary:.2f} (en milliers d'€)")
 
 # Create a histogram
     fig_hist = px.histogram(df, x='Salary (in 1000s)', title='Salary Distribution')
