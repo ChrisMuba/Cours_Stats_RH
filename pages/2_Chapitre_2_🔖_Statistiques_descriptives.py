@@ -54,22 +54,22 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 )
 
 # Display the calculated mean
-   st.write(f"Mean Salary: {mean_salary:.2f} (in 1000s of dollars)")
+    st.write(f"Mean Salary: {mean_salary:.2f} (in 1000s of dollars)")
 
 # Create a histogram
-   fig_hist = px.histogram(df, x='Salary (in 1000s)', title='Salary Distribution')
+    fig_hist = px.histogram(df, x='Salary (in 1000s)', title='Salary Distribution')
 
 # Display the histogram
-   st.plotly_chart(fig_hist)
+    st.plotly_chart(fig_hist)
 
 
 # Create a density plot
-   fig_density = px.density_contour(df, x='Salary (in 1000s)', title='Salary Density Plot')
+    fig_density = px.density_contour(df, x='Salary (in 1000s)', title='Salary Density Plot')
 
 # Display the density plot
-   st.plotly_chart(fig_density)
+    st.plotly_chart(fig_density)
 
-   st.markdown(
+    st.markdown(
     """
     In this HR context, we've explained the theoretical formula for calculating the mean salary 
     and the steps involved in the calculation. The presence of an outlier can significantly 
