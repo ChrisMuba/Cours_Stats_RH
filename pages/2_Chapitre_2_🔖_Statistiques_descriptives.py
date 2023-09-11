@@ -27,7 +27,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     import numpy as np
 
 # Sample employee salary data (in thousands of dollars)
-    salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]  # Includes an outlier (610000 salary)
+    salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000] 
 
 # Create a DataFrame
     df = pd.DataFrame({'Salaire (en milliers €)': salaires})
@@ -74,7 +74,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("**Interpretation**")
 
 
-    st.markdown("L'histogramme de répartition des salaires représente la fréquence des différentes échelles de salaire au sein de l'ensemble de données.")
+    st.markdown("L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.")
 
     st.markdown("La plupart des salaires se situent dans la fourchette de 55 000 € à 65 000 €, cette catégorie ayant la fréquence la plus élevée.")
 
