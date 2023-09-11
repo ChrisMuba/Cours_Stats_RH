@@ -89,19 +89,23 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     
 
 
-# Create a density plot
-    fig_density = px.density_contour(df, x='Salaire (en milliers €)', title='Graphique de densité salariale')
+# Import necessary libraries
+    import streamlit as st
+    import plotly.express as px
 
-# Display the density plot
-    st.plotly_chart(fig_density)
+# Data: Salaries in dollars
+    salaries = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
 
-    st.markdown(
-    """
-    In this HR context, we've explained the theoretical formula for calculating the mean salary 
-    and the steps involved in the calculation. The presence of an outlier can significantly 
-    affect the mean, as shown in the histogram and density plot.
-    """
-)
+# Create a Streamlit app
+    st.title("Salary Distribution Box Plot")
+    st.write("This app displays the distribution of salaries using a box plot.")
+
+# Create a box plot using Plotly Express
+    fig = px.box(x=salaries, labels={'x': 'Salaries'}, title="Salary Distribution Box Plot")
+
+# Display the plot in the Streamlit app
+    st.plotly_chart(fig)
+
 
 
 
