@@ -8,14 +8,14 @@ st.sidebar.markdown("# Chapitre 2")
 
 st.title("Statistiques descriptives")
 
-st.markdown("Comme nous l'avons précédemment vu, **les statistiques descriptives traitent de la collecte, de l'analyse et de la présentation des données**. 
-Elles vont fournir aux professionnels RH des outils pour décrire et résumer les données d'une manière facile à comprendre.")
+st.markdown("Comme nous l'avons précédemment vu, **les statistiques descriptives traitent de la collecte, de l'analyse et de la présentation des données**.") 
+st.markdown("Elles vont fournir aux professionnels RH des outils pour décrire et résumer les données d'une manière facile à comprendre.")
 
 if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale**"):
     
     st.subheader("📈Chap.2-A/ Mesures de tendance centrale📉")
     
-    st.markdown("Les **mesures de tendance centrale** sont utilisées pour définir le centre d'une distribution ou d'un ensemble de données. 
+    st.markdown("Les **mesures de tendance centrale** sont utilisées pour définir le centre d'une distribution ou d'un ensemble de données.") 
     En statistique, une **distribution** fait référence au modèle de variation dans un ensemble de données numériques. 
     Ce modèle de variation décrit comment les données sont réparties sur une plage de valeurs. On peut visualiser une distribution à l'aide d'un graphique, tel qu'un histogramme ou un box plot.")
     
