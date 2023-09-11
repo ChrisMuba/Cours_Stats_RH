@@ -39,6 +39,15 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader("Formule théorique de la **moyenne**")
     st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
+
+    st.markdown("")
+
+
+    st.markdown("Application")
+    st.markdown("Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]")
+
+    
+
 # Display the steps for calculating the mean
     st.subheader("Étapes pour calculer la moyenne")
     st.markdown(
