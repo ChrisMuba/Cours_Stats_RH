@@ -41,7 +41,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 # Display the theoretical formula for calculating the mean
     st.subheader("Formule théorique de la **moyenne**")
-    st.latex(r'\text{Mean} = \frac{\sum_{i=1}^{n}X_i}{n}')
+    st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
 # Display the steps for calculating the mean
     st.subheader("Steps to Calculate Mean")
