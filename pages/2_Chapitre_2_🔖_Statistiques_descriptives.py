@@ -264,35 +264,20 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     mode_with_outliers = df_with_outliers['Salaires (€)'].mode().values[0]
 
 # Explanation and calculation steps
-    st.subheader("Tableau de la distribution de fréquence.")
+    st.subheader("Tableau de la distribution de fréquence")
 
     # Step 1: Frequency Distribution
-    #st.write("**Étape 1**: Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.")
     frequency_table_with_outliers = df_with_outliers['Salaires (€)'].value_counts().reset_index()
     frequency_table_with_outliers.columns = ['Salaires (€)', 'Frequence']
     st.dataframe(frequency_table_with_outliers)
 
 # Step 2: Find the Maximum Frequency
-    #st.write("**Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.")
     max_frequency_with_outliers = frequency_table_with_outliers['Frequence'].max()
     mode_values_with_outliers = frequency_table_with_outliers[frequency_table_with_outliers['Frequence'] == max_frequency_with_outliers]['Salaires (€)'].tolist()
     st.write(f"La valeur du **mode** est : {mode_values_with_outliers}")
 
-
-
-
-
-
-
-
-
-
-
-
-    
-
 # Create a histogram
-    fig_with_outliers = px.histogram(df_with_outliers, x='Salaires (€)', nbins=6, title='Salary Distribution (With Outliers)')
+    fig_with_outliers = px.histogram(df_with_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires (avec Outliers)')
     st.plotly_chart(fig_with_outliers)
 
 # Explanation
