@@ -209,7 +209,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     
 
     # Display the steps for calculating the mode
-    st.subheader("Étapes pour déterminer le mode")
+    
     st.markdown(
     """
     **Étape 1** : Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.
@@ -231,7 +231,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader(f"Mode (Without Outliers): {mode_without_outliers}")
 
 # Explanation and calculation steps
-    st.subheader("Calculation Steps (Without Outliers)")
+    st.subheader("Étapes pour déterminer le mode")
 
     # Step 1: Frequency Distribution
     st.write("Step 1: Create a frequency distribution to count the occurrences of each value in the dataset.")
