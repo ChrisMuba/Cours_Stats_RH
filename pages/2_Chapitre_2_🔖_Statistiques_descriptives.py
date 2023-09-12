@@ -281,7 +281,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig_with_outliers)
 
 # Explanation
-    st.markdown("**🔮Interpretation de l'histogramme des salaires sans valeurs aberrantes**")
+    st.markdown("**🔮Interpretation de l'histogramme des salaires avec valeurs aberrantes**")
     st.write("""
     Dans cet exemple, nous avons un échantillon de données salariales qui inclut des valeurs aberrantes.  
     Il s'agit des valeurs extrêmes qui peuvent **fausser la distribution**. Lorsque des valeurs aberrantes sont présentes, 
