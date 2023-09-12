@@ -133,7 +133,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
         median = (middle1 + middle2) / 2
 
 # Display the calculated median
-    st.write(f"Salaire : €{median}")
+    st.write(f"**Salaire : {median} (en €)**")
 
 # Display the sorted salary data
     st.subheader("Sorted Salary Data")
