@@ -231,39 +231,6 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig_without_outliers)
 
 
-
-
-
-    
-
-# Sample data without outliers
-    data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
-
-# Create a DataFrame
-    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
-
-# Display the data table
-    st.subheader("Sample Salary Data (Without Outliers)")
-    st.dataframe(df_without_outliers)
-
-# Calculate the mode
-    mode_without_outliers = df_without_outliers['Salary'].mode().values[0]
-
-# Display the mode
-    st.subheader(f"Mode (Without Outliers): {mode_without_outliers}")
-
-# Create a histogram
-    fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
-    st.plotly_chart(fig_without_outliers)
-
-# Explanation
-    st.write("""
-    In this example, we have a sample of salary data without any outliers. The mode represents the most 
-    common salary in the dataset, which is the value that occurs most frequently. In this case, 
-    the mode is used to describe the central tendency of the salary distribution. The mode helps HR 
-    professionals understand the most typical salary level within the organization.
-""")
-
 # Create a second Streamlit app for data with outliers
     st.header("Measures of Central Tendency - Mode (With Outliers)")
 
