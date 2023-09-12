@@ -195,6 +195,16 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("Le mode est la valeur qui apparaît **le plus fréquemment** dans l'ensemble de données.)")
 
     st.markdown("**🏀Application**")
+    
+    # Sample data without outliers
+    data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
+
+# Create a DataFrame
+    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
+
+# Display the data table
+    st.subheader("Sample Salary Data (Without Outliers)")
+    st.dataframe(df_without_outliers)
     st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
 
     # Display the steps for calculating the mode
@@ -210,15 +220,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 
 
-# Sample data without outliers
-    data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
 
-# Create a DataFrame
-    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
-
-# Display the data table
-    st.subheader("Sample Salary Data (Without Outliers)")
-    st.dataframe(df_without_outliers)
 
 # Calculate the mode
     mode_without_outliers = df_without_outliers['Salary'].mode().values[0]
