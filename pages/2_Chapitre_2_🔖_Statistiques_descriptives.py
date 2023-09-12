@@ -206,23 +206,6 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("Ci-dessous un échantillon de données de **Salaires (en €)** :")
     st.dataframe(df_without_outliers)
     
-    
-
-    # Display the steps for calculating the mode
-    
-    st.markdown(
-    """
-    **Étape 1** : Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.
-    
-    **Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.
-    
-    """
-)
-
-
-
-
-
 
 # Calculate the mode
     mode_without_outliers = df_without_outliers['Salaires (€)'].mode().values[0]
@@ -240,7 +223,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.dataframe(frequency_table_without_outliers)
 
 # Step 2: Find the Maximum Frequency
-    st.write("Step 2: Identify the value(s) with the highest frequency (mode).")
+    st.write("**Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.")
     max_frequency_without_outliers = frequency_table_without_outliers['Frequency'].max()
     mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequency'] == max_frequency_without_outliers]['Salaires (€)'].tolist()
     st.write(f"Mode Value(s): {mode_values_without_outliers}")
