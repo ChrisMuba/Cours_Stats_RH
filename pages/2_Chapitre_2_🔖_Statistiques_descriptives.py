@@ -21,7 +21,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     
     st.markdown("**Il existe trois principales mesures de tendance centrale** :")
     
-    st.markdown("- 🏀**Moyenne** : il s'agit de la moyenne arithmétique d'un ensemble de valeurs. Elle est calculée en additionnant toutes les valeurs et en divisant par le nombre de valeurs.") 
+    st.markdown("- **Moyenne** : il s'agit de la moyenne arithmétique d'un ensemble de valeurs. Elle est calculée en additionnant toutes les valeurs et en divisant par le nombre de valeurs.") 
     st.markdown("La moyenne est sensible aux valeurs aberrantes et aux valeurs extrêmes, et peut ne pas être représentative des données s'il existe des valeurs extrêmes.")
 
 
@@ -40,7 +40,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     mean_salary = np.mean(df['Salaire (en milliers €)'])
 
 # Display the theoretical formula for calculating the mean
-    st.subheader("Formule théorique de la **moyenne**")
+    st.subheader("🏀Formule théorique de la **moyenne**")
     st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
 
