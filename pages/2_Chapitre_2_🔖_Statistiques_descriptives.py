@@ -234,7 +234,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader("Étapes pour déterminer le mode")
 
     # Step 1: Frequency Distribution
-    st.write("Step 1: Create a frequency distribution to count the occurrences of each value in the dataset.")
+    st.write("**Étape 1**: Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.")
     frequency_table_without_outliers = df_without_outliers['Salaires (€)'].value_counts().reset_index()
     frequency_table_without_outliers.columns = ['Salaires (€)', 'Frequency']
     st.dataframe(frequency_table_without_outliers)
