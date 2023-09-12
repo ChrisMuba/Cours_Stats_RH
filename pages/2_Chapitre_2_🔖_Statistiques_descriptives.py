@@ -47,7 +47,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**🏀Application**")
+    st.markdown("**🏀Application 1**")
     st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
 
     
@@ -112,7 +112,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**🏀Application**")
+    st.markdown("**🏀Application 2**")
     st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
 
 # Display the steps for calculating the median
@@ -194,7 +194,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader("Comment trouver le **mode** ?")
     st.markdown("Le mode est la valeur qui apparaît **le plus fréquemment** dans l'ensemble de données.)")
 
-    st.markdown("**🏀Application**")
+    st.markdown("**🏀Application 3**")
     
     # Sample data without outliers
     data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
@@ -247,7 +247,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**🏀Application**")
+    st.markdown("**🏀Application 4**")
 
 
 # Sample data with outliers
