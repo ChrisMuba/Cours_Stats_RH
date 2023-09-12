@@ -282,11 +282,14 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 # Explanation
     st.write("""
-    In this example, we have a sample of salary data that includes outliers. Outliers are extreme values 
-    that can skew the distribution. When outliers are present, the mode may not accurately represent 
-    the central tendency because it's heavily influenced by the outliers. In such cases, other measures 
-    like the mean or median may provide a better understanding of the typical salary level.
+    Dans cet exemple, nous avons un échantillon de données salariales qui inclut des valeurs aberrantes.  
+    Il s'agit des valeurs extrêmes qui peuvent **fausser la distribution**. Lorsque des valeurs aberrantes sont présentes, 
+    le mode peut **ne pas représenter avec précision la tendance centrale**
+    car il est fortement influencé par les valeurs aberrantes. Dans de tels cas, d’autres mesures 
+    comme la moyenne ou la médiane peuvent permettre de mieux comprendre le niveau de salaire typique.
 """)
+
+    
 
 
 
