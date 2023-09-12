@@ -208,6 +208,27 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 )
 
 
+
+
+# Sample data without outliers
+    data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
+
+# Create a DataFrame
+    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
+
+# Display the data table
+    st.subheader("Sample Salary Data (Without Outliers)")
+    st.dataframe(df_without_outliers)
+
+# Calculate the mode
+    mode_without_outliers = df_without_outliers['Salary'].mode().values[0]
+
+# Display the mode
+    st.subheader(f"Mode (Without Outliers): {mode_without_outliers}")
+
+# Explanation and calculation steps
+    st.subheader("Calculation Steps (Without Outliers)")
+
     # Step 1: Frequency Distribution
     st.write("Step 1: Create a frequency distribution to count the occurrences of each value in the dataset.")
     frequency_table_without_outliers = df_without_outliers['Salary'].value_counts().reset_index()
