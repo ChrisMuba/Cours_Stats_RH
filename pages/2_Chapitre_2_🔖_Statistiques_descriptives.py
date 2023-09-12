@@ -306,6 +306,14 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
 
+    # Explanation
+    st.write("""
+    Le **box plot** nous confirme visuellement la présence de valeurs aberrantes dans les données, avec des salaires allant de 35 000 € à 120 000 €.  
+    La ligne verticale à l’intérieur de la boite nous montre que le salaire médian est de 50 000 €, et les moustaches nous montrent l'écart des salaires dans une plage de 1,5 fois l'écart interquartile (IQR). 
+    Les valeurs aberrantes, représentées par les deux points individuels en dehors des moustaches, sont les salaires de 100 000 € et 120 000 €.
+    La présence de valeurs aberrantes dans les données suggère que certains employés ont des salaires nettement supérieurs à ceux de la majorité des employés.
+""")
+
 
 if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilité**"):
     
