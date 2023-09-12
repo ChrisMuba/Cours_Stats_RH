@@ -109,6 +109,12 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader("Formule théorique de la **mediane**")
     st.latex(r'\text{Mediane} = \frac{N+1}{2}^{ème}\ \text{valeur dans les données classées par ordre croissant}')
 
+    st.markdown("")
+
+
+    st.markdown("**Application**")
+    st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
+
 # Display the steps for calculating the median
     st.subheader("Étapes pour calculer la mediane")
     st.markdown(
