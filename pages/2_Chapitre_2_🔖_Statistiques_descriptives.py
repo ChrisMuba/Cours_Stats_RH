@@ -234,14 +234,16 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
+    st.markdown("**🔮Interpretation de l'histogramme des salaires sans valeurs aberrantes**")
 
 
-    st.markdown("Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.")
+    st.markdown("L'histogramme est une distribution de fréquence qui montre le nombre d'observations dans des intervalles spécifiques. Dans notre cas, l'histogramme représente la répartition des salaires sans valeurs aberrantes.") 
+    
+    st.markdonwn("Cet histogramme montre une répartition relativement symétrique centrée autour des valeurs moyennes (entre 45 000 et 55 000 €), avec un pic autour de 50 000 €. Les données semblent être distribuées assez normalement, sans outliers significatifs.")
+    
+    st.markdown("Il apparaît quelques observations en dessous de 45 000 et au-dessus de 60 000 €. Cela suggère que la majorité des employés ont des salaires similaires, et que seuls quelques-uns ont des salaires nettement inférieurs ou supérieurs.")
 
-    st.markdown("La boite représente l'intervalle interquartile (IQR), les bords inférieur (à gauche) et supérieur (à droite) de la case marquant respectivement le premier quartile (Q1) et le troisième quartile (Q3).")
-
-    st.markdown("Intervalle interquartile (IQR) : la moitié moyenne des salaires (de Q1 à Q3) se situe entre environ 58 000 € et 65 000 €.")
+    st.markdown("Intervalle")
 
 
     st.markdown("**🏀Application**")
