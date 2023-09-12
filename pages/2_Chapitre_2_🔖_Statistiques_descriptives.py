@@ -213,7 +213,9 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown(
     """
     **Étape 1** : Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.
+    
     **Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.
+    
     """
 )
 
