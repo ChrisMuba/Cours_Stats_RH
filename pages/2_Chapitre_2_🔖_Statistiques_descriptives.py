@@ -107,15 +107,15 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 # Display the theoretical formula for calculating the median
     st.subheader("Formule théorique de la **mediane**")
-    st.latex(r'\text{Median} = \frac{N+1}{2}^{th}\ \text{value in the ordered data}')
+    st.latex(r'\text{Mediane} = \frac{N+1}{2}^{ème}\ \text{valeur dans les données classées dans l'ordre croissant}')
 
 # Display the steps for calculating the median
-    st.subheader("Steps to Calculate Median")
+    st.subheader("Étapes pour calculer la mediane")
     st.markdown(
     """
-    1. **Order the data:** First, arrange the salary data in ascending order.
-    2. **Find the middle value:** If the dataset has an odd number of values (N), the median is the middle value.
-       If it has an even number of values, the median is the average of the two middle values.
+    1. **Classez les données :** Commencez par classer les données salariales par ordre croissant.
+    2. **Trouver la valeur médiane :** si l'ensemble de données comporte un nombre **impair** de valeurs (N), la médiane est la valeur médiane. 
+       Si le nombre de valeurs est **pair**, la médiane est la moyenne des deux valeurs médianes.
     """
 )
 
