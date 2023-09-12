@@ -219,13 +219,13 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     # Step 1: Frequency Distribution
     st.write("**Étape 1**: Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.")
     frequency_table_without_outliers = df_without_outliers['Salaires (€)'].value_counts().reset_index()
-    frequency_table_without_outliers.columns = ['Salaires (€)', 'Frequency']
+    frequency_table_without_outliers.columns = ['Salaires (€)', 'Frequence']
     st.dataframe(frequency_table_without_outliers)
 
 # Step 2: Find the Maximum Frequency
     st.write("**Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.")
-    max_frequency_without_outliers = frequency_table_without_outliers['Frequency'].max()
-    mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequency'] == max_frequency_without_outliers]['Salaires (€)'].tolist()
+    max_frequency_without_outliers = frequency_table_without_outliers['Frequence'].max()
+    mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequence'] == max_frequency_without_outliers]['Salaires (€)'].tolist()
     st.write(f"Mode Value(s): {mode_values_without_outliers}")
 
 # Create a histogram
