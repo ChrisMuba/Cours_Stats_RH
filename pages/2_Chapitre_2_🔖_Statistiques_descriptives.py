@@ -125,6 +125,9 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     """
 )
 
+    # Display the calculated median
+    st.write(f"**Salaire : {median} (en €)**")
+    
 
     # Import necessary libraries
     import streamlit as st
