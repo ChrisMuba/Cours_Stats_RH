@@ -104,9 +104,6 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Sample employee salary data (in dollars)
     salaries = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
 
-# Create a Streamlit App
-    st.title("Introduction to Statistics for HR Professionals")
-    st.header("Measures of Central Tendency: Median")
 
 # Display the theoretical formula for calculating the median
     st.subheader("Theoretical Formula for Median")
