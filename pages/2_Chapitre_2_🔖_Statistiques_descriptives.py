@@ -203,9 +203,10 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
 
 # Display the data table
-    st.subheader("Sample Salary Data (Without Outliers)")
+    st.markdown("Ci-dessous un échantillon de données de **Salaires (en €)** :")
     st.dataframe(df_without_outliers)
-    st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
+    
+    
 
     # Display the steps for calculating the mode
     st.subheader("Étapes pour déterminer le mode")
