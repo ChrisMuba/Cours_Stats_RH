@@ -231,6 +231,9 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig_without_outliers)
 
 
+    st.markdown("**🏀Application**")
+
+
 # Sample data with outliers
     data_with_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000, 100000, 120000]
 
