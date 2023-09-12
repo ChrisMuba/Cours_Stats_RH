@@ -215,14 +215,14 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.dataframe(frequency_table_without_outliers)
 
 # Step 2: Find the Maximum Frequency
-   st.write("Step 2: Identify the value(s) with the highest frequency (mode).")
-   max_frequency_without_outliers = frequency_table_without_outliers['Frequency'].max()
-   mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequency'] == max_frequency_without_outliers]['Salary'].tolist()
-   st.write(f"Mode Value(s): {mode_values_without_outliers}")
+    st.write("Step 2: Identify the value(s) with the highest frequency (mode).")
+    max_frequency_without_outliers = frequency_table_without_outliers['Frequency'].max()
+    mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequency'] == max_frequency_without_outliers]['Salary'].tolist()
+    st.write(f"Mode Value(s): {mode_values_without_outliers}")
 
 # Create a histogram
-   fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
-   st.plotly_chart(fig_without_outliers)
+    fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
+    st.plotly_chart(fig_without_outliers)
 
 
 
