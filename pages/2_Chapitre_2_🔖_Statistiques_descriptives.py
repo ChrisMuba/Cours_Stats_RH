@@ -231,6 +231,19 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig_without_outliers)
 
 
+    st.markdown("")
+
+
+    st.markdown("**🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
+
+
+    st.markdown("Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.")
+
+    st.markdown("La boite représente l'intervalle interquartile (IQR), les bords inférieur (à gauche) et supérieur (à droite) de la case marquant respectivement le premier quartile (Q1) et le troisième quartile (Q3).")
+
+    st.markdown("Intervalle interquartile (IQR) : la moitié moyenne des salaires (de Q1 à Q3) se situe entre environ 58 000 € et 65 000 €.")
+
+
     st.markdown("**🏀Application**")
 
 
