@@ -227,7 +227,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.write(f"La valeur du **mode** est : {mode_values_without_outliers}")
 
 # Create a histogram
-    fig_without_outliers = px.histogram(df_without_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la **distribution des salaires**')
+    fig_without_outliers = px.histogram(df_without_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires')
     st.plotly_chart(fig_without_outliers)
 
 
