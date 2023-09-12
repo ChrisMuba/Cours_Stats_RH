@@ -263,11 +263,8 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Calculate the mode
     mode_with_outliers = df_with_outliers['Salaires (€)'].mode().values[0]
 
-# Display the mode
-    st.subheader(f"Mode (With Outliers): {mode_with_outliers}")
-
 # Explanation and calculation steps
-    st.subheader("Tableau de la distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.")
+    st.subheader("Tableau de la distribution de fréquence.")
 
     # Step 1: Frequency Distribution
     #st.write("**Étape 1**: Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.")
