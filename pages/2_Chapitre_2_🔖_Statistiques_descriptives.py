@@ -133,10 +133,6 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Data: Salaries in dollars
     salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
 
-# Create a Streamlit app
-    st.title("Salary Distribution Box Plot")
-    st.write("This app displays the distribution of salaries using a box plot.")
-
 # Create a box plot using Plotly Express
     fig = px.box(x=salaires, labels={'x': 'Salaires (k€)'}, title="Box Plot de la distribution des salaires")
 
