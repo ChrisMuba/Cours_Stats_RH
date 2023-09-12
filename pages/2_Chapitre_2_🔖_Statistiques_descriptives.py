@@ -75,7 +75,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**Interpretation de l'histogramme de la distribution des salaires**")
+    st.markdown("**🔮Interpretation de l'histogramme de la distribution des salaires**")
 
 
     st.markdown("L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.")
@@ -160,7 +160,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("")
 
 
-    st.markdown("**Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
+    st.markdown("**🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
 
 
     st.markdown("Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.")
