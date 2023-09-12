@@ -125,6 +125,20 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     """
 )
 
+
+    # Calculate the median
+    sorted_salaries = sorted(salaries)
+    n = len(sorted_salaries)
+
+    if n % 2 == 1:
+    # Odd number of values
+        median = sorted_salaries[n // 2]
+    else:
+    # Even number of values
+        middle1 = sorted_salaries[(n - 1) // 2]
+        middle2 = sorted_salaries[n // 2]
+        median = (middle1 + middle2) / 2
+    
     # Display the calculated median
     st.write(f"**Salaire : {median} (en €)**")
     
