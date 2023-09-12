@@ -289,8 +289,22 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     comme la moyenne ou la médiane peuvent permettre de mieux comprendre le niveau de salaire typique.
 """)
 
-    
 
+    st.markdown("")
+
+
+# Import necessary libraries
+    import streamlit as st
+    import plotly.express as px
+
+# Data: Salaries in dollars
+    salaires = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000, 100000, 120000]
+
+# Create a box plot using Plotly Express
+    fig = px.box(x=salaires, labels={'x': 'Salaires (k€)'}, title="Box Plot de la distribution des salaires avec outliers")
+
+# Display the plot in the Streamlit app
+    st.plotly_chart(fig)
 
 
 if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilité**"):
