@@ -203,7 +203,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salaires (€)'])
 
 # Display the data table
-    st.markdown("Ci-dessous un échantillon de données de **Salaires (en €)** :")
+    st.subheader("Echantillon de données salariales SANS outliers (valeurs aberrantes)")
     st.dataframe(df_without_outliers)
     
 
@@ -231,9 +231,6 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig_without_outliers)
 
 
-# Create a second Streamlit app for data with outliers
-    st.header("Measures of Central Tendency - Mode (With Outliers)")
-
 # Sample data with outliers
     data_with_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000, 100000, 120000]
 
@@ -241,7 +238,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     df_with_outliers = pd.DataFrame(data_with_outliers, columns=['Salary'])
 
 # Display the data table
-    st.subheader("Sample Salary Data (With Outliers)")
+    st.subheader("Echantillon de données salariales AVEC outliers (valeurs aberrantes)")
     st.dataframe(df_with_outliers)
 
 # Calculate the mode
