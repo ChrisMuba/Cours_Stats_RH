@@ -239,7 +239,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
     st.markdown("L'histogramme est une distribution de fréquence qui montre le nombre d'observations dans des intervalles spécifiques. Dans notre cas, l'histogramme représente la répartition des salaires sans valeurs aberrantes.") 
     
-    st.markdonwn("Cet histogramme montre une répartition relativement symétrique centrée autour des valeurs moyennes (entre 45 000 et 55 000 €), avec un pic autour de 50 000 €. Les données semblent être distribuées assez normalement, sans outliers significatifs.")
+    st.markdown("Cet histogramme montre une répartition relativement symétrique centrée autour des valeurs moyennes (entre 45 000 et 55 000 €), avec un pic autour de 50 000 €. Les données semblent être distribuées assez normalement, sans outliers significatifs.")
     
     st.markdown("Il apparaît quelques observations en dessous de 45 000 et au-dessus de 60 000 €. Cela suggère que la majorité des employés ont des salaires similaires, et que seuls quelques-uns ont des salaires nettement inférieurs ou supérieurs.")
 
