@@ -226,7 +226,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.write("**Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.")
     max_frequency_without_outliers = frequency_table_without_outliers['Frequence'].max()
     mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequence'] == max_frequency_without_outliers]['Salaires (€)'].tolist()
-    st.write(f"Valeur du Mode : {mode_values_without_outliers}(€)")
+    st.write(f"Valeur du **mode** : {mode_values_without_outliers}")
 
 # Create a histogram
     fig_without_outliers = px.histogram(df_without_outliers, x='Salaires (€)', nbins=6, title='Salary Distribution (Without Outliers)')
