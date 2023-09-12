@@ -106,7 +106,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 
 # Display the theoretical formula for calculating the median
-    st.subheader("Theoretical Formula for Median")
+    st.subheader("Formule théorique de la **Mediane**")
     st.latex(r'\text{Median} = \frac{N+1}{2}^{th}\ \text{value in the ordered data}')
 
 # Display the steps for calculating the median
