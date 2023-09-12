@@ -295,7 +295,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     
 
 # Create a histogram
-    fig_with_outliers = px.histogram(df_with_outliers, x='Salary', nbins=6, title='Salary Distribution (With Outliers)')
+    fig_with_outliers = px.histogram(df_with_outliers, x='Salaires (€)', nbins=6, title='Salary Distribution (With Outliers)')
     st.plotly_chart(fig_with_outliers)
 
 # Explanation
