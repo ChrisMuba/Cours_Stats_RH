@@ -190,9 +190,9 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     import pandas as pd
     import plotly.express as px
 
-# Create a Streamlit app
-    st.title("Introduction to Statistics for HR Professionals")
-    st.header("Measures of Central Tendency - Mode (Without Outliers)")
+# Display the formula for calculating the mode
+    st.subheader("Comment trouver le **mode** ?")
+    st.markdown("Le mode est la valeur qui apparaît **le plus fréquemment** dans l'ensemble de données.)")
 
 # Sample data without outliers
     data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
