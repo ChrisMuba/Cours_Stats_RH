@@ -140,7 +140,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
         median = (middle1 + middle2) / 2
     
     # Display the calculated median
-    st.write(f"**Salaire : {median} (en €)**")
+    st.write(f"**Salaire median : {median} (en €)**")
     
 
     # Import necessary libraries
@@ -151,7 +151,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
 
 # Create a box plot using Plotly Express
-    fig = px.box(x=salaires, labels={'x': 'Salaires (k€)'}, title="Box Plot de la distribution des salaires")
+    fig = px.box(x=salaires, labels={'x': 'Salaires (**k€**)'}, title="Box Plot de la distribution des salaires")
 
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
