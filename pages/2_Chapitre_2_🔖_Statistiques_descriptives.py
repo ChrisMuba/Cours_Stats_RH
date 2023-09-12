@@ -200,7 +200,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
 
 # Create a DataFrame
-    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
+    df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salaires (€)'])
 
 # Display the data table
     st.markdown("Ci-dessous un échantillon de données de **Salaires (en €)** :")
