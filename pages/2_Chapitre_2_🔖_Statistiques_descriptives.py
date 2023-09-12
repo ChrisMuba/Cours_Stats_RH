@@ -201,56 +201,56 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     df_without_outliers = pd.DataFrame(data_without_outliers, columns=['Salary'])
 
 # Display the data table
-   st.subheader("Sample Salary Data (Without Outliers)")
-   st.dataframe(df_without_outliers)
+    st.subheader("Sample Salary Data (Without Outliers)")
+    st.dataframe(df_without_outliers)
 
 # Calculate the mode
-   mode_without_outliers = df_without_outliers['Salary'].mode().values[0]
+    mode_without_outliers = df_without_outliers['Salary'].mode().values[0]
 
 # Display the mode
-   st.subheader(f"Mode (Without Outliers): {mode_without_outliers}")
+    st.subheader(f"Mode (Without Outliers): {mode_without_outliers}")
 
 # Create a histogram
-   fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
-   st.plotly_chart(fig_without_outliers)
+    fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
+    st.plotly_chart(fig_without_outliers)
 
 # Explanation
-   st.write("""
-   In this example, we have a sample of salary data without any outliers. The mode represents the most 
-   common salary in the dataset, which is the value that occurs most frequently. In this case, 
-   the mode is used to describe the central tendency of the salary distribution. The mode helps HR 
-   professionals understand the most typical salary level within the organization.
+    st.write("""
+    In this example, we have a sample of salary data without any outliers. The mode represents the most 
+    common salary in the dataset, which is the value that occurs most frequently. In this case, 
+    the mode is used to describe the central tendency of the salary distribution. The mode helps HR 
+    professionals understand the most typical salary level within the organization.
 """)
 
 # Create a second Streamlit app for data with outliers
-   st.header("Measures of Central Tendency - Mode (With Outliers)")
+    st.header("Measures of Central Tendency - Mode (With Outliers)")
 
 # Sample data with outliers
-   data_with_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000, 100000, 120000]
+    data_with_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000, 100000, 120000]
 
 # Create a DataFrame
-   df_with_outliers = pd.DataFrame(data_with_outliers, columns=['Salary'])
+    df_with_outliers = pd.DataFrame(data_with_outliers, columns=['Salary'])
 
 # Display the data table
-   st.subheader("Sample Salary Data (With Outliers)")
-   st.dataframe(df_with_outliers)
+    st.subheader("Sample Salary Data (With Outliers)")
+    st.dataframe(df_with_outliers)
 
 # Calculate the mode
-   mode_with_outliers = df_with_outliers['Salary'].mode().values[0]
+    mode_with_outliers = df_with_outliers['Salary'].mode().values[0]
 
 # Display the mode
-   st.subheader(f"Mode (With Outliers): {mode_with_outliers}")
+    st.subheader(f"Mode (With Outliers): {mode_with_outliers}")
 
 # Create a histogram
-   fig_with_outliers = px.histogram(df_with_outliers, x='Salary', nbins=6, title='Salary Distribution (With Outliers)')
-   st.plotly_chart(fig_with_outliers)
+    fig_with_outliers = px.histogram(df_with_outliers, x='Salary', nbins=6, title='Salary Distribution (With Outliers)')
+    st.plotly_chart(fig_with_outliers)
 
 # Explanation
-   st.write("""
-   In this example, we have a sample of salary data that includes outliers. Outliers are extreme values 
-   that can skew the distribution. When outliers are present, the mode may not accurately represent 
-   the central tendency because it's heavily influenced by the outliers. In such cases, other measures 
-   like the mean or median may provide a better understanding of the typical salary level.
+    st.write("""
+    In this example, we have a sample of salary data that includes outliers. Outliers are extreme values 
+    that can skew the distribution. When outliers are present, the mode may not accurately represent 
+    the central tendency because it's heavily influenced by the outliers. In such cases, other measures 
+    like the mean or median may provide a better understanding of the typical salary level.
 """)
 
 
