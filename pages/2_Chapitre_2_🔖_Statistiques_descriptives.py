@@ -197,6 +197,39 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.markdown("**🏀Application**")
     st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
 
+    # Display the steps for calculating the mode
+    st.subheader("Étapes pour déterminer le mode")
+    st.markdown(
+    """
+    1. **Classez les données :** Commencez par classer les données salariales par ordre croissant.
+    2. **Trouver la valeur médiane :** si l'ensemble de données comporte un nombre **impair** de valeurs (N), la médiane est la valeur médiane. 
+       Si le nombre de valeurs est **pair**, la médiane est la moyenne des deux valeurs médianes.
+    """
+)
+
+
+    # Step 1: Frequency Distribution
+    st.write("Step 1: Create a frequency distribution to count the occurrences of each value in the dataset.")
+    frequency_table_without_outliers = df_without_outliers['Salary'].value_counts().reset_index()
+    frequency_table_without_outliers.columns = ['Salary', 'Frequency']
+    st.dataframe(frequency_table_without_outliers)
+
+# Step 2: Find the Maximum Frequency
+   st.write("Step 2: Identify the value(s) with the highest frequency (mode).")
+   max_frequency_without_outliers = frequency_table_without_outliers['Frequency'].max()
+   mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequency'] == max_frequency_without_outliers]['Salary'].tolist()
+   st.write(f"Mode Value(s): {mode_values_without_outliers}")
+
+# Create a histogram
+   fig_without_outliers = px.histogram(df_without_outliers, x='Salary', nbins=6, title='Salary Distribution (Without Outliers)')
+   st.plotly_chart(fig_without_outliers)
+
+
+
+
+
+    
+
 # Sample data without outliers
     data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
 
