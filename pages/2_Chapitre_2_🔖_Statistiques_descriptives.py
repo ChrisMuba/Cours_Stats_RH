@@ -212,9 +212,8 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.subheader("Étapes pour déterminer le mode")
     st.markdown(
     """
-    1. **Classez les données :** Commencez par classer les données salariales par ordre croissant.
-    2. **Trouver la valeur médiane :** si l'ensemble de données comporte un nombre **impair** de valeurs (N), la médiane est la valeur médiane. 
-       Si le nombre de valeurs est **pair**, la médiane est la moyenne des deux valeurs médianes.
+    **Étape 1** : Créez une distribution de fréquence pour compter les occurrences de chaque valeur dans l'ensemble de données.
+    **Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.
     """
 )
 
