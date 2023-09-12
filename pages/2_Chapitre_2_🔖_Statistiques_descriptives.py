@@ -243,7 +243,8 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     
     st.markdown("Il apparaît quelques observations en dessous de 45 000 et au-dessus de 60 000 €. Cela suggère que la majorité des employés ont des salaires similaires, et que seuls quelques-uns ont des salaires nettement inférieurs ou supérieurs.")
 
-    st.markdown("Intervalle")
+    
+    st.markdown("")
 
 
     st.markdown("**🏀Application**")
