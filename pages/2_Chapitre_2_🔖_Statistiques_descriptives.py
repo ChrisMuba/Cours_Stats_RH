@@ -413,7 +413,16 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("Supposons que nous menions une enquête sur l'engagement des employés et que nous souhaitions mesurer la variance des scores de satisfaction des employés.") 
     st.markdown("Une variance élevée dans ces scores pourrait indiquer que les opinions sur la satisfaction au travail varient considérablement parmi les employés, tandis qu'une faible variance suggère un niveau de satisfaction plus uniforme.")
 
-    st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
+    st.markdown("**scores de satisfaction : [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]**")
+    
+    st.markdown("❗Nous pourrions exprimer nos **scores de satisfaction** en ESI (employee satisfaction index) mais cela n'a aucun intérêt pour illustrer le calcul de la variance.")
+
+    
+
+    
+
+    
+    
 
     
 
