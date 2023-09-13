@@ -412,10 +412,23 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("**🏀Application 6**")
     st.markdown("❗Pour la suite nous pourrions exprimer nos **scores de satisfaction** en ESI (employee satisfaction index) mais cela n'a aucun intérêt pour illustrer le calcul de la variance, donc nous travaillerons avec les données brutes.")
 
-    st.markdown("Supposons que vous ayez mené une enquête sur l'engagement des employés et que vous ayez collecté des scores de satisfaction sur une échelle de 1 à 10, où 1 représente très insatisfait et 10 représente très satisfait. Vous avez interrogé 10 employés. Voici leurs scores de satisfaction :") 
-    st.markdown("ve.")
+    st.markdown("Supposons que vous ayez mené une enquête sur l'engagement des employés et que vous ayez collecté des scores de satisfaction sur une échelle de 1 à 10, où 1 représente très insatisfait et 10 représente très satisfait. Vous avez interrogé 10 employés.")
+    
+    st.markdown("Voici leurs scores de satisfaction :") 
 
-    st.markdown("**scores de satisfaction : [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]**")
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+
+# Create a high variance dataset
+    data = {
+    'Employé': [Employé_1, Employé_2, Employé_3, Employé_4, Employé_5, Employé_6, Employé_7, Employé_8, Employé_9, Employé_10],
+    'Score_de_satisfaction': [1, 3, 4, 7, 9, 2, 10, 5, 8, 6]
+    }
+
+df = pd.DataFrame(data)
+
+    #st.markdown("**scores de satisfaction : [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]**")
     
     
 
