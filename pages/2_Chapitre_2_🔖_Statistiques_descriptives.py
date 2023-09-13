@@ -325,11 +325,9 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     st.markdown("- **Plage** : La plage (gamme, étendue) est la mesure de variabilité la plus simple, elle représente la différence entre les valeurs maximales et minimales dans un ensemble de données. Elle fournit une estimation approximative de la variabilité, mais est sensible aux valeurs aberrantes.")
 
-    st.write("""
-    Mathématiquement, on peut l'exprimer comme suit :
+    st.markdown("**Mathématiquement, on peut l'exprimer comme suit :**")
 
-    **Plage = Valeur maximale - Valeur minimale**
-""")
+    st.subheader("Plage = Valeur maximale - Valeur minimale")
 
 
     st.markdown("")
