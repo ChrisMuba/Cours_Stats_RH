@@ -418,9 +418,10 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.subheader("Étapes pour calculer la variance")
     st.markdown(
     """
-    1. **Sommez toutes les valeurs:** additionnez toutes les valeurs de salaire dans l’ensemble de données.
-    2. **Comptez le nombre de valeurs (n) :** déterminez le nombre total de salaires dans l'ensemble de données.
-    3. **Appliquez la formule:** Divisez la somme par le nombre de valeurs pour obtenir la moyenne.
+    1. Déterminez la **moyenne** des données.
+    2. **Soustrayez** la moyenne de chaque point de données pour trouver les différences.
+    3. **Mettez au carré** chaque différence pour éliminer les valeurs négatives et souligner les écarts plus importants.
+    4. **Calculez** la moyenne des précédents carrés.
     """
 )
 
