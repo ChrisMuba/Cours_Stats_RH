@@ -364,11 +364,10 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     import plotly.express as px
 
 # Data: Salaries in dollars
-    salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
-    âges = [22, 25, 30, 35, 40, 45, 50, 55, 60 et 65 ans]
+    âges = [22, 25, 30, 35, 40, 45, 50, 55, 60, 65]
 
 # Create a box plot using Plotly Express
-    fig = px.box(x=âges, labels={'x': 'âge des employés'}, title="Box Plot de lâge des employés de l'entreprise")
+    fig = px.box(x=âges, labels={'x': 'âge des employés (ans)'}, title="Box Plot de lâge des employés de l'entreprise")
 
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
