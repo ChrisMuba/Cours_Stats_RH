@@ -395,6 +395,16 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.subheader("Formule théorique de la Variance")
     st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N}')
 
+    st.markdown("Où :")
+
+    st.markdown("**σ²** représente la variance")
+
+    st.markdown("**Xᵢ** représente chaque point de données individuel")
+
+    st.markdown("**μ** représente la moyenne de l'échantillon de données")
+
+    st.markdown("**N** est le nombre total de points de données")
+
 
     st.markdown("")
 
@@ -405,7 +415,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
 
 # Display the steps for calculating the mean
-    st.subheader("Étapes pour calculer la moyenne")
+    st.subheader("Étapes pour calculer la variance")
     st.markdown(
     """
     1. **Sommez toutes les valeurs:** additionnez toutes les valeurs de salaire dans l’ensemble de données.
