@@ -196,7 +196,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
     st.markdown("**🏀Application 3**")
     
-    # Sample data without outliers
+# Sample data without outliers
     data_without_outliers = [35000, 40000, 42000, 45000, 48000, 50000, 50000, 52000, 55000, 58000, 60000]
 
 # Create a DataFrame
@@ -416,6 +416,20 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("**scores de satisfaction : [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]**")
     
     st.markdown("❗Nous pourrions exprimer nos **scores de satisfaction** en ESI (employee satisfaction index) mais cela n'a aucun intérêt pour illustrer le calcul de la variance.")
+
+
+# Sample data of Satisfaction Score
+    scores_de_satisfaction = [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]
+
+# Sample data of Squared Difference
+    squared_difference = [4.5, 3.5, 8, 4, 6, 1, 9, 7, 3, 5]
+
+# Create a DataFrame
+    df_without_outliers = pd.DataFrame(scores_de_satisfaction, columns=['Salaires (€)'])
+
+# Display the data table
+    st.subheader("Echantillon de données salariales SANS outliers (valeurs aberrantes)")
+    st.dataframe(df_without_outliers)
 
     
 
