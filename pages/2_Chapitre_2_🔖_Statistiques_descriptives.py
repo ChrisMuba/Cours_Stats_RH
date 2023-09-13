@@ -347,6 +347,15 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("")
 
 
+    st.markdown("Bien que cette plage puisse donner un aperçu de la répartition des âges au sein de l'entreprise, elle présente certaines limites :")
+
+    st.markdown("1. Elle ne tient pas compte de la distance entre les points de données consécutifs.")
+    st.markdown("2. Elle peut être affectée par des valeurs extrêmes ou des valeurs aberrantes.")
+    
+
+    st.markdown("Pour mieux **visualiser et comprendre** la répartition des âges dans notre échantillon de données, nous pouvons utiliser d'autres représentations en plus de la plage.") 
+    st.markdown("Certaines techniques de visualisation populaires incluent : Histogramme et Box plot")
+    
     st.markdown("- **Variance** : La variance est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne. Elle se calcule par la moyenne des différences au carré entre chaque point de données et la moyenne de l'ensemble de données. Elle fournit une mesure plus précise de la variabilité, mais est affecté par des valeurs extrêmes.")    
                 
     st.markdown("- **Écart type** : L'écart type est une mesure de la dispersion des valeurs des données par rapport à la moyenne de l'ensemble de données. C'est la racine carrée de la variance. Il s'agit de la mesure de variabilité la plus couramment utilisée et fournit une mesure de la dispersion dans les mêmes unités que l'ensemble de données d'origine.")            
