@@ -140,7 +140,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
         median = (middle1 + middle2) / 2
     
     # Display the calculated median
-    st.write(f"**Salaire median : {median} (en €)**")
+    st.write(f"**💡Salaire median : {median} (en €)**")
     
 
     # Import necessary libraries
@@ -224,7 +224,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.write("**Étape 2** : Identifiez la ou les valeurs avec la fréquence (mode) la plus élevée.")
     max_frequency_without_outliers = frequency_table_without_outliers['Frequence'].max()
     mode_values_without_outliers = frequency_table_without_outliers[frequency_table_without_outliers['Frequence'] == max_frequency_without_outliers]['Salaires (€)'].tolist()
-    st.write(f"La valeur du **mode** est : {mode_values_without_outliers}")
+    st.write(f"💡La valeur du **mode** est : {mode_values_without_outliers}")
 
 # Create a histogram
     fig_without_outliers = px.histogram(df_without_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires')
@@ -274,7 +274,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Step 2: Find the Maximum Frequency
     max_frequency_with_outliers = frequency_table_with_outliers['Frequence'].max()
     mode_values_with_outliers = frequency_table_with_outliers[frequency_table_with_outliers['Frequence'] == max_frequency_with_outliers]['Salaires (€)'].tolist()
-    st.write(f"La valeur du **mode** est : {mode_values_with_outliers}")
+    st.write(f"💡La valeur du **mode** est : {mode_values_with_outliers}")
 
 # Create a histogram
     fig_with_outliers = px.histogram(df_with_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires (avec Outliers)')
@@ -340,7 +340,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     âges = [22, 25, 30, 35, 40, 45, 50, 55, 60 et 65 ans] 
     
-    La plage de cet échantillon de données est : 65 - 22 = 43 ans.
+    💡La plage de cet échantillon de données est : 65 - 22 = 43 ans.
 """)
 
 
