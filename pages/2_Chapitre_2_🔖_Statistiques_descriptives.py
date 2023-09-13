@@ -465,7 +465,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("Étape 3 : Additionnons tous les carrés des différences**")
     
     # Display
-    st.latex(r'\{\sum_{i=1}^{n}(X_i - \mu)^2}')
+    st.latex(r'{\sum_{i=1}^{n}(X_i - \mu)^2}')
     st.latex(r'\text{Moyenne (μ)} = \frac{\sum_{i=1}^{n}X_i}{n} = \frac{1+3+4+7+9+2+10+5+8+6​}{10} = \frac{55​}{10} = 5.5')
     
     
