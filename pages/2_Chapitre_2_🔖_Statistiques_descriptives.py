@@ -377,7 +377,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.markdown("Ce **box plot** affiche la répartition des âges dans l'échantillon de données, l'axe horizontal représentant les différentes tranches d'âge.")
 
-    st.markdown("L'intervalle interquartile (IQR) (représenté par la boite) nous montre que la majorité des employés (50 %) ont entre 30 et 55 ans.")
+    st.markdown("L'intervalle interquartile **IQR** (représenté par la boite) nous montre que la majorité des employés (50 %) ont entre 30 et 55 ans.")
     
     st.markdown("L’âge médian, (représenté par la ligne verticale dans la boite) est de 42.5 ans, ce qui signifie que la moitié des employés de l'échantillon de données a plus de 42.5 ans et l'autre moitié moins : il s'agit d'une information utile à connaître, car elle peut aider à éclairer les politiques et les pratiques liées au développement et à la rétention des employés.")
 
