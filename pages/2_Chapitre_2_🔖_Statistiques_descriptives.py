@@ -441,9 +441,10 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
 
     st.markdown("Étape 1 : Calculons la Moyenne (**μ**) des scores de satisfaction")
-    st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}') 
-    st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n} = \frac{1+3+4+7+9+2+10+5+8+6​}{10} ')
-    st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N}')
+
+    # Display the Mean
+    st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n} = \frac{1+3+4+7+9+2+10+5+8+6​}{10} = \frac{55​}{10} = 5.5')
+    
 
     
     
