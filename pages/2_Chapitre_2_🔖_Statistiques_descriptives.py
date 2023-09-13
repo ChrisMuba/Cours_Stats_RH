@@ -440,12 +440,12 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("")
 
 
-    st.markdown("**Étape 1 : Calculons la Moyenne (**μ**) des scores de satisfaction**")
+    st.markdown("Étape 1 : **Calculons la Moyenne (**μ**) des scores de satisfaction**")
 
     # Display the Mean
     st.latex(r'\text{Moyenne (μ)} = \frac{\sum_{i=1}^{n}X_i}{n} = \frac{1+3+4+7+9+2+10+5+8+6​}{10} = \frac{55​}{10} = 5.5')
 
-    st.markdown("**Étape 2 : Calculons les carrés des différences entre chaque point de données (Xᵢ) et la moyenne (μ) :**")
+    st.markdown("Étape 2 : **Calculons les carrés des différences entre chaque point de données (Xᵢ) et la moyenne (μ) :**")
     
 
     
