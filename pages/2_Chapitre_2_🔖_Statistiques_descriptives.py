@@ -106,7 +106,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 
 # Display the theoretical formula for calculating the median
-    st.subheader("Formule théorique de la **mediane**")
+    st.subheader("Formule théorique de la mediane")
     st.latex(r'\text{Mediane} = \frac{N+1}{2}^{ème}\ \text{valeur dans les données classées par ordre croissant}')
 
     st.markdown("")
@@ -191,7 +191,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     import plotly.express as px
 
 # Display the formula for calculating the mode
-    st.subheader("Comment trouver le **mode** ?")
+    st.subheader("Comment trouver le mode ?")
     st.markdown("Le mode est la valeur qui apparaît **le plus fréquemment** dans l'ensemble de données.)")
 
     st.markdown("**🏀Application 3**")
