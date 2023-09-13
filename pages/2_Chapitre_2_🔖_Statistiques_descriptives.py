@@ -421,7 +421,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
 # Create a high variance dataset
     data = {
-    'Matricule': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    'Employé': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     'Score de satisfaction': [1, 3, 4, 7, 9, 2, 10, 5, 8, 6]
     }
 
@@ -446,6 +446,8 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.latex(r'\text{Moyenne (μ)} = \frac{\sum_{i=1}^{n}X_i}{n} = \frac{1+3+4+7+9+2+10+5+8+6​}{10} = \frac{55​}{10} = 5.5')
 
     st.markdown("Étape 2 : **Calculons les carrés des différences entre chaque point de données (Xᵢ) et la moyenne (μ) :**")
+
+    st.markdown("Pour l'employé 1 : (1 − 5.5)²= 20.25")
     
 
     
