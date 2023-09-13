@@ -353,8 +353,29 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("2. Elle peut être affectée par des valeurs extrêmes ou des valeurs aberrantes.")
     
 
-    st.markdown("Pour mieux **visualiser et comprendre** la répartition des âges dans notre échantillon de données, nous pouvons utiliser d'autres représentations en plus de la plage. Certaines techniques de visualisation populaires incluent : Histogramme et Box plot") 
+    st.markdown("Pour mieux **visualiser et comprendre** la répartition des âges dans notre échantillon de données, nous pouvons utiliser d'autres représentations en plus de la plage. Certaines techniques de visualisation populaires incluent : Histogramme et Box plot.") 
+    
+    
     st.markdown("")
+
+
+     # Import necessary libraries
+    import streamlit as st
+    import plotly.express as px
+
+# Data: Salaries in dollars
+    salaires = [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
+    âges = [22, 25, 30, 35, 40, 45, 50, 55, 60 et 65 ans]
+
+# Create a box plot using Plotly Express
+    fig = px.box(x=âges, labels={'x': 'âge des employés'}, title="Box Plot de lâge des employés de l'entreprise")
+
+# Display the plot in the Streamlit app
+    st.plotly_chart(fig)
+
+
+    st.markdown("")
+    
     
     st.markdown("- **Variance** : La variance est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne. Elle se calcule par la moyenne des différences au carré entre chaque point de données et la moyenne de l'ensemble de données. Elle fournit une mesure plus précise de la variabilité, mais est affecté par des valeurs extrêmes.")    
                 
