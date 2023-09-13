@@ -447,13 +447,18 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.markdown("Étape 2 : **Calculons les carrés des différences entre chaque point de données (Xᵢ) et la moyenne (μ) :**")
 
-    st.write("Pour l'employé 1 : (1 − 5.5)²= 20.25")
 
     st.write("""
     - Pour l'employé 1 : (1 − 5.5)² = 20.25  
-    - Pour l'employé 1 : (1 − 5.5)² = 20.25 
-    - Pour l'employé 1 : (1 − 5.5)² = 20.25
-    - Pour l'employé 1 : (1 − 5.5)² = 20.25
+    - Pour l'employé 2 : (3 − 5.5)² = 6.25 
+    - Pour l'employé 3 : (4 − 5.5)² = 2.25
+    - Pour l'employé 4 : (7 − 5.5)² = 2.25
+    - Pour l'employé 5 : (9 − 5.5)² = 12.25  
+    - Pour l'employé 6 : (2 − 5.5)² = 12.25 
+    - Pour l'employé 7 : (10 − 5.5)² = 20.25
+    - Pour l'employé 8 : (5 − 5.5)² = 0.25
+    - Pour l'employé 9 : (8 −5 .5)² = 6.25
+    - Pour l'employé 10 : ( 6− 5.5)² = 0.25
 """)
     
 
