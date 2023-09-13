@@ -426,7 +426,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit√
     'Score_de_satisfaction': [1, 3, 4, 7, 9, 2, 10, 5, 8, 6]
     }
 
-df = pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
     #st.markdown("**scores de satisfaction : [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]**")
     
