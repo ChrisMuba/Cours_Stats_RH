@@ -325,8 +325,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     st.markdown("- **Plage** : La plage (gamme, étendue) est la mesure de variabilité la plus simple, elle représente la différence entre les valeurs maximales et minimales dans un ensemble de données. Elle fournit une estimation approximative de la variabilité, mais est sensible aux valeurs aberrantes.")
                 
-    st.markdown("- **Variance** : La variance est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne. Elle se calcule par la moyenne des différences au carré entre chaque point de données et la moyenne de l'ensemble de données.") 
-    st.markdown("Elle fournit une mesure plus précise de la variabilité, mais est affecté par des valeurs extrêmes.")    
+    st.markdown("- **Variance** : La variance est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne. Elle se calcule par la moyenne des différences au carré entre chaque point de données et la moyenne de l'ensemble de données. Elle fournit une mesure plus précise de la variabilité, mais est affecté par des valeurs extrêmes.")    
                 
     st.markdown("- **Écart type** : L'écart type est une mesure de la dispersion des valeurs des données par rapport à la moyenne de l'ensemble de données. C'est la racine carrée de la variance. Il s'agit de la mesure de variabilité la plus couramment utilisée et fournit une mesure de la dispersion dans les mêmes unités que l'ensemble de données d'origine.")            
 
