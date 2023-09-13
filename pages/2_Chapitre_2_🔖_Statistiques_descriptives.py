@@ -430,6 +430,19 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     # Display the dataset
     st.write("Voici leurs scores de satisfaction :")
     st.write(df)
+
+    st.markdown("")
+    
+
+    st.markdown("Maintenant, calculons la variance pour cet ensemble de données étape par étape :")
+
+
+     st.markdown("")
+
+
+     st.markdown("Étape 1 : Calculons la Moyenne (**μ**) des scores de satisfaction")
+     st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N}')
+
     
     
 
