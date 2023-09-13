@@ -336,6 +336,11 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.markdown("**🏀Application 5**")
 
+    st.write("""Supposons que nous disposions d'un échantillon de données sur l'âge des employés d'une entreprise. 
+    âges = [22, 25, 30, 35, 40, 45, 50, 55, 60 et 65 ans] 
+    La plage de cet échantillon de données est : **65 - 22 = 43 ans.**
+""")
+
 
     st.markdown("")
 
