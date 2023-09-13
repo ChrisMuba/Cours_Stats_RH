@@ -329,6 +329,11 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilitÃ
 
     st.subheader("Plage = Valeur maximale - Valeur minimale")
 
+
+    st.markdown("")
+
+    
+
     st.markdown("**ğŸ€Application 5**")
 
 
