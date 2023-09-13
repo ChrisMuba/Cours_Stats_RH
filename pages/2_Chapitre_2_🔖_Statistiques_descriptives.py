@@ -484,44 +484,13 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     # Display
     st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N} = \frac{82.25​}{10} = 8.225')
     
-    
-    
 
-# Sample data of Satisfaction Score
-    scores_de_satisfaction = [10, 2, 8, 4, 6, 1, 9, 7, 3, 5]
-
-# Sample data of Squared Difference
-    squared_difference = [4.5, 3.5, 8, 4, 6, 1, 9, 7, 3, 5]
-
-# Create a DataFrame
-    df_without_outliers = pd.DataFrame(scores_de_satisfaction, columns=['Salaires (€)'])
-
-# Display the data table
-    st.subheader("Echantillon de données salariales SANS outliers (valeurs aberrantes)")
-    st.dataframe(df_without_outliers)
-
-    
-
-    
-
-    
-    
-
-    
-
-# Display the steps for calculating the mean
-    st.subheader("Étapes pour calculer la variance")
-    st.markdown(
-    """
-    1. Déterminez la **moyenne** des données.
-    2. **Soustrayez** la moyenne de chaque point de données pour trouver les différences.
-    3. **Mettez au carré** chaque différence pour éliminer les valeurs négatives et souligner les écarts plus importants.
-    4. **Calculez** la moyenne des précédents carrés.
-    """
-)
-
-# Display the calculated mean
-    st.write(f"**💡Salaire moyen: {mean_salary:.2f} (en €)**")
+# Explanation
+    st.markdown("**🔮Interpretation de la variance**")
+    st.write("""
+    En statistiques, il n'existe pas de valeurs seuil fixes et universellement applicables pour déterminer ce qui constitue une variance faible ou élevée, car cela dépend du contexte des données et des objectifs spécifiques. 
+    **Cependant, il existe quelques lignes directrices et approches générales que nous pouvons utiliser pour prendre cette décision :** 
+""")
     
 
     st.markdown("")
