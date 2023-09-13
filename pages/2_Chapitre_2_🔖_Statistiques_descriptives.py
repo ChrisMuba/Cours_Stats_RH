@@ -392,8 +392,34 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("- **Variance** : La variance est une mesure de variabilité plus sophistiquée que la plage. C'est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne de l'ensemble.") 
 
     # Display the theoretical formula for calculating the variance
-    st.subheader("Formule théorique de la variance")
-    st.latex(r'\text{Variance} = \frac{\sum_{i=1}^{n}X_i}{n}')
+    st.subheader("Formule théorique de la Variance")
+    st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N}')
+
+
+    st.markdown("")
+
+
+    st.markdown("**🏀Application 6**")
+    st.markdown("**Salaires (€) : [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]**")
+
+    
+
+# Display the steps for calculating the mean
+    st.subheader("Étapes pour calculer la moyenne")
+    st.markdown(
+    """
+    1. **Sommez toutes les valeurs:** additionnez toutes les valeurs de salaire dans l’ensemble de données.
+    2. **Comptez le nombre de valeurs (n) :** déterminez le nombre total de salaires dans l'ensemble de données.
+    3. **Appliquez la formule:** Divisez la somme par le nombre de valeurs pour obtenir la moyenne.
+    """
+)
+
+# Display the calculated mean
+    st.write(f"**💡Salaire moyen: {mean_salary:.2f} (en €)**")
+    
+
+    st.markdown("")
+    
                 
     st.markdown("- **Écart type** : L'écart type est une mesure de la dispersion des valeurs des données par rapport à la moyenne de l'ensemble de données. C'est la racine carrée de la variance. Il s'agit de la mesure de variabilité la plus couramment utilisée et fournit une mesure de la dispersion dans les mêmes unités que l'ensemble de données d'origine.")            
 
