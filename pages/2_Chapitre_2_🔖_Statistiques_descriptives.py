@@ -40,7 +40,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     mean_salary = np.mean(df['Salaire (en milliers €)'])
 
 # Display the theoretical formula for calculating the mean
-    st.subheader("Formule théorique de la **moyenne**")
+    st.subheader("Formule théorique de la moyenne")
     st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
 
 
@@ -392,7 +392,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("- **Variance** : La variance est une mesure de variabilité plus sophistiquée que la plage. C'est une mesure de **comment** les données d'un ensemble diffèrent de la moyenne de l'ensemble.") 
 
     # Display the theoretical formula for calculating the mean
-    st.subheader("Formule théorique de la **moyenne**")
+    st.subheader("Formule théorique de la variance")
     st.latex(r'\text{Moyenne} = \frac{\sum_{i=1}^{n}X_i}{n}')
                 
     st.markdown("- **Écart type** : L'écart type est une mesure de la dispersion des valeurs des données par rapport à la moyenne de l'ensemble de données. C'est la racine carrée de la variance. Il s'agit de la mesure de variabilité la plus couramment utilisée et fournit une mesure de la dispersion dans les mêmes unités que l'ensemble de données d'origine.")            
