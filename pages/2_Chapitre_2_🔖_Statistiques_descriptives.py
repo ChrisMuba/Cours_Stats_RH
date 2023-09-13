@@ -414,7 +414,6 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.markdown("Supposons que vous ayez mené une enquête sur l'engagement des employés et que vous ayez collecté des scores de satisfaction sur une échelle de 1 à 10, où 1 représente très insatisfait et 10 représente très satisfait. Vous avez interrogé 10 employés.")
     
-    st.markdown("Voici leurs scores de satisfaction :") 
 
     import streamlit as st
     import pandas as pd
@@ -429,7 +428,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     df = pd.DataFrame(data)
 
     # Display the dataset
-    st.write('Here is the high variance dataset:')
+    st.write("Voici leurs scores de satisfaction :")
     st.write(df)
     
     
