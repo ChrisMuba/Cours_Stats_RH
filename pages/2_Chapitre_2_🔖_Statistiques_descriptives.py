@@ -626,6 +626,29 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("- **Boîte à moustache** : ce graphique montre la distribution de données numériques à l'aide de quartiles. Il affiche le minimum, le maximum, la médiane et les premier et troisième quartiles des données.")
     
     st.markdown("- **Nuages de points** : un graphique qui montre la relation entre deux variables numériques. Chaque point représente une paire de valeurs et le modèle des points peut indiquer la force et la direction de la relation.")
+
+
+    st.markdown("")
+
+
+    def redirect_button(url: str, text: str= None, color="#FD504D"):
+        st.markdown(
+        f"""
+        <a href="{url}" target="_blank">
+            <div style="
+                display: inline-block;
+                padding: 0.5em 1em;
+                color: #FFFFFF;
+                background-color: {color};
+                border-radius: 3px;
+                text-decoration: none;">
+                {text}
+            </div
+        </a>
+        """,
+        unsafe_allow_html=True
+        )
+   redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 2")
     
 
 
