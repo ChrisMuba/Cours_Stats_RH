@@ -514,6 +514,35 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("")
 
 
+    st.markdown("**🏀Application 7**")
+    st.marst.markdown("Supposons qu'une entreprise souhaite analyser les scores d'évaluation de performance de ses employés.")
+    
+
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+
+# Create a high variance dataset
+    data = {
+    'Equipe A': [80, 85, 90, 95, 100],
+    'Equipe B': [60, 70, 90, 110, 120]
+    }
+
+    df = pd.DataFrame(data)
+
+    # Display the dataset
+    st.write("Les scores de performance de deux équipes, l’équipe A et l’équipe B, sont les suivants : ")
+    st.write(df)
+
+    st.markdown("")
+    
+
+    st.markdown("Maintenant, calculons la variance pour cet ensemble de données étape par étape :")
+
+
+    st.markdown("")
+
+
 if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**"):
     
     st.subheader("📈Chap.2-C/ Techniques graphiques📉")
