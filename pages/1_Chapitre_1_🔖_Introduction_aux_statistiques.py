@@ -450,7 +450,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("")
     
-    st.markdown("**Autre exemple : utiliser des **données catégorielles** (intitulé du poste, département) et des **données numériques** (durée de l'emploi) pour identifier les tendances dans le **turnover** (départ et entrée de personnel).") 
+    st.markdown("**Autre exemple** : utiliser des **données catégorielles** (intitulé du poste, département) et des **données numériques** (durée de l'emploi) pour identifier les tendances dans le **turnover** (départ et entrée de personnel).") 
     st.markdown("On pourrait utiliser un **nuage de points** pour montrer la **relation entre la durée de l'emploi et le taux de renouvellement des effectifs** (**fig.3**).")
     
     import streamlit as st
