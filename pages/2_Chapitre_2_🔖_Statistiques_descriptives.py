@@ -559,7 +559,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     Équipe A : Moyenne = (80 + 85 + 90 + 95 + 100) / 5 = 450 / 5 = 90
 
-    Équipe B : Mean = (60 + 70 + 90 + 110 + 120) / 5 = 450 / 5 = 90
+    Équipe B : Moyenne = (60 + 70 + 90 + 110 + 120) / 5 = 450 / 5 = 90
     
 """)
 
