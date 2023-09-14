@@ -531,13 +531,21 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     df = pd.DataFrame(data)
 
     # Display the dataset
-    st.write("Les scores de performance de deux équipes, l’équipe A et l’équipe B, sont les suivants : ")
+    st.markdown("Les scores de performance de deux équipes, l’équipe A et l’équipe B, sont les suivants :")
     st.write(df)
+    
 
     st.markdown("")
     
 
-    st.markdown("Maintenant, calculons la variance pour cet ensemble de données étape par étape :")
+    st.write("""Tout d’abord, nous calculons la **plage** pour les deux équipes : 
+    
+    âges = [22, 25, 30, 35, 40, 45, 50, 55, 60 et 65 ans] 
+    
+    💡La plage de cet échantillon de données est : 65 - 22 = 43 ans.
+""")
+
+    
 
 
     st.markdown("")
