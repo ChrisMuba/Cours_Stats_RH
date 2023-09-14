@@ -606,7 +606,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.markdown("La variance et l'écart type montrent que les scores d'évaluation de performance de l'équipe B sont plus dispersés que ceux de l'équipe A.")
 
-    st.markdown("Ces informations peuvent aider à identifier des problèmes potentiels au sein de l'équipe B et à mettre en œuvre des actions correctives ciblées pour améliorer les performances.")
+    st.markdown("Ces informations peuvent aider à identifier des problèmes potentiels au sein de l'équipe B et à mettre en œuvre des actions correctives ciblées pour améliorer les performances de certains employés.")
 
 
     st.markdown("")
