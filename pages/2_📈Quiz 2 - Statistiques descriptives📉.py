@@ -182,7 +182,7 @@ def redirect_button(url: str, text: str= None, color="#FD504D"):
         """,
         unsafe_allow_html=True
         )
-redirect_button("https://cours-stats-rh.streamlit.app/Chapitre_2_🔖_Statistiques_descriptives","Aller au chapitre 3")
+redirect_button("https://cours-stats-rh.streamlit.app/Chapitre_3_🔖_Introduction_aux_probabilités_et_distributions","Aller au chapitre 3")
 
 
 
