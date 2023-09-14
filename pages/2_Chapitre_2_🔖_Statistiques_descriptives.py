@@ -648,7 +648,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
         """,
         unsafe_allow_html=True
         )
-   redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 2")
+    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉","Quiz du chapitre 2")
     
 
 
