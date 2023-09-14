@@ -550,15 +550,38 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     
     st.markdown("")
+
+
+    st.markdown("")
+    
+
+    st.write("""Calculons la **moyenne** pour les deux équipes : 
+    
+    Équipe A : Moyenne = (80 + 85 + 90 + 95 + 100) / 5 = 450 / 5 = 90
+
+    Équipe B : Mean = (60 + 70 + 90 + 110 + 120) / 5 = 450 / 5 = 90
+    
+""")
+
+    
+    st.markdown("")
     
 
     st.write("""Puis, nous calculons la **variance** pour les deux équipes : 
     
-    Équipe A : Variance = 50
-    # Display the Variance Équipe A
-    st.latex(r'\text{Variance Équipe A} = \frac{100+25+0+25+100​}{5} = \frac{250​}{5} = 50')
+    Équipe A :
 
-    Équipe B : Variance = 400
+    Variance = [(80 - 90)^2 + (85 - 90)^2 + (90 - 90)^2 + (95 - 90)^2 + (100 - 90)^2] / 5
+    Variance = [100 + 25 + 0 + 25 + 100] / 5
+    Variance = 250 / 5
+    Variance = 50
+
+    Équipe B :
+
+    Variance = [(60 - 90)^2 + (70 - 90)^2 + (90 - 90)^2 + (110 - 90)^2 + (120 - 90)^2] / 5
+    Variance = [900 + 400 + 0 + 400 + 900] / 5
+    Variance = 2600 / 5
+    Variance = 520
     
 """)
 
@@ -568,9 +591,9 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     st.write("""Enfin, nous calculons **l’écart type** pour les deux équipes : 
     
-    Équipe A : Écart type ≈ 7,07
+    Équipe A : Écart type ≈ √50 ≈ 7,07
 
-    Équipe B : Écart type ≈ 20
+    Équipe B : Écart type ≈ √520 ≈ 22.80
     
 """)
 
