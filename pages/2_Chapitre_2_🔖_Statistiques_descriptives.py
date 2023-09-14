@@ -556,7 +556,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     Équipe A : Variance = 50
     # Display the Variance Équipe A
-    st.latex(r'\text{Variance Équipe A} = \frac{100 + 25 + 0 + 25 + 100​}{5} = \frac{250​}{5} = 50')
+    st.latex(r'\text{Variance Équipe A} = \frac{100+25+0+25+100​}{5} = \frac{250​}{5} = 50')
 
     Équipe B : Variance = 400
     
