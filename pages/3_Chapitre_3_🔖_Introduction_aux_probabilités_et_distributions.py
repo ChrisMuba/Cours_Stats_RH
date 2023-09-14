@@ -73,7 +73,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
         """,
         unsafe_allow_html=True
         )
-    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_2_-_Statistiques_descriptives📉","Quiz du chapitre 3")
+    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_3_-_Probabilités_et_distributions📉","Quiz du chapitre 3")
     
 
     
