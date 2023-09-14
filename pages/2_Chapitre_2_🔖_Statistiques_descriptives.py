@@ -563,14 +563,14 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 """)
 
 
-   st.markdown("")
+    st.markdown("")
     
 
-   st.write("""Tout d’abord, nous calculons la **plage** pour les deux équipes : 
+    st.write("""Tout d’abord, nous calculons la **plage** pour les deux équipes : 
     
-   Équipe A : Plage = 100 - 80 = 20
+    Équipe A : Plage = 100 - 80 = 20
 
-   Équipe B : Plage = 120 - 60 = 60
+    Équipe B : Plage = 120 - 60 = 60
     
    💡La plage indique qu’il existe une plus grande répartition des scores 
     d'évaluation de performance pour l’équipe B par rapport à l’équipe A.
