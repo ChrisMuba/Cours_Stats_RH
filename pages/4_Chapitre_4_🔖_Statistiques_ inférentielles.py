@@ -73,6 +73,28 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     
     st.markdown("- **Exemple 4 - Application possible en RH** : Un contrôleur de gestion sociale peut utiliser **l'ANOVA** pour rechercher s'il existe des variations significatives dans les heures d'absences des employés entre les différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+). Cette analyse peut donner un aperçu de la nécessité de stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
     
+    st.markdown("")
+
+
+    def redirect_button(url: str, text: str= None, color="#FD504D"):
+        st.markdown(
+        f"""
+        <a href="{url}" target="_blank">
+            <div style="
+                display: inline-block;
+                padding: 0.5em 1em;
+                color: #FFFFFF;
+                background-color: {color};
+                border-radius: 3px;
+                text-decoration: none;">
+                {text}
+            </div
+        </a>
+        """,
+        unsafe_allow_html=True
+        )
+    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_4_-_Statistiques_inférentielles📉","Quiz du chapitre 4")
+    
  
 
     
