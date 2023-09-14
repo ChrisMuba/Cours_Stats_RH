@@ -544,7 +544,8 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
     Équipe B : Plage = 120 - 60 = 60
     
-    💡La plage indique qu’il existe une plus grande répartition des scores d'évaluation de performance pour l’équipe B par rapport à l’équipe A.
+    💡La plage indique qu’il existe une plus grande répartition des scores 
+    d'évaluation de performance pour l’équipe B par rapport à l’équipe A.
 """)
 
     
