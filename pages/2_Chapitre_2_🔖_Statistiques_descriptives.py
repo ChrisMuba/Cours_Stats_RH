@@ -515,7 +515,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
 
     st.markdown("**🏀Application 7**")
-    st.marst.markdown("Supposons qu'une entreprise souhaite analyser les scores d'évaluation de performance de ses employés.")
+    st.markdown("Supposons qu'une entreprise souhaite analyser les scores d'évaluation de performance de ses employés.")
     
 
     import streamlit as st
