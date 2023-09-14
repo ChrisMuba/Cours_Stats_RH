@@ -552,7 +552,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("")
     
 
-    st.write("""Tout d’abord, nous calculons la **variance** pour les deux équipes : 
+    st.write("""Puis, nous calculons la **variance** pour les deux équipes : 
     
     Équipe A : Variance = 50
 
