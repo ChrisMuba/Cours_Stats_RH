@@ -53,6 +53,30 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("En analysant les données historiques et en utilisant la régression multiple, le contrôleur de gestion sociale peut identifier les facteurs les plus importants impliqués dans le turnover et aider les services RH à développer des stratégies pour l'atténuer.")
     
     
+    st.markdown("")
+
+
+    def redirect_button(url: str, text: str= None, color="#FD504D"):
+        st.markdown(
+        f"""
+        <a href="{url}" target="_blank">
+            <div style="
+                display: inline-block;
+                padding: 0.5em 1em;
+                color: #FFFFFF;
+                background-color: {color};
+                border-radius: 3px;
+                text-decoration: none;">
+                {text}
+            </div
+        </a>
+        """,
+        unsafe_allow_html=True
+        )
+    redirect_button("https://cours-stats-rh.streamlit.app/Quiz_5_-_Correlation_et_Regression📉","Quiz du chapitre 5")
+
+    
+    
     
     
     
