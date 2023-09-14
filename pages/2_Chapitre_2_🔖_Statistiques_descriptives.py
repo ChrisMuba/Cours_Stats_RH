@@ -571,14 +571,14 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     
     Équipe A :
 
-    Variance = [(80 - 90)^2 + (85 - 90)^2 + (90 - 90)^2 + (95 - 90)^2 + (100 - 90)^2] / 5
+    Variance = [(80 - 90)² + (85 - 90)² + (90 - 90)² + (95 - 90)² + (100 - 90)²] / 5
     Variance = [100 + 25 + 0 + 25 + 100] / 5
     Variance = 250 / 5
     Variance = 50
 
     Équipe B :
 
-    Variance = [(60 - 90)^2 + (70 - 90)^2 + (90 - 90)^2 + (110 - 90)^2 + (120 - 90)^2] / 5
+    Variance = [(60 - 90)² + (70 - 90)² + (90 - 90)² + (110 - 90)² + (120 - 90)²] / 5
     Variance = [900 + 400 + 0 + 400 + 900] / 5
     Variance = 2600 / 5
     Variance = 520
