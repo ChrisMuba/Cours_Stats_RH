@@ -683,10 +683,9 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-    st.markdown("- **Diagramme circulaire** : Un diagramme circulaire (Camembert) est un graphique qui représente des **données catégorielles** sous forme de tranches du diagramme. Chaque tranche représente une catégorie et la taille de la tranche est proportionnelle au pourcentage du total.")
+    st.markdown("- **Boîtes à moustaches** : Une boîte à moustache est un diagramme utilisé pour visualiser la répartition et l'asymétrie des **données quantitatives**. Elles sont particulièrement utiles pour détecter les valeurs aberrantes.")
 
-    st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
-
+    st.markdown("**Cas d’usage** des boîtes à moustaches : Elles peuvent être utilisés pour comparer différentes distributions d'une même **variable quantitative** (salaires, ancienneté, etc...")
 
     st.markdown("")
     
