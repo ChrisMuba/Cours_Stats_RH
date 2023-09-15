@@ -623,14 +623,21 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
      
-    st.markdown("**Les types de graphiques courants pour analyser des data RH incluent** :") 
+    st.markdown("Les types de graphiques courants pour **analyser des data RH** incluent :") 
     
 
     st.markdown("")
     
     
-    st.markdown("- **Histogramme** : c'est un graphique qui montre la distribution de fréquence des données numériques. Les données sont divisées en intervalles ou bacs, et la hauteur de la barre représente la fréquence de chaque intervalle.")
+    st.markdown("- **Diagramme circulaire** : Un diagramme circulaire (Camembert) est un graphique qui représente des **données catégorielles** sous forme de tranches du diagramme. Chaque tranche représente une catégorie et la taille de la tranche est proportionnelle au pourcentage du total.")
+
+    st.markdown("Exemples de cas d’usage des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques : sexe, âge, ...), etc...")
+
+
+
+Les diagrammes circulaires peuvent être utilisés pour afficher la répartition des employés entre différents départements, fonctions professionnelles ou catégories démographiques (par exemple, sexe, âge ou origine ethnique).
     
+   
     st.markdown("- **Boîte à moustache** : ce graphique montre la distribution de données numériques à l'aide de quartiles. Il affiche le minimum, le maximum, la médiane et les premier et troisième quartiles des données.")
     
     st.markdown("- **Nuages de points** : un graphique qui montre la relation entre deux variables numériques. Chaque point représente une paire de valeurs et le modèle des points peut indiquer la force et la direction de la relation.")
