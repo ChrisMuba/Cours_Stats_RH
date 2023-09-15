@@ -721,16 +721,16 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-    st.markdown("- **Nuage de points** : Un nuage de points est un type de visualisation de données qui montre la relation entre deux variables numériques en plaçant des points de données sur les axes X et Y9.s **données quantitatives** au fil du temps. Il utilise des points connectés pour afficher les tendances et les modèles dans les données.")
+    st.markdown("- **Nuage de points** : Un nuage de points est un type de visualisation de données qui montre la relation entre deux variables en plaçant des points de données sur les axes X et Y.")
 
-    st.markdown("**Cas d’usage** des graphiques linéaires : Ils peuvent être utilisés pour suivre l'évolution des effectifs et de la masse salariale au fil du temps, pour visualiser l'absentéisme sur plusieurs mois, pour suivre les mesures de performance au fil du temps, etc...")
+    st.markdown("**Cas d’usage** des graphiques linéaires : Ils peuvent être utilisés pour analyser la relation entre la satisfaction au travail et l'absentéisme, le niveau d'expérience et le salaire, les scores de performance des employés et les heures de formation suivies, etc...")
 
 
     st.markdown("")
     
 
     st.markdown("**🏀Application 13**")
-    st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
+    st.markdown("Une équipe RH souhaite analyser la relation entre le niveau de satisfaction au travail et l'absentéisme. Les données sont présentées dans le nuage de points suivant : ")
 
     
     st.markdown("")
