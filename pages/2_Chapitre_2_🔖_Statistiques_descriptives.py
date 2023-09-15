@@ -668,7 +668,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Les types de graphiques courants pour analyser des data RH **quantitatives** incluent :") 
 
 
-    st.markdown("- **Histogrammes** : Un histogramme est une représentation graphique de la distribution d'un ensemble de **données quantitatives**, où les données sont divisées en un ensemble d'intervalles (ou groupes) et le nombre de points de données appartenant à un intervalle est représenté par la hauteur d'une barre.")
+    st.markdown("- **Histogrammes** : Un histogramme est une représentation graphique de la distribution d'un ensemble de **données quantitatives**, où les données sont divisées en un ensemble d'intervalles et le nombre de points de données appartenant à un intervalle est représenté par la hauteur d'une barre.")
 
     st.markdown("**Cas d’usage** des histogrammes : Ils peuvent être utilisés pour pour comprendre la distribution d'une seule variable, telle que les salaires des employés, les années d'expérience, etc...")
 
