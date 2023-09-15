@@ -627,7 +627,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.subheader("Données qualitatives")
 
      
-    st.markdown("Les types de graphiques courants pour **analyser des data RH** incluent :") 
+    st.markdown("Les types de graphiques courants pour analyser des data RH **qualitatives** incluent :") 
     
 
     st.markdown("")
