@@ -685,14 +685,14 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("- **Boîtes à moustaches** : Une boîte à moustache est un diagramme utilisé pour visualiser la répartition et l'asymétrie des **données quantitatives**. Elles sont particulièrement utiles pour détecter les valeurs aberrantes.")
 
-    st.markdown("**Cas d’usage** des boîtes à moustaches : Elles peuvent être utilisés pour comparer différentes distributions d'une même **variable quantitative** (salaires, ancienneté, etc...")
+    st.markdown("**Cas d’usage** des boîtes à moustaches : Elles peuvent être utilisés pour comparer différentes distributions d'une même **variable quantitative** (salaires, ancienneté, etc...)")
 
     st.markdown("")
     
 
     st.markdown("**🏀Application 11**")
-    st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
-
+    st.markdown("Disons que nous analysons les salaires des employés pour identifier les tendances et les modèles. Nous voulons voir comment les salaires sont répartis entre les différents services et niveaux de poste.")
+    st.markdown("Nous pouvons créer un box plot pour visualiser la répartition des salaires pour chaque service et niveau de poste. Le box plot nous montrera le salaire médian, l’écart interquartile et toutes les valeurs aberrantes.")
 
     st.markdown("")
 
