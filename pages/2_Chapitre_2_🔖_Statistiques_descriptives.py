@@ -644,7 +644,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-    st.markdown("- **Diagramme circulaire** : Un diagramme circulaire (Camembert) est un graphique qui représente des **données catégorielles** sous forme de tranches du diagramme. Chaque tranche représente une catégorie et la taille de la tranche est proportionnelle au pourcentage du total.")
+    st.markdown("- **Graphique à barres** : Un graphique à barres est un graphique vertical ou horizontal qui affiche des données **quantitatives** ou **qualitatives** (catégorielles). Des barres sont utilisées pour montrer la fréquence ou l’ampleur de chaque catégorie.")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
