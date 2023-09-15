@@ -706,10 +706,29 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 12**")
-    st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
+    st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
 
     
     st.markdown("")
+
+
+    st.markdown("")
+
+
+    st.markdown("- **Graphique linéaire** : Un graphique linéaire est un graphique qui affiche des **données quantitatives** au fil du temps. Il utilise des points connectés pour afficher les tendances et les modèles dans les données.")
+
+    st.markdown("**Cas d’usage** des graphiques linéaires : Ils peuvent être utilisés pour suivre l'évolution des effectifs et de la masse salariale au fil du temps, pour visualiser l'absentéisme sur plusieurs mois, pour suivre les mesures de performance au fil du temps, etc...")
+
+
+    st.markdown("")
+    
+
+    st.markdown("**🏀Application 12**")
+    st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
+
+    
+    st.markdown("")
+
 
 
     def redirect_button(url: str, text: str= None, color="#FD504D"):
