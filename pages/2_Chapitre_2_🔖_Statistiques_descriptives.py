@@ -743,14 +743,14 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
     st.markdown("**Cas d’usage** des cartes thermique : Elles peuvent être utilisées pour montrer la répartition des employés entre différentes fonctions et services, pour visualiser comment les employés évaluent leur satisfaction suivant différents aspects de leur travail.")
-    st.markdown("Les Heatmaps peuvent être utilisées pour améliorer le processus de recrutement en visualisant où les offres d’emploi génèrent le plus de clics, et ainsi identifier les canaux de recrutement les plus efficaces.")
+    st.markdown("Les Heatmaps peuvent aussi être utilisées pour améliorer le processus de recrutement en visualisant où les offres d’emploi génèrent le plus de clics, et permettre ainsi l'identification des canaux de recrutement les plus efficaces.")
 
 
     st.markdown("")
     
 
     st.markdown("**🏀Application 14**")
-    st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
+    st.markdown("un service RH mène une enquête d'engagement annuelle et souhaite identifier quels services ont les niveaux de satisfaction des employés les plus élevés. Une carte thermique peut représenter les scores de satisfaction de chaque service, avec des couleurs indiquant le niveau de satisfaction.")
 
     
     st.markdown("")
