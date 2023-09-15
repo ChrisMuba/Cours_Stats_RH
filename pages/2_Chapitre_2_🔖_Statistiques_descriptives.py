@@ -723,7 +723,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("- **Nuage de points** : Un nuage de points est un type de visualisation de données qui montre la relation entre deux variables en plaçant des points de données sur les axes X et Y.")
 
-    st.markdown("**Cas d’usage** des graphiques linéaires : Ils peuvent être utilisés pour analyser la relation entre la satisfaction au travail et l'absentéisme, le niveau d'expérience et le salaire, les scores de performance des employés et les heures de formation suivies, etc...")
+    st.markdown("**Cas d’usage** des nuages de points : Ils peuvent être utilisés pour analyser la relation entre la satisfaction au travail et l'absentéisme, le niveau d'expérience et le salaire, les scores de performance des employés et les heures de formation suivies, etc...")
 
 
     st.markdown("")
