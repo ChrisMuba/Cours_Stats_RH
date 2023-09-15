@@ -709,7 +709,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
 
 
-    st.markdown(""
+    st.markdown("")
 
 
     st.subheader("Données qualitatives et quantitatives")
