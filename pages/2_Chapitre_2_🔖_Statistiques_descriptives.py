@@ -662,16 +662,19 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-    st.markdown("- **Diagramme circulaire** : Un diagramme circulaire (Camembert) est un graphique qui représente des **données catégorielles** sous forme de tranches du diagramme. Chaque tranche représente une catégorie et la taille de la tranche est proportionnelle au pourcentage du total.")
+    st.subheader("Données quantitatives")
 
-    st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
+
+    st.markdown("- **Histogrammes** : Un histogramme est une représentation graphique de la distribution d'un ensemble de **données quantitatives**, où les données sont divisées en un ensemble d'intervalles (ou groupes) et le nombre de points de données appartenant à un intervalle est représenté par la hauteur d'une barre")
+
+    st.markdown("**Cas d’usage** des histogramme : Ils peuvent être utilisés pour pour comprendre la distribution d'une seule variable, telle que les salaires des employés, les années d'expérience, etc...")
 
 
     st.markdown("")
     
 
     st.markdown("**🏀Application 10**")
-    st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
+    st.markdown(" Les responsables RH peuvent souhaiter visualiser la répartition des salaires au sein de l'entreprise. Un histogramme peut fournir une image claire des échelles salariales et des tranches salariales les plus courantes parmi les employés.")
     
 
     st.markdown("")
