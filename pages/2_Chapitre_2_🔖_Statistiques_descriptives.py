@@ -633,6 +633,10 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
+
+    st.markdown("")
+    
+
     st.markdown("**🏀Application 8**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
 
@@ -644,7 +648,11 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
-    st.markdown("**🏀Application 8**")
+
+    st.markdown("")
+    
+
+    st.markdown("**🏀Application 9**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
 
 
@@ -655,7 +663,11 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
-    st.markdown("**🏀Application 8**")
+
+    st.markdown("")
+    
+
+    st.markdown("**🏀Application 10**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
     
 
@@ -666,7 +678,11 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
-    st.markdown("**🏀Application 8**")
+
+    st.markdown("")
+    
+
+    st.markdown("**🏀Application 11**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
 
 
@@ -677,7 +693,11 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
-    st.markdown("**🏀Application 8**")
+
+    st.markdown("")
+    
+
+    st.markdown("**🏀Application 12**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
 
     
