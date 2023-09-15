@@ -617,7 +617,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.subheader("📈Chap.2-C/ Techniques graphiques📉")
     
     st.markdown("Des techniques graphiques peuvent être utilisées pour améliorer encore la compréhension d'un ensemble de données.") 
-    st.markdown("Les représentations visuelles peuvent aider à identifier facilement des modèles ou des tendances dans les données et à communiquer efficacement des informations complexes des informations aux parties prenantes.")
+    st.markdown("Les représentations visuelles peuvent aider à identifier facilement des modèles ou des tendances dans les données, et à communiquer efficacement des informations complexes des informations aux parties prenantes.")
     
     st.markdown("**Certains types courants de graphiques incluent** :") 
     
