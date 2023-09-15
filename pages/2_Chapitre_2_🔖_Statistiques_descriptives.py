@@ -618,9 +618,13 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
     st.markdown("Les techniques graphiques sont un moyen puissant de visualiser les données et de les rendre plus faciles à comprendre.") 
     st.markdown("Elles peuvent être utilisées pour communiquer aux parties prenantes des informations complexes de manière claire et concise ; et pour identifier des modèles et des tendances qui peuvent ne pas ressortir des données brutes.")
+    st.markdown("Les techniques graphiques à utiliser vont dépendre du type de données : **qualitative** ou **quantitative**.") 
 
 
     st.markdown("")
+
+
+    st.subheader("Données qualitatives")
 
      
     st.markdown("Les types de graphiques courants pour **analyser des data RH** incluent :") 
