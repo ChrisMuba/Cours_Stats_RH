@@ -648,7 +648,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-    st.markdown("- **Graphique à barres** : Un graphique à barres est un graphique vertical ou horizontal qui affiche des données **quantitatives** ou **qualitatives**. Des barres sont utilisées pour montrer la fréquence ou l’ampleur de chaque catégorie.")
+    st.markdown("- **Graphique à barres** : Un graphique à barres est un graphique vertical ou horizontal qui affiche des **données catégorielles**. Des barres sont utilisées pour montrer la fréquence ou l’ampleur de chaque catégorie.")
 
     st.markdown("**Cas d’usage** des diagrammes circulaires : Ils peuvent être utilisés pour afficher la répartition des employés entre différents services d'une entreprise, fonctions professionnelles, catégories démographiques, etc...")
 
