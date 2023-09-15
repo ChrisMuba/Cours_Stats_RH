@@ -650,8 +650,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("- **Graphique à barres** : Un graphique à barres est un graphique vertical ou horizontal qui affiche des **données catégorielles**. Des barres sont utilisées pour montrer la fréquence ou l’ampleur de chaque catégorie.")
 
-    st.markdown("**Cas d’usage** des graphiques à barres : Ils peuvent être utilisés pour comparer le nombre d'employés dans différentes catégories : taux d'absentéisme / turnover par services, échelles salariales, évaluations de performances, participation à la formation. etc...")
-
+    st.markdown("**Cas d’usage** des graphiques à barres : Ils peuvent être utilisés pour comparer diverses mesures entre différents services, groupes d'employés ou périodes. Notamment taux d'absentéisme / turnover par services, échelles salariales, notes d'évaluations de performances, participation à la formation. etc...")
 
     st.markdown("")
     
