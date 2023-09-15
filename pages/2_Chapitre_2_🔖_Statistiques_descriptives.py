@@ -616,10 +616,10 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
     st.subheader("📈Chap.2-C/ Techniques graphiques📉")
     
-    st.markdown("Des techniques graphiques peuvent être utilisées pour améliorer encore la compréhension d'un ensemble de données.") 
-    st.markdown("Les représentations visuelles peuvent aider à identifier facilement des modèles ou des tendances dans les données, et à communiquer efficacement des informations complexes aux parties prenantes.")
-    
-    st.markdown("**Certains types courants de graphiques incluent** :") 
+    st.markdown("Les techniques graphiques sont un moyen puissant de visualiser les données et de les rendre plus faciles à comprendre.") 
+    st.markdown("Elles peuvent être utilisées pour communiquer aux parties prenantes des informations complexes de manière claire et concise ; et pour identifier des modèles et des tendances qui peuvent ne pas ressortir des données brutes.")
+     
+    st.markdown("**Les types de graphiques courants pour analyser des data RH incluent** :") 
     
     st.markdown("- **Histogramme** : c'est un graphique qui montre la distribution de fréquence des données numériques. Les données sont divisées en intervalles ou bacs, et la hauteur de la barre représente la fréquence de chaque intervalle.")
     
