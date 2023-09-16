@@ -733,30 +733,23 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Un histogramme peut vous aider à répondre à ces questions et à obtenir des informations précieuses en fournissant une image claire des échelles salariales et des tranches salariales les plus courantes parmi vos employés.")
 
 
+    import streamlit as st
     import numpy as np
+    import plotly.express as px
 
 # Generate random salary data for 100 employees (in thousands of dollars)
     np.random.seed(42)
     salaries = np.random.normal(50, 10, 100)
 
-    min_salary = min(salaries)
-    max_salary = max(salaries)
+# Create a Plotly histogram figure
+    fig = px.histogram(salaries, nbins=20, title='Salary Distribution in Our Company')
+    fig.update_xaxes(title_text='Salary (in thousands of dollars)')
+    fig.update_yaxes(title_text='Number of Employees')
 
-# Define the bin intervals
-    bins = np.arange(min_salary, max_salary + 5, 5)
+# Create the Streamlit app
+    st.title('Interactive Salary Histogram')
+    st.plotly_chart(fig)
 
-    import matplotlib.pyplot as plt
-
-# Create the histogram
-    plt.hist(salaries, bins=bins, edgecolor='k', alpha=0.65, color='skyblue')
-
-# Labeling
-    plt.title('Salary Distribution in Our Company')
-    plt.xlabel('Salary (in thousands of dollars)')
-    plt.ylabel('Number of Employees')
-
-# Show the plot
-    plt.show()
 
 
 
