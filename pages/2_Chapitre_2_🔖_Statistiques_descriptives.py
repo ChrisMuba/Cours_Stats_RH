@@ -796,6 +796,38 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Disons que nous analysons les salaires des employés pour identifier les tendances et les modèles. Nous voulons voir comment les salaires sont répartis entre les différents services et niveaux de poste.")
     st.markdown("Nous pouvons créer un box plot pour visualiser la répartition des salaires pour chaque service et niveau de poste. Le box plot nous montrera le salaire médian, l’écart interquartile et toutes les valeurs aberrantes.")
 
+
+    import numpy as np
+
+# Create a list of salaries for each department
+    department_salaries = {
+    "Engineering": np.random.randint(50000, 150000, size=100),
+    "Sales": np.random.randint(50000, 150000, size=100),
+    "Marketing": np.random.randint(50000, 150000, size=100),
+    }
+
+    import streamlit as st
+    import plotly.express as px
+
+# Create a boxplot of the salaries for each department
+    fig = px.box(
+    x=list(department_salaries.keys()),
+    y=list(department_salaries.values()),
+    notched=True,
+    title="Salary distribution by department",
+    )
+
+# Add the boxplot to the Streamlit app
+    st.plotly_chart(fig)
+
+
+
+
+
+
+
+
+
     st.markdown("")
 
 
