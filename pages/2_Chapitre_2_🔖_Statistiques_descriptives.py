@@ -711,15 +711,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
-
-
-
-
-
-
-
-
-
     st.markdown("")
 
 
@@ -740,7 +731,39 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("**🏀Application 10**")
     st.markdown("Imaginez que vous êtes un responsable RH chargé de comprendre la répartition des salaires au sein de votre entreprise. La plupart des employés gagnent-ils des salaires similaires ou disposez-vous d’un large éventail d’échelles salariales ?") 
     st.markdown("Un histogramme peut vous aider à répondre à ces questions et à obtenir des informations précieuses en fournissant une image claire des échelles salariales et des tranches salariales les plus courantes parmi vos employés.")
-    
+
+
+    import numpy as np
+
+# Generate random salary data for 100 employees (in thousands of dollars)
+    np.random.seed(42)
+    salaries = np.random.normal(50, 10, 100)
+
+    min_salary = min(salaries)
+    max_salary = max(salaries)
+
+# Define the bin intervals
+    bins = np.arange(min_salary, max_salary + 5, 5)
+
+    import matplotlib.pyplot as plt
+
+# Create the histogram
+    plt.hist(salaries, bins=bins, edgecolor='k', alpha=0.65, color='skyblue')
+
+# Labeling
+    plt.title('Salary Distribution in Our Company')
+    plt.xlabel('Salary (in thousands of dollars)')
+    plt.ylabel('Number of Employees')
+
+# Show the plot
+    plt.show()
+
+
+
+
+
+
+
 
     st.markdown("")
 
