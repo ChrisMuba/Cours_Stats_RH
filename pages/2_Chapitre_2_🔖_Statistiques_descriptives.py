@@ -659,6 +659,15 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
+    import pandas as pd
+
+    data = {
+    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
+    'Number of Employees': [45, 30, 70, 55, 60]
+    }
+
+    df = pd.DataFrame(data)
+
     import streamlit as st
     import plotly.express as px
 
