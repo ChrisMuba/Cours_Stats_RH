@@ -668,7 +668,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Create a Pie Chart using Plotly
     fig = px.pie(df, values='Number of Employees', names='Department', title='Employee Distribution by Department')
-     st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
 
     st.markdown("")
