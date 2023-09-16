@@ -644,23 +644,10 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("**🏀Application 8**")
     st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
 
-    import streamlit as st
-    import plotly.express as px
-
-# Create a list of department names and employee counts
-    departments = ["Sales", "Engineering", "Customer Support", "Marketing"]
-    employee_counts = [100, 75, 50, 25]
-
-# Create a pie chart
-    fig = px.pie(departments, values=employee_counts, labels=departments, title="Distribution of Employees by Department")
-
-# Display the pie chart in Streamlit
-    st.plotly_chart(fig)
-
-
 
     import pandas as pd
-
+    
+# sample dataset:
     data = {
     'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
     'Number of Employees': [45, 30, 70, 55, 60]
@@ -681,20 +668,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Create a Pie Chart using Plotly
     fig = px.pie(df, values='Number of Employees', names='Department', title='Employee Distribution by Department')
-
-# Streamlit App
-    st.title('HR Employee Distribution Analysis')
-    st.plotly_chart(fig)
-
-
-
-
-
-
-
-
-
-    
+     st.plotly_chart(fig)
 
 
     st.markdown("")
