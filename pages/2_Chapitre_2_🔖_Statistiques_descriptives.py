@@ -715,7 +715,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     }
 
 # Create a Bar Graph using Plotly with assigned colors and department names as legend
-    fig = px.bar(df, x='Service', y='Taux Absentéisme', title='Taux d'absentéisme par service',
+    fig = px.bar(df, x='Service', y='Taux Absentéisme', title='Taux d\'absentéisme par service',
              color='Service', color_discrete_map=color_map)
     st.plotly_chart(fig)
 
