@@ -755,36 +755,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
-    import streamlit as st
-    import numpy as np
-    import plotly.express as px
-
-# Generate random salary data for 100 employees (in thousands of dollars)
-    np.random.seed(42)
-    salaries = np.random.normal(50, 10, 100)
-
-# Create a Plotly histogram figure without legend and with a custom annotation
-    fig = px.histogram(salaries, nbins=20, title='Salary Distribution in Our Company')
-    fig.update_xaxes(title_text='Salary (in thousands of dollars)')
-    fig.update_yaxes(title_text='Number of Employees')
-
-# Remove the legend
-    fig.update_traces(showlegend=False)
-
-# Add a custom legend label as an annotation
-    fig.add_annotation(
-    text='Salary (in thousands of dollars)',
-    x=3.5, y=-3.15,
-    showarrow=False,
-    font=dict(size=12, color="black")
-    )
-
-# Create the Streamlit app
-    st.title('Interactive Salary Histogram')
-    st.plotly_chart(fig)
-
-
-
 
 
 
