@@ -780,8 +780,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     )
 
 # Create the Streamlit app
-   st.title('Interactive Salary Histogram')
-   st.plotly_chart(fig)
+    st.title('Interactive Salary Histogram')
+    st.plotly_chart(fig)
 
 
 
