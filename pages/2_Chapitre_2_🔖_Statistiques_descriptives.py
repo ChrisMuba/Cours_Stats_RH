@@ -776,7 +776,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Cet histogramme est une représentation graphique de la la répartition des salaires entre les salariés de notre entreprise. Chaque barre de l'histogramme correspond à une échelle salariale spécifique (en milliers d'euros), et la hauteur de chaque barre indique le nombre d'employés dans cette fourchette salariale.")
     st.markdown("Échelles salariales courantes : les barres les plus hautes de l'histogramme se situent dans les échelles salariales [45 k€ - 49,99 k€] et [50 k€ - 54,99 k€]. Cela suggère que ces échelles salariales sont les plus courantes parmi nos employés, avec respectivement 23 et 22 employés.")
     st.markdown("Répartition des salaires : l'histogramme montre que les salaires sont répartis sur une plage de valeurs relativement uniforme sans écarts ni regroupements significatifs.")
-    st.markdown("Asymétrie : l'histogramme semble être légèrement incliné vers la droite. Cela signifie qu'il y a relativement moins d'employés dans les échelles salariales inférieures ([20 k€ - 24,99 k€] à [40 k€ - 44,99 k€]) et plus d'employés dans les échelles salariales moyennes à supérieures ([45 k€ - 49,99 k€] à [65 k€ - 69.99 k€]").
+    st.markdown("Asymétrie : l'histogramme semble être légèrement incliné vers la droite. Cela signifie qu'il y a relativement moins d'employés dans les échelles salariales inférieures ([20 k€ - 24,99 k€] à [40 k€ - 44,99 k€]) et plus d'employés dans les échelles salariales moyennes à supérieures ([45 k€ - 49,99 k€] à [65 k€ - 69.99 k€].")
 
 
 
