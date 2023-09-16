@@ -649,8 +649,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 # sample dataset:
     data = {
-    'Department': ['HR', 'Finance', 'IT', 'Marketing'],
-    'Number of Employees': [100, 75, 50, 25]
+    'Service': ['Marketing', 'Finance', 'IT', 'RH'],
+    'Nombre d\'employés': [100, 75, 50, 25]
     }
 
     df = pd.DataFrame(data)
@@ -660,22 +660,20 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Load the HR data
     data = {
-    'Department': ['HR', 'Finance', 'IT', 'Marketing'],
-    'Number of Employees': [100, 75, 50, 25]
+    'Service': ['Marketing', 'Finance', 'IT', 'RH'],
+    'Nombre d\'employés': [100, 75, 50, 25]
     }
 
     df = pd.DataFrame(data)
 
 # Create a Pie Chart using Plotly
-    fig = px.pie(df, values='Number of Employees', names='Department', title='Employee Distribution by Department')
+    fig = px.pie(df, values='Nombre d\'employés', names='Service', title='Répartition des employés par service')
     st.plotly_chart(fig)
 
     st.markdown("**🔮Interpretation du diagramme circulaire**")
 
 
-    st.markdown("La variance et l'écart type montrent que les scores d'évaluation de performance de l'équipe B sont plus dispersés que ceux de l'équipe A.")
-
-    st.markdown("Ces informations peuvent aider à identifier des problèmes potentiels au sein de l'équipe B et à mettre en œuvre des actions correctives ciblées pour améliorer les performances de certains employés.")
+    st.markdown("Le diagramme circulaire montre que le service Marketing compte la plus grande proportion d'employés (25 %), suivi du service Finance (18,75 %), du service IT (12,5 %) et enfin du service RH (6,25 %).")
 
 
     st.markdown("")
