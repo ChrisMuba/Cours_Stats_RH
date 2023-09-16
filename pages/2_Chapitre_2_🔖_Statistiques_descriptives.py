@@ -738,7 +738,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 10**")
-    st.markdown(" Les responsables RH peuvent souhaiter visualiser la répartition des salaires au sein de l'entreprise. Un histogramme peut fournir une image claire des échelles salariales et des tranches salariales les plus courantes parmi les employés.")
+    st.markdown("Imaginez que vous êtes un responsable RH chargé de comprendre la répartition des salaires au sein de votre entreprise. La plupart des employés gagnent-ils des salaires similaires ou disposez-vous d’un large éventail d’échelles salariales ?") 
+    st.markdown("Un histogramme peut vous aider à répondre à ces questions et à obtenir des informations précieuses en fournissant une image claire des échelles salariales et des tranches salariales les plus courantes parmi vos employés.")
     
 
     st.markdown("")
