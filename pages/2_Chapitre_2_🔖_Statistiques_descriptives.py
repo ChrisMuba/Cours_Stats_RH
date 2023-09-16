@@ -712,6 +712,28 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
+    import streamlit as st
+    import plotly.express as px
+
+# Load the HR data with colors for each department
+    data = {
+    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
+    'Absenteeism Rate': [8.5, 5.2, 6.8, 9.3, 7.0],
+    'Color': ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']  # Assign distinct colors
+    }
+
+    df = pd.DataFrame(data)
+
+# Create a Bar Graph using Plotly with assigned colors
+    fig = px.bar(df, x='Department', y='Absenteeism Rate', title='Absenteeism Rates by Department', color='Color')
+    st.plotly_chart(fig)
+
+
+
+
+
+
+
 
 
 
