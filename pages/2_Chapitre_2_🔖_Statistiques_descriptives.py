@@ -700,7 +700,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Load the HR data with colors for each department
     data = {
     'Service': ['RH', 'Finance', 'IT', 'Marketing', 'Ventes'],
-    'Taux Absentéisme': [8.5, 5.2, 6.8, 9.3, 7.0],
+    'Taux Absentéisme (%)': [8.5, 5.2, 6.8, 9.3, 7.0],
     }
 
     df = pd.DataFrame(data)
