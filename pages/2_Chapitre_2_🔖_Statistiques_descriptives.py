@@ -774,7 +774,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Add a custom legend label as an annotation
     fig.add_annotation(
     text='Salary (in thousands of dollars)',
-    x=1.5, y=-1.15,
+    x=3.5, y=-3.15,
     showarrow=False,
     font=dict(size=12, color="black")
     )
