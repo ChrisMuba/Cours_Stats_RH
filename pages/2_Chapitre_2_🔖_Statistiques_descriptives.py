@@ -750,7 +750,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 14**")
-    st.markdown("un service RH mène une enquête annuelle sur le climat social dans l'entreprise à l'aide de l'indicateur eNPS (employee Net Promoter Score) et souhaite identifier quels services ont les niveaux de satisfaction des employés les plus élevés. Une carte thermique peut représenter les scores de satisfaction de chaque service, avec des couleurs indiquant le niveau de satisfaction.")
+    st.markdown("un service RH mène une enquête annuelle sur le climat social dans l'entreprise à l'aide de l'indicateur eNPS (employee Net Promoter Score), et souhaite identifier quels services ont les niveaux de satisfaction des employés les plus élevés. Une carte thermique peut représenter les scores de satisfaction de chaque service, avec des couleurs indiquant le niveau de satisfaction.")
 
     
     st.markdown("")
