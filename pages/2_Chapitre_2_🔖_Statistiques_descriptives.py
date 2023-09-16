@@ -823,6 +823,42 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
+    import pandas as pd
+    import numpy as np
+
+# Create sample data
+    np.random.seed(42)
+
+# Simulate salaries for three departments: HR, Sales, and IT
+    hr_salaries = np.random.normal(50000, 10000, 50)
+    sales_salaries = np.random.normal(60000, 15000, 60)
+    it_salaries = np.random.normal(65000, 12000, 45)
+
+# Combine data into a DataFrame
+    data = pd.DataFrame({
+    'Department': ['HR'] * 50 + ['Sales'] * 60 + ['IT'] * 45,
+    'Salary': np.concatenate([hr_salaries, sales_salaries, it_salaries])
+    })
+
+    import streamlit as st
+    import plotly.express as px
+
+# Create the Streamlit app
+    st.title('Salary Distribution by Department and Job Level')
+
+# Create an interactive box plot using Plotly Express
+    fig = px.box(data, x='Department', y='Salary', title='Salary Distribution by Department')
+    fig.update_xaxes(title_text='Department')
+    fig.update_yaxes(title_text='Salary (in dollars)')
+
+# Show the plot in Streamlit
+    st.plotly_chart(fig)
+
+
+
+
+
+
 
 
 
