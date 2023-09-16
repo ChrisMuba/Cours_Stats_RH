@@ -723,7 +723,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("**🔮Interpretation du graphique à barres**")
 
     st.markdown("Le graphique à barres représente les taux d'absentéisme dans différents services d'une entreprise au cours de l'année écoulée. Chaque barre du graphique correspond à un service, tel que RH, Finance, IT, Marketing et Ventes.")
-    st.markdown("La hauteur de chaque barre représente le taux d'absentéisme de ce service : nous pouvons voir que le service Marketing a le taux d'absentéisme le plus élevé (9.3 %), suivi par le service RH (8.5), Ventes (7 %), IT(6.8 %) et enfin Finance (5.2 %).")
+    st.markdown("La hauteur de chaque barre représente le taux d'absentéisme de ce service : nous pouvons voir que le service Marketing a le taux d'absentéisme le plus élevé (9.3 %), suivi par le service RH (8.5), Ventes (7 %), IT (6.8 %) et enfin Finance (5.2 %).")
 
 
     st.markdown("")
@@ -748,7 +748,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**🏀Application 10**")
     st.markdown("Imaginez que vous êtes un responsable RH chargé de comprendre la répartition des salaires au sein de votre entreprise. La plupart des employés gagnent-ils des salaires similaires ou disposez-vous d’un large éventail d’échelles salariales ?") 
-    st.markdown("Un histogramme peut vous aider à répondre à ces questions et à obtenir des informations précieuses en fournissant une image claire des échelles salariales et des tranches salariales les plus courantes parmi vos employés.")
+    st.markdown("Un histogramme peut vous aider à répondre à ces questions et à obtenir des informations précieuses en fournissant une image claire des échelles et tranches salariales les plus courantes parmi vos employés.")
 
 
     import streamlit as st
@@ -760,15 +760,14 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     salaries = np.random.normal(50, 10, 100)
 
 # Create a Plotly histogram figure with a custom legend label and no legend title
-    fig = px.histogram(salaries, nbins=20, title='Salary Distribution in Our Company')
-    fig.update_xaxes(title_text='Salary (in thousands of dollars)')
-    fig.update_yaxes(title_text='Number of Employees')
+    fig = px.histogram(salaries, nbins=20, title='Répartition des salaires dans notre entreprise')
+    fig.update_xaxes(title_text='Salaire (en milliers de d\euros)')
+    fig.update_yaxes(title_text='Nombre d'\employés')
 
 # Remove the legend title
     fig.update_layout(legend_title_text='Salaire')
 
-# Create the Streamlit app
-    st.title('Interactive Salary Histogram')
+# Displaying Chart
     st.plotly_chart(fig)
 
 
