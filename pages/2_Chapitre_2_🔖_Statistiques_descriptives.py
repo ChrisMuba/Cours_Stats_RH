@@ -742,7 +742,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     salaries = np.random.normal(50, 10, 100)
 
 # Create a Plotly histogram figure with a custom legend label and no legend title
-    fig = px.histogram(salaries, nbins=20, title='Salary Distribution in Our Company')
+    fig = px.histogram(salaries, nbins=25, title='Salary Distribution in Our Company')
     fig.update_xaxes(title_text='Salary (in thousands of dollars)')
     fig.update_yaxes(title_text='Number of Employees')
 
