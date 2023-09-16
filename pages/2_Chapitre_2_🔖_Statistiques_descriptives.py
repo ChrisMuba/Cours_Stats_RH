@@ -658,6 +658,36 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
+
+    import streamlit as st
+    import plotly.express as px
+
+# Load the HR data
+    data = {
+    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
+    'Number of Employees': [45, 30, 70, 55, 60]
+    }
+
+    df = pd.DataFrame(data)
+
+# Create a Pie Chart using Plotly
+    fig = px.pie(df, values='Number of Employees', names='Department', title='Employee Distribution by Department')
+
+# Streamlit App
+    st.title('HR Employee Distribution Analysis')
+    st.plotly_chart(fig)
+
+
+
+
+
+
+
+
+
+    
+
+
     st.markdown("")
 
 
