@@ -699,8 +699,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Load the HR data with colors for each department
     data = {
-    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
-    'Absenteeism Rate': [8.5, 5.2, 6.8, 9.3, 7.0],
+    'Service': ['RH', 'Finance', 'IT', 'Marketing', 'Ventes'],
+    'Taux Absentéisme': [8.5, 5.2, 6.8, 9.3, 7.0],
     }
 
     df = pd.DataFrame(data)
@@ -711,13 +711,19 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     'Finance': '#ff7f0e',
     'IT': '#2ca02c',
     'Marketing': '#d62728',
-    'Sales': '#9467bd'
+    'Ventes': '#9467bd'
     }
 
 # Create a Bar Graph using Plotly with assigned colors and department names as legend
-    fig = px.bar(df, x='Department', y='Absenteeism Rate', title='Absenteeism Rates by Department',
-             color='Department', color_discrete_map=color_map)
+    fig = px.bar(df, x='Service', y='Taux Absentéisme', title='Taux d'absentéisme par service',
+             color='Service', color_discrete_map=color_map)
     st.plotly_chart(fig)
+
+
+    st.markdown("**🔮Interpretation du graphique à barres**")
+
+    st.markdown("Le graphique à barres représente les taux d'absentéisme dans différents services d'une entreprise au cours de l'année écoulée. Chaque barre du graphique correspond à un service, tel que RH, Finance, IT, Marketing et Ventes.")
+    st.markdown("La hauteur de chaque barre représente le taux d'absentéisme de ce service : nous pouvons voir que le service Marketing a le taux d'absentéisme le plus élevé, suivi par le service RH, Ventes, IT et Finance.")
 
 
     st.markdown("")
