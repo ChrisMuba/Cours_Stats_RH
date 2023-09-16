@@ -685,6 +685,36 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Supposons qu'un contrôleur de gestion sociale souhaite analyser les taux d'absentéisme du personnel dans différents services au cours de l'année écoulée. Un graphique à barres peut afficher le taux d'absentéisme (axe des y) pour chaque service (axe des x) afin d'identifier les tendances et les problèmes potentiels.")
 
 
+    import pandas as pd
+    
+# sample dataset:
+    data = {
+    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
+    'Absenteeism Rate': [8.5, 5.2, 6.8, 9.3, 7.0]
+    }
+
+    df = pd.DataFrame(data)
+
+    import streamlit as st
+    import plotly.express as px
+
+# Load the HR data
+    data = {
+    'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
+    'Absenteeism Rate': [8.5, 5.2, 6.8, 9.3, 7.0]
+    }
+
+    df = pd.DataFrame(data)
+
+# Create a Bar Graph using Plotly
+    fig = px.bar(df, x='Department', y='Absenteeism Rate', title='Absenteeism Rates by Department')
+    st.plotly_chart(fig)
+
+
+
+
+
+
     st.markdown("")
 
 
