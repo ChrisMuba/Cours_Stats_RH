@@ -650,7 +650,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # sample dataset:
     data = {
     'Department': ['HR', 'Finance', 'IT', 'Marketing', 'Sales'],
-    'Number of Employees': [45, 30, 70, 55, 60]
+    'Number of Employees': [100, 75, 50, 25]
     }
 
     df = pd.DataFrame(data)
