@@ -642,7 +642,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 8**")
-    st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque services. Les données sont présentées dans le diagramme circulaire suivant :")
+    st.markdown("Une équipe RH souhaite analyser la répartition des employés dans chaque service. Les données sont présentées dans le diagramme circulaire suivant :")
 
 
     import pandas as pd
@@ -673,7 +673,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("**🔮Interpretation du diagramme circulaire**")
 
 
-    st.markdown("Le diagramme circulaire montre que le service Marketing compte la plus grande proportion d'employés (25 %), suivi du service Finance (18,75 %), du service IT (12,5 %) et enfin du service RH (6,25 %).")
+    st.markdown("Le diagramme circulaire montre que le service Marketing compte la plus grande proportion d'employés (40 %), suivi du service Finance (30 %), du service IT (20 %) et enfin du service RH (10 %).")
 
 
     st.markdown("")
