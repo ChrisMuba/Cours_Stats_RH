@@ -747,7 +747,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     fig.update_yaxes(title_text='Number of Employees')
 
 # Remove the legend title
-    fig.update_layout(legend_title_text='')
+    fig.update_layout(legend_title_text='Salaire')
 
 # Create the Streamlit app
     st.title('Interactive Salary Histogram')
