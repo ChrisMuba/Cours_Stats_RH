@@ -882,7 +882,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
-    st.markdown("**🔮Interpretation des 3 box plot**")
+    st.markdown("**🔮Interpretation du graphique linéaire**")
 
     st.markdown("Axe des x (Mois) : L'axe des X représente les mois de l'année, fournissant une dimension temporelle pour nos données.")
     st.markdown("Axe des y (salaire total) : L'axe des y représente le total des salaires payés par l'entreprise en milliers d'euros pour chaque mois.")
