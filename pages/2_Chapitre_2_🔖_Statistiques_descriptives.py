@@ -895,16 +895,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
     st.markdown("")
-
-
-
-
-
-
-
-    st.markdown("")
-
-
+    
+    
     st.subheader("Données qualitatives et quantitatives")
 
     
@@ -924,6 +916,38 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**🏀Application 13**")
     st.markdown("Une équipe RH souhaite analyser la relation entre le niveau de satisfaction au travail et l'absentéisme. Les données sont présentées dans le nuage de points suivant : ")
+
+
+    import pandas as pd
+    import numpy as np
+
+# Create sample data for employee performance and training hours
+    np.random.seed(42)
+
+    employee_data = pd.DataFrame({
+    'Performance_Score': np.random.randint(0, 100, 100),
+    'Training_Hours_Completed': np.random.randint(0, 50, 100)
+    })
+
+    import streamlit as st
+    import plotly.express as px
+
+# Create the Streamlit app
+    st.title('Employee Performance vs. Training Hours')
+
+# Create an interactive scatter plot using Plotly Express
+    fig = px.scatter(
+    employee_data, x='Training_Hours_Completed', y='Performance_Score',
+    title='Scatter Plot of Employee Performance vs. Training Hours',
+    trendline='ols'  # Add a linear regression line
+    )
+    fig.update_xaxes(title_text='Training Hours Completed')
+    fig.update_yaxes(title_text='Performance Score')
+
+# Show the plot in Streamlit
+    st.plotly_chart(fig)
+
+
 
     
     st.markdown("")
