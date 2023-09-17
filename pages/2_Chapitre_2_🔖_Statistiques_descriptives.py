@@ -820,10 +820,27 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Create an interactive box plot using Plotly Express
     fig = px.box(data, x='Service', y='Salaire', title='Répartition des salaires au sein des services RH, Ventes & IT')
     fig.update_xaxes(title_text='Service')
-    fig.update_yaxes(title_text='Salaire (€)')
+    fig.update_yaxes(title_text='Salaire (k€)')
 
 # Show the plot in Streamlit
     st.plotly_chart(fig)
+
+
+    st.markdown("**🔮Interpretation des box plot**")
+
+    st.markdown("La boîte représente l'écart interquartile (IQR) des salaires au sein de chaque service. Les bords inférieur (q1) et supérieur (q3) de la boîte correspondent respectivement aux 25e et 75e centiles. Cela nous indique où se situent la plupart des salaires au sein de chaque service.")
+    st.markdown("La ligne à l'intérieur de la boîte représente le salaire médian pour chaque service. C'est la valeur salariale qui sépare les 50 % inférieurs des 50 % supérieurs.")
+    st.markdown("Les moustaches s'étendent de la boîte jusqu'aux valeurs minimales et maximales dans une plage de 1,5 fois l'IQR. Tous les points de données au-delà des moustaches sont considérés comme des valeurs aberrantes et sont affichés sous forme de points individuels.")
+    st.markdown("Comparaison des salaires : nous pouvons facilement comparer les répartitions salariales entre les 3 services RH, Ventes & IT. Par exemple, l'IT a le salaire médian le plus élevé (66.19 k€), suivi des Ventes (59.77 k€) et des RH (45.66 k€).")
+    st.markdown("Variabilité : La longueur de la boîte et des moustaches peuvent nous donner une idée de la variabilité salariale au sein de chaque service : une boîte ou des moustaches plus longues indiquent une plus grande variabilité.")
+    st.markdown(" Valeurs aberrantes : le box plot du services Ventes nous aide à identifier des salaires individuels qui se situent bien en dehors de l'échelle salariale typique. Ils sont repésentés par 3 points individuels (20.70 k€, 30.19 k€ et 88.29 k€).")
+
+
+    st.markdown("")
+
+
+    st.markdown("")
+
 
 
 
