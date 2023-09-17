@@ -793,7 +793,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 11**")
-    st.markdown("Disons que nous analysons les salaires des employés pour identifier les tendances et les modèles. Nous voulons voir comment les salaires sont répartis entre les différents services l'entreprise.")
+    st.markdown("Disons que nous analysons les salaires des employés. Nous voulons voir comment les salaires sont répartis entre les différents services l'entreprise.")
     st.markdown("Nous pouvons créer un box plot pour visualiser la répartition des salaires pour chaque service. Le box plot nous montrera le salaire médian, l’écart interquartile et toutes les valeurs aberrantes.")
 
 
