@@ -826,9 +826,9 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
-    st.markdown("**🔮Interpretation des box plot**")
+    st.markdown("**🔮Interpretation des 3 box plot**")
 
-    st.markdown("La boîte représente l'écart interquartile (IQR) des salaires au sein de chaque service. Les bords inférieur (q1) et supérieur (q3) de la boîte correspondent respectivement aux 25e et 75e centiles. Cela nous indique où se situent la plupart des salaires au sein de chaque service.")
+    st.markdown("La boîte représente l'écart interquartile (IQR) des salaires au sein de chaque service. Les bords inférieur (q1) et supérieur (q3) de la boîte correspondent respectivement aux 25e et 75e centiles. Cela nous indique où se situent 50% des salaires au sein de chaque service.")
     st.markdown("La ligne à l'intérieur de la boîte représente le salaire médian pour chaque service. C'est la valeur salariale qui sépare les 50 % inférieurs des 50 % supérieurs.")
     st.markdown("Les moustaches s'étendent de la boîte jusqu'aux valeurs minimales et maximales dans une plage de 1,5 fois l'IQR. Tous les points de données au-delà des moustaches sont considérés comme des valeurs aberrantes et sont affichés sous forme de points individuels.")
     st.markdown("Comparaison des salaires : nous pouvons facilement comparer les répartitions salariales entre les 3 services RH, Ventes & IT. Par exemple, l'IT a le salaire médian le plus élevé (66.19 k€), suivi des Ventes (59.77 k€) et des RH (45.66 k€).")
