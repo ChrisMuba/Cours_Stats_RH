@@ -878,7 +878,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
               'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre',
               'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
     'Salaire_Total': [120, 125, 122, 128, 162.5, 135, 138, 140, 145, 150, 152, 193.75,
-                     160, 162, 165, 170, 172, 218.75, 178, 180, 182, 185, 190, 240,
+                     160, 162, 165, 170, 215, 175, 178, 180, 182, 185, 190, 240,
                      195, 200, 202, 205, 260, 210, 212, 215, 220, 225, 230, 290]
     })
 
@@ -886,7 +886,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     import plotly.express as px
 
 # Create an interactive line chart using Plotly Express
-    fig = px.line(data, x='Mois', y='Salaire_Total', color='Année', title='Suivi mensuel de la masse salariale')
+    fig = px.line(data, x='Mois', y='Salaire_Total', color='Année', title='Suivi de la masse salariale sur 3 ans')
     fig.update_xaxes(title_text='Mois')
     fig.update_yaxes(title_text='Salaires totaux (en k€)')
 
