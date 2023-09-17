@@ -877,17 +877,17 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     'Salary 2022': [12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000]
     })
 
-   import streamlit as st
-   import plotly.express as px
+    import streamlit as st
+    import plotly.express as px
 
 # Create a line chart with months on the x-axis and total salaries paid on the y-axis
-   fig = px.line(df, x='Month', y=['Salary 2020', 'Salary 2021', 'Salary 2022'], color='Year')
+    fig = px.line(df, x='Month', y=['Salary 2020', 'Salary 2021', 'Salary 2022'], color='Year')
 
 # Set the title and labels for the chart
-   fig.update_layout(title='Monthly salaries paid by the company (2020-2022)', xaxis_title='Month', yaxis_title='Total salaries paid')
+    fig.update_layout(title='Monthly salaries paid by the company (2020-2022)', xaxis_title='Month', yaxis_title='Total salaries paid')
 
 # Display the chart in Streamlit
-   st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
 
 
