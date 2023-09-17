@@ -876,7 +876,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
              2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022],
     'Mois': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre',
               'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre',
-              'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre''],
+              'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
     'Salaire_Total': [120, 125, 122, 128, 162.5, 135, 138, 140, 145, 150, 152, 193.75,
                      160, 162, 165, 170, 172, 218.75, 178, 180, 182, 185, 190, 240,
                      195, 200, 202, 205, 260, 210, 212, 215, 220, 225, 230, 290]
