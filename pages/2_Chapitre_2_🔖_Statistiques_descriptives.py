@@ -852,7 +852,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**🏀Application 12**")
     st.markdown("Supposons que nous disposions de données sur le total des salaires mensuels payés par l'entreprise au cours des trois dernières années (2020, 2021 et 2022). Nous pouvons utiliser un graphique linéaire comme outil de visualisation permettant de suivre l’évolution des salaires mensuels sur plusieurs années.") 
-    st.markdown("Cette visualisation va nous permettre d'identifier les tendances, la saisonnalité et les valeurs aberrantes potentielles, permettant ainsi de prendre des décisions liées à la planification et à la budgétisation de la rémunération fondées sur des données.") 
+    st.markdown("Cette visualisation va nous permettre d'identifier les tendances, la saisonnalité et les valeurs aberrantes potentielles, permettant ainsi de prendre des décisions liées à la planification et à la budgétisation de la rémunération, fondées sur des données.") 
    
 
     import pandas as pd
