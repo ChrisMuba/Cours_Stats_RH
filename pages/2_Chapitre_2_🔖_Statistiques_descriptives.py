@@ -945,6 +945,20 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
+    st.markdown("**🔮Interpretation du nuage de points**")
+
+    st.markdown("Axe des x : L'axe des x représente le nombre d'heures de formation suivies par chaque employé.")
+    st.markdown("Axe des y : L'axe des y représente les scores de performance des employés.")
+    st.markdown("Points de dispersion : chaque point de données sur le tracé représente un employé. La position du point indique leurs heures de formation et leur score de performance.")
+    st.markdown("Droite de régression linéaire : c'est la ligne la mieux adaptée qui décrit la relation entre les heures de formation et les scores de performance. Elle peut nous aider à identifier les tendances dans les données.")
+    st.markdown("Coefficient R² : Il quantifie dans quelle mesure la ligne de régression linéaire s'adapte aux données. Il mesure la force de la relation entre les deux variables. R² va de 0 à 1, où :")
+    st.markdown("R² = 0 : Le modèle n'explique aucune variabilité de la variable dépendante ; R² = 1 : Le modèle explique parfaitement la variabilité de la variable dépendante.")
+    st.markdown("Dans notre cas, la valeur R² est de 0,018599, ce qui est assez faible. Cela suggère que seule une petite fraction (environ 1,86 %) de la variabilité des scores de performance peut être expliquée par le nombre d’heures de formation suivies.") 
+    st.markdown("En d’autres termes, la relation linéaire entre les heures de formation et les scores de performance est faible. Cela indique que d'autres facteurs non inclus dans cette analyse peuvent avoir un impact plus important sur les scores de performance.")
+    
+
+
+
     st.markdown("")
 
 
