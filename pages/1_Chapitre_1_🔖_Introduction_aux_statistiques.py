@@ -55,10 +55,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
         ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
         ["006", "👩‍🦰 F", "Assistante RH", "Administration des RH", "BTS"],
-        ["007", "🧔🏽 H", "Responsable formation", "Développement des RH", "Master"],
-        ["008", "👱🏽‍♀️ F", "Chargée de marketing RH", "Développement des RH", "DUT"],
-        ["009", "👩🏼‍🦳 F", "Directrice RH", "Direction des RH", "Maîtrise"],
-        ["010", "🧑🏻 H", "Contrôleur de gestion sociale", "Administration des RH", "Master"]
+        ["...", "...", "...", "...", "..."]
 ]
 
     headers = ["Matricule RH","Genre H/F", "Poste", "Rattachement", "Diplôme"]
