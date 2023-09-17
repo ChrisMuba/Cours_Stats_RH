@@ -867,6 +867,31 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
 
 
+    import pandas as pd
+
+# Create a dataframe with monthly salaries paid by the company in the last 3 years
+    df = pd.DataFrame({
+    'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    'Salary 2020': [10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000],
+    'Salary 2021': [11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000],
+    'Salary 2022': [12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000]
+    })
+
+   import streamlit as st
+   import plotly.express as px
+
+# Create a line chart with months on the x-axis and total salaries paid on the y-axis
+   fig = px.line(df, x='Month', y=['Salary 2020', 'Salary 2021', 'Salary 2022'], color='Year')
+
+# Set the title and labels for the chart
+   fig.update_layout(title='Monthly salaries paid by the company (2020-2022)', xaxis_title='Month', yaxis_title='Total salaries paid')
+
+# Display the chart in Streamlit
+   st.plotly_chart(fig)
+
+
+
+
     st.markdown("")
 
 
