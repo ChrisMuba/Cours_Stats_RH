@@ -915,7 +915,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 13**")
-    st.markdown("Une équipe RH souhaite analyser la relation entre le niveau de satisfaction au travail et l'absentéisme. Les données sont présentées dans le nuage de points suivant : ")
+    st.markdown("Nous souhaitons analyser la relation entre les scores de performance des collaborateurs et les heures de formation suivies. Nous pouvons utiliser un nuage de points avec droite ajustée et coefficient R².")
 
 
     import pandas as pd
@@ -948,36 +948,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.plotly_chart(fig)
 
 
-
-
-
-
-    import pandas as pd
-
-# Create a DataFrame
-    df = pd.DataFrame({
-    "Employee Performance Score": [75, 80, 85, 90, 95],
-    "Training Hours Completed": [10, 15, 20, 25, 30]
-    })
-
-    import streamlit as st
-    import plotly.express as px
-
-# Set the title and x and y axis labels
-    fig = px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", title="Employee Performance Score vs. Training Hours Completed")
-
-# Add a trendline
-    fig.add_trace(px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", trendline="ols"))
-
-# Display the plot
-    st.plotly_chart(fig)
-
-
-
-
-
-
-    
     st.markdown("")
 
 
