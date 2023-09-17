@@ -1030,34 +1030,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
-    import pandas as pd
-
-    df = pd.DataFrame(
-       data={
-           "department": ["Sales", "Marketing", "Engineering", "HR"],
-           "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-           "absences": [10, 5, 2, 1, 3, 8, 6, 4, 3, 2, 5, 3, 1, 2, 1],
-        }
-    )
-
-    df = df.pivot_table(values="absences", index="department", columns="day")
-
-
-    import streamlit as st
-    import plotly.express as px
-
-# Create a heatmap
-    fig = px.heatmap(df, title="Absences per department and day")
-
-# Add a title and labels
-    fig.update_layout(
-        title_text="Absences per department and day",
-        xaxis_title="Day",
-        yaxis_title="Department",
-    )
-
-# Display the heatmap
-    st.plotly_chart(fig)
+    
 
 
 
