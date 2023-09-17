@@ -1003,6 +1003,31 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Create a DataFrame
     employee_data = pd.DataFrame(data, columns=['Date', 'Department', 'Absences', 'Vacations'])
 
+
+    import streamlit as st
+    import plotly.express as px
+
+# Create the Streamlit app
+    st.title('Employee Absences and Vacations Heatmap')
+
+# Pivot the data for plotting
+    heatmap_data = employee_data.pivot(index='Department', columns='Date', values='Absences')
+
+# Create an interactive heatmap using Plotly Express
+    fig = px.imshow(
+        heatmap_data,
+        x=heatmap_data.columns,
+        y=heatmap_data.index,
+        color_continuous_scale='Viridis',  # You can choose different color scales
+        title='Employee Absences Heatmap by Department'
+    )
+    fig.update_xaxes(title_text='Date')
+    fig.update_yaxes(title_text='Department')
+
+# Show the plot in Streamlit
+    st.plotly_chart(fig)
+
+
     
     st.markdown("")
 
