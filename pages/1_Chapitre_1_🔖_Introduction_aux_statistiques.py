@@ -36,7 +36,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Des exemples de données catégorielles en Ressources Humaines incluent par exemple **le genre** : 👦🏾/👧 ; le **titre du poste**: **contrôleur de gestion sociale**, **responsable formation**, etc... ; le **rattachement du poste** : **administration des RH**, **développement des RH**, etc...") 
     
-    st.markdown("Les données catégorielles peuvent ensuite être classées en données **nominales** et **ordinales**. Les données nominales sont des **données qui ne peuvent pas être classées ou ordonnées**, telles que **le genre** : 👦🏾/👧 ou le **titre du poste**.") 
+    st.markdown("Les données catégorielles peuvent ensuite être divisées en données **nominales** et **ordinales**. Les données nominales sont des **données qui ne peuvent pas être classées ou ordonnées**, telles que **le genre** : 👦🏾/👧 ou le **titre du poste**.") 
     
     st.markdown("Les données **ordinales**, en revanche, sont des **données qui peuvent être classées ou ordonnées**, telles que le niveau d'emploi (ex : cadre sup, cadre, agent de maîtrise, etc...) ou le niveau d'éducation (ex: Master, Licence/Bachelor, DUT/BTS, etc...)")
     
