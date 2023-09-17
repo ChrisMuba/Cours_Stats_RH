@@ -818,7 +818,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     import plotly.express as px
 
 # Create an interactive box plot using Plotly Express
-    fig = px.box(data, x='Service', y='Salaire', title='Répartition des salaires par service')
+    fig = px.box(data, x='Service', y='Salaire', title='Répartition des salaires au sein des services RH, Ventes & IT')
     fig.update_xaxes(title_text='Service')
     fig.update_yaxes(title_text='Salaire (€)')
 
