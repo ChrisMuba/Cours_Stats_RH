@@ -932,9 +932,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     import streamlit as st
     import plotly.express as px
 
-# Create the Streamlit app
-    st.title('Scores de performance vs. Heures de formation')
-
 # Create an interactive scatter plot using Plotly Express
     fig = px.scatter(
     employee_data, x='Heures_de_formation_suivies', y='Score_de_Performance',
