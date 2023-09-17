@@ -960,17 +960,17 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     "Training Hours Completed": [10, 15, 20, 25, 30]
     })
 
-   import streamlit as st
-   import plotly.express as px
+    import streamlit as st
+    import plotly.express as px
 
 # Set the title and x and y axis labels
-   fig = px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", title="Employee Performance Score vs. Training Hours Completed")
+    fig = px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", title="Employee Performance Score vs. Training Hours Completed")
 
 # Add a trendline
-   fig.add_trace(px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", trendline="ols"))
+    fig.add_trace(px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", trendline="ols"))
 
 # Display the plot
-   st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
 
 
