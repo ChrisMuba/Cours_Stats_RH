@@ -964,8 +964,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("En d’autres termes, la relation linéaire entre les heures de formation et les scores de performance est faible. Cela indique que d'autres facteurs non inclus dans cette analyse peuvent avoir un impact plus important sur les scores de performance.")
     
 
-
-
     st.markdown("")
 
 
@@ -984,6 +982,26 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     st.markdown("**🏀Application 14**")
     st.markdown("un service RH mène une enquête annuelle sur le climat social dans l'entreprise à l'aide de l'indicateur eNPS (employee Net Promoter Score), et souhaite identifier quels services ont les niveaux de satisfaction des employés les plus élevés. Une carte thermique peut représenter les scores de satisfaction de chaque service, avec des couleurs indiquant le niveau de satisfaction.")
+
+    import pandas as pd
+    import numpy as np
+
+# Create sample data for employee absences and vacations
+    np.random.seed(42)
+
+# Generate random data for three departments: HR, Sales, and IT
+    departments = ['HR', 'Sales', 'IT']
+    dates = pd.date_range(start='2022-01-01', end='2022-12-31', freq='D')
+    data = []
+
+    for date in dates:
+        for department in departments:
+            absences = np.random.randint(0, 5)  # Random daily absences (0 to 4)
+            vacations = np.random.randint(0, 3)  # Random daily vacations (0 to 2)
+            data.append([date, department, absences, vacations])
+
+# Create a DataFrame
+    employee_data = pd.DataFrame(data, columns=['Date', 'Department', 'Absences', 'Vacations'])
 
     
     st.markdown("")
