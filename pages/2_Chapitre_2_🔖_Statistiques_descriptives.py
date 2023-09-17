@@ -869,25 +869,34 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
     import pandas as pd
 
-# Create a dataframe with monthly salaries paid by the company in the last 3 years
-    df = pd.DataFrame({
-    'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    'Salary 2020': [10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000],
-    'Salary 2021': [11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000],
-    'Salary 2022': [12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000]
+# Create sample data for three years (in thousands of dollars)
+    data = pd.DataFrame({
+    'Year': [2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020,
+             2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021,
+             2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022, 2022],
+    'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+              'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+              'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    'Total_Salary': [120, 125, 122, 128, 130, 135, 138, 140, 145, 150, 152, 155,
+                     160, 162, 165, 170, 172, 175, 178, 180, 182, 185, 190, 192,
+                     195, 200, 202, 205, 208, 210, 212, 215, 220, 225, 230, 232]
     })
 
     import streamlit as st
     import plotly.express as px
 
-# Create a line chart with months on the x-axis and total salaries paid on the y-axis
-    fig = px.line(df, x='Month', y=['Salary 2020', 'Salary 2021', 'Salary 2022'], color='Year')
+# Create the Streamlit app
+    st.title('Monthly Salary Trends Over 3 Years')
 
-# Set the title and labels for the chart
-    fig.update_layout(title='Monthly salaries paid by the company (2020-2022)', xaxis_title='Month', yaxis_title='Total salaries paid')
+# Create an interactive line chart using Plotly Express
+    fig = px.line(data, x='Month', y='Total_Salary', color='Year', title='Monthly Salary Trends')
+    fig.update_xaxes(title_text='Month')
+    fig.update_yaxes(title_text='Total Salary (in thousands of dollars)')
 
-# Display the chart in Streamlit
+# Show the plot in Streamlit
     st.plotly_chart(fig)
+
+
 
 
 
