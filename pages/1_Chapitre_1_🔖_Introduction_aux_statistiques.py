@@ -54,7 +54,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         ["003", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
         ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
         ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
-        ["006", "👩‍🦰 F", "Assistante RH", "Administration des RH", "BTS"],
         ["...", "...", "...", "...", "..."]
 ]
 
