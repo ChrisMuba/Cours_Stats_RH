@@ -925,24 +925,24 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     np.random.seed(42)
 
     employee_data = pd.DataFrame({
-    'Performance_Score': np.random.randint(0, 100, 100),
-    'Training_Hours_Completed': np.random.randint(0, 50, 100)
+    'Score_de_Performance': np.random.randint(0, 100, 100),
+    'Heures_de_formation_suivies': np.random.randint(0, 50, 100)
     })
 
     import streamlit as st
     import plotly.express as px
 
 # Create the Streamlit app
-    st.title('Employee Performance vs. Training Hours')
+    st.title('Scores de performance vs. Heures de formation')
 
 # Create an interactive scatter plot using Plotly Express
     fig = px.scatter(
-    employee_data, x='Training_Hours_Completed', y='Performance_Score',
-    title='Scatter Plot of Employee Performance vs. Training Hours',
+    employee_data, x='Heures_de_formation_suivies', y='Score_de_Performance',
+    title='Scatter Plot des Scores de performance vs. Heures de formation',
     trendline='ols'  # Add a linear regression line
     )
-    fig.update_xaxes(title_text='Training Hours Completed')
-    fig.update_yaxes(title_text='Performance Score')
+    fig.update_xaxes(title_text='Heures_de_formation_suivies')
+    fig.update_yaxes(title_text='Score_de_Performance')
 
 # Show the plot in Streamlit
     st.plotly_chart(fig)
