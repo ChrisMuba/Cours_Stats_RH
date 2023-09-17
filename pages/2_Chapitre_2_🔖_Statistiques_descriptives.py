@@ -842,19 +842,6 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     st.markdown("")
 
 
-
-
-
-
-
-
-
-
-
-
-    st.markdown("")
-
-
     st.markdown("- **Graphique linéaire** : Un graphique linéaire est un graphique qui affiche des **données quantitatives** au fil du temps. Il utilise des points connectés pour afficher les tendances et les modèles dans les données.")
 
     st.markdown("**Cas d’usage** des graphiques linéaires : Ils peuvent être utilisés pour suivre l'évolution des effectifs et de la masse salariale au fil du temps, pour visualiser l'absentéisme sur plusieurs mois, pour suivre les mesures de performance au fil du temps, etc...")
@@ -864,8 +851,9 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 12**")
-    st.markdown("Une équipe RH souhaite analyser l'absentéisme mensuel des collaborateurs sur les trois dernières années. Les données sont présentées dans le graphique linéaire suivant : ")
-
+    st.markdown("Supposons que nous disposions de données sur le total des salaires mensuels payés par l'entreprise au cours des trois dernières années (2020, 2021 et 2022). Nous pouvons utiliser un graphique linéaire comme outil de visualisation permettant de suivre l’évolution des salaires mensuels sur plusieurs années.") 
+    st.markdown("Cette visualisation va nous permettre d'identifier les tendances, la saisonnalité et les valeurs aberrantes potentielles, permettant ainsi de prendre des décisions liées à la planification et à la budgétisation de la rémunération fondées sur des données.") 
+   
 
     import pandas as pd
 
@@ -892,6 +880,22 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Show the plot in Streamlit
     st.plotly_chart(fig)
+
+
+    st.markdown("**🔮Interpretation des 3 box plot**")
+
+    st.markdown("Axe des x (Mois) : L'axe des X représente les mois de l'année, fournissant une dimension temporelle pour nos données.")
+    st.markdown("Axe des y (salaire total) : L'axe des y représente le total des salaires payés par l'entreprise en milliers d'euros pour chaque mois.")
+    st.markdown("Lignes par année : le graphique linéaire montre trois lignes, chacune d'une couleur différente, représentant les années 2020, 2021 et 2022. Ces lignes relient les points de données pour chaque mois, nous permettant d'observer les tendances au fil du temps.")
+    st.markdown("Tendances au fil du temps : nous pouvons voir comment les salaires mensuels totaux ont augmenté au cours des trois années. Ce qui peut être lié aux effectifs, à la structure de la masse salariale (effectifs par catégories de salariés), à l’ancienneté, à la législation, etc...")
+    st.markdown("Modèles saisonniers : On observons une saisonnalité car les salaires ont tendance à être bien plus élevés aux mois de mai et décembre (ce qui peut corrrespondre aux versements de primes <<vacances>>, <<fin d'année>>, etc...)")
+
+
+    st.markdown("")
+
+
+    st.markdown("")
+
 
 
 
