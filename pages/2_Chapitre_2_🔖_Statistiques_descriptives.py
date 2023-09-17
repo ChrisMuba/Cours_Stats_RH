@@ -793,12 +793,8 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     
 
     st.markdown("**🏀Application 11**")
-    st.markdown("Disons que nous analysons les salaires des employés pour identifier les tendances et les modèles. Nous voulons voir comment les salaires sont répartis entre les différents services et niveaux de poste.")
-    st.markdown("Nous pouvons créer un box plot pour visualiser la répartition des salaires pour chaque service et niveau de poste. Le box plot nous montrera le salaire médian, l’écart interquartile et toutes les valeurs aberrantes.")
-
-
-   
-
+    st.markdown("Disons que nous analysons les salaires des employés pour identifier les tendances et les modèles. Nous voulons voir comment les salaires sont répartis entre les différents services l'entreprise.")
+    st.markdown("Nous pouvons créer un box plot pour visualiser la répartition des salaires pour chaque service. Le box plot nous montrera le salaire médian, l’écart interquartile et toutes les valeurs aberrantes.")
 
 
     import pandas as pd
@@ -814,20 +810,17 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 # Combine data into a DataFrame
     data = pd.DataFrame({
-    'Department': ['HR'] * 50 + ['Sales'] * 60 + ['IT'] * 45,
-    'Salary': np.concatenate([hr_salaries, sales_salaries, it_salaries])
+    'Service': ['RH'] * 50 + ['Ventes'] * 60 + ['IT'] * 45,
+    'Salaire': np.concatenate([hr_salaries, sales_salaries, it_salaries])
     })
 
     import streamlit as st
     import plotly.express as px
 
-# Create the Streamlit app
-    st.title('Salary Distribution by Department and Job Level')
-
 # Create an interactive box plot using Plotly Express
-    fig = px.box(data, x='Department', y='Salary', title='Salary Distribution by Department')
-    fig.update_xaxes(title_text='Department')
-    fig.update_yaxes(title_text='Salary (in dollars)')
+    fig = px.box(data, x='Service', y='Salaire', title='Salary Distribution by Department')
+    fig.update_xaxes(title_text='Service')
+    fig.update_yaxes(title_text='Salaire (in dollars)')
 
 # Show the plot in Streamlit
     st.plotly_chart(fig)
