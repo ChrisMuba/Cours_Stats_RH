@@ -952,39 +952,27 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 
 
 
-    import streamlit as st
-    import plotly.express as px
-    import statsmodels.api as sm
+    import pandas as pd
 
-# Create the Streamlit app
-    st.title('Employee Performance vs. Training Hours')
+# Create a DataFrame
+    df = pd.DataFrame({
+    "Employee Performance Score": [75, 80, 85, 90, 95],
+    "Training Hours Completed": [10, 15, 20, 25, 30]
+    })
 
-# Create an interactive scatter plot using Plotly Express
-    fig = px.scatter(
-    employee_data, x='Training_Hours_Completed', y='Performance_Score',
-    title='Scatter Plot of Employee Performance vs. Training Hours',
-    trendline='ols'  # Add a linear regression line using Ordinary Least Squares (OLS) method
-    )
-    fig.update_xaxes(title_text='Training Hours Completed')
-    fig.update_yaxes(title_text='Performance Score')
+   import streamlit as st
+   import plotly.express as px
 
-# Calculate and display the R² value
-    X = sm.add_constant(employee_data['Training_Hours_Completed'])  # Add a constant term to the independent variable
-    Y = employee_data['Performance_Score']
+# Set the title and x and y axis labels
+   fig = px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", title="Employee Performance Score vs. Training Hours Completed")
 
-    model = sm.OLS(Y, X).fit()
-    r_squared = model.rsquared
+# Add a trendline
+   fig.add_trace(px.scatter(df, x="Training Hours Completed", y="Employee Performance Score", trendline="ols"))
 
-# Add R² value as text to the plot
-    fig.add_annotation(
-    text=f'R² = {r_squared:.2f}',
-    x=0.8, y=0.1,  # Adjust the position as needed
-    showarrow=False,
-    font=dict(size=12, color="black")
-    )
+# Display the plot
+   st.plotly_chart(fig)
 
-# Show the plot in Streamlit
-    st.plotly_chart(fig)
+
 
 
 
