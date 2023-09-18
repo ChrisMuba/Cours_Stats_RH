@@ -73,11 +73,11 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
 
     with st.expander("🔮Interpretation de l'histogramme de la distribution des salaires"):
-        st.write(\"\"\"
+        st.write("""
         The chart above shows some numbers I picked for you.
         I rolled actual dice for these, so they're *guaranteed* to
         be random.
-        \"\"\")
+        """)
     
 
     st.markdown("")
