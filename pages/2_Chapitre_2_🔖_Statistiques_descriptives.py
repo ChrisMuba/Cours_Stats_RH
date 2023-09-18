@@ -71,7 +71,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Display the histogram
     st.plotly_chart(fig_hist)
 
-
+# Explanation
     with st.expander("🔮Interpretation de l'histogramme de la distribution des salaires"):
         st.write("""
         L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
@@ -156,8 +156,8 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
 
-
-    with st.expander("🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires"):
+# Explanation
+    with st.expander("🔮Interpretation du box plot de la distribution des salaires"):
         st.write("""
         Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.
         
@@ -228,7 +228,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     fig_without_outliers = px.histogram(df_without_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires')
     st.plotly_chart(fig_without_outliers)
 
-
+# Explanation
     with st.expander("🔮Interpretation de l'histogramme des salaires sans valeurs aberrantes"):
         st.write("""
         L'histogramme est une distribution de fréquence qui montre le nombre d'observations dans des intervalles spécifiques. Dans notre cas, l'histogramme représente la répartition des salaires sans valeurs aberrantes.
@@ -277,16 +277,17 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Create a histogram
     fig_with_outliers = px.histogram(df_with_outliers, x='Salaires (€)', nbins=6, title='Histogramme de la distribution des salaires (avec Outliers)')
     st.plotly_chart(fig_with_outliers)
-
+    
 # Explanation
-    st.markdown("**🔮Interpretation de l'histogramme des salaires avec valeurs aberrantes**")
-    st.write("""
+    with st.expander("🔮Interpretation de l'histogramme des salaires avec valeurs aberrantes"):
+        st.write("""
     Dans cet exemple, nous avons un échantillon de données salariales qui inclut des valeurs aberrantes.  
-    Il s'agit des valeurs extrêmes qui peuvent **fausser la distribution**. Lorsque des valeurs aberrantes sont présentes, 
-    le mode peut **ne pas représenter avec précision la tendance centrale**
-    car il est fortement influencé par les valeurs aberrantes. Dans de tels cas, d’autres mesures 
-    comme la moyenne ou la médiane peuvent permettre de mieux comprendre le niveau de salaire typique.
-""")
+    
+    Il s'agit des valeurs extrêmes qui peuvent **fausser la distribution**. Lorsque des valeurs aberrantes sont présentes, le mode peut **ne pas représenter avec précision la tendance centrale**
+    car il est fortement influencé par les valeurs aberrantes. 
+    
+    Dans de tels cas, d’autres mesures comme la moyenne ou la médiane peuvent permettre de mieux comprendre le niveau de salaire typique.
+    """)
 
 
     st.markdown("")
