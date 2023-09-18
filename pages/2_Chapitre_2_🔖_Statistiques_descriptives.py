@@ -316,7 +316,7 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     Les valeurs aberrantes, représentées par les deux points individuels en dehors des moustaches, sont les salaires de 100 000 € et 120 000 €.
     
     La présence de valeurs aberrantes dans les données suggère que certains employés ont des salaires nettement supérieurs à ceux de la majorité des employés.
-""")
+    """)
 
 
 if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilité**"):
