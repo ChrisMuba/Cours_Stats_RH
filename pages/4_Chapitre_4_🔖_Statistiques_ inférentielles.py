@@ -48,7 +48,8 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.markdown("- **L'estimation** est le processus qui permet d'estimer un paramètre de la population sur la base d'un échantillon.")
     st.markdown("Le *paramètre* à estimer peut-être par exemple, la moyenne, la proportion, etc...")
     
-    st.markdown("- **L'estimation ponctuelle** consiste à utiliser une seule valeur pour estimer le paramètre de la population. Par exemple, si nous voulons estimer le salaire moyen d'une population, nous pouvons calculer le salaire moyen des employés d'une entreprise (échantillon) et l'utiliser comme estimation de la moyenne de la population (la population peut être toutes les entreprises de la branche d'activité).")
+    st.markdown("- **L'estimation ponctuelle** consiste à estimer une valeur unique pour un paramètre de population sur la base d'un échantillon de données.") 
+    st.markdown("Par exemple, on peut utiliser la moyenne de l’échantillon des scores de satisfaction des employés pour estimer le niveau de satisfaction global au sein de l’entreprise.")
     
     st.markdown("- **Exemple 4 - Application possible en RH** : Supposons que nous sélectionnions au hasard 100 employés d'une grande entreprise et constations que leur salaire moyen est de 50 000 €. Nous pouvons utiliser cette moyenne d'échantillon comme estimation ponctuelle du salaire moyen de la population.")
     
