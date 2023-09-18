@@ -157,21 +157,19 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
     st.plotly_chart(fig)
 
 
-    st.markdown("")
+    with st.expander("**🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires**"):
+        st.write("""
+        Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.
+        
+        La boite représente l'intervalle interquartile (IQR), les bords inférieur (à gauche) et supérieur (à droite) de la case marquant respectivement le premier quartile (Q1) et le troisième quartile (Q3).
+        
+        Intervalle interquartile (IQR) : la moitié moyenne des salaires (de Q1 à Q3) se situe entre environ 58 000 € et 65 000 €.
+        
+        La ligne verticale à l’intérieur de la boite représente le salaire médian (Q2) : environ 60 500 €.
+        
+        Les « moustaches » s'étendent des bords de la boîte jusqu'aux salaires minimum (55 000 €) et maximum (75 000 €) dans une fourchette raisonnable : **il n'y a pas de valeurs aberrantes dans l'ensemble de données**, car tous les salaires se situent dans la fourchette raisonnable des « moustaches ».
+        """)
 
-
-    st.markdown("**🔮Interpretation du box plot (boite à moustaches) de la distribution des salaires**")
-
-
-    st.markdown("Le **box plot** fournit un résumé de la répartition des salaires, y compris des mesures de tendance centrale et de variabilité.")
-
-    st.markdown("La boite représente l'intervalle interquartile (IQR), les bords inférieur (à gauche) et supérieur (à droite) de la case marquant respectivement le premier quartile (Q1) et le troisième quartile (Q3).")
-
-    st.markdown("Intervalle interquartile (IQR) : la moitié moyenne des salaires (de Q1 à Q3) se situe entre environ 58 000 € et 65 000 €.")
-
-    st.markdown("La ligne verticale à l’intérieur de la boite représente le salaire médian (Q2) : environ 60 500 €.")
-
-    st.markdown("Les « moustaches » s'étendent des bords de la boîte jusqu'aux salaires minimum (55 000 €) et maximum (75 000 €) dans une fourchette raisonnable : **il n'y a pas de valeurs aberrantes dans l'ensemble de données**, car tous les salaires se situent dans la fourchette raisonnable des « moustaches ».")
 
     st.markdown("")
 
