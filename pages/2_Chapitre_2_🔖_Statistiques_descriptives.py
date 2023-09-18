@@ -1018,7 +1018,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
         """,
         unsafe_allow_html=True
         )
-    redirect_button("https://cours-stats-rh.streamlit.app/Heatmap_en_bonus, "Suite : Heatmap")
+    redirect_button("https://cours-stats-rh.streamlit.app/Heatmap_en_bonus, "Suite")
     
 
 
