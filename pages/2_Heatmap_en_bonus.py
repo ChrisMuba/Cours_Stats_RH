@@ -1,68 +1,52 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
 
 
-import streamlit as st
+    import pandas as pd
+    import numpy as np
 
-st.title("Cours de Statistiques appliquées aux Ressources Humaines")
+# Create sample data for employee absences and vacations
+    np.random.seed(42)
 
-st.header("Auteur : Christian MUBA - HR Data analyst.")
+# Generate random data for three departments: HR, Sales, and IT
+    departments = ['HR', 'Sales', 'IT']
+    dates = pd.date_range(start='2022-01-01', end='2022-12-31', freq='D')
+    data = []
 
-st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions éclairées ou bénéficier d'un tutorat personnalisé ? contactez-moi 📧https://www.linkedin.com/in/chris-muba-io 🌍")
+    for date in dates:
+        for department in departments:
+            absences = np.random.randint(0, 5)  # Random daily absences (0 to 4)
+            vacations = np.random.randint(0, 3)  # Random daily vacations (0 to 2)
+            data.append([date, department, absences, vacations])
+                
 
-# st.markdown("Ce projet porte sur l'étude d'un jeu de données RH comportant 13 colonnes & 8336 lignes")
+    import streamlit as st
+    import plotly.express as px
 
-# st.caption("Fichier de données avant nettoyage : www.example.com")
+# Create the Streamlit app
+    st.title('Employee Absences and Vacations Heatmap')
 
-st.subheader("Description du cours")
+# Create filters for department and month
+    selected_department = st.selectbox('Select Department:', ['HR', 'Sales', 'IT'])
+    selected_month = st.selectbox('Select Month:', ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
 
-st.markdown("Ce cours offre une introduction aux statistiques pour les professionnels des ressources humaines. L'accent est mis sur la compréhension de la façon d'analyser et d'interpréter les données statistiques pour prendre des décisions éclairées. Les sujets couverts comprennent la collecte de données, les mesures de la tendance centrale et de la variabilité, la probabilité, les tests d'hypothèses, la corrélation et la régression.")
+# Filter the data based on user selections
+    filtered_data = employee_data[(employee_data['Department'] == selected_department) & (employee_data['Date'].dt.strftime('%B') == selected_month)]
 
-st.subheader("🚀Objectifs d'apprentissage🚀")
+# Pivot the filtered data for plotting
+    heatmap_data = filtered_data.pivot(index='Department', columns='Date', values='Absences')
 
-st.markdown("A la fin de ce cours, les étudiants seront capables de :")
+# Create an interactive heatmap using Plotly Express
+    fig = px.imshow(
+        heatmap_data,
+        x=heatmap_data.columns,
+        y=heatmap_data.index,
+        color_continuous_scale='Viridis',  # You can choose different color scales
+        title=f'Employee Absences Heatmap for {selected_department} in {selected_month}'
+    )
+    fig.update_xaxes(title_text='Date')
+    fig.update_yaxes(title_text='Department')
 
-st.markdown("🎯Comprendre comment les données statistiques peuvent éclairer les décisions liées aux RH")
-st.markdown("🎯Recueillir, résumer et analyser des données à l'aide de statistiques descriptives")
-st.markdown("🎯Interpréter les données à l'aide de techniques statistiques inférentielles")
-st.markdown("🎯Évaluer la validité des conclusions statistiques basées sur des données d'échantillon")
-st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux RH")
-
-
-st.markdown("")
-
-
-def redirect_button(url: str, text: str= None, color="#FD504D"):
-        st.markdown(
-        f"""
-        <a href="{url}" target="_blank">
-            <div style="
-                display: inline-block;
-                padding: 0.5em 1em;
-                color: #FFFFFF;
-                background-color: {color};
-                border-radius: 3px;
-                text-decoration: none;">
-                {text}
-            </div
-        </a>
-        """,
-        unsafe_allow_html=True
-        )
-redirect_button("https://cours-stats-rh.streamlit.app/Chapitre_1_🔖_Introduction_aux_statistiques","Aller au chapitre 1")
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
+# Show the plot in Streamlit
+    st.plotly_chart(fig)
 
 
 
