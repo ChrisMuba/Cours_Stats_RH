@@ -8,7 +8,8 @@ st.sidebar.markdown("# Chapitre 4")
 
 st.title("Statistiques inférentielles : estimation et tests d'hypothèses")
 
-st.markdown("Dans ce chapitre, nous explorerons deux concepts fondamentaux des statistiques inférentielles : **l'estimation et les tests d'hypothèses**. Nous aborderons également certains tests couramment utilisés tels que les **test t, test du chi carré et l'ANOVA**.")
+st.markdown("Dans ce chapitre, nous explorerons deux concepts fondamentaux des statistiques inférentielles : **l'estimation et les tests d'hypothèses**.") 
+st.markdown("Nous aborderons également certains tests couramment utilisés tels que les **test t, test du chi carré et l'ANOVA**.")
 
 if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
