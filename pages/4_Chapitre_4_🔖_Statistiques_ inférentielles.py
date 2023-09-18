@@ -17,7 +17,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.markdown("Les **statistiques inférentielles** sont un outil puissant qui permet de **faire des déductions et de tirer des conclusions sur une population à partir d'un échantillon de données**.")
     
-    st.markdown("- **L'estimation** est le processus qui permet d'estimer un paramètre de la population (par exemple, la moyenne, la proportion) sur la base d'un échantillon.")
+    st.markdown("- **L'estimation** est le processus qui permet d'estimer un paramètre de la population (par exemple, la moyenne, la proportion, etc...) sur la base d'un échantillon.")
     
     st.markdown("- **L'estimation ponctuelle** consiste à utiliser une seule valeur pour estimer le paramètre de la population. Par exemple, si nous voulons estimer le salaire moyen d'une population, nous pouvons calculer le salaire moyen des employés d'une entreprise (échantillon) et l'utiliser comme estimation de la moyenne de la population (la population peut être toutes les entreprises de la branche d'activité).")
     
