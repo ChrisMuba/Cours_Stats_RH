@@ -387,6 +387,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     L’âge médian, (représenté par la ligne verticale dans la boite) est de 42.5 ans, ce qui signifie que la moitié des employés de l'échantillon de données a plus de 42.5 ans et l'autre moitié moins : il s'agit d'une information utile à connaître, car elle peut aider à éclairer les politiques et les pratiques liées au développement et à la rétention des employés.
 
     st.markdown("Ce **box plot** montre également les quartiles inférieur (Q1 = 30 ans) et supérieur (Q3 = 55 ans), qui sont représentés respectivement par les côtés gauche et droit de la boîte. Les valeurs de **Q1 et Q3** signifient respectivement que 25 % des employés ont moins de 30 ans et 25 %de plus de 55 ans.
+    """)
 
 
     st.markdown("")
@@ -459,7 +460,8 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     st.markdown("Étape 2 : **Calculons les carrés des différences entre chaque point de données (Xᵢ) et la moyenne (μ) :**")
 
 
-    st.markdown("- Pour l'employé 1 : (1 − 5.5)² = 20.25")  
+    st.write("""
+    - Pour l'employé 1 : (1 − 5.5)² = 20.25")  
     - Pour l'employé 2 : (3 − 5.5)² = 6.25 
     - Pour l'employé 3 : (4 − 5.5)² = 2.25
     - Pour l'employé 4 : (7 − 5.5)² = 2.25
