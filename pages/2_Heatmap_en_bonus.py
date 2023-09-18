@@ -16,6 +16,9 @@ for date in dates:
         absences = np.random.randint(0, 5)  # Random daily absences (0 to 4)
         vacations = np.random.randint(0, 3)  # Random daily vacations (0 to 2)
         data.append([date, department, absences, vacations])
+
+# Create a DataFrame
+employee_data = pd.DataFrame(data, columns=['Date', 'Department', 'Absences', 'Vacations'])
                 
 
 import streamlit as st
