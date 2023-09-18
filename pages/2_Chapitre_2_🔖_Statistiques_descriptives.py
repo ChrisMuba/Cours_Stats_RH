@@ -679,11 +679,15 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     fig = px.pie(df, values='Nombre d\'employés', names='Service', title='Répartition des employés par service')
     st.plotly_chart(fig)
 
-    st.markdown("**🔮Interpretation du diagramme circulaire**")
-
-    st.markdown("Le diagramme circulaire montre la répartition des employés dans les différents services de l'entreprise. Chaque tranche du diagramme circulaire correspond à un service, tel que Marketing, Finance, IT & RH.")
-    st.markdown("La taille de chaque tranche du diagramme est proportionnelle au pourcentage du nombre total d'employés de ce service par rapport à l'ensemble des salariés de tous les services.")
-    st.markdown("On observe enfin que le service Marketing compte la plus grande proportion d'employés (40 %), suivi du service Finance (30 %), du service IT (20 %) et enfin du service RH (10 %).")
+    # Explanation
+    with st.expander("🔮Interpretation du diagramme circulaire"):
+        st.write("""
+    Le diagramme circulaire montre la répartition des employés dans les différents services de l'entreprise. Chaque tranche du diagramme circulaire correspond à un service, tel que Marketing, Finance, IT & RH.
+    
+    La taille de chaque tranche du diagramme est proportionnelle au pourcentage du nombre total d'employés de ce service par rapport à l'ensemble des salariés de tous les services.
+    
+    On observe enfin que le service Marketing compte la plus grande proportion d'employés (40 %), suivi du service Finance (30 %), du service IT (20 %) et enfin du service RH (10 %).
+    """)
 
 
     st.markdown("")
