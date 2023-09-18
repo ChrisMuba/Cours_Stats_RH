@@ -12,7 +12,7 @@ st.markdown("")
 st.markdown("- **Cartes thermiques** : Une carte thermique est une visualisation utilisée pour présenter de grands ensembles de données avec des valeurs d'intensité codées par couleur.")
 
 
-st.markdown("**Cas d’usage** des cartes thermique : Elles peuvent être utilisées pour montrer la répartition des employés entre différentes fonctions et services, pour visualiser comment les employés évaluent leur satisfaction suivant différents aspects de leur travail.")
+st.markdown("**Cas d’usage** des cartes thermique : Elles peuvent être utilisées pour montrer la répartition des employés entre différentes fonctions et services, pour visualiser comment les employés évaluent leur satisfaction suivant différents aspects de leur travail, etc...")
 st.markdown("Les Heatmaps peuvent aussi être utilisées pour améliorer le processus de recrutement en visualisant où les offres d’emploi génèrent le plus de clics, et permettre ainsi l'identification des canaux de recrutement les plus efficaces.")
 
 
