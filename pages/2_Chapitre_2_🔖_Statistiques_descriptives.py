@@ -306,11 +306,15 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
 
-    st.markdown("**🔮Interpretation du box plot de la distribution des salaires avec valeurs aberrantes**")
-    st.write("""
+# Explanation
+    with st.expander("🔮Interpretation du box plot de la distribution des salaires avec valeurs aberrantes"):
+        st.write("""
     Le **box plot** nous confirme visuellement la présence de valeurs aberrantes dans les données, avec des salaires allant de 35 000 € à 120 000 €.  
+    
     La ligne verticale à l’intérieur de la boite nous montre que le salaire médian est de 50 000 €, et les moustaches nous montrent l'écart des salaires dans une plage de 1,5 fois l'écart interquartile (IQR). 
+    
     Les valeurs aberrantes, représentées par les deux points individuels en dehors des moustaches, sont les salaires de 100 000 € et 120 000 €.
+    
     La présence de valeurs aberrantes dans les données suggère que certains employés ont des salaires nettement supérieurs à ceux de la majorité des employés.
 """)
 
@@ -330,9 +334,11 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
 
     st.markdown("")
-
     
 
+    st.markdown("")
+
+    
     st.markdown("**🏀Application 5**")
 
     st.write("""Supposons que nous disposions d'un échantillon de données sur l'âge des employés d'une entreprise. 
@@ -371,16 +377,17 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 # Display the plot in the Streamlit app
     st.plotly_chart(fig)
 
-    st.markdown("**🔮Interpretation du box plot de lâge des employés de l'entreprise**")
+# Explanation
+    with st.expander("🔮Interpretation du box plot de lâge des employés de l'entreprise"):
+        st.write("""
+    Ce **box plot** affiche la répartition des âges dans l'échantillon de données, l'axe horizontal représentant les différentes tranches d'âge.
 
-
-    st.markdown("Ce **box plot** affiche la répartition des âges dans l'échantillon de données, l'axe horizontal représentant les différentes tranches d'âge.")
-
-    st.markdown("L'intervalle interquartile **IQR** (représenté par la boite) nous montre que la majorité des employés (50 %) ont entre 30 et 55 ans.")
+    L'intervalle interquartile **IQR** (représenté par la boite) nous montre que la majorité des employés (50 %) ont entre 30 et 55 ans.")
     
-    st.markdown("L’âge médian, (représenté par la ligne verticale dans la boite) est de 42.5 ans, ce qui signifie que la moitié des employés de l'échantillon de données a plus de 42.5 ans et l'autre moitié moins : il s'agit d'une information utile à connaître, car elle peut aider à éclairer les politiques et les pratiques liées au développement et à la rétention des employés.")
+    L’âge médian, (représenté par la ligne verticale dans la boite) est de 42.5 ans, ce qui signifie que la moitié des employés de l'échantillon de données a plus de 42.5 ans et l'autre moitié moins : il s'agit d'une information utile à connaître, car elle peut aider à éclairer les politiques et les pratiques liées au développement et à la rétention des employés.
 
-    st.markdown("Ce **box plot** montre également les quartiles inférieur (Q1 = 30 ans) et supérieur (Q3 = 55 ans), qui sont représentés respectivement par les côtés gauche et droit de la boîte. Les valeurs de **Q1 et Q3** signifient respectivement que 25 % des employés ont moins de 30 ans et 25 %de plus de 55 ans.")
+    st.markdown("Ce **box plot** montre également les quartiles inférieur (Q1 = 30 ans) et supérieur (Q3 = 55 ans), qui sont représentés respectivement par les côtés gauche et droit de la boîte. Les valeurs de **Q1 et Q3** signifient respectivement que 25 % des employés ont moins de 30 ans et 25 %de plus de 55 ans.
+
 
     st.markdown("")
 
