@@ -1,4 +1,23 @@
 
+st.markdown("")
+
+
+st.markdown("- **Cartes thermiques** : Une carte thermique est une visualisation utilisée pour présenter de grands ensembles de données avec des valeurs d'intensité codées par couleur.")
+
+
+st.markdown("**Cas d’usage** des cartes thermique : Elles peuvent être utilisées pour montrer la répartition des employés entre différentes fonctions et services, pour visualiser comment les employés évaluent leur satisfaction suivant différents aspects de leur travail.")
+    st.markdown("Les Heatmaps peuvent aussi être utilisées pour améliorer le processus de recrutement en visualisant où les offres d’emploi génèrent le plus de clics, et permettre ainsi l'identification des canaux de recrutement les plus efficaces.")
+
+
+st.markdown("")
+    
+
+st.markdown("**🏀Application 14**")
+st.markdown("un service RH mène une enquête annuelle sur le climat social dans l'entreprise à l'aide de l'indicateur eNPS (employee Net Promoter Score), et souhaite identifier quels services ont les niveaux de satisfaction des employés les plus élevés. Une carte thermique peut représenter les scores de satisfaction de chaque service, avec des couleurs indiquant le niveau de satisfaction.")
+
+
+st.markdown("")
+
 
 import pandas as pd
 import numpy as np
