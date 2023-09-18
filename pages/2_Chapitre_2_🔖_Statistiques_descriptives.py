@@ -857,7 +857,7 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     Variabilité : La longueur de la boîte et des moustaches peuvent nous donner une idée de la variabilité salariale au sein de chaque service : une boîte ou des moustaches plus longues indiquent une plus grande variabilité.
     
     Valeurs aberrantes : le box plot du services Ventes nous aide à identifier des salaires individuels qui se situent bien en dehors de l'échelle salariale typique. Ils sont repésentés par 3 points individuels (20.70 k€, 30.19 k€ et 88.29 k€).
-    """
+    """)
 
 
     st.markdown("")
