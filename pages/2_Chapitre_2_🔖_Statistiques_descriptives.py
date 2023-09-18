@@ -731,12 +731,14 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
     fig = px.bar(df, x='Service', y='Taux Absentéisme (%)', title='Taux d\'absentéisme par service',
              color='Service', color_discrete_map=color_map)
     st.plotly_chart(fig)
-
-
-    st.markdown("**🔮Interpretation du graphique à barres**")
-
-    st.markdown("Le graphique à barres représente les taux d'absentéisme dans différents services d'une entreprise au cours de l'année écoulée. Chaque barre du graphique correspond à un service, tel que RH, Finance, IT, Marketing et Ventes.")
-    st.markdown("La hauteur de chaque barre représente le taux d'absentéisme de ce service : nous pouvons voir que le service Marketing a le taux d'absentéisme le plus élevé (9.3 %), suivi par le service RH (8.5), Ventes (7 %), IT (6.8 %) et enfin Finance (5.2 %).")
+    
+# Explanation
+    with st.expander("🔮Interpretation du graphique à barres"):
+        st.write("""
+    Le graphique à barres représente les taux d'absentéisme dans différents services d'une entreprise au cours de l'année écoulée. Chaque barre du graphique correspond à un service, tel que RH, Finance, IT, Marketing et Ventes.
+    
+    La hauteur de chaque barre représente le taux d'absentéisme de ce service : nous pouvons voir que le service Marketing a le taux d'absentéisme le plus élevé (9.3 %), suivi par le service RH (8.5), Ventes (7 %), IT (6.8 %) et enfin Finance (5.2 %).
+    """)
 
 
     st.markdown("")
@@ -783,14 +785,17 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Displaying Chart
     st.plotly_chart(fig)
 
-
-    st.markdown("**🔮Interpretation de l'histogramme**")
-
-    st.markdown("Cet histogramme est une représentation graphique de la répartition des salaires entre les salariés de notre entreprise. Chaque barre de l'histogramme correspond à une fourchette salariale spécifique (en milliers d'€), et la hauteur de chaque barre indique le nombre d'employés dans cette fourchette salariale.")
-    st.markdown("Échelles salariales courantes : les barres les plus hautes de l'histogramme se situent dans les échelles salariales [45 k€ - 49,99 k€] et [50 k€ - 54,99 k€]. Cela suggère que ces échelles salariales sont les plus courantes parmi nos employés, avec respectivement 23 et 22 employés.")
-    st.markdown("Répartition des salaires : l'histogramme montre que les salaires sont répartis sur une plage de valeurs relativement uniforme sans écarts ni regroupements significatifs.")
-    st.markdown("Asymétrie : l'histogramme semble être légèrement incliné vers la droite. Cela signifie qu'il y a relativement moins d'employés dans les échelles salariales inférieures ([20 k€ - 24,99 k€] à [40 k€ - 44,99 k€]) et plus d'employés dans les échelles salariales moyennes à supérieures ([45 k€ - 49,99 k€] à [65 k€ - 69.99 k€].")
-
+    # Explanation
+    with st.expander("🔮Interpretation de l'histogramme"):
+        st.write("""
+    Cet histogramme est une représentation graphique de la répartition des salaires entre les salariés de notre entreprise. Chaque barre de l'histogramme correspond à une fourchette salariale spécifique (en milliers d'€), et la hauteur de chaque barre indique le nombre d'employés dans cette fourchette salariale.
+    
+    Échelles salariales courantes : les barres les plus hautes de l'histogramme se situent dans les échelles salariales [45 k€ - 49,99 k€] et [50 k€ - 54,99 k€]. Cela suggère que ces échelles salariales sont les plus courantes parmi nos employés, avec respectivement 23 et 22 employés.
+    
+    Répartition des salaires : l'histogramme montre que les salaires sont répartis sur une plage de valeurs relativement uniforme sans écarts ni regroupements significatifs.
+    
+    Asymétrie : l'histogramme semble être légèrement incliné vers la droite. Cela signifie qu'il y a relativement moins d'employés dans les échelles salariales inférieures ([20 k€ - 24,99 k€] à [40 k€ - 44,99 k€]) et plus d'employés dans les échelles salariales moyennes à supérieures ([45 k€ - 49,99 k€] à [65 k€ - 69.99 k€].
+    """)
 
     st.markdown("")
 
@@ -838,15 +843,21 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Show the plot in Streamlit
     st.plotly_chart(fig)
 
-
-    st.markdown("**🔮Interpretation des 3 box plot**")
-
-    st.markdown("La boîte représente l'écart interquartile (IQR) des salaires au sein de chaque service. Les bords inférieur (q1) et supérieur (q3) de la boîte correspondent respectivement aux 25e et 75e centiles. Cela nous indique où se situent 50% des salaires au sein de chaque service.")
-    st.markdown("La ligne à l'intérieur de la boîte représente le salaire médian pour chaque service. C'est la valeur salariale qui sépare les 50 % inférieurs des 50 % supérieurs.")
-    st.markdown("Les moustaches s'étendent de la boîte jusqu'aux valeurs minimales et maximales dans une plage de 1,5 fois l'IQR. Tous les points de données au-delà des moustaches sont considérés comme des valeurs aberrantes et sont affichés sous forme de points individuels.")
-    st.markdown("Comparaison des salaires : nous pouvons facilement comparer les répartitions salariales entre les 3 services RH, Ventes & IT. Par exemple, l'IT a le salaire médian le plus élevé (66.19 k€), suivi des Ventes (59.77 k€) et des RH (47.66 k€).")
-    st.markdown("Variabilité : La longueur de la boîte et des moustaches peuvent nous donner une idée de la variabilité salariale au sein de chaque service : une boîte ou des moustaches plus longues indiquent une plus grande variabilité.")
-    st.markdown(" Valeurs aberrantes : le box plot du services Ventes nous aide à identifier des salaires individuels qui se situent bien en dehors de l'échelle salariale typique. Ils sont repésentés par 3 points individuels (20.70 k€, 30.19 k€ et 88.29 k€).")
+    # Explanation
+    with st.expander("🔮Interpretation des 3 box plot"):
+        st.write("""
+    La boîte représente l'écart interquartile (IQR) des salaires au sein de chaque service. Les bords inférieur (q1) et supérieur (q3) de la boîte correspondent respectivement aux 25e et 75e centiles. Cela nous indique où se situent 50% des salaires au sein de chaque service.
+    
+    La ligne à l'intérieur de la boîte représente le salaire médian pour chaque service. C'est la valeur salariale qui sépare les 50 % inférieurs des 50 % supérieurs.
+    
+    Les moustaches s'étendent de la boîte jusqu'aux valeurs minimales et maximales dans une plage de 1,5 fois l'IQR. Tous les points de données au-delà des moustaches sont considérés comme des valeurs aberrantes et sont affichés sous forme de points individuels.
+    
+    Comparaison des salaires : nous pouvons facilement comparer les répartitions salariales entre les 3 services RH, Ventes & IT. Par exemple, l'IT a le salaire médian le plus élevé (66.19 k€), suivi des Ventes (59.77 k€) et des RH (47.66 k€).
+    
+    Variabilité : La longueur de la boîte et des moustaches peuvent nous donner une idée de la variabilité salariale au sein de chaque service : une boîte ou des moustaches plus longues indiquent une plus grande variabilité.
+    
+    Valeurs aberrantes : le box plot du services Ventes nous aide à identifier des salaires individuels qui se situent bien en dehors de l'échelle salariale typique. Ils sont repésentés par 3 points individuels (20.70 k€, 30.19 k€ et 88.29 k€).
+    """
 
 
     st.markdown("")
@@ -894,14 +905,19 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Show the plot in Streamlit
     st.plotly_chart(fig)
 
-
-    st.markdown("**🔮Interpretation du graphique linéaire**")
-
-    st.markdown("Axe des x (Mois) : L'axe des X représente les mois de l'année, fournissant une dimension temporelle pour nos données.")
-    st.markdown("Axe des y (salaire total) : L'axe des y représente le total des salaires payés par l'entreprise en milliers d'euros pour chaque mois.")
-    st.markdown("Lignes par année : le graphique linéaire montre trois lignes, chacune d'une couleur différente, représentant les années 2020, 2021 et 2022. Ces lignes relient les points de données pour chaque mois, nous permettant d'observer les tendances au fil du temps.")
-    st.markdown("Tendances au fil du temps : nous pouvons voir comment les salaires mensuels totaux ont augmenté au cours des trois années. Ce qui peut être lié aux effectifs, à la structure de la masse salariale (effectifs par catégories de salariés), à l’ancienneté, à la législation, etc...")
-    st.markdown("Modèles saisonniers : On observons une saisonnalité car les salaires ont tendance à être bien plus élevés aux mois de mai et décembre, ce qui peut corrrespondre aux versements de primes (vacances, fin d'année, etc...)")
+    # Explanation
+    with st.expander("🔮Interpretation du graphique linéaire"):
+        st.write("""
+    Axe des x (Mois) : L'axe des X représente les mois de l'année, fournissant une dimension temporelle pour nos données.
+    
+    Axe des y (salaire total) : L'axe des y représente le total des salaires payés par l'entreprise en milliers d'euros pour chaque mois.
+    
+    Lignes par année : le graphique linéaire montre trois lignes, chacune d'une couleur différente, représentant les années 2020, 2021 et 2022. Ces lignes relient les points de données pour chaque mois, nous permettant d'observer les tendances au fil du temps.
+    
+    Tendances au fil du temps : nous pouvons voir comment les salaires mensuels totaux ont augmenté au cours des trois années. Ce qui peut être lié aux effectifs, à la structure de la masse salariale (effectifs par catégories de salariés), à l’ancienneté, à la législation, etc...
+    
+    Modèles saisonniers : On observons une saisonnalité car les salaires ont tendance à être bien plus élevés aux mois de mai et décembre, ce qui peut corrrespondre aux versements de primes (vacances, fin d'année, etc...)
+    """)
 
 
     st.markdown("")
@@ -957,24 +973,29 @@ if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**")
 # Show the plot in Streamlit
     st.plotly_chart(fig)
 
-
-    st.markdown("**🔮Interpretation du nuage de points**")
-
-    st.markdown("Axe des x : L'axe des x représente le nombre d'heures de formation suivies par chaque employé.")
-    st.markdown("Axe des y : L'axe des y représente les scores de performance des employés.")
-    st.markdown("Points de dispersion : chaque point de données sur le tracé représente un employé. La position du point indique leurs heures de formation et leur score de performance.")
-    st.markdown("Droite de régression linéaire : c'est la ligne la mieux adaptée qui décrit la relation entre les heures de formation et les scores de performance. Elle peut nous aider à identifier les tendances dans les données.")
-    st.markdown("Coefficient R² : Il quantifie dans quelle mesure la ligne de régression linéaire s'adapte aux données. Il mesure la force de la relation entre les deux variables.")
-    st.write("""
+    # Explanation
+    with st.expander("🔮Interpretation du nuage de points"):
+        st.write("""
+    Axe des x : L'axe des x représente le nombre d'heures de formation suivies par chaque employé.
+    
+    Axe des y : L'axe des y représente les scores de performance des employés.
+    
+    Points de dispersion : chaque point de données sur le tracé représente un employé. La position du point indique leurs heures de formation et leur score de performance.
+    
+    Droite de régression linéaire : c'est la ligne la mieux adaptée qui décrit la relation entre les heures de formation et les scores de performance. Elle peut nous aider à identifier les tendances dans les données.
+    
+    Coefficient R² : Il quantifie dans quelle mesure la ligne de régression linéaire s'adapte aux données. Il mesure la force de la relation entre les deux variables.
+    
     R² va de 0 à 1, où :
 
-    R² = 0 : Le modèle n'explique aucune variabilité de la variable dépendante
+    1. R² = 0 : Le modèle n'explique aucune variabilité de la variable dépendante
 
-    R² = 1 : Le modèle explique parfaitement la variabilité de la variable dépendante
-    """)
+    2. R² = 1 : Le modèle explique parfaitement la variabilité de la variable dépendante
+ 
+    Dans notre cas, la valeur R² est de 0,018599, ce qui est assez faible. Cela suggère que seule une petite fraction (environ 1,86 %) de la variabilité des scores de performance peut être expliquée par le nombre d’heures de formation suivies.
     
-    st.markdown("Dans notre cas, la valeur R² est de 0,018599, ce qui est assez faible. Cela suggère que seule une petite fraction (environ 1,86 %) de la variabilité des scores de performance peut être expliquée par le nombre d’heures de formation suivies.") 
-    st.markdown("En d’autres termes, la relation linéaire entre les heures de formation et les scores de performance est faible. Cela indique que d'autres facteurs non inclus dans cette analyse peuvent avoir un impact plus important sur les scores de performance.")
+    En d’autres termes, la relation linéaire entre les heures de formation et les scores de performance est faible. Cela indique que d'autres facteurs non inclus dans cette analyse peuvent avoir un impact plus important sur les scores de performance.
+    """)
     
 
     st.markdown("")
