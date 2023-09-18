@@ -52,4 +52,27 @@ fig.update_yaxes(title_text='Department')
 st.plotly_chart(fig)
 
 
+ st.markdown("")
+
+
+def redirect_button(url: str, text: str= None, color="#FD504D"):
+    st.markdown(
+    f"""
+    <a href="{url}" target="_blank">
+        <div style="
+            display: inline-block;
+            padding: 0.5em 1em;
+            color: #FFFFFF;
+            background-color: {color};
+            border-radius: 3px;
+            text-decoration: none;">
+            {text}
+        </div
+    </a>
+    """,
+    unsafe_allow_html=True
+    )
+redirect_button("https://cours-stats-rh.streamlit.app/Quiz_2_-_Statistiques_descriptives📉","Quiz du chapitre 2")
+
+
 
