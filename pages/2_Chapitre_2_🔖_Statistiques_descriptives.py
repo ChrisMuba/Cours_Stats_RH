@@ -618,7 +618,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit√
    """)
 
 
-   st.markdown("")
+    st.markdown("")
 
 
 if st.button("Continuer vers la suite du Chap.2 - **C/ Techniques graphiques**"):
