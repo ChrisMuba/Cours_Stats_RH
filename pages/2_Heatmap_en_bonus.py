@@ -1,5 +1,4 @@
 
-st.markdown("")
 
 
 st.markdown("- **Cartes thermiques** : Une carte thermique est une visualisation utilisée pour présenter de grands ensembles de données avec des valeurs d'intensité codées par couleur.")
