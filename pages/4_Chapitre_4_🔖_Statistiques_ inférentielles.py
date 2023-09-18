@@ -15,7 +15,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.subheader("📈Chap.4-A/ Estimation📉")
     
-    st.markdown("Les **statistiques inférentielles** sont un outil puissant qui permet de **faire des inférences et de tirer des conclusions sur une population à partir d'un échantillon**.")
+    st.markdown("Les **statistiques inférentielles** sont un outil puissant qui permet de **faire des déductions et de tirer des conclusions sur une population à partir d'un échantillon de données**.")
     
     st.markdown("- **L'estimation** est le processus qui permet d'estimer un paramètre de la population (par exemple, la moyenne, la proportion) sur la base d'un échantillon.")
     
