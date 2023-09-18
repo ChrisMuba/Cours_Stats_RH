@@ -460,7 +460,7 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
 
 
     st.write("""
-    - Pour l'\employé 1 : (1 − 5.5)² = 20.25  
+       - Pour l'\employé 1 : (1 − 5.5)² = 20.25  
     - Pour l'employé 2 : (3 − 5.5)² = 6.25 
     - Pour l'employé 3 : (4 − 5.5)² = 2.25
     - Pour l'employé 4 : (7 − 5.5)² = 2.25
