@@ -30,6 +30,10 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.markdown("💡**Un échantillon, en revanche, est un sous-ensemble de la population que nous sélectionnons pour analyser et tirer des conclusions**.") 
     st.markdown("En RH, un échantillon peut être un groupe d'employés qui ont été sélectionnés pour une enquête, un programme de formation, une évaluation des performances, etc...")
+
+
+    st.markdown("")
+    
     
     st.markdown("- **L'estimation** est le processus qui permet d'estimer un paramètre de la population (par exemple, la moyenne, la proportion, etc...) sur la base d'un échantillon.")
     
