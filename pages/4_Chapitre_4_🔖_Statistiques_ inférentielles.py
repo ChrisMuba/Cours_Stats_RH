@@ -21,6 +21,8 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
     st.markdown("💡En statistiques inférentielles, une **population fait référence à l'ensemble du groupe d'individus (ou de points de donnée) que nous souhaitons étudier**.") 
     st.markdown("Dans le contexte des RH, la population peut être constituée de tous les employés d'une entreprise, d'un service spécifique, d'une fonction particulière, etc...")
+
+    st.markdown("")
     
     st.markdown("💡**Un échantillon, en revanche, est un sous-ensemble de la population que nous sélectionnons pour analyser et tirer des conclusions**.") 
     st.markdown("En RH, un échantillon peut être un groupe d'employés qui ont été sélectionnés pour une enquête, un programme de formation, une évaluation des performances, etc...")
