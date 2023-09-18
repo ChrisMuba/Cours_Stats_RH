@@ -17,7 +17,11 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.markdown("Les **statistiques inférentielles** sont un outil puissant qui permet de **faire des déductions et de tirer des conclusions sur une population à partir d'un échantillon de données**.")
 
+    st.markdown("")
+
     st.markdown("Définissons **Population** et **Échantillon** :")
+
+    st.markdown("")
 
     st.markdown("💡En statistiques inférentielles, une **population fait référence à l'ensemble du groupe d'individus (ou de points de donnée) que nous souhaitons étudier**.") 
     st.markdown("Dans le contexte des RH, la population peut être constituée de tous les employés d'une entreprise, d'un service spécifique, d'une fonction particulière, etc...")
