@@ -6,7 +6,7 @@ import streamlit as st
 st.markdown("# Chapitre 4")
 st.sidebar.markdown("# Chapitre 4")
 
-st.title("Statistiques inférentielles : estimation et test d'hypothèses")
+st.title("Statistiques inférentielles : estimation et tests d'hypothèses")
 
 st.markdown("Dans ce chapitre, nous explorerons deux concepts fondamentaux des statistiques inférentielles : **l'estimation et les tests d'hypothèses**. Nous aborderons également certains tests couramment utilisés tels que les **test t, test du chi carré et l'ANOVA**.")
 
