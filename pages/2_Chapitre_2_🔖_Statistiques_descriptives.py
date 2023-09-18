@@ -74,25 +74,14 @@ if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale
 
     with st.expander("🔮Interpretation de l'histogramme de la distribution des salaires"):
         st.write("""
-        The chart above shows some numbers I picked for you.
-        I rolled actual dice for these, so they're *guaranteed* to
-        be random.
+        L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
+        La plupart des salaires se situent dans la fourchette de **55 000 € à 65 000 €**, cette catégorie ayant la fréquence la plus élevée.
+        Il n'y a pas de salaires inférieurs à 55 000 € ou supérieurs à 75 000 dans cet ensemble de données.
+        La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian (environ 60 500 €).
         """)
     
 
     st.markdown("")
-
-
-    st.markdown("**🔮Interpretation de l'histogramme de la distribution des salaires**")
-
-
-    st.markdown("L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.")
-
-    st.markdown("La plupart des salaires se situent dans la fourchette de **55 000 € à 65 000 €**, cette catégorie ayant la fréquence la plus élevée.")
-
-    st.markdown("Il n'y a pas de salaires inférieurs à 55 000 € ou supérieurs à 75 000 dans cet ensemble de données.")
-
-    st.markdown("La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian (environ 60 500 €).")
 
 
     st.markdown("")
