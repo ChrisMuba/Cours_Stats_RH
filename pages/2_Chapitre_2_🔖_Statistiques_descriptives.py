@@ -491,12 +491,13 @@ if st.button("Continuer vers la suite du Chap.2 - **B/ Mesures de la variabilit�
     # Display
     st.latex(r'Variance (\sigma^2) = \frac{\sum_{i=1}^{n}(X_i - \mu)^2}{N} = \frac{82.25​}{10} = 8.225')
     
-
 # Explanation
-    st.markdown("**🔮Interpretation de la variance**")
-    st.write("""
+    with st.expander("🔮Interpretation de la variance"):
+        st.write("""
     En statistiques, il n'existe pas de valeurs seuil fixes et universellement applicables pour déterminer ce qui constitue une variance faible ou élevée, car cela dépend du contexte des données et des objectifs spécifiques. 
+    
     **Cependant, il existe quelques lignes directrices et approches générales que nous pouvons utiliser pour prendre cette décision :** 
+    
     1. Comparez la valeur de la variance aux variances d'ensembles de données RH similaires des années antérieures, ou au sein d'organisation ou de services similaires.
     
     2. Utiliser des tests statistiques pour déterminer si la variance est statistiquement significative. Par exemple, on peut effectuer un test d'hypothèse pour comparer la variance de notre ensemble de données à une valeur hypothétique ou à la variance d'un autre ensemble de données.
