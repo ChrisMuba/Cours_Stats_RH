@@ -32,6 +32,17 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.markdown("Il s'agit d'un sous-ensemble représentatif d'un groupe plus large, soigneusement choisi pour garantir qu'il reflète fidèlement la population.")
     st.markdown("En RH, un échantillon peut être un groupe d'employés qui ont été sélectionnés pour une enquête, un programme de formation, une évaluation des performances, etc...")
 
+    # Explanation
+    with st.expander("💡illustration des notions **Population** et **Échantillon**"):
+        st.write("""Disons que nous souhaitons comprendre l’ancienneté moyenne des salariés au sein d’une entreprise. La population serait constituée de tous les salariés qui travaillent pour l’entreprise, passés et présents. 
+        Cependant, il n'est pas possible de collecter des données sur chaque employé, c'est pourquoi nous sélectionnons un échantillon de 100 employés issus de différents services et niveaux de responsabilités.
+
+        En analysant les échantillons de données, nous pouvons faire des déductions sur la population, telles que l'ancienneté moyenne des employés au sein de l'entreprise, la répartition de l'ancienneté entre les différents services ou la relation entre l'ancienneté et la performance des employés.
+
+        📢L'échantillon doit être représentatif de la population, ce qui signifie qu'il doit refléter les caractéristiques de la population, telles que l'âge, le sexe, la fonction professionnelle et l'ancienneté. 
+        Cela garantit que les conclusions que nous tirons de l’échantillon sont exactes et fiables pour la population dans son ensemble.
+        """)
+
 
     st.markdown("")
     
