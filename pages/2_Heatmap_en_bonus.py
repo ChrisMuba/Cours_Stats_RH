@@ -52,7 +52,7 @@ fig.update_yaxes(title_text='Department')
 st.plotly_chart(fig)
 
 
- st.markdown("")
+st.markdown("")
 
 
 def redirect_button(url: str, text: str= None, color="#FD504D"):
