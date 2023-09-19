@@ -56,7 +56,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
     st.markdown("")
 
-
+    import streamlit as st
     import numpy as np
     
 # For reproducibility
@@ -72,6 +72,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample")
     fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
     fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+    st.plotly_chart(fig)
 
 
 
@@ -88,7 +89,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.markdown("")
 
-
+    import streamlit as st
     from scipy.stats import t
 
     confidence_level = 0.95
@@ -119,6 +120,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
         bgcolor="green",
         font=dict(color="white"),
    )
+    st.plotly_chart(fig)
 
 
     
