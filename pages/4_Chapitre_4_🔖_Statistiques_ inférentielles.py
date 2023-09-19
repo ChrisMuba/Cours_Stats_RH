@@ -55,6 +55,28 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
 
     st.markdown("")
+
+
+    import numpy as np
+    
+# For reproducibility
+    np.random.seed(42)  
+    
+# Mean: 8 years, Standard Deviation: 2 years
+    sample_experience = np.random.normal(8, 2, 50) 
+
+    point_estimate = np.mean(sample_experience)
+
+    import plotly.express as px
+
+    fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample")
+    fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
+    fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+
+
+
+    
+
     
     
     st.markdown("- **L'estimation par intervalle**, d'autre part, fournit une une plage de valeurs plausibles à l'intérieur de laquelle le paramètre de population est susceptible de se situer ; ainsi qu'un niveau de confiance (par exemple 95 %).") 
@@ -65,6 +87,40 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
     
     st.markdown("")
+
+
+   from scipy.stats import t
+
+   confidence_level = 0.95
+   sample_size = len(sample_experience)
+   standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
+   margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
+
+   confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
+
+   fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
+   fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
+   fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+   fig.add_shape(
+       type="line",
+       x0=confidence_interval[0],
+       x1=confidence_interval[1],
+       y0=0,
+       y1=1,
+       line=dict(color="green", width=3),
+       opacity=0.7,
+       layer="below"
+   )
+   fig.add_annotation(
+       x=confidence_interval[0] + 0.2,
+       y=0.05,
+       text=f"{confidence_level*100}% Confidence Interval\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
+       showarrow=False,
+       bgcolor="green",
+       font=dict(color="white"),
+  )
+
+
     
 
 if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
