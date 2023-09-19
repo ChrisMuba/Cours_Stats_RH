@@ -89,27 +89,27 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.markdown("")
 
 
-   from scipy.stats import t
+    from scipy.stats import t
 
-   confidence_level = 0.95
-   sample_size = len(sample_experience)
-   standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
-   margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
+    confidence_level = 0.95
+    sample_size = len(sample_experience)
+    standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
+    margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
 
-   confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
+    confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
 
-   fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
-   fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
-   fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
-   fig.add_shape(
-       type="line",
-       x0=confidence_interval[0],
-       x1=confidence_interval[1],
-       y0=0,
-       y1=1,
-       line=dict(color="green", width=3),
-       opacity=0.7,
-       layer="below"
+    fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
+    fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
+    fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+    fig.add_shape(
+        type="line",
+        x0=confidence_interval[0],
+        x1=confidence_interval[1],
+        y0=0,
+        y1=1,
+        line=dict(color="green", width=3),
+        opacity=0.7,
+        layer="below"
    )
    fig.add_annotation(
        x=confidence_interval[0] + 0.2,
