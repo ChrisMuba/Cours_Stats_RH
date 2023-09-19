@@ -76,9 +76,9 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     point_estimate = np.mean(sample_experience)
 
 #Step 3: Visualization. Let's create a histogram to visualize the distribution of years of experience in the sample and mark the point estimate on the plot.
-    fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample")
-    fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
-    fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+    fig = px.histogram(sample_experience, title="Répartition des années d'\expérience dans l'échantillon")
+    fig.update_layout(xaxis_title="Années d\'experience", yaxis_title="Frequence")
+    fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Estimation ponctuelle: {point_estimate:.2f}", annotation_position="top left")
 
 # Display the figure in Streamlit
     st.plotly_chart(fig)
