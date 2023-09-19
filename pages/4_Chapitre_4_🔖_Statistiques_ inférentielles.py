@@ -51,7 +51,8 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.markdown("- **L'estimation ponctuelle** consiste à estimer une valeur unique pour un paramètre de population sur la base d'un échantillon de données.") 
     st.markdown("")
     
-    st.markdown("🏀**Application 14** : Par exemple, on peut utiliser la moyenne de l’échantillon des scores de satisfaction des employés pour estimer le niveau de satisfaction global au sein de l’entreprise.")
+    st.markdown("🏀**Application 14** : Le service RH souhaite estimer le nombre moyen d'années d'expérience des employés dans leur entreprise, sur la base d'un échantillon de données.")
+    st.markdown("Ci-dessous l'histogramme des données représentant les années d'expérience pour un échantillon aléatoire de 50 employés.)
 
 
     st.markdown("")
