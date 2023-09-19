@@ -136,7 +136,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     fig.add_annotation(
         x=confidence_interval[0] + 0.2,
         y=0.05,
-        text=f"{confidence_level*100}% Interval de confiance\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
+        text=f"{confidence_level*100}% Intervalle de confiance\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
         showarrow=False,
         bgcolor="green",
         font=dict(color="white"),
