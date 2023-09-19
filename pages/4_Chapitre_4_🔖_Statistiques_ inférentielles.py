@@ -150,11 +150,11 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 # Scenario: Continuing from the previous example, HR professionals want to calculate a 95% confidence interval for the average years of experience in the organization.
 
 #Step 1: Calculate Confidence Interval
-   confidence_level = 0.95
-   sample_size = len(sample_experience)
-   standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
-   margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
-   confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
+    confidence_level = 0.95
+    sample_size = len(sample_experience)
+    standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
+    margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
+    confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
 
 #Step 2: Visualization
    fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
