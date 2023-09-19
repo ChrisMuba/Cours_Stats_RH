@@ -110,7 +110,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
         line=dict(color="green", width=3),
         opacity=0.7,
         layer="below"
-   )
+)
    fig.add_annotation(
        x=confidence_interval[0] + 0.2,
        y=0.05,
@@ -118,7 +118,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
        showarrow=False,
        bgcolor="green",
        font=dict(color="white"),
-  )
+)
 
 
     
