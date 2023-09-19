@@ -180,7 +180,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
   )
 
 # Display the figure in Streamlit
-   st.plotly_chart(fig)
+    st.plotly_chart(fig)
 
 
 
