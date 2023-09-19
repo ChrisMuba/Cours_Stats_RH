@@ -57,9 +57,10 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.markdown("")
     
     
-    st.markdown("- **L'estimation par intervalle**, d'autre part, fournit une gamme de valeurs plausibles pour le paramètre de population. Cette plage est appelée **intervalle de confiance**. **Les intervalles de confiance** nous **aident à comprendre l'incertitude associée à notre estimation**.")
+    st.markdown("- **L'estimation par intervalle**, d'autre part, fournit une une plage de valeurs plausibles à l'intérieur de laquelle le paramètre de population est susceptible de se situer, ainsi qu'un niveau de confiance (par exemple, 95 %). 
+    st.markdown("Cette plage de valeurs plausibles est appelée **intervalle de confiance**. L'estimation par intervalles est plus informative que l'estimation ponctuelle, car elle tient compte de l'incertitude associée à l'utilisation d'un échantillon pour estimer un paramètre de population.")
     st.markdown("")
-    
+
     st.markdown("🏀**Application 15** : En utilisant le même exemple que ci-dessus, si nous calculons un intervalle de confiance à 95 % pour le salaire moyen et que nous trouvons qu'il est de 48 000 € à 52 000 €, cela signifie que nous sommes sûrs à 95 % que le salaire moyen réel de la population se situe dans cette fourchette.")           
 
     
