@@ -84,6 +84,15 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     st.plotly_chart(fig)
 
 
+# Explanation
+    with st.expander("🔮Interpretation de l'histogramme SANS intervalle de confiance"):
+        st.write("""
+        Dans cet exemple, nous avons utilisé l'estimation ponctuelle pour estimer le nombre d'années d'expérience en moyenne dans l'entreprise. Notre estimation ponctuelle, basée sur un échantillon de 50 employés, est d'environ 7,55 ans (ligne rouge sur l'histogramme). 
+        
+        Cela signifie que nous estimons qu'en moyenne, les employés de l'entreprise ont environ 7,55 années d'expérience. Cependant, il ne s’agit que d’une valeur unique et elle ne nous fournit pas d’informations sur l’incertitude associée à cette estimation.
+        """)
+
+
     st.markdown("")
     
 
