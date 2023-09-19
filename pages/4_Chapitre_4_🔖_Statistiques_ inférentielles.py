@@ -157,27 +157,27 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
 
 #Step 2: Visualization
-   fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
-   fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
-   fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
-   fig.add_shape(
-       type="line",
-       x0=confidence_interval[0],
-       x1=confidence_interval[1],
-       y0=0,
-       y1=1,
-       line=dict(color="green", width=3),
-       opacity=0.7,
-       layer="below"
+    fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
+    fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
+    fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+    fig.add_shape(
+        type="line",
+        x0=confidence_interval[0],
+        x1=confidence_interval[1],
+        y0=0,
+        y1=1,
+        line=dict(color="green", width=3),
+        opacity=0.7,
+        layer="below"
+   )
+  fig.add_annotation(
+      x=confidence_interval[0] + 0.2,
+      y=0.05,
+      text=f"{confidence_level*100}% Confidence Interval\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
+      showarrow=False,
+      bgcolor="green",
+      font=dict(color="white"),
   )
- fig.add_annotation(
-    x=confidence_interval[0] + 0.2,
-    y=0.05,
-    text=f"{confidence_level*100}% Confidence Interval\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
-    showarrow=False,
-    bgcolor="green",
-    font=dict(color="white"),
- )
 
 # Display the figure in Streamlit
  st.plotly_chart(fig)
