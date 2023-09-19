@@ -55,31 +55,37 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
 
     st.markdown("")
+    
 
-    import streamlit as st
+#Example 1: Point Estimation
+# Step 1: Sample Data. We'll start by generating some sample data representing years of experience for a random sample of 50 employees.
+
     import numpy as np
+    import plotly.express as px
+    import streamlit as st
+    from scipy.stats import t
     
 # For reproducibility
     np.random.seed(42)  
     
 # Mean: 8 years, Standard Deviation: 2 years
     sample_experience = np.random.normal(8, 2, 50) 
-
+    
+#Step 2: Calculate Point Estimate. We'll calculate the point estimate, which is simply the sample mean.
     point_estimate = np.mean(sample_experience)
 
-    import plotly.express as px
-
+#Step 3: Visualization. Let's create a histogram to visualize the distribution of years of experience in the sample and mark the point estimate on the plot.
     fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample")
     fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
     fig.add_vline(x=point_estimate, line_dash="dash", line_color="red", annotation_text=f"Point Estimate: {point_estimate:.2f}", annotation_position="top left")
+
+# Display the figure in Streamlit
     st.plotly_chart(fig)
 
 
-
+    st.markdown("")
     
 
-    
-    
     st.markdown("- **L'estimation par intervalle**, d'autre part, fournit une une plage de valeurs plausibles à l'intérieur de laquelle le paramètre de population est susceptible de se situer ; ainsi qu'un niveau de confiance (par exemple 95 %).") 
     st.markdown("Cette plage de valeurs plausibles est appelée **intervalle de confiance**. L'estimation par intervalles est plus informative que l'estimation ponctuelle, car elle tient compte de l'incertitude associée à l'utilisation d'un échantillon pour estimer un paramètre de population.")
     st.markdown("")
@@ -89,15 +95,19 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
     
     st.markdown("")
 
-    import streamlit as st
-    from scipy.stats import t
+    
+#Example 2: Interval Estimation
+# Scenario: Continuing from the previous example, HR professionals want to calculate a 95% confidence interval for the average years of experience in the organization.
 
+#Step 1: Calculate Confidence Interval
+    
     confidence_level = 0.95
     sample_size = len(sample_experience)
     standard_error = np.std(sample_experience, ddof=1) / np.sqrt(sample_size)
     margin_of_error = t.ppf((1 + confidence_level) / 2, sample_size - 1) * standard_error
-
     confidence_interval = (point_estimate - margin_of_error, point_estimate + margin_of_error)
+
+#Step 2: Visualization
 
     fig = px.histogram(sample_experience, title="Distribution of Years of Experience in the Sample with Confidence Interval")
     fig.update_layout(xaxis_title="Years of Experience", yaxis_title="Frequency")
@@ -120,7 +130,14 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
         bgcolor="green",
         font=dict(color="white"),
    )
+    
+# Display the figure in Streamlit
     st.plotly_chart(fig)
+
+
+    st.markdown("")
+
+    
 
 
 
