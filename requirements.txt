@@ -1,2 +1,4 @@
 plotly
 statsmodels
+numpy
+scipy.stats
