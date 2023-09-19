@@ -117,8 +117,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
        text=f"{confidence_level*100}% Confidence Interval\n({confidence_interval[0]:.2f}, {confidence_interval[1]:.2f})",
        showarrow=False,
        bgcolor="green",
-       font=dict(color="white"),
-)
+       font=dict(color="white")
 
 
     
