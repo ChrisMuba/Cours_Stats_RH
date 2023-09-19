@@ -151,7 +151,7 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
         st.write("""
         Dans cet exemple, nous avons utilisé l'estimation par intervalle pour calculer un intervalle de confiance de 95 % pour les années d'expérience moyennes dans l'entreprise.
 
-        L'intervalle de confiance, basé sur notre échantillon, est d'environ [7.02 ; 8.08] ans (surlignage vert). Cela signifie que nous sommes sûrs à 95 % que le nombre moyen d'années d'expérience dans l'entreprise situe dans cette fourchette.
+        L'intervalle de confiance (surlignage vert), basé sur notre échantillon, est d'environ [7.02 ; 8.08] ans. Cela signifie que nous sommes sûrs à 95 % que le nombre moyen d'années d'expérience dans l'entreprise situe dans cette fourchette.
         """)
 
 
