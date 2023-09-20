@@ -211,10 +211,13 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
     
-    st.markdown("- **Test t : il est utilisé pour comparer les moyennes entre deux groupes**. En RH, il peut être utilisé pour évaluer s'il existe une différence significative dans les salaires moyens entre les différents postes, services ou effectifs 👦🏾 et 👧.")
+    st.markdown("- **Test t : il est utilisé pour comparer les moyennes entre deux groupes** afin de déterminer s’il existe une différence significative entre eux.)
+    
+    st.markdown("En RH, **les tests t** peuvent être utilisés pour comparer les performances de deux programmes de formation différents, les niveaux de satisfaction au travail des employés de différents services, pour évaluer s'il existe une différence significative dans les salaires moyens entre les différents postes, services ou effectifs 👦🏾 et 👧.")
+                
     st.markdown("")
     
-    st.markdown("🏀**Application 17** : Un contrôleur de gestion sociale peut aussi effectuer un **test t** pour déterminer s'il existe une différence significative dans les notes de performance moyennes entre les employés qui ont suivi un programme de formation interne et ceux qui ne l'ont pas fait.")
+    st.markdown("🏀**Application 17** : Un HR data analyst peut effectuer un **test t** pour déterminer s'il existe une différence significative dans les notes de performance moyennes entre les employés qui ont suivi un programme de formation interne et ceux qui ne l'ont pas fait.")
 
 
     st.markdown("")
