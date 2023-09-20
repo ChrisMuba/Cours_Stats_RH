@@ -169,16 +169,18 @@ if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
     st.markdown("")
     
     st.markdown("Étapes du test d'hypothèse :")
+
+    st.markdown("")
     
     st.markdown("a. Formuler **l\'hypothèse nulle (H0)** et **l\'hypothèse alternative (H1)**")
     
-    st.markdown("b. **Choisissez un niveau de significativité** (α : alpha), qui représente la **probabilité de rejeter** l'hypothèse nulle lorsqu'elle est vraie (seuil de rejet de l'hypothèse nulle.")
+    st.markdown("b. **Choisissez un niveau de significativité (α : alpha)**, qui représente la **probabilité de rejeter** l'hypothèse nulle lorsqu'elle est vraie (seuil de rejet de l'hypothèse nulle).")
     
     st.markdown("c. **Recueillir des échantillons de données** et **calculer** la statistique de test appropriée")
     
     st.markdown("d. Déterminer la valeur critique (**p-value**) pour prendre une décision concernant l'hypothèse nulle")
     
-    st.markdown("e. **Comparez la statistique du test à la **p-value** et **prenez la décision d'accepter ou de rejeter** l'hypothèse nulle **H0**.")
+    st.markdown("e. Comparez la statistique du test à la **p-value** et **prenez la décision d'accepter ou de rejeter** l'hypothèse nulle **H0**.")
     
     st.markdown("f. **Tirer des conclusions basées sur la décision et interpréter les résultats**")
     
