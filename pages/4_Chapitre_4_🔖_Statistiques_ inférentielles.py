@@ -391,7 +391,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.markdown("")
 
 
-    st.markdown("🏀**Application 19** : Un contrôleur de gestion sociale peut utiliser **l'ANOVA** pour rechercher s'il existe des différences significatives dans les heures d'absences des employés entre les différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+). Cette analyse peut donner un aperçu de la nécessité de stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
+    st.markdown("🏀**Application 19** : La Mairie de *Mont-Crack-en-Parisis* souhaite développer des stratégies ciblées pour améliorer l'engagement et le climat social des équipes. Elle demande à son contrôleur de gestion RH de rechercher s'il existe des différences significatives dans les heures d'absences des agents des différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+).") 
+    st.markdown("Cette analyse pourra soutenir des stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
 
     import streamlit as st
     import pandas as pd
