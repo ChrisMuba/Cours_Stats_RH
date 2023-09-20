@@ -260,8 +260,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Compare p-value to α
     st.write(f"Niveau de significativité (α): {alpha}")
-    st.write(f"Statistique du test: {t_statistic}")
-    st.write(f"P-Value: {p_value}")
+    st.write(f"Statistique du test: {t_statistic:.3f}") # Display t_statistic with 3 decimal places
+    st.write(f"P-Value: {p_value:.3f}")  # Display p-value with 3 decimal places
 
     if p_value < alpha:
         st.write("Résultat : Rejeter l'hypothèse nulle")
@@ -339,8 +339,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Compare p-value to α
     st.write(f"Niveau de significativité (α): {alpha}")
-    st.write(f"Statistique du chi carré: {chi2}")
-    st.write(f"P-Value: {p_value}")
+    st.write(f"Statistique du chi carré: {chi2:.3f}")  # Display chi-square statistic with 3 decimal places}")
+    st.write(f"P-Value: {p_value:.3f}")  # Display p-value with 3 decimal places}")
 
     if p_value < alpha:
         st.write("Résultat : Rejeter l'hypothèse nulle")
