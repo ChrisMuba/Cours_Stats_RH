@@ -160,25 +160,28 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
 
 if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
     
-    st.subheader("📈Chap.4-B/ Tests d'hypothèses📉")
+    st.subheader("📈Chap.4-B/ Test d'hypothèse : concepts et étapes📉")
     
-    st.markdown("Le test d'hypothèse est un **cadre permettant de prendre des décisions** ou de **tirer des conclusions** sur une population **sur la base de données** d'échantillon. Il s'agit de mettre en place une **hypothèse nulle (H0)** et une **hypothèse alternative (H1)**.") 
+    st.markdown("Le test d'hypothèse est un une **méthode statistique utilisée pour tester la validité d'une affirmation ou d'une hypothèse concernant une population** sur la base d'un échantillon de données.")
     
-    st.markdown("**L'hypothèse nulle** représente le statut quo : **c'est l'hypothèse que nous voulons tester**, tandis que **l'hypothèse alternative suggère une explication ou un effet alternatif**.")
+    st.markdown("En RH, les tests d'hypothèses peuvent être utilisés pour évaluer l'efficacité des interventions, comparer différents groupes ou évaluer les relations entre les variables.")
+    
+    st.markdown("")
     
     st.markdown("Étapes du test d'hypothèse :")
     
-    st.markdown("a. **Énoncez les hypothèses nulle** et **alternative**")
+    st.markdown("a. Formuler **l\'hypothèse nulle (H0)** et **l\'hypothèse alternative (H1)**")
     
-    st.markdown("b. **Définissez le niveau de signification souhaité** (α : alpha) **qui détermine le seuil de rejet** de l'hypothèse nulle")
+    st.markdown("b. **Choisissez un niveau de significativité** (α : alpha), qui représente la **probabilité de rejeter** l'hypothèse nulle lorsqu'elle est vraie (seuil de rejet de l'hypothèse nulle.")
     
     st.markdown("c. **Recueillir des échantillons de données** et **calculer** la statistique de test appropriée")
     
-    st.markdown("d. **Déterminez la région critique ou la région de rejet** en fonction de la statistique de test et de l'alpha")
+    st.markdown("d. Déterminer la valeur critique (**p-value**) pour prendre une décision concernant l'hypothèse nulle")
     
-    st.markdown("e. **Comparez la statistique de test à la région critique** et **décidez de rejeter ou non** l'hypothèse nulle")
+    st.markdown("e. **Comparez la statistique du test à la **p-value** et **prenez la décision d'accepter ou de rejeter** l'hypothèse nulle **H0**.")
     
     st.markdown("f. **Tirer des conclusions basées sur la décision et interpréter les résultats**")
+    
     st.markdown("")
     
     st.markdown("🏀**Application 16** : Supposons qu'un contrôleur de gestion sociale souhaite déterminer s'il existe un écart de rémunération entre les 👦🏾 et 👧 dans l'entreprise (l'écart de rémunération fait partie des indicateurs qui composent **l’index de l’égalité femmes-hommes**).") 
