@@ -294,16 +294,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.markdown("")
 
 
-    
-
-
-
-
-
-
-
-
-    
+    st.markdown("")
 
     
     st.markdown("- **Test du chi carré (Test du χ²) : ce test est utilisé pour déterminer s'il existe une association significative entre deux variables catégorielles**.") 
