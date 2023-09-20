@@ -403,58 +403,6 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 # Create sample data
     np.random.seed(42)
 
-# Generate performance ratings for three departments: A, B, and C
-    ratings_A = np.random.normal(75, 5, 50)
-    ratings_B = np.random.normal(80, 5, 50)
-    ratings_C = np.random.normal(85, 5, 50)
-
-    data = pd.DataFrame({
-         'Department': np.repeat(['A', 'B', 'C'], 50),
-         'Performance_Rating': np.concatenate([ratings_A, ratings_B, ratings_C])
-    })
-
-# Display the data
-    st.write("Sample Data:")
-    st.write(data)
-
-# Conduct one-way ANOVA
-    st.subheader("Hypothesis Testing:")
-    st.write("Null Hypothesis (H0): There is no significant difference in performance ratings among the departments.")
-    st.write("Alternative Hypothesis (H1): There is a significant difference in performance ratings among the departments.")
-
-# Perform one-way ANOVA
-    f_statistic, p_value = stats.f_oneway(ratings_A, ratings_B, ratings_C)
-
-# Choose a significance level (α)
-    alpha = 0.05
-
-# Compare p-value to α
-    st.write(f"Significance Level (α): {alpha}")
-    st.write(f"F-Statistic: {f_statistic:.3f}")  # Display F-statistic with 3 decimal places
-    st.write(f"P-Value: {p_value:.3f}")  # Display p-value with 3 decimal places
-
-    if p_value < alpha:
-        st.write("Result: Reject the null hypothesis")
-    else:
-        st.write("Result: Fail to reject the null hypothesis")
-
-# Visualize the data
-    fig = px.box(data, x='Department', y='Performance_Rating')
-    fig.update_layout(title="Performance Ratings Across Departments")
-    st.plotly_chart(fig)
-
-
-
-
-    import streamlit as st
-    import pandas as pd
-    import numpy as np
-    import scipy.stats as stats
-    import plotly.express as px
-
-# Create sample data
-    np.random.seed(42)
-
 # Generate hours of absence for different age groups
     age_20_30 = np.random.normal(8, 2, 50)
     age_31_40 = np.random.normal(10, 2, 50)
@@ -462,8 +410,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     age_51_plus = np.random.normal(15, 2, 50)
 
     data = pd.DataFrame({
-         'Age_Group': np.repeat(['20-30', '31-40', '41-50', '51+'], 50),
-         'Hours_of_Absence': np.concatenate([age_20_30, age_31_40, age_41_50, age_51_plus])
+         'Groupe_Age': np.repeat(['20-30', '31-40', '41-50', '51+'], 50),
+         'Heures_Absences': np.concatenate([age_20_30, age_31_40, age_41_50, age_51_plus])
     })
 
 # Display the data
@@ -471,9 +419,9 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.write(data)
 
 # Conduct one-way ANOVA
-    st.subheader("Hypothesis Testing:")
-    st.write("Null Hypothesis (H0): There is no significant difference in hours of absence among different age groups.")
-    st.write("Alternative Hypothesis (H1): There is a significant difference in hours of absence among different age groups.")
+    st.subheader("Test d'hypothèse:")
+    st.write("Hypothèse nulle (H0) : Il n'y a pas de différence significative dans les heures d'absence entre les différents groupes d'âge.")
+    st.write("Hypothèse alternative (H1) : Il existe une différence significative dans les heures d'absence selon les différents groupes d'âge.")
 
 # Perform one-way ANOVA
     f_statistic, p_value = stats.f_oneway(age_20_30, age_31_40, age_41_50, age_51_plus)
@@ -482,19 +430,39 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     alpha = 0.05
 
 # Compare p-value to α
-    st.write(f"Significance Level (α): {alpha}")
-    st.write(f"F-Statistic: {f_statistic:.3f}")  # Display F-statistic with 3 decimal places
+    st.write(f"Niveau de significativité (α) :{alpha}")
+    st.write(f"Statistique F : {f_statistic:.3f}")  # Display F-statistic with 3 decimal places
     st.write(f"P-Value: {p_value:.3f}")  # Display p-value with 3 decimal places
 
     if p_value < alpha:
-        st.write("Result: Reject the null hypothesis")
+        st.write("Résultat : Rejeter l'hypothèse nulle")
     else:
-        st.write("Result: Fail to reject the null hypothesis")
+        st.write("Result: Résultat : ne pas rejeter l'hypothèse nulle")
 
 # Visualize the data
-    fig = px.box(data, x='Age_Group', y='Hours_of_Absence')
-    fig.update_layout(title="Hours of Absence Across Age Groups")
+    fig = px.box(data, x='Groupe_Age', y='Heures_Absences')
+    fig.update_layout(title="Heures d'absence selon les groupes d'âge")
     st.plotly_chart(fig)
+
+
+    # Explanation
+    with st.expander("🔮Explication"):
+        st.write("""
+        Nous commençons par generer un exemple d'ensemble de données avec deux variables catégorielles : le genre (H/F) et la promotion.
+
+        Nous formulons les hypothèses nulles et alternatives.
+
+        Nous créons un tableau de contingence pour résumer les données et calculer les fréquences observées.
+
+        Nous calculons la statistique du chi carré et la p-value à l'aide de stats.chi2_contingency (scipy.stats) pour évaluer l'association entre le genre et la promotion.
+        
+        Nous choisissons un niveau de significativité (α) de 0,05.
+
+        Nous comparons la p-value à α pour décider d'accepter ou de rejeter l'hypothèse nulle. 
+        
+        Enfin, nous visualisons le tableau de contingence et la relation entre le sexe et les taux de promotion à l'aide d'un graphique à barres groupées.
+        """)
+
 
 
 
