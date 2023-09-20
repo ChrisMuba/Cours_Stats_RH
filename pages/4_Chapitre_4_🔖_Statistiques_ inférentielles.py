@@ -357,7 +357,25 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.plotly_chart(fig)
 
 
+     # Explanation
+    with st.expander("🔮Explication"):
+        st.write("""
+        Nous commençons par generer un exemple d'ensemble de données avec deux variables catégorielles : le genre (H/F) et la promotion.
 
+        Nous formulons les hypothèses nulles et alternatives.
+
+        Nous créons un tableau de contingence pour résumer les données et calculer les fréquences observées.
+
+        Nous calculons la statistique du chi carré et la p-value à l'aide de stats.chi2_contingency (scipy.stats) pour évaluer l'association entre le genre et la promotion.
+        
+        Nous choisissons un niveau de significativité (α) de 0,05.
+
+        Nous comparons la p-value à α pour décider d'accepter ou de rejeter l'hypothèse nulle. 
+        
+        Enfin, nous visualisons le tableau de contingence et la relation entre le sexe et les taux de promotion à l'aide d'un graphique à barres groupées.
+        """)
+
+    
     st.markdown("")
 
     
