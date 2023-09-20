@@ -217,7 +217,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
                 
     st.markdown("")
     
-    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services d'un hôpital communal : Accueil des urgences adultes & Accueil des urgences enfants.")
+    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services d'un hôpital communal : Anesthésie & Gériatrie.")
     
     st.markdown("Les données brutes sont consignées dans le tableau ci-dessous : ")
 
@@ -234,7 +234,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 # Create sample data
     np.random.seed(42)
     data = pd.DataFrame({
-         'Service': np.random.choice(['Accueil_des_urgences_Adultes', 'Accueil_des_urgences_Enfants'], size=100),
+         'Service': np.random.choice(['Anesthésie', 'Gériatrie'], size=100),
          'Satisfaction_au_travail': np.random.randint(1, 11, size=100)
     })
 
@@ -244,12 +244,12 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Conduct a t-test
     st.subheader("Hypothesis Testing:")
-    department_a = data[data['Service'] == 'Accueil_des_urgences_Adultes']['Satisfaction_au_travail']
-    department_b = data[data['Service'] == 'Accueil_des_urgences_Enfants']['Satisfaction_au_travail']
+    department_a = data[data['Service'] == 'Anesthésie']['Satisfaction_au_travail']
+    department_b = data[data['Service'] == 'Gériatrie']['Satisfaction_au_travail']
 
 # Formulate the null and alternative hypotheses
-    st.write("Null Hypothesis (H0): There is no significant difference in job satisfaction levels between Service Accueil_des_urgences_Adultes and Department Accueil_des_urgences_Enfants.")
-    st.write("Alternative Hypothesis (H1): There is a significant difference in job satisfaction levels between Service Accueil_des_urgences_Adultes and Department Accueil_des_urgences_Enfants.")
+    st.write("Null Hypothesis (H0): There is no significant difference in job satisfaction levels between Service Anesthésie and Department Gériatrie.")
+    st.write("Alternative Hypothesis (H1): There is a significant difference in job satisfaction levels between Service Anesthésie and Department Gériatrie.")
 
 # Calculate the test statistic and p-value
     t_statistic, p_value = stats.ttest_ind(department_a, department_b)
