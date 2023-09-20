@@ -303,8 +303,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
     
-    st.markdown("🏀**Application 18** : Le contrôleur de gestion sociale de la communauté de communes de *Teuf-les-Bretagne* doit rendre son rapport d'évaluation de la relation entre le sexe et les taux de promotion au sein de l'administration.") 
-    st.markdown("Les données recueillies pour 200 agents sont consignées dans le tableau suivant : ")
+    st.markdown("🏀**Application 18** : Le contrôleur de gestion sociale de la communauté de communes de *Teuf-les-Bretagne* doit rendre son rapport d'évaluation de la relation entre le genre (H/F) et les taux de promotion au sein de l'administration.") 
+    st.markdown("Les données recueillies pour 200 agents (H/F) sont consignées dans le tableau suivant : ")
 
     import streamlit as st
     import pandas as pd
@@ -315,21 +315,21 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 # Create sample data
     np.random.seed(42)
     data = pd.DataFrame({
-        'Gender': np.random.choice(['Male', 'Female'], size=200),
-        'Promotion': np.random.choice(['Promoted', 'Not Promoted'], size=200)
+        'Genre': np.random.choice(['Homme', 'Femme'], size=200),
+        'Promotion': np.random.choice(['Promu', 'Non Promu'], size=200)
     })
 
 # Display the data
-    st.write("Sample Data:")
+    st.write("Données brutes:")
     st.write(data)
 
 # Create a contingency table
-    contingency_table = pd.crosstab(data['Gender'], data['Promotion'])
+    contingency_table = pd.crosstab(data['Genre'], data['Promotion'])
 
 # Conduct a chi-square test
-    st.subheader("Hypothesis Testing:")
-    st.write("Null Hypothesis (H0): There is no significant association between gender and promotion rates.")
-    st.write("Alternative Hypothesis (H1): There is a significant association between gender and promotion rates.")
+    st.subheader("Test d'hypothèse:")
+    st.write("Hypothèse nulle (H0) : Il n'y a pas d'association significative entre le genre et les taux de promotion.")
+    st.write("Hypothèse alternative (H1) : Il existe une association significative entre le genre et les taux de promotion.")
 
 # Calculate the chi-square statistic and p-value
     chi2, p_value, _, _ = stats.chi2_contingency(contingency_table)
@@ -338,21 +338,21 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     alpha = 0.05
 
 # Compare p-value to α
-    st.write(f"Significance Level (α): {alpha}")
-    st.write(f"Chi-square Statistic: {chi2}")
+    st.write(f"Niveau de significativité (α): {alpha}")
+    st.write(f"Statistique du chi carré: {chi2}")
     st.write(f"P-Value: {p_value}")
 
     if p_value < alpha:
-        st.write("Result: Reject the null hypothesis")
+        st.write("Résultat : Rejeter l'hypothèse nulle")
     else:
-        st.write("Result: Fail to reject the null hypothesis")
+        st.write("Résultat : Échec du rejet de l'hypothèse nulle")
 
 # Visualize the contingency table
-    st.subheader("Contingency Table:")
+    st.subheader("Table de contingence:")
     st.write(contingency_table)
 
 # Visualize the association between gender and promotion
-    fig = px.bar(data, x='Gender', color='Promotion', barmode='group')
+    fig = px.bar(data, x='Genre', color='Promotion', barmode='group')
     fig.update_layout(title="Relationship Between Gender and Promotion Rates")
     st.plotly_chart(fig)
 
