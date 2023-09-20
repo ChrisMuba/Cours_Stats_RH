@@ -198,7 +198,13 @@ if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
     
     st.markdown("- **l'hypothèse alternative (H1)** serait : **Il y a une différence significative dans les salaires moyens** entre les 👦🏾 et 👧")
 
+
+    st.markdown("")
+
+
 if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques communs**"):
+
+    st.markdown("Tests statistiques courants (test t, test du chi carré, ANOVA) : ")
     
     st.markdown("- **Test t : il est utilisé pour comparer les moyennes entre deux groupes**. En RH, il peut être utilisé pour évaluer s'il existe une différence significative dans les salaires moyens entre les différents postes, services ou effectifs 👦🏾 et 👧.")
     st.markdown("")
