@@ -393,6 +393,56 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("🏀**Application 19** : Un contrôleur de gestion sociale peut utiliser **l'ANOVA** pour rechercher s'il existe des différences significatives dans les heures d'absences des employés entre les différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+). Cette analyse peut donner un aperçu de la nécessité de stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
 
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import scipy.stats as stats
+    import plotly.express as px
+
+# Create sample data
+    np.random.seed(42)
+
+# Generate performance ratings for three departments: A, B, and C
+    ratings_A = np.random.normal(75, 5, 50)
+    ratings_B = np.random.normal(80, 5, 50)
+    ratings_C = np.random.normal(85, 5, 50)
+
+    data = pd.DataFrame({
+         'Department': np.repeat(['A', 'B', 'C'], 50),
+         'Performance_Rating': np.concatenate([ratings_A, ratings_B, ratings_C])
+    })
+
+# Display the data
+    st.write("Sample Data:")
+    st.write(data)
+
+# Conduct one-way ANOVA
+    st.subheader("Hypothesis Testing:")
+    st.write("Null Hypothesis (H0): There is no significant difference in performance ratings among the departments.")
+    st.write("Alternative Hypothesis (H1): There is a significant difference in performance ratings among the departments.")
+
+# Perform one-way ANOVA
+     f_statistic, p_value = stats.f_oneway(ratings_A, ratings_B, ratings_C)
+
+# Choose a significance level (α)
+    alpha = 0.05
+
+# Compare p-value to α
+    st.write(f"Significance Level (α): {alpha}")
+    st.write(f"F-Statistic: {f_statistic:.3f}")  # Display F-statistic with 3 decimal places
+    st.write(f"P-Value: {p_value:.3f}")  # Display p-value with 3 decimal places
+
+    if p_value < alpha:
+        st.write("Result: Reject the null hypothesis")
+    else:
+        st.write("Result: Fail to reject the null hypothesis")
+
+# Visualize the data
+    fig = px.box(data, x='Department', y='Performance_Rating')
+    fig.update_layout(title="Performance Ratings Across Departments")
+    st.plotly_chart(fig)
+
+
     
     st.markdown("")
 
