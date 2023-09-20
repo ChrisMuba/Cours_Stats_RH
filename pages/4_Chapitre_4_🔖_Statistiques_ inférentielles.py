@@ -182,7 +182,7 @@ if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
     
     st.markdown("e. Comparez la statistique du test à la **p-value** et **prenez la décision d'accepter ou de rejeter** l'hypothèse nulle **H0**.")
     
-    st.markdown("f. **Tirer des conclusions basées sur la décision et interpréter les résultats**")
+    st.markdown("f. **Tirer des conclusions basées sur la décision** et interpréter les résultats")
     
     st.markdown("")
     
