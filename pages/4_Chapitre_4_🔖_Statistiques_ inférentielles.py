@@ -422,7 +422,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.write("Alternative Hypothesis (H1): There is a significant difference in performance ratings among the departments.")
 
 # Perform one-way ANOVA
-     f_statistic, p_value = stats.f_oneway(ratings_A, ratings_B, ratings_C)
+    f_statistic, p_value = stats.f_oneway(ratings_A, ratings_B, ratings_C)
 
 # Choose a significance level (α)
     alpha = 0.05
