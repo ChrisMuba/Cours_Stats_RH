@@ -353,7 +353,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Visualize the association between gender and promotion
     fig = px.bar(data, x='Genre', color='Promotion', barmode='group')
-    fig.update_layout(title="Relationship Between Gender and Promotion Rates")
+    fig.update_layout(title="Relation entre le Genre et les taux de Promotion")
     st.plotly_chart(fig)
 
 
