@@ -448,34 +448,16 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     # Explanation
     with st.expander("🔮Explication"):
         st.write("""
-        Nous commençons par generer un exemple d'ensemble de données avec deux variables catégorielles : le genre (H/F) et la promotion.
+        Nous commençons par generer un exemple d'ensemble de données avec des heures d'absence pour les agents de différentes tranches d'âge (20-30, 31-40, 41-50, 51+).
 
-        Nous formulons les hypothèses nulles et alternatives.
+        Nous formulons les hypothèses nulles et alternatives pour tester s'il existe des différences significatives dans les heures d'absence entre ces groupes d'âge..
 
-        Nous créons un tableau de contingence pour résumer les données et calculer les fréquences observées.
+        Nous effectuons une ANOVA unidirectionnelle pour comparer les moyennes d'heures d'absence selon les groupes d'âge.
 
-        Nous calculons la statistique du chi carré et la p-value à l'aide de stats.chi2_contingency (scipy.stats) pour évaluer l'association entre le genre et la promotion.
+        Nous choisissons un niveau de significativité (α) de 0,05 et comparons la p-value à α pour prendre une décision concernant l'hypothèse nulle.
         
-        Nous choisissons un niveau de significativité (α) de 0,05.
-
-        Nous comparons la p-value à α pour décider d'accepter ou de rejeter l'hypothèse nulle. 
-        
-        Enfin, nous visualisons le tableau de contingence et la relation entre le sexe et les taux de promotion à l'aide d'un graphique à barres groupées.
+        nfin, nous visualisons les données à l'aide d'un diagramme en boîte pour aider à interpréter les différences d'heures d'absence selon les groupes d'âge.
         """)
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     
     st.markdown("")
