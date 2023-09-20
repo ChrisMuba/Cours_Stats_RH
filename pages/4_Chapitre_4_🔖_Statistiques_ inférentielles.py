@@ -213,7 +213,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     
     st.markdown("- **Test t : il est utilisé pour comparer les moyennes entre deux groupes** afin de déterminer s’il existe une différence significative entre eux.")
     
-    st.markdown("En RH, **les tests t** peuvent être utilisés pour comparer les performances de deux programmes de formation différents, les niveaux de satisfaction au travail des employés de différents services, pour évaluer s'il existe une différence significative dans les salaires moyens entre les différents postes, services ou effectifs 👦🏾 et 👧.")
+    st.markdown("En RH, **les tests t** peuvent être utilisés pour comparer les performances de deux programmes de formation différents, les niveaux de satisfaction au travail des employés de différents services ; pour évaluer s'il existe une différence significative dans les salaires moyens entre les différents postes, services ou effectifs 👦🏾 et 👧.")
                 
     st.markdown("")
     
