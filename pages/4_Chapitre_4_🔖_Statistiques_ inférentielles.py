@@ -266,12 +266,35 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     if p_value < alpha:
         st.write("Résultat : Rejeter l'hypothèse nulle")
     else:
-        st.write("Result: Ne pas rejeter l'hypothèse nulle")
+        st.write("Resultat: Ne pas rejeter l'hypothèse nulle")
 
 # Visualize the data
     fig = px.box(data, x='Service', y='Satisfaction au travail (sur 10)', points="all")
-    fig.update_layout(title="Box Plots des niveaux de satisfaction au travail dans les services Anesthésie et Gériatrie")
+    fig.update_layout(title="Box Plot des niveaux de satisfaction au travail dans les services Anesthésie et Gériatrie")
     st.plotly_chart(fig)
+
+
+    # Explanation
+    with st.expander("🔮Explication"):
+        st.write("""
+        Nous commençons par generer un exemple d'ensemble de données avec des notes de satisfaction au travail pour deux services (Anesthésie et Gériatrie).
+
+        Nous formulons les hypothèses nulles et alternatives.
+
+        Nous calculons la statistique t et la p-value à l'aide de stats.ttest_ind (scipy.stats) pour comparer les niveaux de satisfaction au travail dans les deux services.
+        
+        Nous choisissons un niveau de significativité (α) de 0,05.
+
+        Nous comparons la p-value à α pour décider d'accepter ou de rejeter l'hypothèse nulle. 
+        
+        Enfin, nous visualisons les données à l'aide d'un box plot.
+        """)
+
+
+    st.markdown("")
+
+
+    
 
 
 
