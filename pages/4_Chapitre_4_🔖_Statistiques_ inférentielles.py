@@ -345,7 +345,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     if p_value < alpha:
         st.write("Résultat : Rejeter l'hypothèse nulle")
     else:
-        st.write("Résultat : Échec du rejet de l'hypothèse nulle")
+        st.write("Résultat : On ne peut pas rejeter l'hypothèse nulle")
 
 # Visualize the contingency table
     st.subheader("Table de contingence:")
