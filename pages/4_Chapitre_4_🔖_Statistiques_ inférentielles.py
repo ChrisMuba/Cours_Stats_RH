@@ -459,6 +459,63 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
         nfin, nous visualisons les données à l'aide d'un diagramme en boîte pour aider à interpréter les différences d'heures d'absence selon les groupes d'âge.
         """)
 
+
+
+
+
+
+
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import scipy.stats as stats
+    import plotly.express as px
+
+# Create sample data
+    np.random.seed(42)
+
+# Generate hours of absence for different age groups
+    age_20_30 = np.random.normal(8, 2, 50)
+    age_31_40 = np.random.normal(10, 2, 50)
+    age_41_50 = np.random.normal(12, 2, 50)
+    age_51_plus = np.random.normal(15, 2, 50)
+
+    data = pd.DataFrame({
+         'Age_Group': np.repeat(['20-30', '31-40', '41-50', '51+'], 50),
+         'Hours_of_Absence': np.concatenate([age_20_30, age_31_40, age_41_50, age_51_plus])
+    })
+
+# Display the data
+    st.write("Sample Data:")
+    st.write(data)
+
+# Conduct one-way ANOVA
+    st.subheader("Hypothesis Testing:")
+    st.write("Null Hypothesis (H0): There is no significant difference in hours of absence among different age groups.")
+    st.write("Alternative Hypothesis (H1): There is a significant difference in hours of absence among different age groups.")
+
+# Perform one-way ANOVA
+    f_statistic, p_value = stats.f_oneway(age_20_30, age_31_40, age_41_50, age_51_plus)
+
+# Choose a significance level (α)
+    alpha = 0.05
+
+# Compare p-value to α
+    st.write(f"Significance Level (α): {alpha}")
+    st.write(f"F-Statistic: {f_statistic:.2f}")  # Display F-statistic with 2 decimal places
+    st.write(f"P-Value: {p_value:.2f}")  # Display p-value with 2 decimal places
+
+    if p_value < alpha:
+        st.write("Result: Reject the null hypothesis")
+    else:
+        st.write("Result: Fail to reject the null hypothesis")
+
+# Visualize the data
+    fig = px.box(data, x='Age_Group', y='Hours_of_Absence')
+    fig.update_layout(title="Hours of Absence Across Age Groups")
+    st.plotly_chart(fig)
+
+
     
     st.markdown("")
 
