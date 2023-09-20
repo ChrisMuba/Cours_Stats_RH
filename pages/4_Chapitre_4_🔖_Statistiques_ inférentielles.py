@@ -270,7 +270,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Visualize the data
     fig = px.box(data, x='Service', y='Satisfaction au travail (sur 10)', points="all")
-    fig.update_layout(title="Niveaux de satisfaction au travail dans les services Anesthésie et Gériatrie")
+    fig.update_layout(title="Box Plots des niveaux de satisfaction au travail dans les services Anesthésie et Gériatrie")
     st.plotly_chart(fig)
 
 
