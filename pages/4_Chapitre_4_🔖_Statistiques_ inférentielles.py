@@ -229,18 +229,23 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
     
-    st.markdown("🏀**Application 18** : Un contrôleur de gestion sociale peut utiliser le **test du χ²** pour examiner s'il existe une relation significative entre les niveaux de satisfaction des employés (variable catégorielle) et leur engagement dans des programmes de développement professionnel (une autre variable catégorielle).") 
+    st.markdown("🏀**Application 18** : ") 
 
 
     st.markdown("")
 
     
-    st.markdown("Grâce au résultat du test, le contrôleur de gestion sociale pourra aider les autres professionnels RH à comprendre s'il existe un lien entre ces variables, et à décider si des interventions ciblées sont nécessaires pour améliorer la satisfaction des employés.")
-    
-    st.markdown("- **ANOVA (Analyse de la Variance): L'ANOVA est utilisée pour comparer les moyennes entre trois groupes ou plus**. En RH, elle peut être utilisée pour analyser s'il existe des différences significatives dans la comparaison de l'absentéisme moyen entre les employés de différents services, à différentes catégories de postes, ou à différents niveaux d'expérience.")
     st.markdown("")
     
-    st.markdown("🏀**Application 19** : Un contrôleur de gestion sociale peut utiliser **l'ANOVA** pour rechercher s'il existe des variations significatives dans les heures d'absences des employés entre les différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+). Cette analyse peut donner un aperçu de la nécessité de stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
+    st.markdown("- **ANOVA (Analyse de la Variance): L'ANOVA est utilisée pour comparer les moyennes entre trois groupes ou plus** afin de déterminer s'il existe une différence significative entre eux.") 
+    
+    st.markdown("En RH, l'ANOVA peut être utilisée pour analyser s'il existe des différences significatives dans la comparaison de l'absentéisme moyen entre les employés de différents services, à différentes catégories de postes, ou à différents niveaux d'expérience. Ou encore comparer les performances des employés dans plusieurs services, etc... ") 
+    st.markdown("")
+    
+    st.markdown("")
+
+
+    st.markdown("🏀**Application 19** : Un contrôleur de gestion sociale peut utiliser **l'ANOVA** pour rechercher s'il existe des différences significatives dans les heures d'absences des employés entre les différents groupes d'âge (par exemple, 20-30, 31-40, 41-50, 51+). Cette analyse peut donner un aperçu de la nécessité de stratégies ciblées pour améliorer l'engagement et le climat social en fonction des différentes tranches d'âge.")
 
     
     st.markdown("")
