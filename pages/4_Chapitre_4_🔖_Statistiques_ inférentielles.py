@@ -223,7 +223,10 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.markdown("")
 
     
-    st.markdown("- **Test du chi carré (Test du χ²) : ce test est utilisé pour déterminer s'il existe une association entre deux variables catégorielles**.") 
+    st.markdown("- **Test du chi carré (Test du χ²) : ce test est utilisé pour déterminer s'il existe une association significative entre deux variables catégorielles**.") 
+
+    st.markdown("En RH, les tests du chi carré peuvent être utilisés pour évaluer la relation entre les données démographiques des employés (par exemple, le sexe, l'âge) et divers résultats, tels que le taux de promotion, le taux de turnover, etc...")
+
     st.markdown("")
     
     st.markdown("🏀**Application 18** : Un contrôleur de gestion sociale peut utiliser le **test du χ²** pour examiner s'il existe une relation significative entre les niveaux de satisfaction des employés (variable catégorielle) et leur engagement dans des programmes de développement professionnel (une autre variable catégorielle).") 
