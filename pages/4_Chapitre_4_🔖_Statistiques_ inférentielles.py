@@ -222,6 +222,63 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
 
+
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import scipy.stats as stats
+    import plotly.express as px
+
+# Create sample data
+    np.random.seed(42)
+    data = pd.DataFrame({
+         'Department': np.random.choice(['A', 'B'], size=100),
+         'Job_Satisfaction': np.random.randint(1, 11, size=100)
+    })
+
+# Display the data
+    st.write("Sample Data:")
+    st.write(data)
+
+# Conduct a t-test
+    st.subheader("Hypothesis Testing:")
+    department_a = data[data['Department'] == 'A']['Job_Satisfaction']
+    department_b = data[data['Department'] == 'B']['Job_Satisfaction']
+
+# Formulate the null and alternative hypotheses
+    st.write("Null Hypothesis (H0): There is no significant difference in job satisfaction levels between Department A and Department B.")
+    st.write("Alternative Hypothesis (H1): There is a significant difference in job satisfaction levels between Department A and Department B.")
+
+# Calculate the test statistic and p-value
+    t_statistic, p_value = stats.ttest_ind(department_a, department_b)
+
+# Choose a significance level (α)
+    alpha = 0.05
+
+# Compare p-value to α
+    st.write(f"Significance Level (α): {alpha}")
+    st.write(f"Test Statistic: {t_statistic}")
+    st.write(f"P-Value: {p_value}")
+
+    if p_value < alpha:
+        st.write("Result: Reject the null hypothesis")
+    else:
+        st.write("Result: Fail to reject the null hypothesis")
+
+# Visualize the data
+    fig = px.box(data, x='Department', y='Job_Satisfaction', points="all")
+    fig.update_layout(title="Job Satisfaction Levels in Department A and B")
+    st.plotly_chart(fig)
+
+
+
+
+
+
+
+
+    
+
     
     st.markdown("- **Test du chi carré (Test du χ²) : ce test est utilisé pour déterminer s'il existe une association significative entre deux variables catégorielles**.") 
 
