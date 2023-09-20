@@ -237,7 +237,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     
     st.markdown("")
     
-    st.markdown("- **ANOVA (Analyse de la Variance): L'ANOVA est utilisée pour comparer les moyennes entre trois groupes ou plus** afin de déterminer s'il existe une différence significative entre eux.") 
+    st.markdown("- **ANOVA (Analyse de la Variance) : L'ANOVA est utilisée pour comparer les moyennes entre trois groupes ou plus** afin de déterminer s'il existe une différence significative entre eux.") 
     
     st.markdown("En RH, l'ANOVA peut être utilisée pour analyser s'il existe des différences significatives dans la comparaison de l'absentéisme moyen entre les employés de différents services, à différentes catégories de postes, ou à différents niveaux d'expérience. Ou encore comparer les performances des employés dans plusieurs services, etc... ") 
     st.markdown("")
