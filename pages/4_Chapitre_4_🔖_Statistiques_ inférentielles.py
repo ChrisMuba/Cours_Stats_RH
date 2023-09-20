@@ -303,7 +303,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
     
-    st.markdown("🏀**Application 18** : Le contrôleur de gestion sociale de la communauté de communes de *Teuf-les-Bretagne* doit rendre son rapport d'évaluation de la relation entre le genre (H/F) et les taux de promotion au sein de l'administration.") 
+    st.markdown("🏀**Application 18** : Le contrôleur de gestion sociale de la communauté de communes de *Teuf-les-Bretagne* doit rendre son rapport sur l'évaluation de la relation entre le genre (H/F) et les taux de promotion au sein de l'administration.") 
     st.markdown("Les données recueillies pour 200 agents (H/F) de même catégorie sont consignées dans le tableau suivant : ")
 
     import streamlit as st
