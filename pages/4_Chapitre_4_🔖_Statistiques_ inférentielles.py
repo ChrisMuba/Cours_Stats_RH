@@ -217,7 +217,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
                 
     st.markdown("")
     
-    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services de l'hôpital communal de Trifouilly-les-Oies : Anesthésie & Gériatrie.")
+    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services de l'hôpital communal de *Trifouilly-les-Oies* : Anesthésie & Gériatrie.")
     
     st.markdown("Les notes de satisfaction au travail des 100 agents des deux services sont consignées dans le tableau suivant : ")
 
@@ -303,8 +303,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
     st.markdown("")
     
-    st.markdown("🏀**Application 18** : ") 
-
+    st.markdown("🏀**Application 18** : Le contrôleur de gestion sociale de la communauté de communes de *Teuf-les-Bretagne* doit rendre son rapport d'évaluation de la relation entre le sexe et les taux de promotion au sein de la communauté de communes.") 
+    st.markdown("Les données recueillies pour 200 agents sont consignées dans le tableau suivant : ")
 
     import streamlit as st
     import pandas as pd
