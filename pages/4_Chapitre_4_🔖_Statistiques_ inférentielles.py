@@ -217,9 +217,9 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
                 
     st.markdown("")
     
-    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services de l'hôpital communal de Trifouilly-les-Oies : services Anesthésie & Gériatrie.")
+    st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services de l'hôpital communal de Trifouilly-les-Oies : Anesthésie & Gériatrie.")
     
-    st.markdown("Les données brutes sont consignées dans le tableau ci-dessous : ")
+    st.markdown("Les notes de satisfaction au travail des 100 agents des deux services sont consignées dans le tableau ci-dessous : ")
 
 
     st.markdown("")
@@ -235,7 +235,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     np.random.seed(42)
     data = pd.DataFrame({
          'Service': np.random.choice(['Anesthésie', 'Gériatrie'], size=100),
-         'Satisfaction_au_travail': np.random.randint(1, 11, size=100)
+         'Satisfaction au travail (sur 10)': np.random.randint(1, 11, size=100)
     })
 
 # Display the data
@@ -244,8 +244,8 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
 
 # Conduct a t-test
     st.subheader("Hypothesis Testing:")
-    department_a = data[data['Service'] == 'Anesthésie']['Satisfaction_au_travail']
-    department_b = data[data['Service'] == 'Gériatrie']['Satisfaction_au_travail']
+    department_a = data[data['Service'] == 'Anesthésie']['Satisfaction au travail (sur 10)']
+    department_b = data[data['Service'] == 'Gériatrie']['Satisfaction au travail (sur 10)']
 
 # Formulate the null and alternative hypotheses
     st.write("Null Hypothesis (H0): There is no significant difference in job satisfaction levels between Service Anesthésie and Department Gériatrie.")
@@ -268,7 +268,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
         st.write("Result: Fail to reject the null hypothesis")
 
 # Visualize the data
-    fig = px.box(data, x='Service', y='Satisfaction_au_travail', points="all")
+    fig = px.box(data, x='Service', y='Satisfaction au travail (sur 10)', points="all")
     fig.update_layout(title="Job Satisfaction Levels in Department A and B")
     st.plotly_chart(fig)
 
