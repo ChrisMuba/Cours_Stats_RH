@@ -219,7 +219,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     
     st.markdown("🏀**Application 17** : Un contrôleur de gestion RH est chargé de mener une étude pour comparer les niveaux de satisfaction au travail dans deux services de l'hôpital communal de Trifouilly-les-Oies : Anesthésie & Gériatrie.")
     
-    st.markdown("Les notes de satisfaction au travail des 100 agents des deux services sont consignées dans le tableau ci-dessous : ")
+    st.markdown("Les notes de satisfaction au travail des 100 agents des deux services sont consignées dans le tableau suivant : ")
 
 
     st.markdown("")
