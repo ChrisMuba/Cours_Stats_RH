@@ -243,7 +243,7 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.write(data)
 
 # Conduct a t-test
-    st.subheader("Tests d'hypothèses:")
+    st.subheader("Test d'hypothèse :")
     department_a = data[data['Service'] == 'Anesthésie']['Satisfaction au travail (sur 10)']
     department_b = data[data['Service'] == 'Gériatrie']['Satisfaction au travail (sur 10)']
 
