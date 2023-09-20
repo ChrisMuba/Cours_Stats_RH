@@ -306,6 +306,58 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     st.markdown("🏀**Application 18** : ") 
 
 
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import scipy.stats as stats
+    import plotly.express as px
+
+# Create sample data
+    np.random.seed(42)
+    data = pd.DataFrame({
+        'Gender': np.random.choice(['Male', 'Female'], size=200),
+        'Promotion': np.random.choice(['Promoted', 'Not Promoted'], size=200)
+    })
+
+# Display the data
+    st.write("Sample Data:")
+    st.write(data)
+
+# Create a contingency table
+    contingency_table = pd.crosstab(data['Gender'], data['Promotion'])
+
+# Conduct a chi-square test
+    st.subheader("Hypothesis Testing:")
+    st.write("Null Hypothesis (H0): There is no significant association between gender and promotion rates.")
+    st.write("Alternative Hypothesis (H1): There is a significant association between gender and promotion rates.")
+
+# Calculate the chi-square statistic and p-value
+    chi2, p_value, _, _ = stats.chi2_contingency(contingency_table)
+
+# Choose a significance level (α)
+    alpha = 0.05
+
+# Compare p-value to α
+    st.write(f"Significance Level (α): {alpha}")
+    st.write(f"Chi-square Statistic: {chi2}")
+    st.write(f"P-Value: {p_value}")
+
+    if p_value < alpha:
+        st.write("Result: Reject the null hypothesis")
+    else:
+        st.write("Result: Fail to reject the null hypothesis")
+
+# Visualize the contingency table
+    st.subheader("Contingency Table:")
+    st.write(contingency_table)
+
+# Visualize the association between gender and promotion
+    fig = px.bar(data, x='Gender', color='Promotion', barmode='group')
+    fig.update_layout(title="Relationship Between Gender and Promotion Rates")
+    st.plotly_chart(fig)
+
+
+
     st.markdown("")
 
     
