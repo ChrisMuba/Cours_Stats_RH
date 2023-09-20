@@ -239,17 +239,18 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     })
 
 # Display the data
-    st.write("Sample Data:")
+    st.write("Données brutes :")
     st.write(data)
 
 # Conduct a t-test
-    st.subheader("Hypothesis Testing:")
+    st.subheader("Tests d'hypothèses:")
     department_a = data[data['Service'] == 'Anesthésie']['Satisfaction au travail (sur 10)']
     department_b = data[data['Service'] == 'Gériatrie']['Satisfaction au travail (sur 10)']
 
 # Formulate the null and alternative hypotheses
-    st.write("Null Hypothesis (H0): There is no significant difference in job satisfaction levels between Service Anesthésie and Department Gériatrie.")
-    st.write("Alternative Hypothesis (H1): There is a significant difference in job satisfaction levels between Service Anesthésie and Department Gériatrie.")
+    st.write("Hypothèse nulle (H0) : Il n'y a pas de différence significative dans les niveaux de satisfaction au travail entre le Service Anesthésie et le Service Gériatrie.")
+    st.write("AHypothèse alternative (H1) : Il existe une différence significative dans les niveaux de satisfaction au travail entre le Service Anesthésie et le Service Gériatrie.")
+
 
 # Calculate the test statistic and p-value
     t_statistic, p_value = stats.ttest_ind(department_a, department_b)
@@ -258,18 +259,18 @@ if st.button("Continuer vers la suite du Chap.4 - **C/ Tests statistiques commun
     alpha = 0.05
 
 # Compare p-value to α
-    st.write(f"Significance Level (α): {alpha}")
-    st.write(f"Test Statistic: {t_statistic}")
+    st.write(f"Niveau de significativité (α): {alpha}")
+    st.write(f"Statistique du test: {t_statistic}")
     st.write(f"P-Value: {p_value}")
 
     if p_value < alpha:
-        st.write("Result: Reject the null hypothesis")
+        st.write("Résultat : Rejeter l'hypothèse nulle")
     else:
-        st.write("Result: Fail to reject the null hypothesis")
+        st.write("Result: Ne pas rejeter l'hypothèse nulle")
 
 # Visualize the data
     fig = px.box(data, x='Service', y='Satisfaction au travail (sur 10)', points="all")
-    fig.update_layout(title="Job Satisfaction Levels in Department A and B")
+    fig.update_layout(title="Niveaux de satisfaction au travail dans les services Anesthésie et Gériatrie")
     st.plotly_chart(fig)
 
 
