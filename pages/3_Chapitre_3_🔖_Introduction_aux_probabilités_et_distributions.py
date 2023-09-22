@@ -22,9 +22,13 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.subheader("📈Chap.3-A/ Concepts de clés📉")
 
+    st.markdown("")
+
     st.markdown("**Les concepts clés en probabilités comprennent les notions suivantes** :")
 
+    
     st.markdown("")
+    
 
     st.markdown("💡**Variable aléatoire** : c'est une quantité qui prend différentes valeurs à la suite d'événements aléatoires. Une variable aléatoire peut être **discrete ou continue**.") 
     
@@ -40,7 +44,6 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("") 
 
     
-
     st.markdown("")
 
     st.markdown("- **Espace d'échantillonnage et événements** : l'espace d'échantillonnage **représente l'ensemble de tous les résultats possibles d'une expérience**. Les **événements sont des sous-ensembles** de l'espace d'échantillonnage, représentant des résultats spécifiques ou des combinaisons de résultats.")
@@ -112,7 +115,23 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("")
 
 
-    st.markdown("- **Règles de probabilité** : La **probabilité d'un événement varie de 0** (événement impossible) à **1** (événement certain). La somme des probabilités de tous les résultats possibles dans l'espace échantillon est toujours **1**. De plus, la règle de complément, la règle d'addition et la règle de multiplication aident à calculer les probabilités dans différents scénarios.")
+    st.markdown("- **Règles de probabilité** : La **probabilité d'un événement varie de 0** (événement impossible) à **1** (événement certain). Il existe trois règles principales de probabilité :")
+
+    st.markdown("")
+
+    st.markdown("La règle de la somme : la probabilité que l'un des deux événements exclusifs se produise est égale à la somme de leurs probabilités individuelles.")
+
+    st.markdown("")
+    
+    st.markdown("La règle du produit : la probabilité que deux événements se produisent tous deux est égale au produit de leurs probabilités individuelles.")
+
+    st.markdown("")
+
+    st.markdown("La règle du complément : La probabilité qu’un événement ne se produise pas est égale à un moins la probabilité que l’événement se produise.")
+
+
+
+    
     
     st.markdown("- **Exemple 1 - Application possible en RH** : Supposons qu'un chargé d'études RH veuille déterminer la probabilité qu'un employé soit absent un jour particulier. Il peut collecter des données historiques sur les absences des employés et calculer la proportion d'absences par rapport au nombre total de jours de travail pour estimer la probabilité.")
 
