@@ -10,7 +10,7 @@ st.title("Introductions aux probabilités et distributions")
 
 st.markdown("Ce chapitre sert d'**introduction** en fournissant un **aperçu des concepts de base en probabilités et distributions, et leurs applications possibles dans le domaine des RH**.")
 
-st.markdown("La **probabilité** est la branche des mathématiques qui **quantifie la possibilité qu'un événement se produise**.")
+st.markdown("La **probabilité** est la branche des mathématiques qui **quantifie la possibilité qu'un événement particulier se produise**.")
 
 if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
