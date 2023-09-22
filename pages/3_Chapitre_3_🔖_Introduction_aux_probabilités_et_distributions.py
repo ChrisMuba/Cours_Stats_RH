@@ -80,18 +80,18 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     sample_space_experience = df["Expérience (Années)"].unique()
 
 # Explain Sample Space and Events
-    st.subheader("Explanation:")
+    st.markdown("Explication:")
     st.markdown(
         """
-    - **Sample Space for Education Levels:** The sample space for education levels includes all possible education levels in our dataset. In this case, it consists of three categories: "Bachelor's," "Master's," and "Ph.D."
+    - **Espace échantillon pour les diplômes :** L'espace échantillon pour les diplômes comprend tous les diplômes possibles dans notre ensemble de données. Dans notre cas, il se compose de trois catégories : « Bachelor », « Master » et « Ph.D »
 
-    - **Sample Space for Experience (Years):** The sample space for experience includes all unique years of experience in our dataset. In this case, it consists of the values [2, 4, 3, 5, 1].
+    - **Espace échantillon pour l'expérience (années):** L'espace échantillon pour l'expérience comprend toutes les années d'expérience uniques dans notre ensemble de données. Dans ce cas, il s'agit des valeurs [2, 4, 3, 5, 1].
 
-    Now, let's define some events based on this sample space:
-    - Event A: Candidates with a Master's degree
-    - Event B: Candidates with more than 3 years of experience
+    Maintenant, définissons quelques événements basés sur cet exemple d'espace :
+    - Événement A : Candidats titulaires d'un Master
+    - Événement B : Candidats ayant plus de 3 ans d'expérience
 
-    We'll use Plotly to visualize these events on the sample data.
+    Nous pouvouns visualiser ces événements ci-dessous.
     """
     )
 
