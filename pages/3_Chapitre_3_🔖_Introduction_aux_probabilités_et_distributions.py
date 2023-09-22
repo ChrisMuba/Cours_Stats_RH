@@ -137,11 +137,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
     st.markdown("Illustrons les trois principales règles de probabilité par un scénario hypothétique dans lequel nous analysons les candidats et leurs qualifications pour deux postes différents.")
     
-    st.markdown("Disons que nous devons embaucher des candidats pour deux postes : « Analyste de données RH » et « Coordonnateur RH ».")
-
-    st.markdown("Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».") 
+    st.markdown("Nous devons embaucher des candidats pour deux postes : « Analyste de données RH » et « Coordonnateur RH ». Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».") 
     
-    st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ». Voici les exemples de données :")
+    st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ». Ci-dessous l'échantillon de données :")
 
 
     import streamlit as st
