@@ -135,109 +135,13 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
     st.markdown("**🏀Application 16**")
 
-    st.markdown("Illustrons les concepts d'espace d'échantillonnage et d'événements par un scénario hypothétique dans lequel nous analysons les qualifications des candidats à un poste vacant.")
-
-    st.markdown("Ci-dessous un échantillon des données de 5 candidats :")
+    st.markdown("Illustrons les trois principales règles de probabilité par un scénario hypothétique dans lequel nous analysons les candidats et leurs qualifications pour deux postes différents.")
     
+    st.markdown("Disons que nous devons embaucher des candidats pour deux postes : « Analyste de données RH » et « Coordonnateur RH ».
 
-    import pandas as pd
-    import streamlit as st
-    import plotly.express as px
-
-# Sample Data
-    data = {
-        "Applicant ID": [1, 2, 3, 4, 5],
-        "Data Analyst Qualification": ["Qualified", "Not Qualified", "Qualified", "Not Qualified", "Qualified"],
-        "HR Coordinator Qualification": ["Not Qualified", "Qualified", "Not Qualified", "Qualified", "Not Qualified"],
-    }
-
-    df = pd.DataFrame(data)
-
-# Streamlit App
-    st.title("HR Data Analysis: Probability Rules")
-
-# Display the sample data
-    st.subheader("Sample Data:")
-    st.dataframe(df)
-
-# Rule 1: The Sum Rule
-    st.subheader("Rule 1: The Sum Rule")
-    st.markdown(
-        """
-    The sum rule states that the probability of either one of two exclusive events occurring 
-    is equal to the sum of their individual probabilities.
-
-    In this context, let's calculate the probability of hiring for either the Data Analyst position or 
-    the HR Coordinator position.
-
-    - Event A: Being Qualified for Data Analyst
-    - Event B: Being Qualified for HR Coordinator
-
-    We'll calculate P(A) and P(B) and use the sum rule to find P(A or B).
-    """
-    )
-
-# Calculate P(A): Probability of being Qualified for Data Analyst
-    total_data_analyst = df["Data Analyst Qualification"].count()
-    qualified_data_analyst = df[df["Data Analyst Qualification"] == "Qualified"]["Data Analyst Qualification"].count()
-    p_A = qualified_data_analyst / total_data_analyst
-
-# Calculate P(B): Probability of being Qualified for HR Coordinator
-    total_hr_coordinator = df["HR Coordinator Qualification"].count()
-    qualified_hr_coordinator = df[df["HR Coordinator Qualification"] == "Qualified"]["HR Coordinator Qualification"].count()
-    p_B = qualified_hr_coordinator / total_hr_coordinator
-
-# Calculate P(A or B) using the Sum Rule
-    p_A_or_B = p_A + p_B - (p_A * p_B)
-
-    st.markdown(f"P(A): {p_A}")
-    st.markdown(f"P(B): {p_B}")
-    st.markdown(f"P(A or B) using the Sum Rule: {p_A_or_B}")
-
-# Rule 2: The Product Rule
-    st.subheader("Rule 2: The Product Rule")
-    st.markdown(
-        """
-    The product rule states that the probability of two events both occurring is equal 
-    to the product of their individual probabilities.
-
-    In this context, let's calculate the probability of hiring for both the Data Analyst position and 
-    the HR Coordinator position.
-
-    - Event A: Being Qualified for Data Analyst
-    - Event B: Being Qualified for HR Coordinator
-
-    We'll calculate P(A) and P(B) and use the product rule to find P(A and B).
-    """
-    )
-
-# Calculate P(A and B) using the Product Rule
-    p_A_and_B = p_A * p_B
-
-    st.markdown(f"P(A and B) using the Product Rule: {p_A_and_B}")
-
-# Rule 3: The Complement Rule
-    st.subheader("Rule 3: The Complement Rule")
-    st.markdown(
-        """
-    The complement rule states that the probability of an event not occurring is equal 
-    to one minus the probability of the event occurring.
-
-    In this context, let's calculate the probability of not being Qualified for the Data Analyst position.
-
-    - Event A: Being Qualified for Data Analyst
-
-    We'll calculate P(A) and use the complement rule to find P(not A).
-    """
-    )
-
-# Calculate P(not A) using the Complement Rule
-    p_not_A = 1 - p_A
-
-    st.markdown(f"P(not A) using the Complement Rule: {p_not_A}")
-
-
-
+    st.markdown("Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».) 
+    
+    st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ». Voici les exemples de données :")
 
 
     import streamlit as st
