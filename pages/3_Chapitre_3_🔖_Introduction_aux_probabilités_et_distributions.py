@@ -70,11 +70,8 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
     df = pd.DataFrame(data)
 
-# Streamlit App
-    st.title("HR Data Analysis: Sample Space and Events")
-
 # Display the sample data
-    st.subheader("Sample Data:")
+    st.subheader("Échantillon des données :")
     st.dataframe(df)
 
 # Calculate the sample space for education levels
