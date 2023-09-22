@@ -150,9 +150,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 # Sample Data
     data = {
-        "Applicant ID": [1, 2, 3, 4, 5],
-        "Data Analyst Qualification": ["Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié"],
-        "HR Coordinator Qualification": ["Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié"],
+        "ID du candidat": [1, 2, 3, 4, 5],
+        "Qualification d'analyste de données RH": ["Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié"],
+        "Qualification de coordonnateur RH": ["Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié"],
     }
 
     df = pd.DataFrame(data)
@@ -161,35 +161,35 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.dataframe(df)
 
 # Rule 1: The Sum Rule
-    st.subheader("Rule 1: The Sum Rule")
+    st.subheader("Règle 1 : la règle de la somme")
     st.latex(r"P(A \cup B) = P(A) + P(B) - P(A \cap B)")
     st.markdown(
         """
-    The sum rule states that the probability of either one of two exclusive events occurring 
-    is equal to the sum of their individual probabilities minus their joint probability.
+    La règle de la somme stipule que la probabilité que l'un des deux événements exclusifs se produise 
+    est égale à la somme de leurs probabilités individuelles moins leur probabilité conjointe.
 
-    In this context, let's calculate the probability of hiring for either the Data Analyst position or 
-    the HR Coordinator position.
+    Dans ce contexte, calculons la probabilité d'embauche soit pour le poste d'analyste de données RH, 
+    soit pour le poste de Coordonnateur RH.
 
-    - Event A: Being Qualified for Data Analyst
-    - Event B: Being Qualified for HR Coordinator
+    - Événement A : Être qualifié pour le poste d'analyste de données RH
+    - Événement B : Être qualifié pour le poste de coordonnateur RH
 
-    We'll calculate P(A), P(B), and P(A and B) and use the sum rule formula to find P(A or B).
+    Nous allons calculer P(A), P(B) et P(A et B) et utiliser la formule de la règle de somme pour trouver P(A ou B).
     """
     )
 
 # Calculate P(A): Probability of being Qualified for Data Analyst
-    total_data_analyst = df["Data Analyst Qualification"].count()
-    qualified_data_analyst = df[df["Data Analyst Qualification"] == "Qualified"]["Data Analyst Qualification"].count()
+    total_data_analyst = df["Qualification d'analyste de données RH"].count()
+    qualified_data_analyst = df[df["Qualification d'analyste de données RH"] == "Qualifié"]["Qualification d'analyste de données RH"].count()
     p_A = qualified_data_analyst / total_data_analyst
 
 # Calculate P(B): Probability of being Qualified for HR Coordinator
-    total_hr_coordinator = df["HR Coordinator Qualification"].count()
-    qualified_hr_coordinator = df[df["HR Coordinator Qualification"] == "Qualified"]["HR Coordinator Qualification"].count()
+    total_hr_coordinator = df["Qualification de coordonnateur RH"].count()
+    qualified_hr_coordinator = df[df["Qualification de coordonnateur RH"] == "Qualifié"]["Qualification de coordonnateur RH"].count()
     p_B = qualified_hr_coordinator / total_hr_coordinator
 
 # Calculate P(A and B): Probability of being Qualified for both positions
-    qualified_both = df[(df["Data Analyst Qualification"] == "Qualified") & (df["HR Coordinator Qualification"] == "Qualified")]["Applicant ID"].count()
+    qualified_both = df[(df["Qualification d'analyste de données RH"] == "Qualifié") & (df["Qualification de coordonnateur RH"] == "Qualifié")]["ID du candidat"].count()
     p_A_and_B = qualified_both / total_data_analyst  # Using the data analyst total for joint probability
 
 # Calculate P(A or B) using the Sum Rule formula
@@ -201,20 +201,18 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A \cup B) = {p_A_or_B}")
 
 # Rule 2: The Product Rule
-    st.subheader("Rule 2: The Product Rule")
+    st.subheader("Règle 2 : la règle du produit")
     st.latex(r"P(A \cap B) = P(A) \cdot P(B)")
     st.markdown(
         """
-    The product rule states that the probability of two events both occurring is equal 
-    to the product of their individual probabilities.
+    La règle du produit stipule que la probabilité que deux événements se produisent tous deux est égale au produit de leurs probabilités individuelles.
 
-    In this context, let's calculate the probability of hiring for both the Data Analyst position and 
-    the HR Coordinator position.
+    Dans ce contexte, calculons la probabilité d'embauche à la fois pour le poste d'analyste de données RH et pour le poste de Coordonnateur RH.
 
-    - Event A: Being Qualified for Data Analyst
-    - Event B: Being Qualified for HR Coordinator
+   - Événement A : Être qualifié pour le poste d'analyste de données RH
+   - Événement B : Être qualifié pour le poste de coordonnateur RH
 
-    We'll calculate P(A) and P(B) and use the product rule formula to find P(A and B).
+    Nous allons calculer P(A) et P(B) et utiliser la formule de la règle du produit pour trouver P(A et B).
     """
     )
 
@@ -226,18 +224,17 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A \cap B) = {p_A_and_B}")
 
 # Rule 3: The Complement Rule
-    st.subheader("Rule 3: The Complement Rule")
+    st.subheader("Règle 3 : la règle du complément")
     st.latex(r"P(\neg A) = 1 - P(A)")
     st.markdown(
         """
-    The complement rule states that the probability of an event not occurring is equal 
-    to one minus the probability of the event occurring.
+    La règle du complément stipule que la probabilité qu’un événement ne se produise pas est égale à un moins la probabilité que l’événement se produise.
 
-    In this context, let's calculate the probability of not being Qualified for the Data Analyst position.
+    Dans ce contexte, calculons la probabilité de ne pas être qualifié pour le poste d'analyste de données RH.
 
-    - Event A: Being Qualified for Data Analyst
+    - Événement A : Être qualifié pour le poste d'analyste de données RH
 
-    We'll calculate P(A) and use the complement rule formula to find P(not A).
+    Nous allons calculer P(A) et utiliser la formule de la règle du complément pour trouver P(non A).
     """
     )
 
