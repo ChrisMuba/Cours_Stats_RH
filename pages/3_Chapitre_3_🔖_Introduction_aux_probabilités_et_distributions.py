@@ -22,7 +22,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.subheader("📈Chap.3-A/ Concepts de clés📉")
 
-    st.markdown("Quelques définitionns :")
+    st.markdown("**Les concepts clés en probabilités comprennent les notions suivantes** :")
 
     st.markdown("")
 
@@ -40,7 +40,6 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("") 
 
     
-    st.markdown("**Les concepts clés en probabilités comprennent les notions suivantes** :")
 
     st.markdown("")
 
@@ -80,7 +79,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     sample_space_experience = df["Expérience (Années)"].unique()
 
 # Explain Sample Space and Events
-    st.markdown("Explication:")
+    st.markdown("**Explication**:")
     st.markdown(
         """
     - **Espace échantillon pour les diplômes :** L'espace échantillon pour les diplômes comprend tous les diplômes possibles dans notre ensemble de données. Dans notre cas, il se compose de trois catégories : « Bachelor », « Master » et « Ph.D »
@@ -110,7 +109,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.plotly_chart(fig_B)
 
 
-    
+     st.markdown("")
 
 
     st.markdown("- **Règles de probabilité** : La **probabilité d'un événement varie de 0** (événement impossible) à **1** (événement certain). La somme des probabilités de tous les résultats possibles dans l'espace échantillon est toujours **1**. De plus, la règle de complément, la règle d'addition et la règle de multiplication aident à calculer les probabilités dans différents scénarios.")
