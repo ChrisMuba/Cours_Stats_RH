@@ -139,7 +139,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.markdown("Disons que nous devons embaucher des candidats pour deux postes : « Analyste de données RH » et « Coordonnateur RH ».")
 
-    st.markdown("Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».) 
+    st.markdown("Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».") 
     
     st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ». Voici les exemples de données :")
 
