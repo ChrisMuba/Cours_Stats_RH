@@ -52,7 +52,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
     st.markdown("**🏀Application 15**")
 
-    st.markdown("Illustrons les concepts d'espace d'échantillonnage et d'événements dans le contexte RH par un scénario hypothétique dans lequel nous analysons les qualifications des candidats à un poste vacant.")
+    st.markdown("Illustrons les concepts d'espace d'échantillonnage et d'événements par un scénario hypothétique dans lequel nous analysons les qualifications des candidats à un poste vacant.")
 
     st.markdown("Ci-dessous un échantillon des données de 5 candidats :")
     
