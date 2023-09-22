@@ -252,37 +252,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A) = {p_A}")
     st.latex(f"P(\neg A) = {p_not_A}")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
-
-
-
-
+    st.markdown("")
     
-    
-    st.markdown("- **Exemple 1 - Application possible en RH** : Supposons qu'un chargé d'études RH veuille déterminer la probabilité qu'un employé soit absent un jour particulier. Il peut collecter des données historiques sur les absences des employés et calculer la proportion d'absences par rapport au nombre total de jours de travail pour estimer la probabilité.")
 
 if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité discrète**"):
     
