@@ -10,7 +10,7 @@ st.title("Introductions aux probabilités et distributions")
 
 st.markdown("Ce chapitre sert d'**introduction** en fournissant un **aperçu des concepts de base en probabilités et distributions, et leurs applications possibles dans le domaine des RH**.")
 
-st.markdown("La **probabilité** est la branche des mathématiques qui **quantifie la possibilité qu'un événement particulier se produise**. Cette possibilité est exprimée sous la forme d'un nombre compris entre 0 et 1.")
+st.markdown("La **théorie des probabilité** est la branche des mathématiques qui **quantifie la possibilité qu'un événement particulier se produise**. Cette possibilité est exprimée sous la forme d'un nombre compris entre 0 et 1.")
 
 st.markdown("En termes simples, la probabilité quantifie le degré de certitude ou d'incertitude associé à un résultat spécifique. Elle est calculée en divisant le nombre de résultats favorables par le nombre total de résultats possibles dans une situation donnée.")
 
