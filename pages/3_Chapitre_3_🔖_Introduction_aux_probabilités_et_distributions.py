@@ -63,22 +63,21 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 # Sample Data
     data = {
-        "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
-        "Experience (Years)": [2, 4, 3, 5, 1],
-        "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
+        "Candidat": ["Candidat 1", "Candidat 2", "Candidat 3", "Candidat 4", "Candidat 5"],
+        "Expérience (Années)": [2, 4, 3, 5, 1],
+        "Diplôme": ["Bachelor", "Master", "Bachelor", "Ph.D.", "Master"],
     }
 
     df = pd.DataFrame(data)
 
 # Display the sample data
-    st.subheader("Échantillon des données :")
     st.dataframe(df)
 
 # Calculate the sample space for education levels
-    sample_space_education = df["Education"].unique()
+    sample_space_education = df["Diplôme"].unique()
 
 # Calculate the sample space for experience
-    sample_space_experience = df["Experience (Years)"].unique()
+    sample_space_experience = df["Expérience (Années)"].unique()
 
 # Explain Sample Space and Events
     st.subheader("Explanation:")
@@ -97,17 +96,17 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     )
 
 # Define Events
-    event_A = df[df["Education"] == "Master's"]
-    event_B = df[df["Experience (Years)"] > 3]
+    event_A = df[df["Diplôme"] == "Master"]
+    event_B = df[df["Expérience (Années)"] > 3]
 
 # Visualize Event A (Master's Degree)
     st.subheader("Event A: Candidates with a Master's Degree")
-    fig_A = px.scatter(event_A, x="Experience (Years)", y="Candidate", color="Education", title="Event A")
+    fig_A = px.scatter(event_A, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Event A")
     st.plotly_chart(fig_A)
 
 # Visualize Event B (More than 3 Years of Experience)
     st.subheader("Event B: Candidates with More than 3 Years of Experience")
-    fig_B = px.scatter(event_B, x="Experience (Years)", y="Candidate", color="Education", title="Event B")
+    fig_B = px.scatter(event_B, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Event B")
     st.plotly_chart(fig_B)
 
 
