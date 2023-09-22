@@ -239,6 +239,142 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 
 
+
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+
+# Sample Data
+    data = {
+        "Applicant ID": [1, 2, 3, 4, 5],
+        "Data Analyst Qualification": ["Qualified", "Not Qualified", "Qualified", "Not Qualified", "Qualified"],
+        "HR Coordinator Qualification": ["Not Qualified", "Qualified", "Not Qualified", "Qualified", "Not Qualified"],
+    }
+
+    df = pd.DataFrame(data)
+
+# Streamlit App
+    st.title("HR Data Analysis: Probability Rules")
+
+# Display the sample data
+    st.subheader("Sample Data:")
+    st.dataframe(df)
+
+# Rule 1: The Sum Rule
+    st.subheader("Rule 1: The Sum Rule")
+    st.latex(r"P(A \cup B) = P(A) + P(B) - P(A \cap B)")
+    st.markdown(
+        """
+    The sum rule states that the probability of either one of two exclusive events occurring 
+    is equal to the sum of their individual probabilities minus their joint probability.
+
+    In this context, let's calculate the probability of hiring for either the Data Analyst position or 
+    the HR Coordinator position.
+
+    - Event A: Being Qualified for Data Analyst
+    - Event B: Being Qualified for HR Coordinator
+
+    We'll calculate P(A), P(B), and P(A and B) and use the sum rule formula to find P(A or B).
+    """
+    )
+
+# Calculate P(A): Probability of being Qualified for Data Analyst
+    total_data_analyst = df["Data Analyst Qualification"].count()
+    qualified_data_analyst = df[df["Data Analyst Qualification"] == "Qualified"]["Data Analyst Qualification"].count()
+    p_A = qualified_data_analyst / total_data_analyst
+
+# Calculate P(B): Probability of being Qualified for HR Coordinator
+    total_hr_coordinator = df["HR Coordinator Qualification"].count()
+    qualified_hr_coordinator = df[df["HR Coordinator Qualification"] == "Qualified"]["HR Coordinator Qualification"].count()
+    p_B = qualified_hr_coordinator / total_hr_coordinator
+
+# Calculate P(A and B): Probability of being Qualified for both positions
+    qualified_both = df[(df["Data Analyst Qualification"] == "Qualified") & (df["HR Coordinator Qualification"] == "Qualified")]["Applicant ID"].count()
+    p_A_and_B = qualified_both / total_data_analyst  # Using the data analyst total for joint probability
+
+# Calculate P(A or B) using the Sum Rule formula
+    p_A_or_B = p_A + p_B - p_A_and_B
+
+    st.latex(f"P(A) = {p_A}")
+    st.latex(f"P(B) = {p_B}")
+    st.latex(f"P(A \cap B) = {p_A_and_B}")
+    st.latex(f"P(A \cup B) = {p_A_or_B}")
+
+# Rule 2: The Product Rule
+    st.subheader("Rule 2: The Product Rule")
+    st.latex(r"P(A \cap B) = P(A) \cdot P(B)")
+    st.markdown(
+        """
+    The product rule states that the probability of two events both occurring is equal 
+    to the product of their individual probabilities.
+
+    In this context, let's calculate the probability of hiring for both the Data Analyst position and 
+    the HR Coordinator position.
+
+    - Event A: Being Qualified for Data Analyst
+    - Event B: Being Qualified for HR Coordinator
+
+    We'll calculate P(A) and P(B) and use the product rule formula to find P(A and B).
+    """
+    )
+
+# Calculate P(A and B) using the Product Rule formula
+    p_A_and_B = p_A * p_B
+
+    st.latex(f"P(A) = {p_A}")
+    st.latex(f"P(B) = {p_B}")
+    st.latex(f"P(A \cap B) = {p_A_and_B}")
+
+# Rule 3: The Complement Rule
+    st.subheader("Rule 3: The Complement Rule")
+    st.latex(r"P(\neg A) = 1 - P(A)")
+    st.markdown(
+        """
+    The complement rule states that the probability of an event not occurring is equal 
+    to one minus the probability of the event occurring.
+
+    In this context, let's calculate the probability of not being Qualified for the Data Analyst position.
+
+    - Event A: Being Qualified for Data Analyst
+
+    We'll calculate P(A) and use the complement rule formula to find P(not A).
+    """
+    )
+
+# Calculate P(not A) using the Complement Rule formula
+    p_not_A = 1 - p_A
+
+    st.latex(f"P(A) = {p_A}")
+    st.latex(f"P(\neg A) = {p_not_A}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
     
     
     st.markdown("- **Exemple 1 - Application possible en RH** : Supposons qu'un chargé d'études RH veuille déterminer la probabilité qu'un employé soit absent un jour particulier. Il peut collecter des données historiques sur les absences des employés et calculer la proportion d'absences par rapport au nombre total de jours de travail pour estimer la probabilité.")
