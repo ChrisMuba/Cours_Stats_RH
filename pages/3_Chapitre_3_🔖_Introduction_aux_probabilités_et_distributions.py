@@ -250,7 +250,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     p_not_A = 1 - p_A
 
     st.latex(f"P(A) = {p_A}")
-    st.latex(f"P(\neg A) = {p_not_A}")
+    st.latex(r"P(\neg A) = {p_not_A}")
 
 
 
