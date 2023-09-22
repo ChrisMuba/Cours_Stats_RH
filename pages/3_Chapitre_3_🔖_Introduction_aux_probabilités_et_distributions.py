@@ -30,7 +30,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.markdown("")
 
-    st.markdown("💡**Variable aléatoire discrète** : C'est une variable qui ne peut prendre que certaines valeurs distinctes. Par exemple, le nombre d'employés d'un service ne peut prendre que des valeurs entières.
+    st.markdown("💡**Variable aléatoire discrète** : C'est une variable qui ne peut prendre que certaines valeurs distinctes. Par exemple, le nombre d'employés d'un service ne peut prendre que des valeurs entières.")
 
     st.markdown("")
                 
