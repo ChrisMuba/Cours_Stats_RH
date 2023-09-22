@@ -35,17 +35,14 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("")
                 
     st.markdown("💡**Variable aléatoire continue** : C'est une variable qui peut prendre n'importe quelle valeur dans une plage. Par exemple, le salaire d’un employé peut prendre n’importe quelle valeur dans une certaine fourchette.")
+
     
     st.markdown("") 
-    st.markdown("")
-    st.markdown("")
 
-
-
-
-    
     
     st.markdown("**Les concepts clés en probabilités comprennent les notions suivantes** :")
+
+    st.markdown("")
 
     st.markdown("- **Espace d'échantillonnage et événements** : l'espace d'échantillonnage **représente l'ensemble de tous les résultats possibles d'une expérience**. Les **événements sont des sous-ensembles** de l'espace d'échantillonnage, représentant des résultats spécifiques ou des combinaisons de résultats.")
     
