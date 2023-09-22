@@ -21,9 +21,32 @@ st.markdown("")
 if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.subheader("📈Chap.3-A/ Concepts de clés📉")
+
+    st.markdown("Quelques définitionns :")
+
+    st.markdown("")
+
+    st.markdown("💡**Variable aléatoire** : c'est une quantité qui prend différentes valeurs à la suite d'événements aléatoires. Une variable aléatoire peut être **discrete ou continue**.") 
+    
+    st.markdown("")
+
+    st.markdown("💡**Variable aléatoire discrète** : C'est une variable qui ne peut prendre que certaines valeurs distinctes. Par exemple, le nombre d'employés d'un service ne peut prendre que des valeurs entières.
+
+    st.markdown("")
+                
+    st.markdown("💡**Variable aléatoire continue** : C'est une variable qui peut prendre n'importe quelle valeur dans une plage. Par exemple, le salaire d’un employé peut prendre n’importe quelle valeur dans une certaine fourchette.")
+    
+    st.markdown("") 
+    st.markdown("")
+    st.markdown("")
+
+
+
+
+    
     
     st.markdown("**Les concepts clés en probabilités comprennent les notions suivantes** :")
-    
+
     st.markdown("- **Espace d'échantillonnage et événements** : l'espace d'échantillonnage **représente l'ensemble de tous les résultats possibles d'une expérience**. Les **événements sont des sous-ensembles** de l'espace d'échantillonnage, représentant des résultats spécifiques ou des combinaisons de résultats.")
     
     st.markdown("- **Règles de probabilité** : La **probabilité d'un événement varie de 0** (événement impossible) à **1** (événement certain). La somme des probabilités de tous les résultats possibles dans l'espace échantillon est toujours **1**. De plus, la règle de complément, la règle d'addition et la règle de multiplication aident à calculer les probabilités dans différents scénarios.")
