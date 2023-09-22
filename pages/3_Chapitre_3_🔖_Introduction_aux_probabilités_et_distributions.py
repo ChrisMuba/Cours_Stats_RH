@@ -45,7 +45,81 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("")
 
     st.markdown("- **Espace d'échantillonnage et événements** : l'espace d'échantillonnage **représente l'ensemble de tous les résultats possibles d'une expérience**. Les **événements sont des sous-ensembles** de l'espace d'échantillonnage, représentant des résultats spécifiques ou des combinaisons de résultats.")
+
     
+# Sample Data: Let's assume you have received applications from five candidates. 
+# Each candidate's application includes their years of experience and their highest education level, which can be either "Bachelor's," "Master's," or "Ph.D." 
+# Here's the sample data:
+    
+    import pandas as pd
+
+    data = {
+        "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
+        "Experience (Years)": [2, 4, 3, 5, 1],
+        "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
+    }
+
+    df = pd.DataFrame(data)
+
+   import streamlit as st
+   import plotly.express as px
+
+# Sample Data
+   data = {
+       "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
+       "Experience (Years)": [2, 4, 3, 5, 1],
+       "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
+   }
+
+   df = pd.DataFrame(data)
+
+# Streamlit App
+   st.title("HR Data Analysis: Sample Space and Events")
+
+# Display the sample data
+   st.subheader("Sample Data:")
+   st.dataframe(df)
+
+# Calculate the sample space for education levels
+   sample_space_education = df["Education"].unique()
+
+# Calculate the sample space for experience
+   sample_space_experience = df["Experience (Years)"].unique()
+
+# Explain Sample Space and Events
+   st.subheader("Explanation:")
+   st.markdown(
+       """
+   - **Sample Space for Education Levels:** The sample space for education levels includes all possible education levels in our dataset. In this case, it consists of three categories: "Bachelor's," "Master's," and "Ph.D."
+
+   - **Sample Space for Experience (Years):** The sample space for experience includes all unique years of experience in our dataset. In this case, it consists of the values [2, 4, 3, 5, 1].
+
+   Now, let's define some events based on this sample space:
+   - Event A: Candidates with a Master's degree
+   - Event B: Candidates with more than 3 years of experience
+
+   We'll use Plotly to visualize these events on the sample data.
+   """
+   )
+
+# Define Events
+   event_A = df[df["Education"] == "Master's"]
+   event_B = df[df["Experience (Years)"] > 3]
+
+# Visualize Event A (Master's Degree)
+   st.subheader("Event A: Candidates with a Master's Degree")
+   fig_A = px.scatter(event_A, x="Experience (Years)", y="Candidate", color="Education", title="Event A")
+   st.plotly_chart(fig_A)
+
+# Visualize Event B (More than 3 Years of Experience)
+   st.subheader("Event B: Candidates with More than 3 Years of Experience")
+   fig_B = px.scatter(event_B, x="Experience (Years)", y="Candidate", color="Education", title="Event B")
+   st.plotly_chart(fig_B)
+
+
+    
+
+
     st.markdown("- **Règles de probabilité** : La **probabilité d'un événement varie de 0** (événement impossible) à **1** (événement certain). La somme des probabilités de tous les résultats possibles dans l'espace échantillon est toujours **1**. De plus, la règle de complément, la règle d'addition et la règle de multiplication aident à calculer les probabilités dans différents scénarios.")
     
     st.markdown("- **Exemple 1 - Application possible en RH** : Supposons qu'un chargé d'études RH veuille déterminer la probabilité qu'un employé soit absent un jour particulier. Il peut collecter des données historiques sur les absences des employés et calculer la proportion d'absences par rapport au nombre total de jours de travail pour estimer la probabilité.")
