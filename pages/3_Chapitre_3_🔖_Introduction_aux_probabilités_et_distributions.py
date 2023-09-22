@@ -47,10 +47,18 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("- **Espace d'échantillonnage et événements** : l'espace d'échantillonnage **représente l'ensemble de tous les résultats possibles d'une expérience**. Les **événements sont des sous-ensembles** de l'espace d'échantillonnage, représentant des résultats spécifiques ou des combinaisons de résultats.")
 
     
-# Sample Data: Let's assume you have received applications from five candidates. 
-# Each candidate's application includes their years of experience and their highest education level, which can be either "Bachelor's," "Master's," or "Ph.D." 
-# Here's the sample data:
+    st.markdown("")
+
+
+    st.markdown("**🏀Application 15**")
+
+    st.markdown("Illustrons les concepts d'espace d'échantillonnage et d'événements dans le contexte RH par un scénario hypothétique dans lequel nous analysons les qualifications des candidats à un poste vacant.")
+
+    st.markdown("Ci-dessous un échantillon des données de 5 candidats :")
     
+    
+# Sample Data: 
+
     import pandas as pd
 
     data = {
