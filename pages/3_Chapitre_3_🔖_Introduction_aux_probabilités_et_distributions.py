@@ -57,20 +57,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("Ci-dessous un échantillon des données de 5 candidats :")
     
     
-# Sample Data: 
-
-    import pandas as pd
-
-    data = {
-        "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
-        "Experience (Years)": [2, 4, 3, 5, 1],
-        "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
-    }
-
-    df = pd.DataFrame(data)
-
     import streamlit as st
     import plotly.express as px
+    import pandas as pd
 
 # Sample Data
     data = {
