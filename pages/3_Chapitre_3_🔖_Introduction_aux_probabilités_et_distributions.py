@@ -100,13 +100,13 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     event_B = df[df["Expérience (Années)"] > 3]
 
 # Visualize Event A (Master's Degree)
-    st.subheader("Event A: Candidates with a Master's Degree")
-    fig_A = px.scatter(event_A, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Event A")
+    st.subheader("Événement A: Candidats avec un diplôme de Master")
+    fig_A = px.scatter(event_A, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Événement A")
     st.plotly_chart(fig_A)
 
 # Visualize Event B (More than 3 Years of Experience)
-    st.subheader("Event B: Candidates with More than 3 Years of Experience")
-    fig_B = px.scatter(event_B, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Event B")
+    st.subheader("Événement B: Candidats avec plus de 3 ans d'expérience")
+    fig_B = px.scatter(event_B, x="Expérience (Années)", y="Candidat", color="Diplôme", title="Événement B")
     st.plotly_chart(fig_B)
 
 
