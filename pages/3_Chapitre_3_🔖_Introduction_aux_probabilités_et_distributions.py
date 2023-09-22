@@ -61,60 +61,60 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
     df = pd.DataFrame(data)
 
-   import streamlit as st
-   import plotly.express as px
+    import streamlit as st
+    import plotly.express as px
 
 # Sample Data
-   data = {
-       "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
-       "Experience (Years)": [2, 4, 3, 5, 1],
-       "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
-   }
+    data = {
+        "Candidate": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
+        "Experience (Years)": [2, 4, 3, 5, 1],
+        "Education": ["Bachelor's", "Master's", "Bachelor's", "Ph.D.", "Master's"],
+    }
 
-   df = pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
 # Streamlit App
-   st.title("HR Data Analysis: Sample Space and Events")
+    st.title("HR Data Analysis: Sample Space and Events")
 
 # Display the sample data
-   st.subheader("Sample Data:")
-   st.dataframe(df)
+    st.subheader("Sample Data:")
+    st.dataframe(df)
 
 # Calculate the sample space for education levels
-   sample_space_education = df["Education"].unique()
+    sample_space_education = df["Education"].unique()
 
 # Calculate the sample space for experience
-   sample_space_experience = df["Experience (Years)"].unique()
+    sample_space_experience = df["Experience (Years)"].unique()
 
 # Explain Sample Space and Events
-   st.subheader("Explanation:")
-   st.markdown(
-       """
-   - **Sample Space for Education Levels:** The sample space for education levels includes all possible education levels in our dataset. In this case, it consists of three categories: "Bachelor's," "Master's," and "Ph.D."
+    st.subheader("Explanation:")
+    st.markdown(
+        """
+    - **Sample Space for Education Levels:** The sample space for education levels includes all possible education levels in our dataset. In this case, it consists of three categories: "Bachelor's," "Master's," and "Ph.D."
 
-   - **Sample Space for Experience (Years):** The sample space for experience includes all unique years of experience in our dataset. In this case, it consists of the values [2, 4, 3, 5, 1].
+    - **Sample Space for Experience (Years):** The sample space for experience includes all unique years of experience in our dataset. In this case, it consists of the values [2, 4, 3, 5, 1].
 
-   Now, let's define some events based on this sample space:
-   - Event A: Candidates with a Master's degree
-   - Event B: Candidates with more than 3 years of experience
+    Now, let's define some events based on this sample space:
+    - Event A: Candidates with a Master's degree
+    - Event B: Candidates with more than 3 years of experience
 
-   We'll use Plotly to visualize these events on the sample data.
-   """
-   )
+    We'll use Plotly to visualize these events on the sample data.
+    """
+    )
 
 # Define Events
-   event_A = df[df["Education"] == "Master's"]
-   event_B = df[df["Experience (Years)"] > 3]
+    event_A = df[df["Education"] == "Master's"]
+    event_B = df[df["Experience (Years)"] > 3]
 
 # Visualize Event A (Master's Degree)
-   st.subheader("Event A: Candidates with a Master's Degree")
-   fig_A = px.scatter(event_A, x="Experience (Years)", y="Candidate", color="Education", title="Event A")
-   st.plotly_chart(fig_A)
+    st.subheader("Event A: Candidates with a Master's Degree")
+    fig_A = px.scatter(event_A, x="Experience (Years)", y="Candidate", color="Education", title="Event A")
+    st.plotly_chart(fig_A)
 
 # Visualize Event B (More than 3 Years of Experience)
-   st.subheader("Event B: Candidates with More than 3 Years of Experience")
-   fig_B = px.scatter(event_B, x="Experience (Years)", y="Candidate", color="Education", title="Event B")
-   st.plotly_chart(fig_B)
+    st.subheader("Event B: Candidates with More than 3 Years of Experience")
+    fig_B = px.scatter(event_B, x="Experience (Years)", y="Candidate", color="Education", title="Event B")
+    st.plotly_chart(fig_B)
 
 
     
