@@ -139,7 +139,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     
     st.markdown("Nous devons embaucher des candidats pour deux postes : « Analyste de données RH » et « Coordonnateur RH ». Supposons que nous ayons deux groupes de candidats : un pour le poste « Analyste de données RH » et un autre pour le poste de « Coordonnateur RH ».") 
     
-    st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ». Ci-dessous l'échantillon de données :")
+    st.markdown("La qualification de chaque candidat est classée comme « Qualifié » ou « Non qualifié ».") 
+    
+    st.markdown("Ci-dessous l'échantillon de données :")
 
 
     import streamlit as st
@@ -149,17 +151,13 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 # Sample Data
     data = {
         "Applicant ID": [1, 2, 3, 4, 5],
-        "Data Analyst Qualification": ["Qualified", "Not Qualified", "Qualified", "Not Qualified", "Qualified"],
-        "HR Coordinator Qualification": ["Not Qualified", "Qualified", "Not Qualified", "Qualified", "Not Qualified"],
+        "Data Analyst Qualification": ["Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié"],
+        "HR Coordinator Qualification": ["Non Qualifié", "Qualifié", "Non Qualifié", "Qualifié", "Non Qualifié"],
     }
 
     df = pd.DataFrame(data)
 
-# Streamlit App
-    st.title("HR Data Analysis: Probability Rules")
-
 # Display the sample data
-    st.subheader("Sample Data:")
     st.dataframe(df)
 
 # Rule 1: The Sum Rule
