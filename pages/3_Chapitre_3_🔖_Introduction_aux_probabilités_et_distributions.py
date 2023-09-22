@@ -160,6 +160,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 # Display the sample data
     st.dataframe(df)
 
+
+    st.markdown("")
+
 # Rule 1: The Sum Rule
     st.subheader("Règle 1 : la règle de la somme")
     st.latex(r"P(A \cup B) = P(A) + P(B) - P(A \cap B)")
@@ -200,6 +203,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A \cap B) = {p_A_and_B}")
     st.latex(f"P(A \cup B) = {p_A_or_B}")
 
+
+    st.markdown("")
+
 # Rule 2: The Product Rule
     st.subheader("Règle 2 : la règle du produit")
     st.latex(r"P(A \cap B) = P(A) \cdot P(B)")
@@ -222,6 +228,8 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A) = {p_A}")
     st.latex(f"P(B) = {p_B}")
     st.latex(f"P(A \cap B) = {p_A_and_B}")
+
+    st.markdown("")
 
 # Rule 3: The Complement Rule
     st.subheader("Règle 3 : la règle du complément")
