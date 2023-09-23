@@ -287,13 +287,19 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("")
     
 
-    st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continues sont utilisées lorsque la variable aléatoire peut prendre n'importe quelle valeur dans une plage. Cette distribution fournit la probabilité qu’un résultat se situe dans une certaine plage de valeurs.")
+   
 
     
     st.markdown("") 
     
     
 if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
+
+
+    st.markdown("")
+
+
+    st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continues sont utilisées lorsque la variable aléatoire peut prendre n'importe quelle valeur dans une plage. Cette distribution fournit la probabilité qu’un résultat se situe dans une certaine plage de valeurs.")
     
     st.markdown("Deux exemples courants sont la **distribution binomiale** et la **distribution de Poisson**.")
     
