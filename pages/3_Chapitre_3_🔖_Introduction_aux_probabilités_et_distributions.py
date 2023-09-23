@@ -274,12 +274,15 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
     st.markdown("- **Distributions de probabilité discrète** : Des distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées. Cette distribution fournit la probabilité de chaque valeur possible de la variable aléatoire.")
 
+    st.markdown("")
     
     st.markdown("**Distribution de Poisson** : La distribution de Poisson est une distribution de probabilité discrète, qui modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**, étant donné un taux moyen d'événements connu. Elle est **souvent utilisée pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant**.")
 
+    st.markdown("")
 
     st.markdown("**Distribution binomiale** : La distribution binomiale est une distribution de probabilité discrète utilisée pour modéliser le nombre de réussites dans un nombre fixe d'essais indépendants.")
 
+    st.markdown("")
     
     st.markdown("- **🏀Application 17** :")
     
