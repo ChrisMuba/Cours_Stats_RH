@@ -316,10 +316,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 # Create an interactive line plot
     #st.header('Payroll Budget Evolution (2021 vs. 2022)')
-    fig = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
-              labels={'value': 'Masse salariale brute (Millions €)'},
-              title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
-    st.plotly_chart(fig)
+    fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
+                labels={'value': 'Masse salariale brute (Millions €)'},
+                title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
+    st.plotly_chart(fig_1)
 
     
     st.markdown("")
@@ -476,7 +476,15 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 
                 
-    #st.markdown("Mais aussi de **mesurer et anticiper les coûts financiers de la gestion et de la politique RH** d'une entreprise.")
+    # Display the 4 graphs side-by-side
+    #col1, col2 = st.columns(2)
+    #with col1:
+        #st.plotly_chart(fig_pie)
+        #st.plotly_chart(fig_scatter)
+    #with col2:
+        #st.plotly_chart(fig_line)
+        #st.plotly_chart(fig_box)
+
 
     
     st.markdown("")
