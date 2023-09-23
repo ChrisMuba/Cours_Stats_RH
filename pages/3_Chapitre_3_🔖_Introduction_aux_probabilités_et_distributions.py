@@ -258,7 +258,15 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité**"):
     
-    st.subheader("📈Chap.2-B/ Distributions de probabilité discrète📉")
+    st.subheader("📈Chap.2-B/ Distributions de probabilité discrète et continue📉")
+
+
+    st.markdown("")
+
+
+    st.markdown("Les distributions de probabilité sont des fonctions mathématiques qui décrivent la probabilité de différents résultats dans un processus aléatoire.") 
+    
+    st.markdown("Il existe deux principaux types de distributions de probabilité :")
     
     st.markdown("Des **distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées**.") 
     
