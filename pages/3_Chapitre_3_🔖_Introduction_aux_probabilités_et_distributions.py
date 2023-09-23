@@ -284,7 +284,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("") 
     
     
-    if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
+if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
     
     st.markdown("Deux exemples courants sont la **distribution binomiale** et la **distribution de Poisson**.")
     
