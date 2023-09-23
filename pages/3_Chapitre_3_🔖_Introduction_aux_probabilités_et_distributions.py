@@ -258,7 +258,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité**"):
     
-    st.subheader("📈Chap.2-B/ Distributions de probabilité discrète📉")
+    st.subheader("📈Chap.2-B/ Distributions discrète et continue📉")
 
 
     st.markdown("")
@@ -272,10 +272,19 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("")
 
 
-    st.markdown("- Distributions de probabilité discrètes : Des **distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées**. Cette distribution de probabilité fournit la probabilité de chaque valeur possible de la variable aléatoire.")
+    st.markdown("- **Distributions de probabilité discrète** : Des distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées. Cette distribution fournit la probabilité de chaque valeur possible de la variable aléatoire.")
+
+    
+    st.markdown("")
+    
+
+    st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continues sont utilisées lorsque la variable aléatoire peut prendre n'importe quelle valeur dans une plage. Cette distribution fournit la probabilité qu’un résultat se situe dans une certaine plage de valeurs.")
 
     
     st.markdown("") 
+    
+    
+    if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
     
     st.markdown("Deux exemples courants sont la **distribution binomiale** et la **distribution de Poisson**.")
     
@@ -287,11 +296,11 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     st.markdown("- **Exemple 3 - Application possible en RH** : Un chargé d'études RH dans le secteur industriel peut devoir analyser mensuellement le nombre d'accidents du travail pour identifier les problèmes de sécurité. **En ajustant les données historiques d'accidents du travail à une distribution de Poisson**, le chargé d'études RH peut estimer la probabilité qu'un nombre spécifique d'accidents du travail se produisent au cours d'un mois donné.")
 
-if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
+
     
     st.subheader("📈Chap.3-C/ Distributions de probabilité continue📉")
     
-    st.markdown("**Les distributions de probabilité continues sont utilisées lorsque la variable aléatoire peut prendre n'importe quelle valeur dans une plage.**") 
+    st.markdown("") 
     
     st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
     
