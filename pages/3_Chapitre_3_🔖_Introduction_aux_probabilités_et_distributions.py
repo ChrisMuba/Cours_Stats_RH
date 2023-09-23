@@ -256,9 +256,9 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("")
     
 
-if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité**"):
+if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité discrète**"):
     
-    st.subheader("📈Chap.2-B/ Distributions discrète et continue📉")
+    st.subheader("📈Chap.2-B/ Distributions discrète / Loi de Poisson📉")
 
 
     st.markdown("")
@@ -274,6 +274,12 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
     st.markdown("- **Distributions de probabilité discrète** : Des distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées. Cette distribution fournit la probabilité de chaque valeur possible de la variable aléatoire.")
 
+    
+    st.markdown("- **Distribution de Poisson** : La distribution de Poisson modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**. Il est **souvent utilisé pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant (λ)**.")
+
+    
+    st.markdown("- **🏀Application 17** : Un chargé d'études RH dans le secteur industriel peut devoir analyser mensuellement le nombre d'accidents du travail pour identifier les problèmes de sécurité. **En ajustant les données historiques d'accidents du travail à une distribution de Poisson**, le chargé d'études RH peut estimer la probabilité qu'un nombre spécifique d'accidents du travail se produisent au cours d'un mois donné.")
+    
     
     st.markdown("")
     
@@ -292,9 +298,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     
     st.markdown("- **Exemple 2 - Application possible en RH** : Considérez un chargé d'études RH à qui l'on demande de déterminer la probabilité de sélectionner trois candidats parmi un groupe de 10 pour un entretien d'embauche. En utilisant la distribution binomiale, le chargé d'études RH peut calculer la probabilité d'exactement trois sélections réussies, compte tenu d'un certain taux de réussite (par exemple, la proportion des candidats qualifiés dans le bassin.")
     
-    st.markdown("- **Distribution de Poisson** : La distribution de Poisson modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**. Il est **souvent utilisé pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant (λ)**.")
     
-    st.markdown("- **Exemple 3 - Application possible en RH** : Un chargé d'études RH dans le secteur industriel peut devoir analyser mensuellement le nombre d'accidents du travail pour identifier les problèmes de sécurité. **En ajustant les données historiques d'accidents du travail à une distribution de Poisson**, le chargé d'études RH peut estimer la probabilité qu'un nombre spécifique d'accidents du travail se produisent au cours d'un mois donné.")
 
 
     
