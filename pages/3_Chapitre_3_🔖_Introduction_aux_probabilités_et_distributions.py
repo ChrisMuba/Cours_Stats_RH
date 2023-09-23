@@ -277,8 +277,11 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     st.markdown("**Distribution de Poisson** : La distribution de Poisson est une distribution de probabilité discrète, qui modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**, étant donné un taux moyen d'événements connu. Elle est **souvent utilisée pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant**.")
 
+
+    st.markdown("**Distribution binomiale ** : La distribution binomiale est une distribution de probabilité discrète utilisée pour modéliser le nombre de réussites dans un nombre fixe d'essais indépendants.")
+
     
-    st.markdown("- **🏀Application 17** : Un chargé d'études RH dans le secteur industriel peut devoir analyser mensuellement le nombre d'accidents du travail pour identifier les problèmes de sécurité. **En ajustant les données historiques d'accidents du travail à une distribution de Poisson**, le chargé d'études RH peut estimer la probabilité qu'un nombre spécifique d'accidents du travail se produisent au cours d'un mois donné.")
+    st.markdown("- **🏀Application 17** :)
     
     
     st.markdown("")
