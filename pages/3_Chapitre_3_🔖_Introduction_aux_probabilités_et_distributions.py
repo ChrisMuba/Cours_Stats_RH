@@ -281,7 +281,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("**Distribution binomiale ** : La distribution binomiale est une distribution de probabilité discrète utilisée pour modéliser le nombre de réussites dans un nombre fixe d'essais indépendants.")
 
     
-    st.markdown("- **🏀Application 17** :)
+    st.markdown("- **🏀Application 17** :")
     
     
     st.markdown("")
