@@ -476,20 +476,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 
                 
-    # Display the 4 graphs side-by-side
-    col1, col2 = st.columns(2)
-    with col1:
-        st.plotly_chart(fig_1)
-        st.plotly_chart(fig_bar)
-    with col2:
-        st.plotly_chart(fig_2)
-        st.plotly_chart(fig_box)
-
-
-    
-    st.markdown("")
-
-
     #url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
     #st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
 
