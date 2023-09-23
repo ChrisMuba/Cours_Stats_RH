@@ -266,9 +266,16 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
     st.markdown("Les distributions de probabilité sont des fonctions mathématiques qui décrivent la probabilité de différents résultats dans un processus aléatoire.") 
     
-    st.markdown("Il existe deux principaux types de distributions de probabilité :")
+    st.markdown("Il existe deux principaux types de distributions de probabilité : **discrète** et **continue**.")
     
-    st.markdown("Des **distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées**.") 
+
+    st.markdown("")
+
+
+    st.markdown("- Distributions de probabilité discrètes : Des **distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées**. Cette distribution de probabilité fournit la probabilité de chaque valeur possible de la variable aléatoire.")
+
+    
+    st.markdown("") 
     
     st.markdown("Deux exemples courants sont la **distribution binomiale** et la **distribution de Poisson**.")
     
