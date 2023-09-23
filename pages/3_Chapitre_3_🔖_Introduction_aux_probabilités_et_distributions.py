@@ -275,7 +275,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("- **Distributions de probabilité discrète** : Des distributions de probabilité discrètes sont utilisées lorsque la variable aléatoire ne peut prendre que des valeurs distinctes et séparées. Cette distribution fournit la probabilité de chaque valeur possible de la variable aléatoire.")
 
     
-    st.markdown("- **Distribution de Poisson** : La distribution de Poisson modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**. Il est **souvent utilisé pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant (λ)**.")
+    st.markdown("- **Distribution de Poisson** : La distribution de Poisson est une distribution de probabilité discrète, qui modélise le **nombre d'événements se produisant dans un intervalle de temps ou d'espace fixe**, étant donné un taux moyen d'événements connu. Elle est **souvent utilisée pour analyser des événements rares** qui se produisent indépendamment à un **taux moyen constant**.")
 
     
     st.markdown("- **🏀Application 17** : Un chargé d'études RH dans le secteur industriel peut devoir analyser mensuellement le nombre d'accidents du travail pour identifier les problèmes de sécurité. **En ajustant les données historiques d'accidents du travail à une distribution de Poisson**, le chargé d'études RH peut estimer la probabilité qu'un nombre spécifique d'accidents du travail se produisent au cours d'un mois donné.")
