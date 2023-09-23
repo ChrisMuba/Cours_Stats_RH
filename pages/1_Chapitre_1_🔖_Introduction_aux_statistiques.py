@@ -480,10 +480,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     col1, col2 = st.columns(2)
     with col1:
         st.plotly_chart(fig_1)
-        st.plotly_chart(fig_2)
-    with col2:
         st.plotly_chart(fig_bar)
-        st.plotly_chart(fig_scatter)
+    with col2:
+        st.plotly_chart(fig_2)
+        st.plotly_chart(fig_box)
 
 
     
