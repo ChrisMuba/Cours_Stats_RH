@@ -475,6 +475,32 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.plotly_chart(fig_scatter)
 
 
+
+
+    # Create the tabs
+    tabs = st.tabs(["Suivi de la masse salariale", "Pyramide des âges", "Tab 3", "Tab 4"])
+
+# Tab 1 - Line Chart
+    with tabs[0]:
+        st.write("## Line Chart")
+        st.plotly_chart(fig_1)
+
+# Tab 2 - Bar Chart
+    with tabs[1]:
+        st.write("## Bar Chart")
+        st.plotly_chart(fig_2)
+
+# Tab 3 - Box Plot
+    with tabs[2]:
+        st.write("## Box Plot")
+        st.plotly_chart(fig_box)
+
+# Tab 4 - Bar Chart
+    with tabs[3]:
+        st.write("## Bar Chart")
+        st.plotly_chart(fig_bar)
+
+
                 
     #url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
     #st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
