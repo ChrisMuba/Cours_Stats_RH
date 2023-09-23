@@ -256,7 +256,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.markdown("")
     
 
-if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité discrète**"):
+if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité**"):
     
     st.subheader("📈Chap.2-B/ Distributions de probabilité discrète📉")
     
