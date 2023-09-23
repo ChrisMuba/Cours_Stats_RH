@@ -378,9 +378,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     )
 ]
 
-    fig = go.Figure(data=data, layout=layout)
+    fig_2 = go.Figure(data=data, layout=layout)
     
-    st.plotly_chart(fig)
+    st.plotly_chart(fig_2)
 
 
     st.markdown("- **Et enfin remplir les obligations légales**, notamment construire le **bilan social**, préparer et mettre à dsposition les données necessaires à la **négociation annuelle obligatoire** (NAO) ; ") 
