@@ -286,7 +286,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     st.markdown("- **🏀Application 17** :")
 
-    st.markdown("Un chargé de recrutement de la municipalité de Culiacan-lès-Marseille doit de suivre le nombre de candidats qui visitent le site web carrière de la commune au cours d'une période donnée. Ci-dessous les données collectées sur le nombre de visites du site web par heure sur une semaine.")
+    st.markdown("Un chargé de recrutement de la municipalité de Culiacan-lès-Marseille doit de suivre le nombre de candidats qui visitent le site web carrière de la commune au cours d'une période donnée. Ci-dessous les data collectées sur le nombre de visites du site web par heure sur une semaine.")
 
 
     import streamlit as st
