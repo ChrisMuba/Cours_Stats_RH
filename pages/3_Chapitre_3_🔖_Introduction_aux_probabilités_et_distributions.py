@@ -390,7 +390,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
 
     st.markdown("Ci-dessous les données collectées.")
 
-    st.markdown(")
+    st.markdown("")
 
 
     import pandas as pd
@@ -407,21 +407,18 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     df = pd.DataFrame(data)
 
 # Display the sample data
-    st.subheader("Sample Data (Performance Ratings):")
+    st.markdown("Échantillon de données (évaluations des performances):")
     st.dataframe(df)
 
 # Normal Distribution
-    st.subheader("Normal Distribution (Performance Ratings):")
+    st.subheader("Distribution Normale (Évaluation Performance):")
     st.markdown(
         """
-    The normal distribution, also known as the Gaussian distribution or bell curve, is characterized 
-    by its symmetrical bell-shaped curve. It is defined by two parameters: the mean (μ) and the 
-    standard deviation (σ). In HR, the normal distribution can be used to model various employee 
-    performance metrics.
+    La distribution normale, également connue sous le nom de distribution gaussienne ou courbe en cloche, se caractérise par sa courbe symétrique en forme de cloche. 
+    Elle est définie par deux paramètres : la moyenne (μ) et l'écart type (σ). En RH, la distribution normale peut être utilisée pour modéliser diverses mesures de performance des employés.
 
-    In this context, let's assume that the average performance rating in your company is 70, and 
-    the standard deviation is 10. We'll calculate the probabilities associated with different 
-    performance ratings and visualize the normal distribution.
+    Dans ce contexte, supposons que la note de performance moyenne du Service Public est de 70 et que l'écart type est de 10. 
+    Nous calculerons les probabilités associées aux différentes notes de performance et visualiserons la distribution normale.
     """
     )
 
@@ -434,9 +431,8 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     pdf_values = (1 / (std_deviation * np.sqrt(2 * np.pi))) * np.exp(-((x_values - mean_rating) ** 2) / (2 * std_deviation ** 2))
 
 # Visualize the Normal Distribution
-    fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Performance Rating", "y": "Probability Density"}, title="Normal Distribution")
+    fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Évaluation Performance", "y": "Densité de probabilité"}, title="Distribution Normal")
     st.plotly_chart(fig_normal)
-
 
 
     st.markdown("")
