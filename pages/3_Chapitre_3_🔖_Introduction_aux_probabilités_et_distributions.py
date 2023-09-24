@@ -280,7 +280,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
     st.markdown("")
 
-    st.markdown("**Distribution binomiale** : La distribution binomiale est une distribution de probabilité discrète utilisée pour modéliser le nombre de réussites dans un nombre fixe d'essais indépendants (essais de Bernoulli), , chacun avec la **même probabilité de succès (p)**. Elle est caractérisé par deux paramètres, **n (nombre d'essais) et p (probabilité de succès)**.").")
+    st.markdown("**Distribution binomiale** : La distribution binomiale est une distribution de probabilité discrète utilisée pour modéliser le nombre de réussites dans un nombre fixe d'essais indépendants (essais de Bernoulli), , chacun avec la **même probabilité de succès (p)**. Elle est caractérisé par deux paramètres, **n (nombre d'essais) et p (probabilité de succès)**.")
 
     st.markdown("")
     
