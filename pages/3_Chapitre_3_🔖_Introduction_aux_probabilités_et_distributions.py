@@ -289,9 +289,6 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     st.markdown("")
     
-
-   
-
     
     st.markdown("") 
     
@@ -302,23 +299,9 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     st.markdown("")
 
 
-    st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continues sont utilisées lorsque la variable aléatoire peut prendre n'importe quelle valeur dans une plage. Cette distribution fournit la probabilité qu’un résultat se situe dans une certaine plage de valeurs.")
+    st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continue décrivent la probabilité de résultats pour des variables aléatoires continues, qui peuvent prendre un nombre infini de valeurs dans une plage spécifiée.")
     
-    st.markdown("Deux exemples courants sont la **distribution binomiale** et la **distribution de Poisson**.")
-    
-    st.markdown("- **Distribution binomiale** : La distribution binomiale modélise le **nombre de succès (x)** dans un nombre fixe d'essais indépendants, chacun avec la **même probabilité de succès (p)**. Il est caractérisé par deux paramètres, **n (nombre d'essais) et p (probabilité de succès)**.")
-    
-    st.markdown("- **Exemple 2 - Application possible en RH** : Considérez un chargé d'études RH à qui l'on demande de déterminer la probabilité de sélectionner trois candidats parmi un groupe de 10 pour un entretien d'embauche. En utilisant la distribution binomiale, le chargé d'études RH peut calculer la probabilité d'exactement trois sélections réussies, compte tenu d'un certain taux de réussite (par exemple, la proportion des candidats qualifiés dans le bassin.")
-    
-    
-
-
-    
-    st.subheader("📈Chap.3-C/ Distributions de probabilité continue📉")
-    
-    st.markdown("") 
-    
-    st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
+     st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
     
     st.markdown("- **La distribution normale**, également connue sous le nom de **distribution gaussienne ou courbe en cloche**, se caractérise par sa **courbe symétrique en forme de cloche**. Elle est définie par deux paramètres : la **moyenne** (μ) et **l'écart type** (σ). De nombreux phénomènes naturels suivent une distribution normale, y compris dans le domaine des RH.")
     
