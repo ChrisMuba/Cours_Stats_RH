@@ -290,6 +290,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
 
     import streamlit as st
+    import pandas as pd
     import plotly.express as px
     import numpy as np
     from scipy.stats import poisson, binom
