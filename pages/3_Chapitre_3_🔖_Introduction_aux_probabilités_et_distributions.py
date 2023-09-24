@@ -258,7 +258,7 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
 
 if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité discrète**"):
     
-    st.subheader("📈Chap.2-B/ Distributions discrète / Loi de Poisson📉")
+    st.subheader("📈Chap.2-B/ Distribution discrète📉")
 
 
     st.markdown("")
@@ -294,6 +294,8 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     
 if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
+
+    st.subheader("📈Chap.2-B/ Distribution continue📉")
 
 
     st.markdown("")
