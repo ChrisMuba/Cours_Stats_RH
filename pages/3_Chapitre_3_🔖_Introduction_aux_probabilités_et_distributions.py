@@ -285,6 +285,80 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.markdown("")
     
     st.markdown("- **🏀Application 17** :")
+
+    st.markdown("Un chargé de recrutement de la municipalité de Culiacan-lès-Marseille doit de suivre le nombre de candidats qui visitent le site web carrière de la commune au cours d'une période donnée. Ci-dessous les données collectées sur le nombre de visites du site web par heure sur une semaine.")
+
+
+    import streamlit as st
+    import plotly.express as px
+    import numpy as np
+    from scipy.stats import poisson, binom
+
+# Sample Data
+    data = {
+        "Hour": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "Visits": [8, 7, 9, 6, 10, 9, 11, 8, 7, 10],
+    }
+
+    df = pd.DataFrame(data)
+
+# Streamlit App
+    st.title("HR Data Analysis: Discrete Probability Distributions")
+
+# Display the sample data
+    st.subheader("Sample Data (Website Visits per Hour):")
+    st.dataframe(df)
+
+# Poisson Distribution
+    st.subheader("Poisson Distribution (Website Visits):")
+    st.markdown(
+        """
+    The Poisson distribution models the number of events occurring in a fixed interval of time or space, 
+    given a known average event rate. In this context, it can be used to predict the number of website 
+    visits in a specific hour based on the average number of visits per hour.
+
+    Let's assume the average number of website visits per hour is 8. We'll calculate the Poisson probabilities 
+    for different numbers of visits per hour and visualize the distribution.
+    """
+    )
+
+# Define the average number of visits per hour
+    average_visits = 8
+
+# Calculate Poisson probabilities for different values
+    x = np.arange(0, 16)  # Number of visits from 0 to 15
+    poisson_probs = poisson.pmf(x, average_visits)
+
+# Visualize the Poisson Distribution
+    fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Number of Visits", "y": "Probability"}, title="Poisson Distribution")
+    st.plotly_chart(fig_poisson)
+
+# Binomial Distribution
+    st.subheader("Binomial Distribution (Job Applicant Success):")
+    st.markdown(
+        """
+    The Binomial distribution models the number of successes in a fixed number of independent trials 
+    (Bernoulli trials), each with the same probability of success (p). In HR, it can be used to model 
+    the number of successful job applicants out of a fixed number of interviews (trials) with a given 
+    probability of success.
+
+    Let's assume there are 10 job applicants, and each has a 30% chance of success. We'll calculate the 
+    Binomial probabilities for different numbers of successful applicants and visualize the distribution.
+    """
+    )
+
+# Define the parameters for the Binomial distribution
+    n_applicants = 10  # Number of job applicants
+    p_success = 0.3   # Probability of success for each applicant
+
+# Calculate Binomial probabilities for different values
+    x_binom = np.arange(0, 11)  # Number of successful applicants from 0 to 10
+    binom_probs = binom.pmf(x_binom, n_applicants, p_success)
+
+# Visualize the Binomial Distribution
+    fig_binomial = px.bar(x=x_binom, y=binom_probs, labels={"x": "Number of Successful Applicants", "y": "Probability"}, title="Binomial Distribution")
+    st.plotly_chart(fig_binomial)
+
     
     
     st.markdown("")
