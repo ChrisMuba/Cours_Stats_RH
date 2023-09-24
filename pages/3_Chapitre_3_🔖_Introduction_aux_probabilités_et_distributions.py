@@ -301,7 +301,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
 
     st.markdown("- **Distributions de probabilité continues** : Les distributions de probabilité continue décrivent la probabilité de résultats pour des variables aléatoires continues, qui peuvent prendre un nombre infini de valeurs dans une plage spécifiée.")
     
-     st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
+    st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
     
     st.markdown("- **La distribution normale**, également connue sous le nom de **distribution gaussienne ou courbe en cloche**, se caractérise par sa **courbe symétrique en forme de cloche**. Elle est définie par deux paramètres : la **moyenne** (μ) et **l'écart type** (σ). De nombreux phénomènes naturels suivent une distribution normale, y compris dans le domaine des RH.")
     
