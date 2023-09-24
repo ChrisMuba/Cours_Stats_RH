@@ -388,7 +388,9 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
 
     st.markdown("Le contrôleur de gestion sociale d'un service public de *Pluie-lès-Brest* a collecté des données sur les évaluations de performance de 100 agents. Il souhaite analyser la répartition de ces évaluations.")
 
-    st.markdown("")
+    st.markdown("Ci-dessous les données collectées.")
+
+    st.markdown(")
 
 
     import pandas as pd
@@ -403,9 +405,6 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     }
 
     df = pd.DataFrame(data)
-
-# Streamlit App
-    st.title("HR Data Analysis: Normal Distribution")
 
 # Display the sample data
     st.subheader("Sample Data (Performance Ratings):")
