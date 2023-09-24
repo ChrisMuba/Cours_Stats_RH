@@ -290,6 +290,8 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     
     st.markdown("Ci-dessous les data collectées sur le nombre de visites du site web par heure sur une semaine.")
 
+    st.markdown("")
+
 
     import streamlit as st
     import pandas as pd
