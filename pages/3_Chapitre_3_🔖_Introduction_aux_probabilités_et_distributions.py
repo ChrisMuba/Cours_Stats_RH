@@ -303,7 +303,9 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     
     st.markdown("La distribution continue la plus utilisée est la **distribution normale**.")
     
-    st.markdown("**La distribution normale**, également connue sous le nom de **distribution gaussienne ou courbe en cloche**, se caractérise par sa **courbe symétrique en forme de cloche**. Elle est définie par deux paramètres : la **moyenne** (μ) et **l'écart type** (σ). La distribution normale est largement utilisée dans divers domaines, notamment les ressources humaines, en raison de sa capacité à modéliser avec précision de nombreux phénomènes du monde réel.")
+    st.markdown("**La distribution normale**, également connue sous le nom de **distribution gaussienne ou courbe en cloche**, se caractérise par sa **courbe symétrique en forme de cloche**. Elle est définie par deux paramètres : la **moyenne** (μ) et **l'écart type** (σ). La distribution normale est largement utilisée dans divers domaines, y compris RH, en raison de sa capacité à modéliser avec précision de nombreux phénomènes du monde réel.")
+
+    st.markdown("")
     
     st.markdown("- **🏀Application 18** :")
 
