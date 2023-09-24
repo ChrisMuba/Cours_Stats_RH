@@ -386,6 +386,59 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     
     st.markdown("- **🏀Application 18** :")
 
+    st.markdown("Le contrôleur de gestion sociale d'un service public de Pluie-lès-Brest a collecté des données sur les évaluations de performance de 100 agents. Il souhaite analyser la répartition de ces évaluations.")
+
+    st.markdown("")
+
+
+    import pandas as pd
+    import numpy as np
+    import streamlit as st
+    import plotly.express as px
+
+# Sample Data
+    data = {
+        "Employee ID": range(1, 101),
+        "Performance Rating": np.random.normal(70, 10, 100)  # Mean = 70, Standard Deviation = 10
+    }
+
+    df = pd.DataFrame(data)
+
+# Streamlit App
+    st.title("HR Data Analysis: Normal Distribution")
+
+# Display the sample data
+    st.subheader("Sample Data (Performance Ratings):")
+    st.dataframe(df)
+
+# Normal Distribution
+    st.subheader("Normal Distribution (Performance Ratings):")
+    st.markdown(
+        """
+    The normal distribution, also known as the Gaussian distribution or bell curve, is characterized 
+    by its symmetrical bell-shaped curve. It is defined by two parameters: the mean (μ) and the 
+    standard deviation (σ). In HR, the normal distribution can be used to model various employee 
+    performance metrics.
+
+    In this context, let's assume that the average performance rating in your company is 70, and 
+    the standard deviation is 10. We'll calculate the probabilities associated with different 
+    performance ratings and visualize the normal distribution.
+    """
+    )
+
+# Define the mean and standard deviation for the normal distribution
+    mean_rating = 70
+    std_deviation = 10
+
+# Calculate the probabilities for different performance ratings
+    x_values = np.linspace(mean_rating - 3 * std_deviation, mean_rating + 3 * std_deviation, 100)
+    pdf_values = (1 / (std_deviation * np.sqrt(2 * np.pi))) * np.exp(-((x_values - mean_rating) ** 2) / (2 * std_deviation ** 2))
+
+# Visualize the Normal Distribution
+    fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Performance Rating", "y": "Probability Density"}, title="Normal Distribution")
+    st.plotly_chart(fig_normal)
+
+
 
     st.markdown("")
 
