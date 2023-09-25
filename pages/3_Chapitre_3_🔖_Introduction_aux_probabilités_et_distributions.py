@@ -341,7 +341,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.table(poisson_table)
 
 # Visualize the Poisson Distribution
-    fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Nombre de visites", "y": "Probabilité"}, title="Distribution de Poisson ")
+    fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Nombre de visites", "y": "Probabilité"}, title="DataViz: Distribution de Poisson ")
     st.plotly_chart(fig_poisson)
 
 
