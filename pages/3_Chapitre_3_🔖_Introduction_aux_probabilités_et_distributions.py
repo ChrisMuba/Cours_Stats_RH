@@ -382,6 +382,9 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     """
     )
 
+    st.markdown("")
+    
+
 # Define the parameters for the Binomial distribution
     n_applicants = 10  # Number of job applicants
     p_success = 0.3   # Probability of success for each applicant
