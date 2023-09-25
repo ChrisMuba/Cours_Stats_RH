@@ -477,7 +477,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     calculation_details = calculation_details.round(4)  # Round to 4 decimal places for readability
 
 # Display the calculation details table
-    st.subheader("Table des probabilités pour différentes valeurs des notes d'évaluation de performance (x).:")
+    st.markdown("Table des probabilités pour différentes valeurs des notes d'évaluation de performance (x).:")
     st.dataframe(calculation_details)
 
 # Visualize the Normal Distribution
