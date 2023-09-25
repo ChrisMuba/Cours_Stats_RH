@@ -319,8 +319,9 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     étant donné un taux d’événements moyen connu. Dans ce contexte, elle peut être utilisée pour prédire le nombre de visites du site web
     carrière à une heure spécifique en fonction du nombre moyen de visites par heure.
 
-    Supposons que le nombre moyen de visites du site Web par heure soit de 8. Nous calculerons les probabilités de Poisson
-    pour différents nombres de visites par heure et en visualiserons la répartition.
+    Supposons que le nombre moyen de visites du site Web par heure soit de 8. 
+    
+    Nous calculons les probabilités de Poisson pour différents nombres de visites par heure et en visualisons la répartition.
     """
     )
 
@@ -333,6 +334,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
 # Display the Poisson probabilities table
     poisson_table = pd.DataFrame({"Nombre de visites (x)": x, "P(X = x)": poisson_probs})
+    st.markdown("**Table des probabilités de Poisson pour différentes valeurs de *Nombre de visites* (x).**")
     st.table(poisson_table)
 
 # Visualize the Poisson Distribution
@@ -353,7 +355,6 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     for different numbers of visits per hour and visualize the distribution.
     """
     )
-
 
     
 
