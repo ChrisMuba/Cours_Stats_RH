@@ -487,6 +487,27 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Évaluation Performance", "y": "Densité de probabilité"}, title="DataViz : Distribution Normale")
     st.plotly_chart(fig_normal)
 
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Dans le tableau, nous avons calculé les probabilités associées à différentes notes de performance (Évaluation Performance (x)) sur la base d'une distribution normale avec une moyenne (μ) de 70 et un écart type (σ) de 10. 
+        Chaque ligne du Le tableau correspond à une note de performance spécifique, et la colonne « Densité de probabilité (P(X = x)) » représente la probabilité d'observer cette note particulière.
+
+        Distribution de probabilité : La distribution normale est symétrique et caractérisée par deux paramètres : la moyenne (μ) et l'écart type (σ). Cela nous aide à modéliser la probabilité d’observer différentes notes de performance.
+        
+        Courbe en forme de cloche : Comme le montre la visualisation, la distribution normale forme une courbe en forme de cloche, avec le pic centré autour de la moyenne (μ). 
+        Dans notre cas, la note moyenne de performance est de 70.
+        
+        Densité de probabilité : la densité de probabilité (P(X = x)) quantifie la probabilité d'observer des évaluations de performance spécifiques. 
+        Les notes plus proches de la moyenne ont des probabilités plus élevées, tandis que les notes plus éloignées de la moyenne ont des probabilités plus faibles.
+
+        Plage de valeurs : La distribution normale s'étend à l'infini dans les deux directions, couvrant une large gamme de performances possibles. 
+        ⚠️Cependant, les notes qui s’éloignent de plus de quelques écarts-types de la moyenne deviennent de plus en plus rares.
+    """)
+    
+
+    st.markdown("")
+
 
     st.markdown("")
 
