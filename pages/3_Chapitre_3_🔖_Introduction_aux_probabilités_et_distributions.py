@@ -415,7 +415,7 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
         Distribution de probabilité : La distribution binomiale nous aide à modéliser le nombre de résultats réussis (nombre de candidats retenus (x)) dans un nombre fixe d'essais indépendants (entretiens) avec la même probabilité de succès (p).
         
         Variation de probabilité : Le tableau montre comment varie la probabilité d'observer un nombre différent de candidats retenus. 
-        Par exemple, la probabilité d’avoir 3 candidats retenus sur 10 est d’environ 0,2668, tandis que la probabilité d’avoir 9 candidats retenus est bien plus faible, à environ 0,0001.
+        Par exemple, la probabilité d’avoir 3 candidats retenus sur 10 est d’environ 0,2668 ; tandis que la probabilité d’avoir 9 candidats retenus est bien plus faible, à environ 0,0001.
 
         Probabilité maximale : la distribution binomiale a souvent une probabilité maximale autour du nombre moyen de réussites, qui est calculée comme n * p, où n est le nombre d'essais (candidats) et p est la probabilité de réussite pour chaque essai.
 
