@@ -331,6 +331,10 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     x = np.arange(0, 16)  # Number of visits from 0 to 15
     poisson_probs = poisson.pmf(x, average_visits)
 
+# Display the Poisson probabilities table
+    poisson_table = pd.DataFrame({"Nombre de visites (x)": x, "P(X = x)": poisson_probs})
+    st.table(poisson_table)
+
 # Visualize the Poisson Distribution
     fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Nombre de visites", "y": "Probabilité"}, title="Distribution de Poisson ")
     st.plotly_chart(fig_poisson)
@@ -350,60 +354,40 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     """
     )
 
-# Define the average number of visits per hour
-    average_visits = 8
-
-# Calculate Poisson probabilities for different values
-    x = np.arange(0, 16)  # Number of visits from 0 to 15
-    poisson_probs = poisson.pmf(x, average_visits)
-
-# Display the Poisson probabilities table
-    poisson_table = pd.DataFrame({"Number of Visits (x)": x, "P(X = x)": poisson_probs})
-    st.table(poisson_table)
-
-# Visualize the Poisson Distribution
-    fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Number of Visits", "y": "Probability"}, title="Poisson Distribution")
-    st.plotly_chart(fig_poisson)
-
-
-
-
-
-
 
     
 
 # Binomial Distribution
-st.subheader("Distribution Binomiale (Succès des candidats à un emploi):")
-st.markdown(
-   """
-La distribution binomiale modélise le nombre de réussites dans un nombre fixe d'essais indépendants
-(essais de Bernoulli), chacun avec la même probabilité de succès (p). En RH, elle peut être utilisée pour modéliser
-le nombre de candidats retenus sur un nombre fixe d'entretiens (essais) avec un probabilité de succès.
+    st.subheader("Distribution Binomiale (Succès des candidats à un emploi):")
+    st.markdown(
+       """
+    La distribution binomiale modélise le nombre de réussites dans un nombre fixe d'essais indépendants
+    (essais de Bernoulli), chacun avec la même probabilité de succès (p). En RH, elle peut être utilisée pour modéliser
+    le nombre de candidats retenus sur un nombre fixe d'entretiens (essais) avec un probabilité de succès.
 
-Supposons qu'il y ait 10 candidats à un emploi et que chacun ait 30 % de chances de succès. Nous calculerons les
-Probabilités binomiales pour différents nombres de candidats retenus et visualiserons la distribution.
-"""
-)
+    Supposons qu'il y ait 10 candidats à un emploi et que chacun ait 30 % de chances de succès. Nous calculerons les
+    Probabilités binomiales pour différents nombres de candidats retenus et visualiserons la distribution.
+    """
+    )
 
 # Define the parameters for the Binomial distribution
-n_applicants = 10  # Number of job applicants
-p_success = 0.3   # Probability of success for each applicant
+    n_applicants = 10  # Number of job applicants
+    p_success = 0.3   # Probability of success for each applicant
 
 # Calculate Binomial probabilities for different values
-x_binom = np.arange(0, 11)  # Number of successful applicants from 0 to 10
-binom_probs = binom.pmf(x_binom, n_applicants, p_success)
+    x_binom = np.arange(0, 11)  # Number of successful applicants from 0 to 10
+    binom_probs = binom.pmf(x_binom, n_applicants, p_success)
 
 # Visualize the Binomial Distribution
-fig_binomial = px.bar(x=x_binom, y=binom_probs, labels={"x": "Nombre de candidats retenus", "y": "Probabilité"}, title="Distribution Binomiale")
-st.plotly_chart(fig_binomial)
+    fig_binomial = px.bar(x=x_binom, y=binom_probs, labels={"x": "Nombre de candidats retenus", "y": "Probabilité"}, title="Distribution Binomiale")
+    st.plotly_chart(fig_binomial)
 
     
     
-st.markdown("")
+    st.markdown("")
     
     
-st.markdown("") 
+    st.markdown("") 
     
     
 if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
