@@ -400,10 +400,10 @@ st.plotly_chart(fig_binomial)
 
     
     
-    st.markdown("")
+st.markdown("")
     
     
-    st.markdown("") 
+st.markdown("") 
     
     
 if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabilité continue**"):
