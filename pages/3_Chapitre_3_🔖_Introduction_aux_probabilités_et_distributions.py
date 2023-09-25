@@ -346,15 +346,22 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
 
 
 # Explanation
-    with st.expander("🔮Interpretation de l'histogramme de la distribution des salaires"):
+    with st.expander("🔮Interpretation"):
         st.write("""
-        L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
+        Dans le tableau, nous avons calculé les probabilités de Poisson pour différents scenarii, représentant le nombre de visites de sites Web par heure (Nombre de visites (x)) sur la base d'un taux d'événements moyen de 8 visites par heure. 
+        Chaque ligne du tableau correspond à une valeur spécifique de « x », qui représente le nombre de visites qui nous intéressent.
+
+        Distribution de probabilité : la distribution de Poisson nous aide à comprendre la probabilité d'observer un nombre spécifique de visites de sites Web (Nombre de visites (x)) au cours d'une heure donnée.
         
-        La plupart des salaires se situent dans les fourchettes de **[55 k€ - 59 k€]** et **[60 k€ - 64 k€]**, ces 2 catégories ayant les fréquences les plus élevées.
+        Courbe en forme de cloche : comme nous pouvons le voir sur la visualisation, la distribution de Poisson forme une courbe en forme de cloche. 
+        Cette courbe est centrée autour du taux moyen d’événements, qui est ici de 8 visites par heure.
         
-        Dans cet échantillon de données, les salaires minimum et maximum sont respectivement 55 000 € et 75 000 €.
-        
-        La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian.
+        Variation de probabilité : La probabilité d’observer différents nombres de visites varie. Par exemple, la probabilité d’avoir exactement 8 visites par heure (la moyenne) est relativement élevée, soit environ 0,14. 
+        Cependant, à mesure que l’on s’éloigne de la moyenne dans un sens ou dans l’autre, les probabilités diminuent.
+
+        Événements rares : la distribution de Poisson est particulièrement utile pour modéliser des événements rares, où le taux d'événements moyen est faible et où les événements se produisent indépendamment.
+
+        ⚠️La distribution de Poisson n'est qu'un des nombreux outils de la boîte à outils statistiques et elle peut s'avérer un atout précieux lorsque l'on traite des événements qui se produisent de manière aléatoire et peu fréquente.
         """)
     
 
