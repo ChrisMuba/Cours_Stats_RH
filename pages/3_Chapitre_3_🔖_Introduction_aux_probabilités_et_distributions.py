@@ -325,6 +325,9 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     """
     )
 
+     st.markdown("")
+
+
 # Define the average number of visits per hour
     average_visits = 8
 
