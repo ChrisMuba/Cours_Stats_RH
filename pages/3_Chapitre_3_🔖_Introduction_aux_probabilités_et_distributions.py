@@ -345,19 +345,20 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     st.plotly_chart(fig_poisson)
 
 
+# Explanation
+    with st.expander("🔮Interpretation de l'histogramme de la distribution des salaires"):
+        st.write("""
+        L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
+        
+        La plupart des salaires se situent dans les fourchettes de **[55 k€ - 59 k€]** et **[60 k€ - 64 k€]**, ces 2 catégories ayant les fréquences les plus élevées.
+        
+        Dans cet échantillon de données, les salaires minimum et maximum sont respectivement 55 000 € et 75 000 €.
+        
+        La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian.
+        """)
+    
 
-# Poisson Distribution
-    st.subheader("Poisson Distribution (Website Visits):")
-    st.markdown(
-        """
-    The Poisson distribution models the number of events occurring in a fixed interval of time or space, 
-    given a known average event rate. In this context, it can be used to predict the number of website 
-    visits in a specific hour based on the average number of visits per hour.
-
-    Let's assume the average number of website visits per hour is 8. We'll calculate the Poisson probabilities 
-    for different numbers of visits per hour and visualize the distribution.
-    """
-    )
+    st.markdown("")
 
     
 
