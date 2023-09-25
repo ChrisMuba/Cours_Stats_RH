@@ -472,6 +472,14 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     x_values = np.linspace(mean_rating - 3 * std_deviation, mean_rating + 3 * std_deviation, 100)
     pdf_values = (1 / (std_deviation * np.sqrt(2 * np.pi))) * np.exp(-((x_values - mean_rating) ** 2) / (2 * std_deviation ** 2))
 
+# Create a DataFrame to display the calculation details
+    calculation_details = pd.DataFrame({"Performance Rating (x)": x_values, "Probability Density (P(X = x))": pdf_values})
+    calculation_details = calculation_details.round(4)  # Round to 4 decimal places for readability
+
+# Calculate the probabilities for different performance ratings
+    x_values = np.linspace(mean_rating - 3 * std_deviation, mean_rating + 3 * std_deviation, 100)
+    pdf_values = (1 / (std_deviation * np.sqrt(2 * np.pi))) * np.exp(-((x_values - mean_rating) ** 2) / (2 * std_deviation ** 2))
+
 # Visualize the Normal Distribution
     fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Évaluation Performance", "y": "Densité de probabilité"}, title="Distribution Normal")
     st.plotly_chart(fig_normal)
