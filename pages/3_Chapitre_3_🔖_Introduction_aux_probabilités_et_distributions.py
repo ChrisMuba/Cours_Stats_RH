@@ -473,15 +473,15 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     pdf_values = (1 / (std_deviation * np.sqrt(2 * np.pi))) * np.exp(-((x_values - mean_rating) ** 2) / (2 * std_deviation ** 2))
 
 # Create a DataFrame to display the calculation details
-    calculation_details = pd.DataFrame({"Performance Rating (x)": x_values, "Probability Density (P(X = x))": pdf_values})
+    calculation_details = pd.DataFrame({"Évaluation Performance (x)": x_values, "Densité de probabilité (P(X = x))": pdf_values})
     calculation_details = calculation_details.round(4)  # Round to 4 decimal places for readability
 
 # Display the calculation details table
-    st.subheader("Calculation Details:")
+    st.subheader("Table des probabilités pour différentes valeurs des notes d'évaluation de performance (x).:")
     st.dataframe(calculation_details)
 
 # Visualize the Normal Distribution
-    fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Évaluation Performance", "y": "Densité de probabilité"}, title="Distribution Normal")
+    fig_normal = px.line(x=x_values, y=pdf_values, labels={"x": "Évaluation Performance", "y": "Densité de probabilité"}, title="DataViz : Distribution Normale")
     st.plotly_chart(fig_normal)
 
 
