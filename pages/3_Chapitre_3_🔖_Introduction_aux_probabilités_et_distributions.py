@@ -409,20 +409,18 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     # Explanation
     with st.expander("🔮Interpretation"):
         st.write("""
-        Dans le tableau, nous avons calculé les probabilités de Poisson pour différents scenarii, représentant le nombre de visites de sites Web par heure (Nombre de visites (x)) sur la base d'un taux d'événements moyen de 8 visites par heure. 
-        Chaque ligne du tableau correspond à une valeur spécifique de « x », qui représente le nombre de visites qui nous intéressent.
+        Dans le tableau, nous avons calculé les probabilités associées à différents nombres de candidats retenus (Nombre de candidats retenus (x)) sur un total de 10 candidats, 
+        chaque candidat ayant 30 % de chances de réussite (P(X =x)). Chaque ligne du tableau représente un nombre spécifique de candidats retenus.
 
-        Distribution de probabilité : la distribution de Poisson nous aide à comprendre la probabilité d'observer un nombre spécifique de visites de sites Web (Nombre de visites (x)) au cours d'une heure donnée.
+        Distribution de probabilité : La distribution binomiale nous aide à modéliser le nombre de résultats réussis (nombre de candidats retenus (x)) dans un nombre fixe d'essais indépendants (entretiens) avec la même probabilité de succès (p).
         
-        Courbe en forme de cloche : comme nous pouvons le voir sur la visualisation, la distribution de Poisson forme une courbe en forme de cloche. 
-        Cette courbe est centrée autour du taux moyen d’événements, qui est ici de 8 visites par heure.
-        
-        Variation de probabilité : La probabilité d’observer différents nombres de visites varie. Par exemple, la probabilité d’avoir exactement 8 visites par heure (la moyenne) est relativement élevée, soit environ 0,14. 
-        Cependant, à mesure que l’on s’éloigne de la moyenne dans un sens ou dans l’autre, les probabilités diminuent.
+        Variation de probabilité : Le tableau montre comment varie la probabilité d'observer un nombre différent de candidats retenus. 
+        Par exemple, la probabilité d’avoir 3 candidats retenus sur 10 est d’environ 0,2668, tandis que la probabilité d’avoir 9 candidats retenus est bien plus faible, à environ 0,0001.
 
-        Événements rares : la distribution de Poisson est particulièrement utile pour modéliser des événements rares, où le taux d'événements moyen est faible et où les événements se produisent indépendamment.
+        Probabilité maximale : la distribution binomiale a souvent une probabilité maximale autour du nombre moyen de réussites, qui est calculée comme n * p, où n est le nombre d'essais (candidats) et p est la probabilité de réussite pour chaque essai.
 
-        ⚠️La distribution de Poisson n'est qu'un des nombreux outils de la boîte à outils statistiques et elle peut s'avérer un atout précieux lorsque l'on traite des événements qui se produisent de manière aléatoire et peu fréquente.
+        Probabilités croissantes/décroissantes : Comme on peut le constater, les probabilités augmentent d’abord puis diminuent à mesure que l’on s’éloigne du nombre moyen de réussites. 
+        La forme de la distribution dépend à la fois de n et de p.
         """)
 
     
