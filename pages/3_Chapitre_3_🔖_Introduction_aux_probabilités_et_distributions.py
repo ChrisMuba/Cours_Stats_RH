@@ -391,12 +391,12 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     binom_probs = binom.pmf(x_binom, n_applicants, p_success)
 
 # Create a DataFrame to display the calculation details
-   calculation_details_binom = pd.DataFrame({"Number of Successful Applicants (x)": x_binom, "P(X = x)": binom_probs})
-   calculation_details_binom = calculation_details_binom.round(4)  # Round to 4 decimal places for readability
+    calculation_details_binom = pd.DataFrame({"Number of Successful Applicants (x)": x_binom, "P(X = x)": binom_probs})
+    calculation_details_binom = calculation_details_binom.round(4)  # Round to 4 decimal places for readability
 
 # Display the calculation details table
-   st.subheader("Calculation Details:")
-   st.dataframe(calculation_details_binom)
+    st.subheader("Calculation Details:")
+    st.dataframe(calculation_details_binom)
 
 # Visualize the Binomial Distribution
     fig_binomial = px.bar(x=x_binom, y=binom_probs, labels={"x": "Nombre de candidats retenus", "y": "Probabilité"}, title="Distribution Binomiale")
