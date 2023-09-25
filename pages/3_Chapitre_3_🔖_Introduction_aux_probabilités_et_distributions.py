@@ -464,6 +464,9 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     """
     )
 
+    st.markdown("")
+    
+
 # Define the mean and standard deviation for the normal distribution
     mean_rating = 70
     std_deviation = 10
