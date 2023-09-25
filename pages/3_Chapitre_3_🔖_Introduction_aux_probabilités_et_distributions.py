@@ -335,6 +335,44 @@ if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabil
     fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Nombre de visites", "y": "Probabilité"}, title="Distribution de Poisson ")
     st.plotly_chart(fig_poisson)
 
+
+
+# Poisson Distribution
+st.subheader("Poisson Distribution (Website Visits):")
+st.markdown(
+    """
+The Poisson distribution models the number of events occurring in a fixed interval of time or space, 
+given a known average event rate. In this context, it can be used to predict the number of website 
+visits in a specific hour based on the average number of visits per hour.
+
+Let's assume the average number of website visits per hour is 8. We'll calculate the Poisson probabilities 
+for different numbers of visits per hour and visualize the distribution.
+"""
+)
+
+# Define the average number of visits per hour
+average_visits = 8
+
+# Calculate Poisson probabilities for different values
+x = np.arange(0, 16)  # Number of visits from 0 to 15
+poisson_probs = poisson.pmf(x, average_visits)
+
+# Display the Poisson probabilities table
+poisson_table = pd.DataFrame({"Number of Visits (x)": x, "P(X = x)": poisson_probs})
+st.table(poisson_table)
+
+# Visualize the Poisson Distribution
+fig_poisson = px.bar(x=x, y=poisson_probs, labels={"x": "Number of Visits", "y": "Probability"}, title="Poisson Distribution")
+st.plotly_chart(fig_poisson)
+
+
+
+
+
+
+
+    
+
 # Binomial Distribution
     st.subheader("Distribution Binomiale (Succès des candidats à un emploi):")
     st.markdown(
