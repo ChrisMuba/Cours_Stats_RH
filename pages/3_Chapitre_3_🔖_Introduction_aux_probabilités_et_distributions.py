@@ -406,6 +406,15 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
 
     df = pd.DataFrame(data)
 
+
+# Display the sample data with two digits after the decimal point
+
+df_display = df.copy()  # Create a copy of the DataFrame for display
+df_display["Performance Rating"] = df_display["Performance Rating"].apply(lambda x: round(x, 2))
+
+st.dataframe(df_display)
+
+
 # Display the sample data
     st.markdown("Échantillon de données (évaluations des performances):")
     st.dataframe(df)
