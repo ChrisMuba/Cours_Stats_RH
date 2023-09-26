@@ -224,60 +224,9 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     st.markdown("**Elle suppose une relation linéaire entre les deux variables et estime la ligne la mieux ajustée qui minimise la différence entre les données observées et les valeurs prédites**.") 
 
 
+
+
 # Import necessary libraries
-    import streamlit as st
-    import pandas as pd
-    import numpy as np
-    import plotly.express as px
-    import plotly.graph_objects as go
-    from sklearn.linear_model import LinearRegression
-
-# Step 1: Generate Sample Data
-    np.random.seed(0)
-    years_of_experience = np.random.randint(1, 20, 50)  # Generate 50 random years of experience
-    performance_rating = 3 + 0.5 * years_of_experience + np.random.normal(0, 2, 50)  # Simulate performance rating
-
-# Create a DataFrame
-    data = pd.DataFrame({'Years of Experience': years_of_experience, 'Performance Rating': performance_rating})
-
-# Step 2: Perform Simple Linear Regression
-    X = data['Years of Experience'].values.reshape(-1, 1)
-    y = data['Performance Rating'].values
-    model = LinearRegression()
-    model.fit(X, y)
-
-# Step 3: Visualize the Results
-    st.title("Simple Linear Regression in HR")
-    st.write("Dataset - Employee Performance vs. Years of Experience")
-
-# Scatter plot of the data
-    scatter_fig = px.scatter(data, x='Years of Experience', y='Performance Rating', 
-                             title="Employee Performance vs. Years of Experience",
-                             labels={'Years of Experience': 'Years of Experience', 'Performance Rating': 'Performance Rating'})
-    st.plotly_chart(scatter_fig)
-
-# Regression line plot
-    y_pred = model.predict(X)
-    line_fig = go.Figure()
-    line_fig.add_trace(go.Scatter(x=data['Years of Experience'], y=y_pred, mode='lines', name='Regression Line'))
-    line_fig.update_traces(line=dict(color='red'))
-    line_fig.update_layout(title="Simple Linear Regression Line",
-                           xaxis_title="Years of Experience",
-                           yaxis_title="Performance Rating")
-    st.plotly_chart(line_fig)
-
-# Step 4: Interpretation
-    st.write("Interpretation:")
-    st.write("Simple linear regression helps us understand the relationship between years of experience and performance rating.")
-    st.write(f"The regression equation is: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
-    st.write("Here, the intercept represents the expected performance rating when an employee has 0 years of experience.")
-    st.write("The coefficient represents how much the performance rating is expected to change for a one-unit increase in years of experience.")
-    st.write("In our case, for every additional year of experience, the expected performance rating increases by approximately 0.50 points.")
-
-
-
-
-    # Import necessary libraries
     import streamlit as st
     import pandas as pd
     import numpy as np
@@ -329,10 +278,9 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     st.write("In our case, for every additional year of experience, the expected performance rating increases by approximately 0.50 points.")
 
 
+    st.markdown("") 
     
-    st.markdown("En **RH, une régression linéaire simple peut être appliquée pour prédire les performances des employés** en fonction de divers facteurs. Par exemple, une entreprise peut vouloir comprendre comment le nombre d'heures consacrées à la formation influe sur la performance ultérieure d'un employé.") 
-    
-    st.markdown("**En analysant les données à l'aide d'une régression linéaire simple**, le contrôleur de gestion sociale peut estimer le niveau de performance attendu en fonction du nombre d'heures de formation.")
+    st.markdown("")
 
 if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : prise en compte de plusieurs facteurs**"):
     
