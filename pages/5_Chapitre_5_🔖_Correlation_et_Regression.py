@@ -219,25 +219,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corr√©lation : d√
 
 
     st.markdown("")
-
-
-# Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', title='Training Hours vs. Performance Rating')
-    fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
-    fig.add_trace(
-        px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', trendline="ols").data[1]
-    )
-    st.plotly_chart(fig)
-    
-# Interpretation
-    st.write("The correlation coefficient (r) is approximately 0.14, which is close to 0.")
-    st.write("This suggests that there is no discernible relationship between Training Hours and Performance Rating.")
-    st.write("In other words, the amount of training hours an employee receives does not appear to have a significant impact on their performance rating.")
-
-
-
-
-
     
     
     st.markdown("")
