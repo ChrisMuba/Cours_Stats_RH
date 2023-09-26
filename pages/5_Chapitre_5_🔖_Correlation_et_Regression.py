@@ -204,7 +204,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "non correlation"
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Heures de formation', y='Évaluation des performances (échelle 1 à 5)', title='DataViz : Heures de formation vs. notes d'évaluation des performances', trendline='ols')
+    fig = px.scatter(df, x='Heures de formation', y='Évaluation des performances (échelle 1 à 5)', title='DataViz : Heures de formation vs. notes d\'évaluation des performances', trendline='ols')
     st.plotly_chart(fig)
 
     st.write(f"Cette dataviz indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
