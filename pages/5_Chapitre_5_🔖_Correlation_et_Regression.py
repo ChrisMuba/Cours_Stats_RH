@@ -161,7 +161,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("**🏀Application 21** :")
 
-    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre les niveaux de salaires et les notes d'évaluations de performances des agents de la commune. Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
+    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre les niveaux de salaires et les notes d'évaluations de performances des agents de sa commune. Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
 
     st.markdown("Ci-dessous un échantillon des données collectées :")
 
@@ -185,6 +185,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Create a DataFrame
     df = pd.DataFrame(data)
+    
+# Display the sample data
+    st.dataframe(df)
 
 # Introduction
     st.write("Dans cet exercice, nous analyserons s'il existe une corrélation entre les salaires annuels et les notes d'évaluation des performances.")
