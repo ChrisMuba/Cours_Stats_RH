@@ -178,10 +178,17 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 # Sample HR data
     data = {
         'Agents': list(range(1, 11)),
-        'Heures de formation': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
-        'Évaluation des performances (échelle 1 à 5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
+        'Heures de formation': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
+        'Évaluation des performances (échelle 1 à 5)': [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
     }
 
+#Salary (Variable X): [2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500]
+#Satisfaction (Variable Y): [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
+
+       # 'Heures de formation': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
+       # 'Évaluation des performances (échelle 1 à 5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
+
+    
 # Create a DataFrame
     df = pd.DataFrame(data)
 
