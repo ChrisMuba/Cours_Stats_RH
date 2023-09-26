@@ -161,7 +161,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("**🏀Application 21** :")
 
-    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre « heures de formation des agents » et « notes d'évaluations de performances ». Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
+    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre les niveaux de salaires et les notes d'évaluations de performances des agents de la commune. Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
 
     st.markdown("Ci-dessous un échantillon des données collectées :")
 
