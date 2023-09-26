@@ -70,6 +70,17 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Dans cet exemple, nous avons utilisé l'estimation ponctuelle pour estimer le nombre d'années d'expérience en moyenne dans l'entreprise. Notre estimation ponctuelle, basée sur un échantillon de 50 employés, est d'environ 7,55 ans (ligne rouge sur l'histogramme). 
+        
+        Cela signifie que nous estimons qu'en moyenne, les employés de l'entreprise ont environ 7,55 années d'expérience. Cependant, il ne s’agit que d’une valeur unique et elle ne nous fournit pas d’informations sur l’incertitude associée à cette estimation.
+        """)
+
+
+    st.markdown("")
+
 # Display the correlation type with the coefficient
     st.write(f"Cela indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
 
@@ -122,11 +133,23 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     fig = px.scatter(df, x='Absentéisme (jours)', y='Satisfaction au travail (échelle 1-5)', title='Absentéisme vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Le coefficient de corrélation négative (r) d'environ -0,94 indique une forte corrélation négative entre l'absentéisme et la satisfaction au travail. 
+        
+        À mesure que l’absentéisme augmente (les agents manquent plus de jours), la satisfaction au travail a tendance à diminuer (scores de satisfaction au travail plus faibles). 
+        Cela suggère qu’un absentéisme plus élevé est associé à une moindre satisfaction au travail parmi les agents.
+        """)
+
+
+    st.markdown("")
+
 # Display the correlation type with the coefficient
     st.write(f"Cela indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
 
 # Interpretation
-    st.write("The negative correlation coefficient (r) of approximately -0.69 indicates a strong negative correlation between Absenteeism and Job Satisfaction.")
+    st.write("Le coefficient de corrélation négative (r) d'environ -0,94 indique une forte corrélation négative entre l'absentéisme et la satisfaction au travail.")
     st.write("As Absenteeism increases (employees missing more days), Job Satisfaction tends to decrease (lower job satisfaction scores). This suggests that higher absenteeism is associated with lower job satisfaction among employees.")
 
     
