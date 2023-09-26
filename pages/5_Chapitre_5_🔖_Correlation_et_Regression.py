@@ -25,37 +25,15 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     
     st.markdown("- **Corrélation positive** : **Lorsque deux variables évoluent dans le même sens**, on dit qu'elles ont une **corrélation positive**.") 
 
-    st.markdown("- **🏀Application 19** :")
+    st.markdown("**🏀Application 19** :")
     
     st.markdown("Par exemple, il pourrait y avoir une corrélation positive entre la satisfaction des employés et la productivité. Si le coefficient de corrélation est proche de **+1**, cela indique une **forte corrélation positive**.")              
     
+    st.markdown("Le contrôleur de gestion sociale d'un service public de *Ploucs-lès-Landes* souhaite analyser la relation entre « Productivité des agents » et « Satisfaction au travail ».")
 
-    st.markdown("Le contrôleur de gestion sociale d'un service public de *Pluie-lès-Brest* a collecté des données sur les évaluations de performance de 100 agents. Il souhaite analyser la répartition de ces évaluations.")
+    st.markdown("Ci-dessous un échantillon des données collectées :")
 
-    st.markdown("Ci-dessous les données collectées.")
-
-    st.markdown("")
-    
-    st.markdown("")
-    
-    
-    st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
-
-    st.markdown("- **🏀Application 20** :")
-    
-    st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
-
-    st.markdown("")
-    
-    
-    st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
-
-    st.markdown("- **🏀Application 21** :")
-    
-    st.markdown("")
-    
-
-# Import necessary libraries
+    # Import necessary libraries
     import streamlit as st
     import pandas as pd
     import plotly.express as px
@@ -69,6 +47,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Create a DataFrame
     df = pd.DataFrame(data)
+
+# Display the sample data
+    st.dataframe(df)
 
 # Title for the Streamlit app
     st.title("Correlation Analysis in HR")
@@ -94,6 +75,29 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Display the correlation type with the coefficient
     st.write(f"This indicates a {correlation_type} correlation with a coefficient of {correlation_coefficient:.2f}.")
+
+
+    st.markdown("")
+    
+    st.markdown("")
+    
+    
+    st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
+
+    st.markdown("- **🏀Application 20** :")
+    
+    st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
+
+    st.markdown("")
+    
+    
+    st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
+
+    st.markdown("- **🏀Application 21** :")
+    
+    st.markdown("")
+    
+
 
 
 
