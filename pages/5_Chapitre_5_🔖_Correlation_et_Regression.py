@@ -24,13 +24,24 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     
     
     st.markdown("- **Corrélation positive** : **Lorsque deux variables évoluent dans le même sens**, on dit qu'elles ont une **corrélation positive**.") 
+
+    st.markdown("- **🏀Application 19** :")
     
     st.markdown("Par exemple, il pourrait y avoir une corrélation positive entre la satisfaction des employés et la productivité. Si le coefficient de corrélation est proche de **+1**, cela indique une **forte corrélation positive**.")              
+    
+
+    st.markdown("Le contrôleur de gestion sociale d'un service public de *Pluie-lès-Brest* a collecté des données sur les évaluations de performance de 100 agents. Il souhaite analyser la répartition de ces évaluations.")
+
+    st.markdown("Ci-dessous les données collectées.")
+
+    st.markdown("")
     
     st.markdown("")
     
     
     st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
+
+    st.markdown("- **🏀Application 20** :")
     
     st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
 
@@ -39,6 +50,8 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     
     st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
 
+    st.markdown("- **🏀Application 21** :")
+    
     st.markdown("")
     
 
