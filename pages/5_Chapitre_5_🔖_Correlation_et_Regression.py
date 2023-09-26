@@ -166,62 +166,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.markdown("Ci-dessous un échantillon des données collectées :")
 
 
-    # Import necessary libraries
-    import streamlit as st
-    import pandas as pd
-    import numpy as np
-    import plotly.express as px
-
-# Sample HR data
-    data = {
-        'Agents': list(range(1, 11)),
-        'Salaire annuel (€)': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
-        'Évaluation des performances (échelle 1 à 5)': [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
-    }
-
-#Salary (Variable X): [2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500]
-#Satisfaction (Variable Y): [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
-
-       # 'Heures de formation': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
-       # 'Évaluation des performances (échelle 1 à 5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
-
-    
-# Create a DataFrame
-    df = pd.DataFrame(data)
-
-# Display the sample data
-    st.dataframe(df)
-
-# Introduction
-    st.write("Dans cet exercice, nous analyserons s'il existe une corrélation entre les heures de formation et les notes d'évaluation des performances.")
-
-# Calculate and display the correlation coefficient
-    correlation_coefficient = df['Salaire annuel (€)'].corr(df['Évaluation des performances (échelle 1 à 5)'])
-    st.write(f"Coefficient de correlation (r): {correlation_coefficient:.2f}")
-
-# Determine the type of correlation
-    if correlation_coefficient > 0:
-        correlation_type = "correlation positive"
-    elif correlation_coefficient < 0:
-        correlation_type = "correlation negative"
-    else:
-        correlation_type = "non correlation"
-
-# Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', title='DataViz : Heures de formation vs. notes d\'évaluation des performances', trendline='ols')
-    st.plotly_chart(fig)
-
-    st.write(f"Cette dataviz indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
-
-    # Explanation
-    with st.expander("🔮Interpretation"):
-        st.write("""
-        Le coefficient de corrélation d'environ 0,14 est proche de 0, ce qui indique qu'il n'y a aucune relation perceptible entre le nombre d'heures de formation et les notes d'évaluation des performances. 
-        
-        En d’autres termes, le nombre d’heures de formation qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
-        """)
-
-
     st.markdown("")
     
     
@@ -235,7 +179,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 # Sample HR data
     data = {
        'Agents': list(range(1, 11)),
-        'Salaire annuel (€)': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
+        'Salaire annuel (€)': [120000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000, 65000],
         'Évaluation des performances (échelle 1 à 5)': [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
     }
 
@@ -243,24 +187,27 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     df = pd.DataFrame(data)
 
 # Introduction
-    st.write("In this exercise, we will analyze whether there is a correlation between Training Hours and Performance Rating.")
+    st.write("Dans cet exercice, nous analyserons s'il existe une corrélation entre les salaires annuels et les notes d'évaluation des performances.")
 
 # Calculate and display the correlation coefficient
     correlation_coefficient = df['Salaire annuel (€)'].corr(df['Évaluation des performances (échelle 1 à 5)'])
-    st.write(f"Correlation Coefficient (r): {correlation_coefficient:.2f}")
+    st.write(f"Coefficient de correlation (r): {correlation_coefficient:.2f}")
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', title='Salaire annuel (€) vs. Notes d\'évaluation des performances')
+    fig = px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', title='DataViz : Salaire annuel (€) vs. Notes d\'évaluation des performances')
     fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
     fig.add_trace(
         px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', trendline="ols").data[1]
     )
     st.plotly_chart(fig)
 
-# Interpretation
-    st.write("The correlation coefficient (r) is approximately 0.14, which is close to 0.")
-    st.write("This suggests that there is no discernible relationship between Training Hours and Performance Rating.")
-    st.write("In other words, the amount of training hours an employee receives does not appear to have a significant impact on their performance rating.")
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Le coefficient de corrélation d'environ 0,03 est proche de 0, ce qui indique qu'il n'y a aucune relation perceptible entre le niveau de salaire annuel et les notes d'évaluation des performances. 
+        
+        En d’autres termes, le salaire annuel qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
+        """)
 
 
 
