@@ -119,7 +119,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "non correlation"
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
+    fig = px.scatter(df, x='Absentéisme (jours)', y='Satisfaction au travail (échelle 1-5)', title='Absentéisme vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
 # Display the correlation type with the coefficient
