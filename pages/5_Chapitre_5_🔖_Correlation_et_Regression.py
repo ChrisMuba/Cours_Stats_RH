@@ -40,9 +40,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
 
     st.markdown("")
+    
 
-
-    # Import necessary libraries
+# Import necessary libraries
     import streamlit as st
     import pandas as pd
     import plotly.express as px
@@ -51,7 +51,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     data = {
         'Employee': list(range(1, 11)),
         'Employee Productivity': [80, 75, 90, 70, 85, 65, 95, 75, 85, 70],
-       'Job Satisfaction': [5, 4, 6, 3, 5, 2, 7, 4, 6, 3]
+        'Job Satisfaction': [5, 4, 6, 3, 5, 2, 7, 4, 6, 3]
     }
 
 # Create a DataFrame
@@ -69,11 +69,11 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Determine the type of correlation
     if correlation_coefficient > 0:
-        st.write("This indicates a positive correlation.")
+        correlation_type = "positive"
     elif correlation_coefficient < 0:
-        st.write("This indicates a negative correlation.")
+        correlation_type = "negative"
     else:
-        st.write("This indicates no correlation.")
+        correlation_type = "no"
 
 # Create a scatter plot with a trendline
     fig = px.scatter(df, x='Employee Productivity', y='Job Satisfaction', title='Employee Productivity vs. Job Satisfaction', trendline='ols')
@@ -81,8 +81,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Display the correlation type with the coefficient
     st.write(f"This indicates a {correlation_type} correlation with a coefficient of {correlation_coefficient:.2f}.")
-
-
 
 
 
