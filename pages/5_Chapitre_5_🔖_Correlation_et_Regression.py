@@ -219,9 +219,21 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     
     st.subheader("📈Chap.5-B/ Régression linéaire simple📉")
     
-    st.markdown("La **régression linéaire simple est** une méthode statistique **utilisée pour comprendre et prédire la relation entre une variable dépendante et une seule variable indépendante**.")
+    st.markdown("- La **régression linéaire simple est** une méthode statistique **utilisée pour comprendre et prédire la relation entre une variable dépendante et une seule variable indépendante**.")
     
-    st.markdown("**Elle suppose une relation linéaire entre les deux variables et estime la ligne la mieux ajustée qui minimise la différence entre les données observées et les valeurs prédites**.") 
+    st.markdown("**Elle suppose une relation linéaire entre les deux variables et estime la ligne la mieux ajustée qui minimise la différence entre les données observées et les valeurs prédites**.")
+
+    st.markdown("**🏀Application 22** :")
+
+    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre les niveaux de salaires et les notes d'évaluations de performances des agents de sa commune. Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
+
+    st.markdown("Ci-dessous un échantillon des données collectées :")
+
+
+    st.markdown("")
+    
+    
+    st.markdown("")
 
 
 
