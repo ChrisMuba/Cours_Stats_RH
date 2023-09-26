@@ -263,10 +263,6 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     model = LinearRegression()
     model.fit(X, y)
 
-# Step 3: Visualize the Results
-    st.title("Simple Linear Regression in HR")
-    st.write("Dataset - Employee Performance vs. Years of Experience")
-
 # Scatter plot with the regression line
     scatter_fig = go.Figure()
 
@@ -286,11 +282,30 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
 # Step 4: Interpretation
     st.write("Interpretation:")
-    st.write("Simple linear regression helps us understand the relationship between years of experience and performance rating.")
-    st.write(f"The regression equation is: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
-    st.write("Here, the intercept represents the expected performance rating when an employee has 0 years of experience.")
-    st.write("The coefficient represents how much the performance rating is expected to change for a one-unit increase in years of experience.")
-    st.write("In our case, for every additional year of experience, the expected performance rating increases by approximately 0.50 points.")
+    st.write("Une régression linéaire simple nous aide à comprendre la relation entre les années d'expérience et l'évaluation des performances.")
+    st.write(f"L'équation de régression est: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
+    st.write("Ici, l'interception représente la note de performance attendue lorsqu'un employé a 0 année d'expérience.")
+    st.write("Le coefficient représente la variation attendue de la note de performance pour une augmentation d'une unité du nombre d'années d'expérience.")
+    st.write("Dans notre cas, pour chaque année d'expérience supplémentaire, la note de performance attendue augmente d'environ 0,50 point.")
+
+     # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Une régression linéaire simple nous aide à comprendre la relation entre les années d'expérience et l'évaluation des performances. 
+
+        f"L'équation de régression est: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience"
+
+        Ici, l'interception représente la note de performance attendue lorsqu'un employé a 0 année d'expérience.
+
+        Le coefficient représente la variation attendue de la note de performance pour une augmentation d'une unité du nombre d'années d'expérience.
+
+        Dans notre cas, pour chaque année d'expérience supplémentaire, la note de performance attendue augmente d'environ 0,50 point.
+        
+        En d’autres termes, le salaire annuel qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
+        """)
+
+    st.markdown("")
+
 
 
     st.markdown("") 
