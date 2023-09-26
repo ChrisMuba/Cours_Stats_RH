@@ -118,8 +118,8 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.plotly_chart(fig)
 
 # Interpretation
-   st.write("The negative correlation coefficient (r) of approximately -0.69 indicates a strong negative correlation between Absenteeism and Job Satisfaction.")
-   st.write("As Absenteeism increases (employees missing more days), Job Satisfaction tends to decrease (lower job satisfaction scores). This suggests that higher absenteeism is associated with lower job satisfaction among employees.")
+    st.write("The negative correlation coefficient (r) of approximately -0.69 indicates a strong negative correlation between Absenteeism and Job Satisfaction.")
+    st.write("As Absenteeism increases (employees missing more days), Job Satisfaction tends to decrease (lower job satisfaction scores). This suggests that higher absenteeism is associated with lower job satisfaction among employees.")
 
     
     st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
