@@ -18,19 +18,26 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     
     st.subheader("📈Chap.5-A/ Analyse de corrélation📉")
     
-    st.markdown("**L'analyse de corrélation** est une technique statistique qui **examine la force et la direction de la relation entre deux variables**.") 
-    
-    st.markdown("Elle aide à déterminer si les changements d'une variable sont associés aux changements d'une autre. La **corrélation est indiquée par le coefficient de corrélation (r), qui varie de -1 à +1**.") 
+    st.markdown("**L'analyse de corrélation** est une technique statistique qui **examine la force et la direction de la relation entre deux variables**. Elle aide à déterminer si les changements d'une variable sont associés aux changements d'une autre. La **corrélation est indiquée par le coefficient de corrélation (r), qui varie de -1 à +1**.") 
+
+    st.markdown("")
     
     st.markdown("- **Corrélation positive** : **Lorsque deux variables évoluent dans le même sens**, on dit qu'elles ont une **corrélation positive**.") 
     
     st.markdown("Par exemple, il pourrait y avoir une corrélation positive entre la satisfaction des employés et la productivité. Si le coefficient de corrélation est proche de **+1**, cela indique une **forte corrélation positive**.")              
     
+    st.markdown("")
+    
     st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
     
     st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
-                    
+
+    st.markdown("")
+    
+    
     st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
+
+    st.markdown("")
 
 if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire simple : prédire les résultats**"):
     
