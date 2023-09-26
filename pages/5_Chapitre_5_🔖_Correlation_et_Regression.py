@@ -67,15 +67,16 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "non correlation"
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
+    fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='DataViz : Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
     # Explanation
     with st.expander("🔮Interpretation"):
         st.write("""
-        Dans cet exemple, nous avons utilisé l'estimation ponctuelle pour estimer le nombre d'années d'expérience en moyenne dans l'entreprise. Notre estimation ponctuelle, basée sur un échantillon de 50 employés, est d'environ 7,55 ans (ligne rouge sur l'histogramme). 
+        Le coefficient de corrélation positive (r) d'environ 0,98 indique une forte corrélation positive entre la productivité des agents et la satisfaction au travail. 
         
-        Cela signifie que nous estimons qu'en moyenne, les employés de l'entreprise ont environ 7,55 années d'expérience. Cependant, il ne s’agit que d’une valeur unique et elle ne nous fournit pas d’informations sur l’incertitude associée à cette estimation.
+        À mesure que la satisfaction au travail augmente (scores de satisfaction au travail plus élévés), la productivité des agents augmente aussi (les agents accomplissent plus de tâches dans un laps de temps donné). 
+        Cela suggère qu’une productivité plus élevée est associée à une meilleure satisfaction au travail parmi les agents.
         """)
 
 
