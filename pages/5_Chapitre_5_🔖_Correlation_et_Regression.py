@@ -274,6 +274,61 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     st.write("The coefficient represents how much the performance rating is expected to change for a one-unit increase in years of experience.")
     st.write("In our case, for every additional year of experience, the expected performance rating increases by approximately 0.50 points.")
 
+
+
+
+    # Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from sklearn.linear_model import LinearRegression
+
+# Step 1: Generate Sample Data
+    np.random.seed(0)
+    years_of_experience = np.random.randint(1, 20, 50)  # Generate 50 random years of experience
+    performance_rating = 3 + 0.5 * years_of_experience + np.random.normal(0, 2, 50)  # Simulate performance rating
+
+# Create a DataFrame
+    data = pd.DataFrame({'Years of Experience': years_of_experience, 'Performance Rating': performance_rating})
+
+# Step 2: Perform Simple Linear Regression
+    X = data['Years of Experience'].values.reshape(-1, 1)
+    y = data['Performance Rating'].values
+    model = LinearRegression()
+    model.fit(X, y)
+
+# Step 3: Visualize the Results
+    st.title("Simple Linear Regression in HR")
+    st.write("Dataset - Employee Performance vs. Years of Experience")
+
+# Scatter plot with the regression line
+    scatter_fig = go.Figure()
+
+# Add scatter plot
+    scatter_fig.add_trace(go.Scatter(x=data['Years of Experience'], y=data['Performance Rating'],
+                                     mode='markers', name='Data Points'))
+
+# Add regression line
+    y_pred = model.predict(X)
+    scatter_fig.add_trace(go.Scatter(x=data['Years of Experience'], y=y_pred,
+                                     mode='lines', name='Regression Line', line=dict(color='red')))
+
+    scatter_fig.update_layout(title="Employee Performance vs. Years of Experience",
+                           xaxis_title="Years of Experience",
+                           yaxis_title="Performance Rating")
+    st.plotly_chart(scatter_fig)
+
+# Step 4: Interpretation
+    st.write("Interpretation:")
+    st.write("Simple linear regression helps us understand the relationship between years of experience and performance rating.")
+    st.write(f"The regression equation is: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
+    st.write("Here, the intercept represents the expected performance rating when an employee has 0 years of experience.")
+    st.write("The coefficient represents how much the performance rating is expected to change for a one-unit increase in years of experience.")
+    st.write("In our case, for every additional year of experience, the expected performance rating increases by approximately 0.50 points.")
+
+
     
     st.markdown("En **RH, une régression linéaire simple peut être appliquée pour prédire les performances des employés** en fonction de divers facteurs. Par exemple, une entreprise peut vouloir comprendre comment le nombre d'heures consacrées à la formation influe sur la performance ultérieure d'un employé.") 
     
