@@ -155,7 +155,10 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.markdown("")
 
 
-    st.markdown("**Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables**, elles sont considérées comme n'ayant **aucune corrélation**. Le coefficient de corrélation serait alors proche de **0**.")
+    st.markdown("")
+
+
+    st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables**, elles sont considérées comme n'ayant **aucune corrélation**. Le coefficient de corrélation serait alors proche de **0**.")
 
     st.markdown("**🏀Application 21** :")
 
