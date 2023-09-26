@@ -204,6 +204,8 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "correlation positive"
     elif correlation_coefficient < 0:
         correlation_type = "correlation negative"
+    elif correlation_coefficient ≈ 0:
+        correlation_type = "non correlation"
     else:
         correlation_type = "non correlation"
 
