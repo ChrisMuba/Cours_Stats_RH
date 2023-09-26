@@ -41,6 +41,55 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("")
 
+
+    # Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+
+# Sample HR data
+    data = {
+        'Employee': list(range(1, 11)),
+        'Employee Productivity': [80, 75, 90, 70, 85, 65, 95, 75, 85, 70],
+       'Job Satisfaction': [5, 4, 6, 3, 5, 2, 7, 4, 6, 3]
+    }
+
+# Create a DataFrame
+    df = pd.DataFrame(data)
+
+# Title for the Streamlit app
+    st.title("Correlation Analysis in HR")
+
+# Introduction
+    st.write("In this exercise, we will analyze the correlation between Employee Productivity and Job Satisfaction.")
+
+# Calculate and display the correlation coefficient
+    correlation_coefficient = df['Employee Productivity'].corr(df['Job Satisfaction'])
+    st.write(f"Correlation Coefficient (r): {correlation_coefficient}")
+
+# Determine the type of correlation
+    if correlation_coefficient > 0:
+        st.write("This indicates a positive correlation.")
+    elif correlation_coefficient < 0:
+        st.write("This indicates a negative correlation.")
+    else:
+        st.write("This indicates no correlation.")
+
+# Create a scatter plot to visualize the data
+    fig = px.scatter(df, x='Employee Productivity', y='Job Satisfaction', title='Employee Productivity vs. Job Satisfaction')
+    st.plotly_chart(fig)
+
+
+
+
+
+
+
+
+
+
+
+
 if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire simple : prédire les résultats**"):
     
     st.subheader("📈Chap.5-B/ Régression linéaire simple📉")
