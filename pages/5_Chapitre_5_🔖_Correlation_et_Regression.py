@@ -70,6 +70,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='DataViz : Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
+    # Display the correlation type with the coefficient
+    st.write(f"Cette dataviz indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
+
     # Explanation
     with st.expander("🔮Interpretation"):
         st.write("""
@@ -82,8 +85,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("")
 
-# Display the correlation type with the coefficient
-    st.write(f"Cela indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
+
 
 
     st.markdown("")
@@ -137,6 +139,8 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 # Create a scatter plot with a trendline
     fig = px.scatter(df, x='Absentéisme (jours)', y='Satisfaction au travail (échelle 1-5)', title='DataViz : Absentéisme vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
+
+    st.write(f"Cette dataviz indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
 
     # Explanation
     with st.expander("🔮Interpretation"):
