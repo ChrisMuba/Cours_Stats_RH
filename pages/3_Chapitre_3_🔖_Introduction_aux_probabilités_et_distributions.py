@@ -483,8 +483,7 @@ if st.button("Continuer vers la suite du Chap.3 - **C/ Distributions de probabil
     st.subheader("Distribution Normale (Évaluation Performance):")
     st.markdown(
         """
-    La distribution normale, également connue sous le nom de distribution gaussienne ou courbe en cloche, se caractérise par sa courbe symétrique en forme de cloche. 
-    Elle est définie par deux paramètres : la moyenne (μ) et l'écart type (σ). En RH, la distribution normale peut être utilisée pour modéliser diverses mesures de performance des employés.
+    Comme dit précédemment, la distribution normale se caractérise par sa courbe symétrique en forme de cloche et est définie par deux paramètres : la moyenne (μ) et l'écart type (σ). 
 
     Dans ce contexte, supposons que la note de performance moyenne du Service Public est de 70 et que l'écart type est de 10. 
     Nous calculerons les probabilités associées aux différentes notes de performance et visualiserons la distribution normale.
