@@ -40,9 +40,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Sample HR data
     data = {
-        'Employee': list(range(1, 11)),
-        'Employee Productivity': [80, 75, 90, 70, 85, 65, 95, 75, 85, 70],
-        'Job Satisfaction': [5, 4, 6, 3, 5, 2, 7, 4, 6, 3]
+        'Agent': list(range(1, 11)),
+        'Productivité de l\'agent': [80, 75, 90, 70, 85, 65, 95, 75, 85, 70],
+        'Satisfaction au travail': [5, 4, 6, 3, 5, 2, 7, 4, 6, 3]
     }
 
 # Create a DataFrame
@@ -51,30 +51,27 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 # Display the sample data
     st.dataframe(df)
 
-# Title for the Streamlit app
-    st.title("Correlation Analysis in HR")
-
 # Introduction
-    st.write("In this exercise, we will analyze the correlation between Employee Productivity and Job Satisfaction.")
+    st.write("Dans cet exercice, nous analyserons la corrélation entre la productivité des agents et leur satisfaction au travail.")
 
 # Calculate and display the correlation coefficient
-    correlation_coefficient = df['Employee Productivity'].corr(df['Job Satisfaction'])
-    st.write(f"Correlation Coefficient (r): {correlation_coefficient}")
+    correlation_coefficient = df['Productivité de l\'agent'].corr(df['Satisfaction au travail'])
+    st.write(f"Coefficient de correlation (r): {correlation_coefficient}")
 
 # Determine the type of correlation
     if correlation_coefficient > 0:
-        correlation_type = "positive"
+        correlation_type = "correlation positive"
     elif correlation_coefficient < 0:
-        correlation_type = "negative"
+        correlation_type = "correlation negative"
     else:
-        correlation_type = "no"
+        correlation_type = "non correlation"
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Employee Productivity', y='Job Satisfaction', title='Employee Productivity vs. Job Satisfaction', trendline='ols')
+    fig = px.scatter(df, x='Productivité de l\'agent', y='Satisfaction au travail', title='Productivité de l\'agent vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
 # Display the correlation type with the coefficient
-    st.write(f"This indicates a {correlation_type} correlation with a coefficient of {correlation_coefficient:.2f}.")
+    st.write(f"Cela indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
 
 
     st.markdown("")
