@@ -196,7 +196,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.write("Dans cet exercice, nous analyserons s'il existe une corrélation entre les heures de formation et les notes d'évaluation des performances.")
 
 # Calculate and display the correlation coefficient
-    correlation_coefficient = df['Heures de formation'].corr(df['Évaluation des performances (échelle 1 à 5)'])
+    correlation_coefficient = df['Salaire annuel (€)'].corr(df['Évaluation des performances (échelle 1 à 5)'])
     st.write(f"Coefficient de correlation (r): {correlation_coefficient:.2f}")
 
 # Determine the type of correlation
