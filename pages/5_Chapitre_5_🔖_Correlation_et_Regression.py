@@ -85,9 +85,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corr√©lation : d√
 
     st.markdown("")
 
-
-
-
     st.markdown("")
     
     st.markdown("")
@@ -229,6 +226,47 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corr√©lation : d√
     
     
     st.markdown("")
+    
+# Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+
+# Sample HR data
+    data = {
+       'Employee': list(range(1, 11)),
+        'Training Hours': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
+        'Performance Rating (scale 1-5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
+    }
+
+# Create a DataFrame
+    df = pd.DataFrame(data)
+
+# Title for the Streamlit app
+    st.title("No Correlation Analysis in HR")
+
+# Introduction
+    st.write("In this exercise, we will analyze whether there is a correlation between Training Hours and Performance Rating.")
+
+# Calculate and display the correlation coefficient
+    correlation_coefficient = df['Training Hours'].corr(df['Performance Rating (scale 1-5)'])
+    st.write(f"Correlation Coefficient (r): {correlation_coefficient:.2f}")
+
+# Create a scatter plot with a trendline
+    fig = px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', title='Training Hours vs. Performance Rating')
+    fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
+    fig.add_trace(
+        px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', trendline="ols").data[1]
+    )
+    st.plotly_chart(fig)
+
+# Interpretation
+    st.write("The correlation coefficient (r) is approximately 0.14, which is close to 0.")
+    st.write("This suggests that there is no discernible relationship between Training Hours and Performance Rating.")
+    st.write("In other words, the amount of training hours an employee receives does not appear to have a significant impact on their performance rating.")
+
+
+
     
 
 
