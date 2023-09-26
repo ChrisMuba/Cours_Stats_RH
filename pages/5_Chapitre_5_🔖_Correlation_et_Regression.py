@@ -164,9 +164,81 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("**🏀Application 21** :")
 
-    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite maintenant analyser la relation entre « Absentéisme (en jours) » et « Satisfaction au travail (échelle 1-5) ».")
+    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre « heures de formation des agents » et « notes d'évaluations de performances ». Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
 
     st.markdown("Ci-dessous un échantillon des données collectées :")
+
+
+    # Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import plotly.express as px
+
+# Sample HR data
+    data = {
+        'Agents': list(range(1, 11)),
+        'Heures de formation': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
+        'Évaluation des performances (échelle 1 à 5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
+    }
+
+# Create a DataFrame
+    df = pd.DataFrame(data)
+
+# Display the sample data
+    st.dataframe(df)
+
+# Introduction
+    st.write("Dans cet exercice, nous analyserons s'il existe une corrélation entre les heures de formation et les notes d'évaluation des performances.")
+
+# Calculate and display the correlation coefficient
+    correlation_coefficient = df['Heures de formation'].corr(df['Évaluation des performances (échelle 1 à 5)'])
+    st.write(f"Coefficient de correlation (r): {correlation_coefficient:.2f}")
+
+# Determine the type of correlation
+    if correlation_coefficient > 0:
+        correlation_type = "correlation positive"
+    elif correlation_coefficient < 0:
+        correlation_type = "correlation negative"
+    else:
+        correlation_type = "non correlation"
+
+# Create a scatter plot with a trendline
+    fig = px.scatter(df, x='Heures de formation', y='Évaluation des performances (échelle 1 à 5)', title='DataViz : Heures de formation vs. notes d'évaluation des performances', trendline='ols')
+    st.plotly_chart(fig)
+
+    st.write(f"Cette dataviz indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
+
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        Le coefficient de corrélation d'environ 0,14 est proche de 0, ce qui indique qu'il n'y a aucune relation perceptible entre le nombre d'heures de formation et les notes d'évaluation des performances. 
+        
+        En d’autres termes, le nombre d’heures de formation qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
+        """)
+
+
+    st.markdown("")
+
+
+# Create a scatter plot with a trendline
+    fig = px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', title='Training Hours vs. Performance Rating')
+    fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
+    fig.add_trace(
+        px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', trendline="ols").data[1]
+    )
+    st.plotly_chart(fig)
+    
+# Interpretation
+    st.write("The correlation coefficient (r) is approximately 0.14, which is close to 0.")
+    st.write("This suggests that there is no discernible relationship between Training Hours and Performance Rating.")
+    st.write("In other words, the amount of training hours an employee receives does not appear to have a significant impact on their performance rating.")
+
+
+
+
+
+    
     
     st.markdown("")
     
