@@ -281,29 +281,14 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     st.plotly_chart(scatter_fig)
 
 # Step 4: Interpretation
-    st.write("Interpretation:")
+    st.write("🔮Interpretation:")
     st.write("Une régression linéaire simple nous aide à comprendre la relation entre les années d'expérience et l'évaluation des performances.")
     st.write(f"L'équation de régression est: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
     st.write("Ici, l'interception représente la note de performance attendue lorsqu'un employé a 0 année d'expérience.")
     st.write("Le coefficient représente la variation attendue de la note de performance pour une augmentation d'une unité du nombre d'années d'expérience.")
     st.write("Dans notre cas, pour chaque année d'expérience supplémentaire, la note de performance attendue augmente d'environ 0,50 point.")
 
-     # Explanation
-    with st.expander("🔮Interpretation"):
-        st.write("""
-        Une régression linéaire simple nous aide à comprendre la relation entre les années d'expérience et l'évaluation des performances. 
-
-        f"L'équation de régression est: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience"
-
-        Ici, l'interception représente la note de performance attendue lorsqu'un employé a 0 année d'expérience.
-
-        Le coefficient représente la variation attendue de la note de performance pour une augmentation d'une unité du nombre d'années d'expérience.
-
-        Dans notre cas, pour chaque année d'expérience supplémentaire, la note de performance attendue augmente d'environ 0,50 point.
-        
-        En d’autres termes, le salaire annuel qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
-        """)
-
+     
     st.markdown("")
 
 
