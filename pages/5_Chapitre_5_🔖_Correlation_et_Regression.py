@@ -82,6 +82,45 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
 
     st.markdown("- **🏀Application 20** :")
+
+# Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+    import numpy as np
+
+# Sample HR data
+    data = {
+        'Employee': list(range(1, 11)),
+        'Absenteeism (days)': [5, 2, 8, 1, 6, 4, 9, 3, 7, 2],
+        'Job Satisfaction (scale 1-5)': [2, 4, 1, 5, 2, 3, 1, 4, 1, 3]
+    }
+
+# Create a DataFrame
+    df = pd.DataFrame(data)
+
+# Title for the Streamlit app
+    st.title("Negative Correlation Analysis in HR")
+
+# Introduction
+    st.write("In this exercise, we will analyze the negative correlation between Absenteeism and Job Satisfaction.")
+
+# Calculate and display the correlation coefficient
+    correlation_coefficient = df['Absenteeism (days)'].corr(df['Job Satisfaction (scale 1-5)'])
+    st.write(f"Correlation Coefficient (r): {correlation_coefficient:.2f}")
+
+# Create a scatter plot with a trendline
+    fig = px.scatter(df, x='Absenteeism (days)', y='Job Satisfaction (scale 1-5)', title='Absenteeism vs. Job Satisfaction')
+    fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
+    fig.add_trace(
+        px.scatter(df, x='Absenteeism (days)', y='Job Satisfaction (scale 1-5)', trendline="ols").data[1]
+    )
+    st.plotly_chart(fig)
+
+# Interpretation
+   st.write("The negative correlation coefficient (r) of approximately -0.69 indicates a strong negative correlation between Absenteeism and Job Satisfaction.")
+   st.write("As Absenteeism increases (employees missing more days), Job Satisfaction tends to decrease (lower job satisfaction scores). This suggests that higher absenteeism is associated with lower job satisfaction among employees.")
+
     
     st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
 
