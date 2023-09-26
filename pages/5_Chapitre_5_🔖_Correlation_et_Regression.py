@@ -81,7 +81,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
     
     st.markdown("- **Corrélation négative** : **lorsque deux variables évoluent dans des directions opposées**, elles présentent une **corrélation négative**.") 
 
-    st.markdown("- **🏀Application 20** :")
+    st.markdown("**🏀Application 20** :")
 
 # Import necessary libraries
     import streamlit as st
