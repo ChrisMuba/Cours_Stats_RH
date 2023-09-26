@@ -175,7 +175,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 # Sample HR data
     data = {
         'Agents': list(range(1, 11)),
-        'Heures de formation': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
+        'Salaire annuel (€)': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
         'Évaluation des performances (échelle 1 à 5)': [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
     }
 
@@ -204,8 +204,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "correlation positive"
     elif correlation_coefficient < 0:
         correlation_type = "correlation negative"
-    elif correlation_coefficient ≈ 0:
-        correlation_type = "non correlation"
     else:
         correlation_type = "non correlation"
 
@@ -236,29 +234,26 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
 # Sample HR data
     data = {
-       'Employee': list(range(1, 11)),
-        'Training Hours': [10, 15, 12, 8, 11, 14, 9, 13, 10, 12],
-        'Performance Rating (scale 1-5)': [3, 3, 4, 2, 3, 4, 2, 3, 3, 4]
+       'Agents': list(range(1, 11)),
+        'Salaire annuel (€)': [12000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500],
+        'Évaluation des performances (échelle 1 à 5)': [4, 3, 5, 2, 5, 4, 3, 5, 4, 2]
     }
 
 # Create a DataFrame
     df = pd.DataFrame(data)
 
-# Title for the Streamlit app
-    st.title("No Correlation Analysis in HR")
-
 # Introduction
     st.write("In this exercise, we will analyze whether there is a correlation between Training Hours and Performance Rating.")
 
 # Calculate and display the correlation coefficient
-    correlation_coefficient = df['Training Hours'].corr(df['Performance Rating (scale 1-5)'])
+    correlation_coefficient = df['Salaire annuel (€)'].corr(df['Évaluation des performances (échelle 1 à 5)'])
     st.write(f"Correlation Coefficient (r): {correlation_coefficient:.2f}")
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', title='Training Hours vs. Performance Rating')
+    fig = px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', title='Salaire annuel (€) vs. Notes d\'évaluation des performances')
     fig.update_traces(marker=dict(size=12, opacity=0.6), selector=dict(mode='markers'))
     fig.add_trace(
-        px.scatter(df, x='Training Hours', y='Performance Rating (scale 1-5)', trendline="ols").data[1]
+        px.scatter(df, x='Salaire annuel (€)', y='Évaluation des performances (échelle 1 à 5)', trendline="ols").data[1]
     )
     st.plotly_chart(fig)
 
