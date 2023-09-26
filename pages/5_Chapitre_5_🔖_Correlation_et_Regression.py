@@ -94,7 +94,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("**🏀Application 20** :")
 
-    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite cette fois analyser la relation entre « Absentéisme (en jours) » et « Satisfaction au travail (échelle 1-5) ».")
+    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite maintenant analyser la relation entre « Absentéisme (en jours) » et « Satisfaction au travail (échelle 1-5) ».")
 
     st.markdown("Ci-dessous un échantillon des données collectées :")
 
