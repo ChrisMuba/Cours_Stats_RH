@@ -75,9 +75,12 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corr√©lation : d√
     else:
         st.write("This indicates no correlation.")
 
-# Create a scatter plot to visualize the data
-    fig = px.scatter(df, x='Employee Productivity', y='Job Satisfaction', title='Employee Productivity vs. Job Satisfaction')
+# Create a scatter plot with a trendline
+    fig = px.scatter(df, x='Employee Productivity', y='Job Satisfaction', title='Employee Productivity vs. Job Satisfaction', trendline='ols')
     st.plotly_chart(fig)
+
+# Display the correlation type with the coefficient
+    st.write(f"This indicates a {correlation_type} correlation with a coefficient of {correlation_coefficient:.2f}.")
 
 
 
