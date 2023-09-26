@@ -130,7 +130,7 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         correlation_type = "non correlation"
 
 # Create a scatter plot with a trendline
-    fig = px.scatter(df, x='Absentéisme (jours)', y='Satisfaction au travail (échelle 1-5)', title='Absentéisme vs. Satisfaction au travail', trendline='ols')
+    fig = px.scatter(df, x='Absentéisme (jours)', y='Satisfaction au travail (échelle 1-5)', title='Visualisation : Absentéisme vs. Satisfaction au travail', trendline='ols')
     st.plotly_chart(fig)
 
     # Explanation
@@ -145,20 +145,6 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
 
     st.markdown("")
 
-# Display the correlation type with the coefficient
-    st.write(f"Cela indique une {correlation_type} avec un coefficient de {correlation_coefficient:.2f}.")
-
-# Interpretation
-    st.write("Le coefficient de corrélation négative (r) d'environ -0,94 indique une forte corrélation négative entre l'absentéisme et la satisfaction au travail.")
-    st.write("As Absenteeism increases (employees missing more days), Job Satisfaction tends to decrease (lower job satisfaction scores). This suggests that higher absenteeism is associated with lower job satisfaction among employees.")
-
-    
-    st.markdown("Par exemple, l'absentéisme et la satisfaction au travail pourraient avoir une corrélation négative. Un coefficient de corrélation proche de **-1** représente une **forte corrélation négative**.")
-
-    st.markdown("")
-    
-    
-    st.markdown("- **Aucune corrélation** : **S'il n'y a pas de relation perceptible entre deux variables, elles sont considérées comme n'ayant aucune corrélation**. Le coefficient de corrélation serait proche de **0** dans de tels cas.")
 
     st.markdown("- **🏀Application 21** :")
     
