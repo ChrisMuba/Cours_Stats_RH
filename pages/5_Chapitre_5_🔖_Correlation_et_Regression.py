@@ -254,6 +254,9 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 # Create a DataFrame
     data = pd.DataFrame({'Years of Experience': years_of_experience, 'Performance Rating': performance_rating})
 
+# Display the sample data
+    st.dataframe(data)
+
 # Step 2: Perform Simple Linear Regression
     X = data['Years of Experience'].values.reshape(-1, 1)
     y = data['Performance Rating'].values
