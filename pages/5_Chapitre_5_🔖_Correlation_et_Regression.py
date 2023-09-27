@@ -375,7 +375,6 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
         'Years_of_Experience': [12],
         'Job_Title_Director': [0],
         'Job_Title_Manager': [1],  # Set to 1 for Manager
-        'Job_Title_Specialist': [0],
         'Job_Title_Coordinator': [0],
         'Job_Title_Associate\'s': [0],
         'Job_Title_Analyst': [0],
