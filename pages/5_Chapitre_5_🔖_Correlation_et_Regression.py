@@ -338,9 +338,9 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
-   import pandas as pd
-   import plotly.express as px
-   import statsmodels.api as sm
+    import pandas as pd
+    import plotly.express as px
+    import statsmodels.api as sm
 
 # Create the DataFrame
     data = {
