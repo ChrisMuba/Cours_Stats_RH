@@ -259,6 +259,10 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 # Display the sample data
     st.dataframe(data)
 
+# Introduction
+    st.write("Dans cet exercice, nous effectuerons une régression linéaire simple afin de trouver la droite la mieux adaptée qui prédit l'évaluation des performances en fonction des années d'expérience ; et visualiserons la droite de régression et les points de données.")
+
+
 # Step 2: Perform Simple Linear Regression
     X = data['Années d\'expérience'].values.reshape(-1, 1)
     y = data['Notes de performance'].values
