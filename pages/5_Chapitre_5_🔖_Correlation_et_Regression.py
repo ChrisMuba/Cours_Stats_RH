@@ -440,6 +440,54 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
     st.write("These coefficients help HR professionals identify which factors have the most significant impact on turnover. In this example, job satisfaction and work-life balance have the strongest influence on turnover.")
 
+
+    import pandas as pd
+
+    data = {
+        'YearsExperience': [2, 3, 5, 7, 8, 10, 12, 15, 20, 22],
+        'TrainingHours': [10, 12, 15, 18, 20, 25, 30, 35, 40, 45],
+        'EmployeeSatisfaction': [3, 4, 3, 5, 4, 4, 5, 3, 5, 4],
+        'PerformanceRating': [60, 65, 68, 72, 70, 75, 80, 78, 85, 88]
+    }
+
+    df = pd.DataFrame(data)
+
+    import streamlit as st
+    import plotly.express as px
+    import statsmodels.api as sm
+
+# Title for the Streamlit app
+    st.title("Multiple Regression Analysis in HR")
+
+# Scatter plot to visualize the data
+    scatter_fig = px.scatter(df, x='YearsExperience', y='PerformanceRating',
+                             title='Performance Rating vs. Years of Experience',
+                             labels={'YearsExperience': 'Years of Experience', 'PerformanceRating': 'Performance Rating'})
+
+# Adding a regression line to the scatter plot
+    scatter_fig.update_traces(
+        mode='markers+lines',
+        marker=dict(size=8),
+        line=dict(color='red', width=2)
+    )
+
+# Display the scatter plot
+    st.plotly_chart(scatter_fig)
+
+# Multiple regression analysis
+    X = df[['YearsExperience', 'TrainingHours', 'EmployeeSatisfaction']]
+    X = sm.add_constant(X)  # Add a constant term (intercept)
+    y = df['PerformanceRating']
+
+# Fit the regression model
+    model = sm.OLS(y, X).fit()
+
+# Display regression results
+    st.header("Multiple Regression Results")
+    st.write(model.summary())
+
+
+
     
     st.markdown("")
 
