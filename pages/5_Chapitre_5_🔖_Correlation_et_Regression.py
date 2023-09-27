@@ -308,6 +308,62 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("Dans le contexte des RH, **la régression multiple peut être utilisée pour prédire le turnover en fonction de plusieurs variables** telles que **la satisfaction au travail, le salaire, la distance domicile - travail, et l'équilibre travail-vie personnelle**.") 
     
     st.markdown("En analysant les données historiques et en utilisant la régression multiple, le contrôleur de gestion sociale peut identifier les facteurs les plus importants impliqués dans le turnover et aider les services RH à développer des stratégies pour l'atténuer.")
+
+
+# Import necessary libraries
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import plotly.express as px
+    import statsmodels.api as sm
+
+# Step 1: Generate Sample Data
+    np.random.seed(0)
+
+# Simulate data for job satisfaction, salary, distance, work-life balance, and turnover
+    n_samples = 100
+    job_satisfaction = np.random.uniform(1, 5, n_samples)
+    salary = np.random.uniform(30000, 80000, n_samples)
+    distance_to_work = np.random.uniform(1, 30, n_samples)
+    work_life_balance = np.random.uniform(1, 5, n_samples)
+    turnover = 20 + 3 * job_satisfaction - 2 * salary + 1.5 * distance_to_work + 2 * work_life_balance + np.random.normal(0, 5, n_samples)
+
+# Create a DataFrame
+    data = pd.DataFrame({'Job Satisfaction': job_satisfaction, 'Salary': salary,
+                         'Distance to Work': distance_to_work, 'Work-Life Balance': work_life_balance, 'Turnover': turnover})
+
+# Step 2: Perform Multiple Regression
+    X = data[['Job Satisfaction', 'Salary', 'Distance to Work', 'Work-Life Balance']]
+    X = sm.add_constant(X)  # Add a constant (intercept) to the model
+    y = data['Turnover']
+
+    model = sm.OLS(y, X).fit()
+
+# Step 3: Visualize the Results
+    st.title("Multiple Regression in HR")
+    st.write("Dataset - Predicting Turnover")
+
+# Scatter plot of actual vs. predicted values
+    fig = px.scatter(x=model.fittedvalues, y=data['Turnover'], labels={'x': 'Predicted Turnover', 'y': 'Actual Turnover'})
+    st.plotly_chart(fig)
+
+# Step 4: Interpretation
+    st.write("Interpretation:")
+    st.write("Multiple regression helps us understand how multiple factors (independent variables) collectively impact a dependent variable (turnover in this case).")
+
+# Print regression coefficients
+    st.write("Regression Coefficients:")
+    st.write(model.params)
+
+# Interpretation of coefficients
+    st.write("Interpreting the coefficients:")
+    st.write("1. Job Satisfaction: For every one-unit increase in job satisfaction, turnover is expected to increase by approximately 3 units.")
+    st.write("2. Salary: For every one-unit increase in salary, turnover is expected to decrease by approximately 2 units.")
+    st.write("3. Distance to Work: For every one-unit increase in distance to work, turnover is expected to increase by approximately 1.5 units.")
+    st.write("4. Work-Life Balance: For every one-unit increase in work-life balance, turnover is expected to increase by approximately 2 units.")
+
+    st.write("These coefficients help HR professionals identify which factors have the most significant impact on turnover. In this example, job satisfaction and work-life balance have the strongest influence on turnover.")
+
     
     
     st.markdown("")
