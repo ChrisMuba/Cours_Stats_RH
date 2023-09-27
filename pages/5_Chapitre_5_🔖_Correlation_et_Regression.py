@@ -341,6 +341,9 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("")
 
 
+    st.markdown("")
+
+
     def redirect_button(url: str, text: str= None, color="#FD504D"):
         st.markdown(
         f"""
