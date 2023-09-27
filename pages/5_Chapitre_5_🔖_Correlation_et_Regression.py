@@ -303,24 +303,21 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
 if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : prise en compte de plusieurs facteurs**"):
     
-    st.markdown("La **régression multiple étend le concept** de régression linéaire simple **en incorporant plus d'une variable indépendante pour prédire une variable dépendante**. **Elle permet d'examiner l'effet combiné de plusieurs facteurs** sur un résultat d'intérêt.")
+    st.markdown("La **régression multiple étend le concept** de régression linéaire simple **en incorporant plus d'une variable indépendante pour prédire une variable dépendante** (le résultat que vous souhaitez prédire ou expliquer). **Elle permet d'examiner l'effet combiné de plusieurs facteurs** sur un résultat d'intérêt.")
     
-    st.markdown("Dans le contexte des RH, **la régression multiple peut être utilisée pour prédire le turnover en fonction de plusieurs variables** telles que **la satisfaction au travail, le salaire, la distance domicile - travail, et l'équilibre travail-vie personnelle**.") 
+    st.markdown("Dans le contexte des RH, **la régression multiple peut être utilisée pour prédire le turnover en fonction de plusieurs variables** telles que **la satisfaction au travail, le salaire, la distance domicile - travail, et l'équilibre travail-vie personnelle**, etc...") 
     
-    st.markdown("En analysant les données historiques et en utilisant la régression multiple, le contrôleur de gestion sociale peut identifier les facteurs les plus importants impliqués dans le turnover et aider les services RH à développer des stratégies pour l'atténuer.")
 
     st.markdown("")
 
 
-    st.markdown("La régression multiple est une technique statistique utilisée pour analyser la relation entre une variable dépendante (le résultat que vous souhaitez prédire ou expliquer) et deux ou plusieurs variables indépendantes (les facteurs pouvant influencer la variable dépendante).")
-
     st.markdown("Les bases de la régression multiple :")
 
-    st.markdown("- Variable dépendante (Y) : il s'agit de la variable que vous souhaitez prédire ou expliquer. En RH, il peut s’agir du taux de turnover, du score de satisfaction des employés ou de la productivité.")
+    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. En RH, il peut s’agir du taux de turnover, du score de satisfaction des employés ou de la productivité.")
 
-    st.markdown("- Variables indépendantes (X1, X2, X3, ...) : Ce sont les facteurs ou variables qui, selon vous, peuvent influencer la variable dépendante. Pour les RH, cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc.")
+    st.markdown("- **Variables indépendantes (X1, X2, X3, ...)** : Ce sont les facteurs ou variables qui, selon vous, peuvent influencer la variable dépendante. Pour les RH, cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc.")
 
-    st.markdown("- Équation de régression : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante et les variables indépendantes.")
+    st.markdown("- **Équation de régression** : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante et les variables indépendantes.")
 
     st.write(""" L'équation ressemblera à ceci :
 
@@ -335,7 +332,7 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
      - ε représente le terme d'erreur, représentant la partie de la variable dépendante qui ne peut pas être expliquée par les variables indépendantes.
      """)
 
-    st.markdown("- Analyse de régression : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
+    st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
 
