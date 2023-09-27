@@ -252,7 +252,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     performance_rating = 3 + 0.5 * years_of_experience + np.random.normal(0, 2, 50)  # Simulate performance rating
 
 # Create a DataFrame
-    data = pd.DataFrame({'Années d\'expérience': years_of_experience, 'Notes de performance'.2f: performance_rating})
+    data = pd.DataFrame({'Années d\'expérience': years_of_experience, 'Notes de performance': performance_rating})
 
 # Display the sample data
     st.dataframe(data)
