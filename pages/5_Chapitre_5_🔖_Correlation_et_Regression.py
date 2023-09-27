@@ -335,7 +335,7 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
      - ε représente le terme d'erreur, représentant la partie de la variable dépendante qui ne peut pas être expliquée par les variables indépendantes.
      """)
 
-     st.markdown("- Analyse de régression : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
+    st.markdown("- Analyse de régression : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
 
