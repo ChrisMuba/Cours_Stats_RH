@@ -338,6 +338,75 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
+    import pandas as pd
+
+    data = {
+        'Employee_ID': [1, 2, 3, 4, 5, 6],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+    }
+
+    df = pd.DataFrame(data)
+
+    # Display the sample data
+    st.dataframe(data)
+
+    import plotly.express as px
+
+# Scatter plot for Job Title vs. Salary
+    fig1 = px.scatter(df, x='Job_Title', y='Salary', title='Job Title vs. Salary')
+
+# Scatter plot for Years of Experience vs. Salary
+    fig2 = px.scatter(df, x='Years_of_Experience', y='Salary', title='Years of Experience vs. Salary')
+
+# Scatter plot for Level of Education vs. Salary
+    fig3 = px.scatter(df, x='Level_of_Education', y='Salary', title='Level of Education vs. Salary')
+
+# Calculate correlation coefficients
+    correlation_job_salary = df['Job_Title'].corr(df['Salary'])
+    correlation_exp_salary = df['Years_of_Experience'].corr(df['Salary'])
+    correlation_education_salary = df['Level_of_Education'].corr(df['Salary'])
+
+    import statsmodels.api as sm
+
+    X = df[['Job_Title', 'Years_of_Experience', 'Level_of_Education']]
+    X = pd.get_dummies(X, drop_first=True)  # Convert categorical variables to binary (dummy) variables
+    X = sm.add_constant(X)  # Add a constant (intercept) term
+
+    y = df['Salary']
+
+    model = sm.OLS(y, X).fit()
+    coefficients = model.params
+
+# Define the characteristics of the employee for prediction
+    employee_characteristics = {
+        'Job_Title': 'Manager',
+        'Years_of_Experience': 12,
+        'Level_of_Education': "Master's"
+    }
+
+# Create a DataFrame for prediction
+    employee_df = pd.DataFrame([employee_characteristics])
+
+# Convert categorical variables to binary variables
+    employee_df = pd.get_dummies(employee_df, drop_first=True)
+
+# Add a constant term
+    employee_df = sm.add_constant(employee_df)
+
+# Predict the salary
+    predicted_salary = model.predict(employee_df)
+
+# Display the predicted salary
+    print(f"The predicted salary for the employee is: ${predicted_salary[0]:,.2f}")
+
+
+
+
+
+
     st.markdown("")
 
 
