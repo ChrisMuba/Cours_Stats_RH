@@ -277,7 +277,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     scatter_fig.add_trace(go.Scatter(x=data['Années d\'expérience'], y=y_pred,
                                      mode='lines', name='Regression Line', line=dict(color='red')))
 
-    scatter_fig.update_layout(title="Notes de performance vs. Années d\'expérience",
+    scatter_fig.update_layout(title="DataViz : Notes de performance vs. Années d\'expérience",
                            xaxis_title="Années d\'expérience",
                            yaxis_title="Notes de performance")
     st.plotly_chart(scatter_fig)
