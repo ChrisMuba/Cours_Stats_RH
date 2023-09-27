@@ -322,7 +322,7 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
     st.markdown("- Équation de régression : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante et les variables indépendantes.")
 
-     st.write(""" L'équation ressemblera à ceci :
+    st.write(""" L'équation ressemblera à ceci :
 
      Y = b0 + b1*X1 + b2*X2 + b3*X3 + ... + ε
      
