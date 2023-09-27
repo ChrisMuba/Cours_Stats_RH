@@ -227,8 +227,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
     st.markdown("Illustrons le concept de la « Régression linéaire simple » à l'aide de données RH pour comprendre comment prédire la note de performance d'un employé en fonction de ses années d'expérience.")
 
-    st.markdown("Supposons que nous avons un ensemble de données avec deux variables, "Années d'expérience" (variable indépendante) et "Évaluation des performances" (variable dépendante).")
-    
+    st.markdown("Supposons que nous avons un ensemble de données avec deux variables, « Années d'expérience (variable indépendante) » et « Évaluation des performances (variable dépendante) ».")
     
     st.markdown("Ci-dessous un échantillon de nos données :")
 
