@@ -225,9 +225,12 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
     st.markdown("**🏀Application 22** :")
 
-    st.markdown("Notre contrôleur de gestion sociale à *Ploucs-lès-Landes* souhaite analyser la relation entre les niveaux de salaires et les notes d'évaluations de performances des agents de sa commune. Il veut déterminer s'il n'y a pas de corrélation entre ces variables.")
+    st.markdown("Illustrons le concept de la « Régression linéaire simple » à l'aide de données RH pour comprendre comment prédire la note de performance d'un employé en fonction de ses années d'expérience.")
 
-    st.markdown("Ci-dessous un échantillon des données collectées :")
+    st.markdown("Supposons que nous avons un ensemble de données avec deux variables, "Années d'expérience" (variable indépendante) et "Évaluation des performances" (variable dépendante).")
+    
+    
+    st.markdown("Ci-dessous un échantillon de nos données :")
 
 
     st.markdown("")
