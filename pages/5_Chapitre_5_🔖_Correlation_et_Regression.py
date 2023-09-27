@@ -238,8 +238,6 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     st.markdown("")
 
 
-
-
 # Import necessary libraries
     import streamlit as st
     import pandas as pd
@@ -254,7 +252,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     performance_rating = 3 + 0.5 * years_of_experience + np.random.normal(0, 2, 50)  # Simulate performance rating
 
 # Create a DataFrame
-    data = pd.DataFrame({'Années d\'expérience': years_of_experience, 'Notes de performance': performance_rating})
+    data = pd.DataFrame({'Années d\'expérience': years_of_experience, 'Notes de performance': performance_rating.2f})
 
 # Display the sample data
     st.dataframe(data)
@@ -289,7 +287,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 # Step 4: Interpretation
     st.write("🔮Interpretation:")
     st.write("Une régression linéaire simple nous aide à comprendre la relation entre les années d'expérience et l'évaluation des performances.")
-    st.write(f"L'équation de régression est: Performance Rating = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Years of Experience")
+    st.write(f"L'équation de régression est: Notes de performance = {model.intercept_:.2f} + {model.coef_[0]:.2f} * Années d'expérience")
     st.write("Ici, l'interception représente la note de performance attendue lorsqu'un employé a 0 année d'expérience.")
     st.write("Le coefficient représente la variation attendue de la note de performance pour une augmentation d'une unité du nombre d'années d'expérience.")
     st.write("Dans notre cas, pour chaque année d'expérience supplémentaire, la note de performance attendue augmente d'environ 0,50 point.")
