@@ -305,7 +305,7 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     
     st.markdown("La **régression multiple étend le concept** de régression linéaire simple **en incorporant plus d'une variable indépendante pour prédire une variable dépendante** (le résultat que vous souhaitez prédire ou expliquer). **Elle permet d'examiner l'effet combiné de plusieurs facteurs** sur un résultat d'intérêt.")
     
-    st.markdown("Dans le contexte des RH, **la régression multiple peut être utilisée pour prédire le turnover en fonction de plusieurs variables** telles que **la satisfaction au travail, le salaire, la distance domicile - travail, et l'équilibre travail-vie personnelle**, etc...") 
+    st.markdown("Dans le contexte des RH, **la régression multiple peut être utilisée pour prédire par exemple le turnover en fonction de plusieurs variables** telles que **la satisfaction au travail, le salaire, la distance domicile - travail, et l'équilibre travail-vie personnelle**, etc...") 
     
 
     st.markdown("")
@@ -313,15 +313,19 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
     st.markdown("Les bases de la régression multiple :")
 
-    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. En RH, il peut s’agir du taux de turnover, du score de satisfaction des employés ou de la productivité.")
+    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. Il peut s’agir du taux de turnover, du score de satisfaction des employés, de la productivité, etc...")
 
-    st.markdown("- **Variables indépendantes (X1, X2, X3, ...)** : Ce sont les facteurs ou variables qui, selon vous, peuvent influencer la variable dépendante. Pour les RH, cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc.")
+    st.markdown("- **Variables indépendantes (X1, X2, X3, ...)** : Ce sont les facteurs ou variables qui, selon vous, peuvent influencer la variable dépendante. Cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc...")
 
-    st.markdown("- **Équation de régression** : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante et les variables indépendantes.")
+    st.markdown("- **Équation de régression** : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante (le résultat que vous souhaitez prédire ou expliquer) et les variables indépendantes (les facteurs pouvant influencer la variable dépendante).")
 
+    #st.markdown("L\'équation ressemblera à ceci : **Y = b0 + b1*X1 + b2*X2 + b3*X3 + ... + ε**")
+    
     st.write(""" L'équation ressemblera à ceci :
 
      Y = b0 + b1*X1 + b2*X2 + b3*X3 + ... + ε
+
+     avec : 
      
      - Y est la variable dépendante.
      
