@@ -227,7 +227,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
     st.markdown("Illustrons le concept de la « Régression linéaire simple » à l'aide de données RH pour comprendre comment prédire la note de performance d'un employé en fonction de ses années d'expérience.")
 
-    st.markdown("Supposons que nous avons un ensemble de données avec deux variables, « Années d'expérience (variable indépendante) » et « Évaluation des performances (variable dépendante) ».")
+    st.markdown("Supposons que nous avons un ensemble de données avec deux variables, « Années d'expérience (variable indépendante) » et « Notes d'évaluation des performances (variable dépendante) ».")
     
     st.markdown("Ci-dessous un échantillon de nos données :")
 
@@ -254,14 +254,14 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     performance_rating = 3 + 0.5 * years_of_experience + np.random.normal(0, 2, 50)  # Simulate performance rating
 
 # Create a DataFrame
-    data = pd.DataFrame({'Years of Experience': years_of_experience, 'Performance Rating': performance_rating})
+    data = pd.DataFrame({'Années d\'expérience': years_of_experience, 'Notes de performance': performance_rating})
 
 # Display the sample data
     st.dataframe(data)
 
 # Step 2: Perform Simple Linear Regression
-    X = data['Years of Experience'].values.reshape(-1, 1)
-    y = data['Performance Rating'].values
+    X = data['Années d\'expérience'].values.reshape(-1, 1)
+    y = data['Notes de performance'].values
     model = LinearRegression()
     model.fit(X, y)
 
@@ -269,17 +269,17 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     scatter_fig = go.Figure()
 
 # Add scatter plot
-    scatter_fig.add_trace(go.Scatter(x=data['Years of Experience'], y=data['Performance Rating'],
+    scatter_fig.add_trace(go.Scatter(x=data['Années d\'expérience'], y=data['Notes de performance'],
                                      mode='markers', name='Data Points'))
 
 # Add regression line
     y_pred = model.predict(X)
-    scatter_fig.add_trace(go.Scatter(x=data['Years of Experience'], y=y_pred,
+    scatter_fig.add_trace(go.Scatter(x=data['Années d\'expérience'], y=y_pred,
                                      mode='lines', name='Regression Line', line=dict(color='red')))
 
-    scatter_fig.update_layout(title="Employee Performance vs. Years of Experience",
-                           xaxis_title="Years of Experience",
-                           yaxis_title="Performance Rating")
+    scatter_fig.update_layout(title="Notes de performance vs. Années d\'expérience",
+                           xaxis_title="Années d\'expérience",
+                           yaxis_title="Notes de performance")
     st.plotly_chart(scatter_fig)
 
 # Step 4: Interpretation
