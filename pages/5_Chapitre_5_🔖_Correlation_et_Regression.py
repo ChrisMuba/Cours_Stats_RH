@@ -338,7 +338,57 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
-   
+    import pandas as pd
+
+    data = {
+        'Employee_ID': [1, 2, 3, 4, 5, 6],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst', 'Specialist'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+    }
+
+    df = pd.DataFrame(data)
+
+    st.dataframe(data)
+
+# Perform one-hot encoding
+    df_encoded = pd.get_dummies(df, columns=['Job_Title', 'Level_of_Education'], drop_first=True)
+
+# Display the encoded data
+    print(df_encoded)
+
+    from sklearn.model_selection import train_test_split
+    from sklearn.linear_model import LinearRegression
+
+# Split the data into training (80%) and testing (20%)
+    X = df_encoded.drop('Salary', axis=1)
+    y = df_encoded['Salary']
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create and train the linear regression model
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+
+# Predict the salary for an employee with the given characteristics
+    new_employee = pd.DataFrame({
+        'Years_of_Experience': [12],
+        'Job_Title_Director': [0],
+        'Job_Title_Manager': [1],  # Set to 1 for Manager
+        'Job_Title_Specialist': [0],
+        'Job_Title_Coordinator': [0],
+        'Job_Title_Associate\'s': [0],
+        'Job_Title_Analyst': [0],
+        'Level_of_Education_Master\'s': [1],  # Set to 1 for Master's
+        'Level_of_Education_Bachelor\'s': [0],  # Set to 0 for Bachelor's
+        'Level_of_Education_Associate\'s': [0]  # Set to 0 for Associate's
+    })
+
+    predicted_salary = model.predict(new_employee)
+    print("Predicted Salary: $", predicted_salary[0])
+
+
+
 
 
 
