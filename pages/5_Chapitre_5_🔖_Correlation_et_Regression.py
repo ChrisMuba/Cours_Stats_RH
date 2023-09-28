@@ -350,16 +350,7 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
         'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"],
         'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
     }
-
-
-    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist',
-        'Job_Title_Associate', 'Job_Title_Analyst',
-        "Level_of_Education_Associate's", "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
-
-
     df = pd.DataFrame(data)
-    st.dataframe(data)
-    print(df.columns)
 
 # Visualize the data with scatter plots
     fig1 = px.scatter(df, x='Job_Title', y='Salary', title='Job Title vs. Salary')
@@ -371,12 +362,10 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     df = pd.get_dummies(df, columns=['Level_of_Education'], drop_first=True)
 
 # Perform multiple regression analysis
-    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist','Job_Title_Associate', 'Job_Title_Analyst',
+    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist', 'Job_Title_Associate', 'Job_Title_Analyst',
             'Job_Title_Consultant', 'Years_of_Experience', "Level_of_Education_Associate's", "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
     X = sm.add_constant(X)
-
     y = df['Salary']
-
     model = sm.OLS(y, X).fit()
     coefficients = model.params
 
@@ -386,14 +375,12 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
         'Job_Title_Director': 0,
         'Job_Title_Manager': 1,
         'Job_Title_Specialist': 0,
-        'Job_Title_Consultant': 0,
-        'Job_Title_Associate': 0, 
-        'Job_Title_Analyst': 0,    
+        'Job_Title_Associate': 0,
+        'Job_Title_Analyst': 0,
         'Years_of_Experience': 12,
         "Level_of_Education_Bachelor's": 0,
         "Level_of_Education_Master's": 1
     }
-
     employee_df = pd.DataFrame([employee_characteristics])
     employee_df = sm.add_constant(employee_df)
     predicted_salary = model.predict(employee_df)
@@ -403,6 +390,9 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
 # Print coefficients
     print(coefficients)
+
+   
+
 
 
 
