@@ -68,7 +68,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     data = [
         ["18 - 24", "0 à 2 ans", "Employé","BTS / Titre pro"],
         ["25 - 34", "3 à 5 ans", "Agent de maîtrise", "Bachelor"],
-        ["35 - 44", "6 à 10 ans", "Master"],
+        ["35 - 44", "6 à 10 ans", "Cadre", "Master"],
         ["45 - 54", "11 à 15 ans", "Cadre sup.", "Master"],
         ["55 et plus", "plus de 15 ans", "Cadre sup.", "BTS / Titre pro"],
         ["...", "...", "...", "..."]
