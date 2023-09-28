@@ -228,9 +228,9 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
 
     st.markdown("Les bases de la régression linéaire simple :")
 
-    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. Il peut s’agir du taux de turnover, du score de satisfaction des employés, de la productivité, etc...")
+    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. Les possibilités sont nombreuses : taux de turnover, score de satisfaction des employés, productivité, etc...")
 
-    st.markdown("- **Variable indépendante (X1)** : C'est le facteur ou variable qui, selon vous, peut influencer la variable dépendante. Cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc...")
+    st.markdown("- **Variable indépendante (X1)** : C'est le facteur ou variable qui, selon vous, peut influencer la variable dépendante. Là aussi de nombreux facteurs peuvent être investigués : âge de l’employé, années d’expérience, salaire, heures de formation, etc...")
 
     st.markdown("- **Équation de régression** : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante (le résultat que vous souhaitez prédire ou expliquer) et la variable indépendante (le facteur pouvant influencer la variable dépendante).")
 
