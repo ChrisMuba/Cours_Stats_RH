@@ -61,6 +61,25 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("Les données catégorielles quantitatives impliquent des **catégories basées sur des caractéristiques qui peuvent être comptées** par des valeurs discrètes (par exemple 1, 2, 3, etc...).")
 
+    ### Affichage tableau au format tabulaire    
+    
+    st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles quantitatives**")
+    
+    data = [
+        ["18 - 24", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
+        ["25 - 34", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
+        ["35 - 44", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
+        ["45 - 54", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
+        ["55 - et plus", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
+        ["...", "...", "...", "...", "..."]
+]
+
+    headers = ["Tranche d'âge des employés","Genre H/F", "Poste", "Rattachement", "Diplôme"]
+
+    df = pd.DataFrame(data, columns=headers)
+
+    st.table(df)
+
     
     st.markdown("")
     
@@ -78,24 +97,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("") 
 
-### Affichage tableau au format tabulaire    
-    
-    st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles quantitatives**")
-    
-    data = [
-        ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
-        ["002", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
-        ["003", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
-        ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
-        ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
-        ["...", "...", "...", "...", "..."]
-]
 
-    headers = ["Matricule RH","Genre H/F", "Poste", "Rattachement", "Diplôme"]
-
-    df = pd.DataFrame(data, columns=headers)
-
-    st.table(df)
        
 
     st.markdown("Dans cet exemple, l'ensemble de données comprend **diverses variables catégorielles liées aux RH**.") 
