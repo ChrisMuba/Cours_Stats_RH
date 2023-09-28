@@ -351,6 +351,12 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
         'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
     }
 
+
+    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist',
+        'Job_Title_Associate', 'Job_Title_Analyst',
+        "Level_of_Education_Associate's", "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
+
+
     df = pd.DataFrame(data)
     st.dataframe(data)
     print(df.columns)
