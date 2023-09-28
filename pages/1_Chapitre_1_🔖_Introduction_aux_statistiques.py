@@ -36,6 +36,27 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - a1/ Les données **catégorielles qualitatives**")
 
+    st.markdown("Les données catégorielles qualitatives font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.
+
+### Affichage tableau au format tabulaire    
+    
+    st.markdown("🚨Exemple de données **catégorielles** dans un service RH :")
+    
+    data = [
+        ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
+        ["002", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
+        ["003", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
+        ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
+        ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
+        ["...", "...", "...", "...", "..."]
+]
+
+    headers = ["Matricule RH","Genre H/F", "Poste", "Rattachement", "Diplôme"]
+
+    df = pd.DataFrame(data, columns=headers)
+
+    st.table(df)
+
     st.markdown(" - a2/ Les données **catégorielles quantitatives**")
 
     
