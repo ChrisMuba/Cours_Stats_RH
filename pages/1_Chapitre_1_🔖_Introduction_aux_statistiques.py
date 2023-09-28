@@ -66,15 +66,15 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles quantitatives**")
     
     data = [
-        ["18 - 24", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
-        ["25 - 34", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
-        ["35 - 44", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
-        ["45 - 54", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
-        ["55 - et plus", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
+        ["18 - 24", "0 à 2 ans", "Chargée de recrutement","Développement des RH", "Bachelor"],
+        ["25 - 34", "3 à 5 ans", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
+        ["35 - 44", "6 à 10 ans", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
+        ["45 - 54", "11 à 15 ans", "Juriste droit social", "Administration des RH", "Master"],
+        ["55 - et plus", "plus de 15 ans", "Responsable GPEC", "Développement des RH", "Master"],
         ["...", "...", "...", "...", "..."]
 ]
 
-    headers = ["Tranche d'âge des employés","Genre H/F", "Poste", "Rattachement", "Diplôme"]
+    headers = ["Tranche d'âge des employés","Nombre d'années d'expérience", "Poste", "Rattachement", "Diplôme"]
 
     df = pd.DataFrame(data, columns=headers)
 
