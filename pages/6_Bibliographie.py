@@ -11,7 +11,9 @@ st.markdown("*High-level interface for data visualization* https://plotly.com/py
 
 st.markdown("*Python Data Analysis Library* https://pandas.pydata.org")
 
-st.markdown("*The fundamental package for scientific computing with Python* https://numpy.org")            
+st.markdown("*The fundamental package for scientific computing with Python* https://numpy.org")  
+
+st.markdown("*The Python Imaging Library* https://pillow.readthedocs.io")
 
 st.markdown("*Les statistiques : le pouvoir des données !* https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-fra.htm")
 
