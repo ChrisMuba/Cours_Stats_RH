@@ -34,15 +34,15 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Ces catégories sont non numériques et peuvent être **qualitatives** ou **quantitatives** :")
 
-    st.markdown("")
-
     st.markdown("** - a1/ Les données catégorielles qualitatives**")
 
+    st.markdown("** - a2/ Les données catégorielles quantitatives**")
+
     
     st.markdown("")
     
 
-    st.markdown("** - a2/ Les données catégorielles quantitatives**")
+    
 
     st.markdown("⚠️Des données **catégorielles** peuvent être **quantitatives** car elles peuvent être quantifiées ou décrites à l'aide de méthodes numériques : calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser les données ; l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans les données catégorielles.")  
     
