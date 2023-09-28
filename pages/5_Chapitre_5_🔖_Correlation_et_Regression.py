@@ -339,52 +339,63 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
 
     import pandas as pd
+    import plotly.express as px
+    import statsmodels.api as sm
 
+# Create the DataFrame
     data = {
-    'Employee_ID': [1, 2, 3, 4, 5, 6, 7],
-    'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst', 'Specialist'],
-    'Years_of_Experience': [10, 15, 5, 3, 8, 12, 9],
-    'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"],
-    'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
+        'Employee_ID': [1, 2, 3, 4, 5, 6],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
     }
 
     df = pd.DataFrame(data)
 
-    st.dataframe(data)
+# Visualize the data with scatter plots
+    fig1 = px.scatter(df, x='Job_Title', y='Salary', title='Job Title vs. Salary')
+    fig2 = px.scatter(df, x='Years_of_Experience', y='Salary', title='Years of Experience vs. Salary')
+    fig3 = px.scatter(df, x='Level_of_Education', y='Salary', title='Level of Education vs. Salary')
 
-# Perform one-hot encoding
-    df_encoded = pd.get_dummies(df, columns=['Job_Title', 'Level_of_Education'], drop_first=True)
+# Convert categorical variables to dummy variables
+    df = pd.get_dummies(df, columns=['Job_Title'], drop_first=True)
+    df = pd.get_dummies(df, columns=['Level_of_Education'], drop_first=True)
 
-# Display the encoded data
-    print(df_encoded)
+# Perform multiple regression analysis
+    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist',
+            'Job_Title_Consultant', 'Years_of_Experience', "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
+    X = sm.add_constant(X)
 
-    from sklearn.model_selection import train_test_split
-    from sklearn.linear_model import LinearRegression
+    y = df['Salary']
 
-# Split the data into training (80%) and testing (20%)
-    X = df_encoded.drop('Salary', axis=1)
-    y = df_encoded['Salary']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    model = sm.OLS(y, X).fit()
+    coefficients = model.params
 
-# Create and train the linear regression model
-    model = LinearRegression()
-    model.fit(X_train, y_train)
+# Predict the salary for an employee
+    employee_characteristics = {
+        'Job_Title_Coordinator': 0,
+        'Job_Title_Director': 0,
+        'Job_Title_Manager': 1,
+        'Job_Title_Specialist': 0,
+        'Job_Title_Consultant': 0,
+        'Years_of_Experience': 12,
+        "Level_of_Education_Bachelor's": 0,
+        "Level_of_Education_Master's": 1
+    }
 
-# Predict the salary for an employee with the given characteristics
-    new_employee = pd.DataFrame({
-        'Years_of_Experience': [12],
-        'Job_Title_Director': [0],
-        'Job_Title_Manager': [1],  # Set to 1 for Manager
-        'Job_Title_Coordinator': [0],
-        'Job_Title_Associate\'s': [0],
-        'Job_Title_Analyst': [0],
-        'Level_of_Education_Master\'s': [1],  # Set to 1 for Master's
-        'Level_of_Education_Bachelor\'s': [0],  # Set to 0 for Bachelor's
-        'Level_of_Education_Associate\'s': [0]  # Set to 0 for Associate's
-    })
+    employee_df = pd.DataFrame([employee_characteristics])
+    employee_df = sm.add_constant(employee_df)
+    predicted_salary = model.predict(employee_df)
 
-    predicted_salary = model.predict(new_employee)
-    print("Predicted Salary: $", predicted_salary[0])
+# Display the results
+    print(f"The predicted salary for the employee is: ${predicted_salary[0]:,.2f}")
+
+# Print coefficients
+    print(coefficients)
+
+
+
 
 
 
