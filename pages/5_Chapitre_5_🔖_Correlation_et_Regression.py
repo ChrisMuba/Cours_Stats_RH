@@ -377,6 +377,50 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     fig = px.scatter(df, x='Years_of_Experience', y='Salary', trendline='ols')
     st.plotly_chart(fig)
 
+    
+
+
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+    from sklearn.linear_model import LinearRegression
+
+# Define the HR data
+    data = {
+        'Employee_ID': [1, 2, 3, 4, 5, 6],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', 'Associate', 'Analyst'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+    }
+
+# Create a DataFrame from the HR data
+    df = pd.DataFrame(data)
+
+# Prepare the feature matrix X and target variable y
+    X = df[['Years_of_Experience']]
+    X['Job_Title'] = df['Job_Title'].apply(lambda x: 1 if x == 'Manager' else 0)
+    X['Level_of_Education'] = df['Level_of_Education'].apply(lambda x: 1 if x == "Master's" else 0)
+    y = df['Salary']
+
+# Create an instance of the LinearRegression class
+    model = LinearRegression()
+
+# Fit the model to the data
+    model.fit(X, y)
+
+# Predict the target variable for new data
+    new_data = pd.DataFrame({'Years_of_Experience': [12], 'Job_Title': [1], 'Level_of_Education': [1]})
+    prediction = model.predict(new_data)[0]
+
+# Display the prediction
+    st.write("Predicted Salary:", prediction)
+
+# Visualize the data and regression line using Plotly
+    fig = px.scatter(df, x='Years_of_Experience', y='Salary', trendline='ols', color='Job_Title')
+    st.plotly_chart(fig)
+
+
 
 
 
