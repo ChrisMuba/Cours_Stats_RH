@@ -51,7 +51,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         ["...", "...", "...", "...", "..."]
 ]
 
-    headers = ["Matricule RH","Genre H/F", "Qualités professionnelles", "Type de contrat de travail", "Motif de fin de contrat", "Service"]
+    headers = ["Genre H/F", "Qualités professionnelles", "Type de contrat de travail", "Motif de fin de contrat", "Service"]
 
     df = pd.DataFrame(data, columns=headers)
 
