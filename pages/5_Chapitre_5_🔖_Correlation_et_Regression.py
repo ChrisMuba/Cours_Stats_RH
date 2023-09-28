@@ -352,6 +352,8 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     }
 
     df = pd.DataFrame(data)
+    st.dataframe(data)
+    print(df.columns)
 
 # Visualize the data with scatter plots
     fig1 = px.scatter(df, x='Job_Title', y='Salary', title='Job Title vs. Salary')
