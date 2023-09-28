@@ -17,6 +17,8 @@ st.markdown("*The fundamental package for scientific computing with Python* http
 
 st.markdown("*Statistical functions (scipy.stats)* https://docs.scipy.org/doc/scipy/reference/stats.html")
 
+st.markdown("*Simple and efficient tools for predictive data analysis* https://scikit-learn.org/stable/index.html")
+
 st.markdown("*The Python Imaging Library* https://pillow.readthedocs.io")
 
 st.markdown("*Les statistiques : le pouvoir des données !* https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-fra.htm")
