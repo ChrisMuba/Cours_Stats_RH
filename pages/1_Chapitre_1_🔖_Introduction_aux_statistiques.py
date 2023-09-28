@@ -43,15 +43,15 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨Exemple de données **catégorielles qualitatives** dans un service RH :")
     
     data = [
-        ["001", "👧🏾 F", "Leadership","CDI", "Comptabilité-Finances"],
-        ["002", "👦🏿 H", "Communication", "CDD", "Marketing-Ventes"],
-        ["003", "👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "RH"],
-        ["004", "👨‍🦰 H", "Créativité", "Contrat d\'apprentissage", "Informatique"],
-        ["005", "👴 H", "Travail d\'équipe", "Contrat de professionnalisation", "Administration générale"],
+        ["001", "👧🏾 F", "Leadership", "CDI", "CDI", "Comptabilité-Finances"],
+        ["002", "👦🏿 H", "Communication", "CDD", "CDI", "Marketing-Ventes"],
+        ["003", "👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "CDI", "RH"],
+        ["004", "👨‍🦰 H", "Créativité", "Contrat d\'apprentissage", "CDI", "Informatique"],
+        ["005", "👴 H", "Travail d\'équipe", "Contrat de professionnalisation", "CDI", "Administration générale"],
         ["...", "...", "...", "...", "..."]
 ]
 
-    headers = ["Matricule RH","Genre H/F", "Qualités professionnelles", "Type de contrat de travail", "Service"]
+    headers = ["Matricule RH","Genre H/F", "Qualités professionnelles", "Type de contrat de travail", "Motif de fin de contrat", "Service"]
 
     df = pd.DataFrame(data, columns=headers)
 
