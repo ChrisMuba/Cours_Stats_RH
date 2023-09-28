@@ -32,7 +32,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
                 
     st.markdown("Les données **catégorielles** sont des données qui peuvent être **triées en catégories ou en groupes**.") 
     
-    st.markdown("Ces catégories sont non numériques et peuvent être **qualitatives** ou **quantitatives** :")
+    st.write("Ces catégories sont non numériques et peuvent être **qualitatives** ou **quantitatives** :")
 
     st.markdown("** - a1/ Les données catégorielles qualitatives**")
 
