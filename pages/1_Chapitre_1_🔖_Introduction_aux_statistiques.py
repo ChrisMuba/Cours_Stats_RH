@@ -59,6 +59,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - a2/ Les données **catégorielles quantitatives**")
 
+    st.markdown("Les données catégorielles quantitatives impliquent des **catégories qui sont basées sur des caractéristiques qui peuvent être comptées** par des valeurs discrètes (par exemple 1, 2, 3, etc...).")
+
     
     st.markdown("")
     
