@@ -223,6 +223,36 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     
     st.markdown("**Elle suppose une relation linéaire entre les deux variables et estime la ligne la mieux ajustée qui minimise la différence entre les données observées et les valeurs prédites**.")
 
+    st.markdown("")
+
+
+    st.markdown("Les bases de la régression linéaire simple :")
+
+    st.markdown("- **Variable dépendante (Y)** : il s'agit de la variable que vous souhaitez prédire ou expliquer. Il peut s’agir du taux de turnover, du score de satisfaction des employés, de la productivité, etc...")
+
+    st.markdown("- **Variable indépendante (X1)** : C'est le facteur ou variable qui, selon vous, peut influencer la variable dépendante. Cela peut inclure des facteurs tels que l’âge de l’employé, les années d’expérience, le salaire, les heures de formation, etc...")
+
+    st.markdown("- **Équation de régression** : l'objectif est de trouver une équation de régression qui décrit le mieux la relation entre la variable dépendante (le résultat que vous souhaitez prédire ou expliquer) et la variable indépendante (le facteur pouvant influencer la variable dépendante).")
+
+    st.write(""" L'équation ressemblera à ceci :
+
+     Y = b0 + b1*X1 + ε
+
+     où : 
+     
+     - Y est la variable dépendante.
+     
+     - b0 est l'ordonnée à l'origine (la valeur de Y lorsque la variable indépendante est nulle).
+     
+     - b1 est le coefficient qui représente dans quelle mesure la variable indépendante influence la variable dépendante.
+     
+     - ε représente le terme d'erreur : la partie de la variable dépendante qui ne peut pas être expliquée par la variable indépendante.
+     """)
+    
+    st.markdown("")
+
+    st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
+
     st.markdown("**🏀Application 22** :")
 
     st.markdown("Illustrons le concept de la « Régression linéaire simple » à l'aide de données RH pour comprendre comment prédire la note de performance d'un employé en fonction de ses années d'expérience.")
