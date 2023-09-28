@@ -6,7 +6,7 @@
 
 import streamlit as st
 
-st.title("Cours de Statistiques appliquées aux Ressources Humaines")
+st.title("Cours de Statistiques appliquées aux :blue[Ressources Humaines]")
 
 st.header("Auteur : Christian MUBA - HR Data analyst.")
 
