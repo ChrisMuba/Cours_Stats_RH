@@ -23,6 +23,8 @@ st.markdown("*The Python Imaging Library* https://pillow.readthedocs.io")
 
 st.markdown("*Les statistiques : le pouvoir des données !* https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-fra.htm")
 
+st.balloons()
+
 
 st.markdown("")
 
