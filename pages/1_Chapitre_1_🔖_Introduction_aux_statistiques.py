@@ -40,7 +40,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨Exemple de données **catégorielles qualitatives** dans un service RH :")
+    st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles qualitatives**")
     
     data = [
         ["👧🏾 F", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
@@ -78,7 +78,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨Exemple de données **catégorielles** dans un service RH :")
+    st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles quantitatives**")
     
     data = [
         ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
