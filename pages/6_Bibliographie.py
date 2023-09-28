@@ -9,6 +9,8 @@ st.markdown("*Low-Code Data Apps* https://plotly.com")
 
 st.markdown("*High-level interface for data visualization* https://plotly.com/python-api-reference/plotly.express.html")
 
+st.markdown("*Graph Objects in Python* https://plotly.com/python/graph-objects")
+
 st.markdown("*Python Data Analysis Library* https://pandas.pydata.org")
 
 st.markdown("*The fundamental package for scientific computing with Python* https://numpy.org")  
