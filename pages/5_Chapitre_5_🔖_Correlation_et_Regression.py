@@ -338,66 +338,29 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
 
-    import pandas as pd
-    import streamlit as st
-    import plotly.express as px
-
-# Step 2: Create the data
-    Employee_ID = [1, 2, 3, 4, 5, 6, 7]
-    Job_Title = ['Manager', 'Director', 'Consultant', 'Coordinator', 'Associate', 'Analyst', 'Specialist']
-    Years_of_Experience = [10, 15, 5, 3, 8, 12, 9]
-    Level_of_Education = ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"]
-    Salary = [80000, 120000, 60000, 40000, 70000, 100000, 80000]
-
-# Step 3: Create a DataFrame
-    data = pd.DataFrame({
-        'Employee_ID': Employee_ID,
-        'Job_Title': Job_Title,
-        'Years_of_Experience': Years_of_Experience,
-        'Level_of_Education': Level_of_Education,
-        'Salary': Salary
-    })
-
-# Step 4: Data preprocessing
-    data_encoded = pd.get_dummies(data, columns=['Job_Title', 'Level_of_Education'])
-
-# Step 5: Split the data into features and target
-    features = data_encoded.drop('Salary', axis=1)
-    target = data_encoded['Salary']
-
-# Step 6: Train a machine learning model
     from sklearn.linear_model import LinearRegression
+    import numpy as np
 
+# Create the feature matrix X
+    X = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Create the target variable y
+    y = np.array([10, 20, 30])
+
+# Create an instance of the LinearRegression class
     model = LinearRegression()
-    model.fit(features, target)
 
-# Step 7: Predict the salary
-    job_title = 'Manager'
-    years_of_experience = 12
-    level_of_education = "Master's"
+# Fit the model to the data
+    model.fit(X, y)
 
-# Create a DataFrame for the input data
-    input_data = pd.DataFrame({
-        'Job_Title_' + job_title: [1],
-        'Years_of_Experience': [years_of_experience],
-        'Level_of_Education_' + level_of_education: [1]
-    })
+# Predict the target variable for new data
+    new_data = np.array([[2, 3, 4], [5, 6, 7]])
+    predictions = model.predict(new_data)
 
-    predicted_salary = model.predict(input_data)[0]
+    print(predictions)
 
-# Step 8: Create a Streamlit web application
-    st.title('HR Data Analysis')
-    st.subheader('Predicting Salary')
 
-    st.write('Predicted salary for an employee with the following characteristics:')
-    st.write('- Job title: ' + job_title)
-    st.write('- Years of experience: ' + str(years_of_experience))
-    st.write('- Level of education: ' + level_of_education)
-    st.write('is $' + str(predicted_salary))
-
-# Step 9: Visualize the data
-    fig = px.scatter(data, x='Years_of_Experience', y='Salary', color='Job_Title', title='Salary vs Years of Experience')
-    st.plotly_chart(fig)
+    
 
 
 
