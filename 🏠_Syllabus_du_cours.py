@@ -8,13 +8,9 @@ import streamlit as st
 
 st.title("Cours de Statistiques appliquées aux :blue[Ressources Humaines]")
 
-st.header("Auteur : Christian MUBA - HR Data analyst.")
+st.header("Formateur^1 : Christian MUBA")
 
 st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions éclairées ou bénéficier d'un tutorat personnalisé ? contactez-moi 📧https://www.linkedin.com/in/chris-muba-io 🌍")
-
-# st.markdown("Ce projet porte sur l'étude d'un jeu de données RH comportant 13 colonnes & 8336 lignes")
-
-# st.caption("Fichier de données avant nettoyage : www.example.com")
 
 st.subheader("Description du cours")
 
