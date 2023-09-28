@@ -337,16 +337,28 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
     st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
+
+    
     import streamlit as st
     import pandas as pd
+    import plotly.express as px
     from sklearn.linear_model import LinearRegression
-    import numpy as np
 
-# Create the feature matrix X
-    X = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# Define the HR data
+    data = {
+        'Employee_ID': [1, 2, 3, 4, 5, 6],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', 'Associate', 'Analyst'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+    }
 
-# Create the target variable y
-    y = np.array([10, 20, 30])
+# Create a DataFrame from the HR data
+    df = pd.DataFrame(data)
+
+# Prepare the feature matrix X and target variable y
+    X = df[['Years_of_Experience']]
+    y = df['Salary']
 
 # Create an instance of the LinearRegression class
     model = LinearRegression()
@@ -355,13 +367,16 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     model.fit(X, y)
 
 # Predict the target variable for new data
-    new_data = np.array([[2, 3, 4], [5, 6, 7]])
-    predictions = model.predict(new_data)
+    new_data = pd.DataFrame({'Years_of_Experience': [12]})
+    prediction = model.predict(new_data)[0]
 
-    print(predictions)
+# Display the prediction
+    st.write("Predicted Salary:", prediction)
 
+# Visualize the data and regression line using Plotly
+    fig = px.scatter(df, x='Years_of_Experience', y='Salary', trendline='ols')
+    st.plotly_chart(fig)
 
-    
 
 
 
