@@ -341,11 +341,11 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     import pandas as pd
 
     data = {
-    'Employee_ID': [1, 2, 3, 4, 5, 6],
-    'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst'],
-    'Years_of_Experience': [10, 15, 5, 3, 8, 12],
-    'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
-    'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+    'Employee_ID': [1, 2, 3, 4, 5, 6, 7],
+    'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst', 'Specialist'],
+    'Years_of_Experience': [10, 15, 5, 3, 8, 12, 9],
+    'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"],
+    'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
     }
 
     df = pd.DataFrame(data)
