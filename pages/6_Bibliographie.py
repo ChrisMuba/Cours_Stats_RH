@@ -1,7 +1,7 @@
 
 import streamlit as st
 
-st.title('Bibliographie')
+st.title('Bibliographie / Webographie')
 
 st.markdown("*A faster way to build and share data apps* https://streamlit.io")
 
