@@ -119,7 +119,6 @@ if check_4:
 
 st.markdown("")
 
-st.balloons()
 
 
 def redirect_button(url: str, text: str= None, color="#FD504D"):
