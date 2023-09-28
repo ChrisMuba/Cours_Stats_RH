@@ -43,11 +43,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨Exemple de données **catégorielles qualitatives** dans un service RH :")
     
     data = [
-        ["001", "👧🏾 F", "Leadership", "CDI", "CDI", "Comptabilité-Finances"],
-        ["002", "👦🏿 H", "Communication", "CDD", "CDI", "Marketing-Ventes"],
-        ["003", "👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "CDI", "RH"],
-        ["004", "👨‍🦰 H", "Créativité", "Contrat d\'apprentissage", "CDI", "Informatique"],
-        ["005", "👴 H", "Travail d\'équipe", "Contrat de professionnalisation", "CDI", "Administration générale"],
+        ["👧🏾 F", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
+        ["👦🏿 H", "Communication", "CDD", "fin de CDD", "Marketing-Ventes"],
+        ["👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "Fin de mission", "RH"],
+        ["👨‍🦰 H", "Créativité", "Contrat d\'apprentissage", "Démission", "Informatique"],
+        ["👴 H", "Travail d\'équipe", "Contrat de professionnalisation", "Fin de période d’essai", "Administration générale"],
         ["...", "...", "...", "...", "..."]
 ]
 
