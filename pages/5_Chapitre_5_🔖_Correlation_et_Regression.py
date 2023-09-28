@@ -339,57 +339,67 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
 
     import pandas as pd
+    import streamlit as st
     import plotly.express as px
-    import statsmodels.api as sm
 
-# Create the DataFrame
-    data = {
-        'Employee_ID': [1, 2, 3, 4, 5, 6, 7],
-        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate", 'Analyst', 'Specialist'],
-        'Years_of_Experience': [10, 15, 5, 3, 8, 12, 9],
-        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"],
-        'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
-    }
-    df = pd.DataFrame(data)
+# Step 2: Create the data
+    Employee_ID = [1, 2, 3, 4, 5, 6, 7]
+    Job_Title = ['Manager', 'Director', 'Consultant', 'Coordinator', 'Associate', 'Analyst', 'Specialist']
+    Years_of_Experience = [10, 15, 5, 3, 8, 12, 9]
+    Level_of_Education = ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"]
+    Salary = [80000, 120000, 60000, 40000, 70000, 100000, 80000]
 
-# Visualize the data with scatter plots
-    fig1 = px.scatter(df, x='Job_Title', y='Salary', title='Job Title vs. Salary')
-    fig2 = px.scatter(df, x='Years_of_Experience', y='Salary', title='Years of Experience vs. Salary')
-    fig3 = px.scatter(df, x='Level_of_Education', y='Salary', title='Level of Education vs. Salary')
+# Step 3: Create a DataFrame
+    data = pd.DataFrame({
+        'Employee_ID': Employee_ID,
+        'Job_Title': Job_Title,
+        'Years_of_Experience': Years_of_Experience,
+        'Level_of_Education': Level_of_Education,
+        'Salary': Salary
+    })
 
-# Convert categorical variables to dummy variables
-    df = pd.get_dummies(df, columns=['Job_Title'], drop_first=True)
-    df = pd.get_dummies(df, columns=['Level_of_Education'], drop_first=True)
+# Step 4: Data preprocessing
+    data_encoded = pd.get_dummies(data, columns=['Job_Title', 'Level_of_Education'])
 
-# Perform multiple regression analysis
-    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist', 'Job_Title_Associate', 'Job_Title_Analyst',
-            'Job_Title_Consultant', 'Years_of_Experience', "Level_of_Education_Associate's", "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
-    X = sm.add_constant(X)
-    y = df['Salary']
-    model = sm.OLS(y, X).fit()
-    coefficients = model.params
+# Step 5: Split the data into features and target
+    features = data_encoded.drop('Salary', axis=1)
+    target = data_encoded['Salary']
 
-# Predict the salary for an employee
-    employee_characteristics = {
-        'Job_Title_Coordinator': 0,
-        'Job_Title_Director': 0,
-        'Job_Title_Manager': 1,
-        'Job_Title_Specialist': 0,
-        'Job_Title_Associate': 0,
-        'Job_Title_Analyst': 0,
-        'Years_of_Experience': 12,
-        "Level_of_Education_Bachelor's": 0,
-        "Level_of_Education_Master's": 1
-    }
-    employee_df = pd.DataFrame([employee_characteristics])
-    employee_df = sm.add_constant(employee_df)
-    predicted_salary = model.predict(employee_df)
+# Step 6: Train a machine learning model
+    from sklearn.linear_model import LinearRegression
 
-# Display the results
-    print(f"The predicted salary for the employee is: ${predicted_salary[0]:,.2f}")
+    model = LinearRegression()
+    model.fit(features, target)
 
-# Print coefficients
-    print(coefficients)
+# Step 7: Predict the salary
+    job_title = 'Manager'
+    years_of_experience = 12
+    level_of_education = "Master's"
+
+# Create a DataFrame for the input data
+    input_data = pd.DataFrame({
+        'Job_Title_' + job_title: [1],
+        'Years_of_Experience': [years_of_experience],
+        'Level_of_Education_' + level_of_education: [1]
+    })
+
+    predicted_salary = model.predict(input_data)[0]
+
+# Step 8: Create a Streamlit web application
+    st.title('HR Data Analysis')
+    st.subheader('Predicting Salary')
+
+    st.write('Predicted salary for an employee with the following characteristics:')
+    st.write('- Job title: ' + job_title)
+    st.write('- Years of experience: ' + str(years_of_experience))
+    st.write('- Level of education: ' + level_of_education)
+    st.write('is $' + str(predicted_salary))
+
+# Step 9: Visualize the data
+    fig = px.scatter(data, x='Years_of_Experience', y='Salary', color='Job_Title', title='Salary vs Years of Experience')
+    st.plotly_chart(fig)
+
+
 
    
 
