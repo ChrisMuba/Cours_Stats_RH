@@ -36,7 +36,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - a1/ Les données **catégorielles qualitatives**")
 
-    st.markdown("Les données catégorielles qualitatives font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
+    st.markdown("Les données catégorielles qualitatives font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
 
 ### Affichage tableau au format tabulaire    
     
