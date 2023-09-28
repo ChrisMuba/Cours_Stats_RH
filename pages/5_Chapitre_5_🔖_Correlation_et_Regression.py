@@ -251,7 +251,7 @@ if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire sim
     
     st.markdown("")
 
-    st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0, b1, b2, etc.) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
+    st.markdown("- **Analyse de régression** : vous analysez les données pour estimer les coefficients (b0 & b1) qui correspondent le mieux à vos données et décrire la relation entre les variables.")
 
     st.markdown("**🏀Application 22** :")
 
