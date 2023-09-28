@@ -344,11 +344,11 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
 
 # Create the DataFrame
     data = {
-        'Employee_ID': [1, 2, 3, 4, 5, 6],
-        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate's", 'Analyst'],
-        'Years_of_Experience': [10, 15, 5, 3, 8, 12],
-        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's"],
-        'Salary': [80000, 120000, 60000, 40000, 70000, 100000]
+        'Employee_ID': [1, 2, 3, 4, 5, 6, 7],
+        'Job_Title': ['Manager', 'Director', 'Consultant', 'Coordinator', "Associate", 'Analyst', 'Specialist'],
+        'Years_of_Experience': [10, 15, 5, 3, 8, 12, 9],
+        'Level_of_Education': ["Bachelor's", "Master's", "Bachelor's", "Associate's", "Bachelor's", "Master's", "Master's"],
+        'Salary': [80000, 120000, 60000, 40000, 70000, 100000, 80000]
     }
 
     df = pd.DataFrame(data)
@@ -363,8 +363,8 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
     df = pd.get_dummies(df, columns=['Level_of_Education'], drop_first=True)
 
 # Perform multiple regression analysis
-    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist',
-            'Job_Title_Consultant', 'Years_of_Experience', "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
+    X = df[['Job_Title_Coordinator', 'Job_Title_Director', 'Job_Title_Manager', 'Job_Title_Specialist','Job_Title_Associate', 'Job_Title_Analyst',
+            'Job_Title_Consultant', 'Years_of_Experience', "Level_of_Education_Associate's", "Level_of_Education_Bachelor's", "Level_of_Education_Master's"]]
     X = sm.add_constant(X)
 
     y = df['Salary']
@@ -379,6 +379,8 @@ if st.button("Continuer vers la suite du Chap.5 - **C/ Régression multiple : pr
         'Job_Title_Manager': 1,
         'Job_Title_Specialist': 0,
         'Job_Title_Consultant': 0,
+        'Job_Title_Associate': 0, 
+        'Job_Title_Analyst': 0,    
         'Years_of_Experience': 12,
         "Level_of_Education_Bachelor's": 0,
         "Level_of_Education_Master's": 1
