@@ -13,7 +13,9 @@ st.markdown("*Graph Objects in Python* https://plotly.com/python/graph-objects")
 
 st.markdown("*Python Data Analysis Library* https://pandas.pydata.org")
 
-st.markdown("*The fundamental package for scientific computing with Python* https://numpy.org")  
+st.markdown("*The fundamental package for scientific computing with Python* https://numpy.org") 
+
+st.markdown("*Statistical functions (scipy.stats)* https://docs.scipy.org/doc/scipy/reference/stats.html")
 
 st.markdown("*The Python Imaging Library* https://pillow.readthedocs.io")
 
