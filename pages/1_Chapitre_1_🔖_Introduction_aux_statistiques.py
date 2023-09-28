@@ -71,7 +71,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         ["35 - 44", "6 à 10 ans", "Master"],
         ["45 - 54", "11 à 15 ans", "Cadre sup.", "Master"],
         ["55 et plus", "plus de 15 ans", "Cadre sup.", "BTS / Titre pro"],
-        ["...", "...", "...", "...", "..."]
+        ["...", "...", "...", "..."]
 ]
 
     headers = ["Tranche d'âge des employés","Ancienneté", "Catégorie de l'emploi", "Diplôme"]
