@@ -40,18 +40,18 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨Exemple de données **catégorielles** dans un service RH :")
+    st.markdown("🚨Exemple de données **catégorielles qualitatives** dans un service RH :")
     
     data = [
-        ["001", "👧🏾 F", "Chargée de recrutement","Développement des RH", "Bachelor"],
-        ["002", "👦🏿 H", "Directeur adjoint - Relations sociales", "Direction des RH", "Master"],
-        ["003", "👧 F", "Gestionnaire paie", "Administration des RH", "BTS / Titre pro"],
-        ["004", "👨‍🦰 H", "Juriste droit social", "Administration des RH", "Master"],
-        ["005", "👴 H", "Responsable GPEC", "Développement des RH", "Master"],
+        ["001", "👧🏾 F", "Leadership","Développement des RH", "Bachelor"],
+        ["002", "👦🏿 H", "Communication", "Direction des RH", "Master"],
+        ["003", "👧 F", "Résolution de problèmes", "Administration des RH", "BTS / Titre pro"],
+        ["004", "👨‍🦰 H", "Créativité", "Administration des RH", "Master"],
+        ["005", "👴 H", "travail d\'équipe", "Développement des RH", "Master"],
         ["...", "...", "...", "...", "..."]
 ]
 
-    headers = ["Matricule RH","Genre H/F", "Poste", "Rattachement", "Diplôme"]
+    headers = ["Matricule RH","Genre H/F", "qualités professionnelles", "Rattachement", "Diplôme"]
 
     df = pd.DataFrame(data, columns=headers)
 
@@ -62,7 +62,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("")
     
-
     
 
     st.markdown("⚠️Des données **catégorielles** peuvent être **quantitatives** car elles peuvent être quantifiées ou décrites à l'aide de méthodes numériques : calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser les données ; l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans les données catégorielles.")  
