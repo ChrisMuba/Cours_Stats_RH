@@ -30,13 +30,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("")
     
-    st.markdown("**a/ Les données catégorielles** (ou données qualitatives)")
+    st.markdown("**A/ Les données catégorielles** (ou données qualitatives)")
                 
     st.markdown("Les données **catégorielles** sont des données qui peuvent être **triées en catégories ou en groupes**.") 
     
     st.write("Ces catégories sont non numériques et peuvent être **nominales** ou **ordinales** :")
 
-    st.markdown(" - a1/ Les données **catégorielles nominales**")
+    st.markdown(" - 1/ Les données **catégorielles nominales**")
 
     st.markdown("Les données catégorielles nominales font référence à des **catégories qui ne peuvent pas être mesurées, comptées, classées ou ordonnées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
 
@@ -60,7 +60,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.table(df)
 
-    st.markdown(" - a2/ Les données **catégorielles ordinales**")
+    st.markdown(" - 2/ Les données **catégorielles ordinales**")
 
     st.markdown("Les données catégorielles ordinales impliquent des **catégories basées sur des caractéristiques qui peuvent traduire une chronologie, un classement, une échelle. ; Souvent elles peuvent être comptées** par des valeurs discrètes.")
 
@@ -98,7 +98,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("") 
 
-    st.markdown("**b/ Visualisation des données catégorielles**")
+    st.markdown("**3/ Visualisation des données catégorielles**")
     
     st.markdown("Les données catégorielles sont souvent présentées sous forme de *graphique en barres*📊 ou de *diagramme circulaire*🥧 ( « camembert »). Par exemple si nous reprenons notre **Tableau 1**, nous pouvons tracer un diagramme circulaire à partir de données catégorielles nominales : ici les données de la colonne **Genre H/F**.")
 
