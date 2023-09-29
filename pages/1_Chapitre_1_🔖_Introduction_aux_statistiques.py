@@ -103,10 +103,10 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import streamlit as st
     import plotly.graph_objects as go
 
-    data = ["Female", "Male", "Female", "Male", "Male"]
+    data = ["Femme", "Homme", "Femme", "Homme", "Homme"]
     colors = ['#1f77b4', '#e377c2']
 
-    def plot_pie_chart(data, colors):
+    def plot_pie_chart(data, colors, title):
         gender_counts = {gender: data.count(gender) for gender in set(data)}
         labels = list(gender_counts.keys())
         values = list(gender_counts.values())
@@ -114,7 +114,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
         st.plotly_chart(fig)
 
-    plot_pie_chart(data, colors)
+    plot_pie_chart(data, colors, "Diagramme circulaire : Genre H/F - Tableau 1")
 
 
     
