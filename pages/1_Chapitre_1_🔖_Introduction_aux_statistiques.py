@@ -87,9 +87,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("⚠️Bien que non numériques les données **catégorielles**, aussi appelées données **qualitatives**, peuvent être **quantifiées** ou décrites à l'aide de méthodes numériques :") 
     
-    st.markdown("🌶️ calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser ce type de données ;") 
+    st.markdown(" 🌶️ calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser ce type de données ;") 
     
-    st.markdown("🌶️ l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans ces données.")  
+    st.markdown(" 🌶️ l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans ces données.")  
     
     st.markdown("") 
     
