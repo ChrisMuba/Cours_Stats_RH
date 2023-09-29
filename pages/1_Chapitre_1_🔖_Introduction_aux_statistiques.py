@@ -184,7 +184,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("") 
     
-    st.markdown("**b/ Les données numériques**")
+    st.markdown("**B/ Les données numériques**")
     
     st.markdown("Les données **numériques** sont des données qui peuvent être **mesurées** ou **comptées**. Les données numériques peuvent ensuite être classées en données **discrètes** et **continues**.") 
     
