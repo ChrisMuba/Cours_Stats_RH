@@ -118,7 +118,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         fig.update_layout(title=title)
         st.plotly_chart(fig)
 
-    plot_pie_chart(data, colors, "Gender Distribution")
+    plot_pie_chart(data, colors, "DataViz : Genre H/F - Tableau 1")
 
 
     
