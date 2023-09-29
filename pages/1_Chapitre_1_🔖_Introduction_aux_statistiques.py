@@ -104,7 +104,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import plotly.graph_objects as go
 
     data = ["Female", "Male", "Female", "Male", "Male"]
-    colors = ['#e377c2', '#1f77b4']
+    colors = ['#1f77b4', '#e377c2']
 
     def plot_pie_chart(data, colors):
         gender_counts = {gender: data.count(gender) for gender in set(data)}
