@@ -104,17 +104,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import plotly.graph_objects as go
 
 # Create a pie chart
-    fig = go.Figure(data=[go.Pie(labels=["F", "H", "F", "H", "H"])])
-
-# Add a title
-    #fig.update_layout(title="H/F Distribution")
-
-# Add a legend
-    #fig.update_layout(legend=dict(x=0.1, y=1.05, traceorder="normal", font=dict(family="sans-serif", size=12, color="black")))
+    fig = go.Figure(data=[go.Pie(labels=["F", "H", "F", "H", "H"],
+                             marker={'F': '#e377c2', 'H': '#1f77b4'})])
 
 # Show the plot
     st.plotly_chart(fig)
-
 
 
 
