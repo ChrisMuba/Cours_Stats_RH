@@ -104,8 +104,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import plotly.graph_objects as go
 
 # Create a pie chart
-    fig = go.Figure(data=[go.Pie(labels=["F", "H", "F", "H", "H"],
-                             marker={'F': '#e377c2', 'H': '#1f77b4'})])
+    fig = go.Figure(data=[go.Pie(labels=["Femme", "Homme", "Femme", "Homme", "Homme"],
+                             marker={'Femme': '#e377c2', 'Homme': '#1f77b4'})])
 
 # Show the plot
     st.plotly_chart(fig)
