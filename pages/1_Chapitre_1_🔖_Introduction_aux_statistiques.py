@@ -104,7 +104,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import plotly.graph_objects as go
 
 # Create a pie chart
-    fig = go.Figure(data=[go.Pie(labels=["👧🏾 F", "👦🏿 H", "👧 F", "👨‍🦰 H", "👴 H"])])
+    fig = go.Figure(data=[go.Pie(labels=["F", "H", "F", "H", "H"])])
 
 # Add a title
     #fig.update_layout(title="H/F Distribution")
