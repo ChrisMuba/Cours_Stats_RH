@@ -42,7 +42,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles nominales**")
     
-    data = [
+    data_1 = [
         ["👧🏾 F", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
         ["👦🏿 H", "Communication", "CDD", "fin de CDD", "Marketing-Ventes"],
         ["👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "Fin de mission", "RH"],
@@ -53,7 +53,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     headers = ["Genre H/F", "Qualités professionnelles", "Type de contrat de travail", "Motif de fin de contrat", "Service"]
 
-    df = pd.DataFrame(data, columns=headers)
+    df = pd.DataFrame(data_1, columns=headers)
 
     st.table(df)
 
@@ -103,18 +103,17 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import streamlit as st
     import plotly.graph_objects as go
 
-# Select the "Genre H/F" column from the dataframe
-    genre_h_f = df["Genre H/F"]
+# Create a pie chart
+    fig = go.Figure(data=[go.Pie(labels=["👧🏾 F", "👦🏿 H", "👧 F", "👨‍🦰 H", "👴 H"])])
 
-# Create a pie chart using Plotly
-    fig = go.Figure(data=[go.Pie(labels=genre_h_f, values=genre_h_f.value_counts())])
+# Add a title
+    #fig.update_layout(title="H/F Distribution")
 
-# Add a title to the chart
-    fig.update_layout(title="Distribution of Genre H/F in the Dataframe")
+# Add a legend
+    #fig.update_layout(legend=dict(x=0.1, y=1.05, traceorder="normal", font=dict(family="sans-serif", size=12, color="black")))
 
-# Display the chart using Streamlit
+# Show the plot
     st.plotly_chart(fig)
-
 
 
 
