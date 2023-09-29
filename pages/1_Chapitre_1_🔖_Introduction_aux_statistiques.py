@@ -28,19 +28,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("En GRH les données jouent un rôle crucial dans la prise de décision. Les données peuvent être classées en deux types principaux : **catégorielles** et **numériques**.")
     
-    st.markdown("**a/ Les données catégorielles**")
+    st.markdown("**a/ Les données catégorielles** (ou données qualitatives)")
                 
     st.markdown("Les données **catégorielles** sont des données qui peuvent être **triées en catégories ou en groupes**.") 
     
-    st.write("Ces catégories sont non numériques et peuvent être **qualitatives** ou **quantitatives** :")
+    st.write("Ces catégories sont non numériques et peuvent être **nominales** ou **ordinales** :")
 
-    st.markdown(" - a1/ Les données **catégorielles qualitatives**")
+    st.markdown(" - a1/ Les données **catégorielles nominales**")
 
-    st.markdown("Les données catégorielles qualitatives font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
+    st.markdown("Les données catégorielles nominales font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
 
 ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles qualitatives**")
+    st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles nominales**")
     
     data = [
         ["👧🏾 F", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
@@ -57,13 +57,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.table(df)
 
-    st.markdown(" - a2/ Les données **catégorielles quantitatives**")
+    st.markdown(" - a2/ Les données **catégorielles ordinales**")
 
-    st.markdown("Les données catégorielles quantitatives impliquent des **catégories basées sur des caractéristiques qui peuvent être comptées** par des valeurs discrètes (par exemple 1, 2, 3, etc...).")
+    st.markdown("Les données catégorielles ordinales impliquent des **catégories basées sur des caractéristiques qui peuvent traduire une chronologie, une échelle ; et/ou être comptées** par des valeurs discrètes (par exemple 1, 2, 3, etc...).")
 
     ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles quantitatives**")
+    st.markdown("🚨**Tableau 2** : Exemple de données **catégorielles ordinales**")
     
     data = [
         ["18 - 24", "0 à 2 ans", "Employé","BTS / Titre pro"],
