@@ -10,7 +10,7 @@ st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
 
 st.subheader("Formateur : Christian MUBA - Data Analyst RH")
 
-st.caption("*Master Sciences (UB Dijon)*)
+st.caption("*Master Sciences (UB Dijon)*")
 
 st.caption("*Master Gestion (IAE Dijon)*")
 
