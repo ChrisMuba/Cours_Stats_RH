@@ -10,7 +10,7 @@ st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
 
 st.subheader("Formateur : Christian MUBA - Data Analyst RH")
 
-st.caption("*Master Sciences & Master Gestion*")
+st.caption("*Master Sciences (UB Dijon) & Master Gestion (IAE Dijon*")
 
 st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions éclairées ou bénéficier d'un tutorat personnalisé ? contactez-moi 📧https://www.linkedin.com/in/chris-muba-io 🌍")
 
