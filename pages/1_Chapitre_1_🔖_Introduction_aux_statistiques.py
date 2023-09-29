@@ -40,6 +40,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("Les données catégorielles nominales font référence à des **catégories qui ne peuvent pas être mesurées, comptées, classées ou ordonnées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
 
+    st.markdown("")
 ### Affichage tableau au format tabulaire    
     
     st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles nominales**")
