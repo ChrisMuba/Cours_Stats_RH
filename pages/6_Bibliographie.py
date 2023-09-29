@@ -25,6 +25,8 @@ st.markdown("*Les statistiques : le pouvoir des données !* https://www150.statc
 
 st.balloons()
 
+st.balloons()
+
 
 st.markdown("")
 
