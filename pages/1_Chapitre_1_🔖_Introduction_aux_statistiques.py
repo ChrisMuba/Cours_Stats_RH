@@ -94,8 +94,10 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("") 
     
     st.markdown("") 
+
+    st.markdown("**b/ Visualisation des données catégorielles**")
     
-    st.markdown("")
+    st.markdown("Les données catégorielles sont souvent présentées sous forme de *graphique en barres* (à ne pas confondre avec l'histogramme) ou de *diagramme circulaire* ( « camembert »). Par exemple, un histogramme peut montrer la répartition des salaires dans l'organisation, tandis qu'un nuage de points peut montrer la relation entre l'âge et la performance au travail.")
     
     st.markdown("")
     
