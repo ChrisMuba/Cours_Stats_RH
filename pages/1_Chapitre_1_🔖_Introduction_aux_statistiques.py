@@ -117,7 +117,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
         st.plotly_chart(fig)
 
-    plot_pie_chart(data, colors, Diagramme circulaire : Genre H/F)
+    plot_pie_chart(data, colors, Diagramme circulaire Genre H/F)
 
 
     
