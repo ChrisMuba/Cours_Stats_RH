@@ -115,6 +115,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         values = list(gender_counts.values())
 
         fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
+        fig.update_layout(title=title)
         st.plotly_chart(fig)
 
     plot_pie_chart(data, colors, "Gender Distribution")
