@@ -103,18 +103,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import streamlit as st
     import plotly.graph_objects as go
 
-# Data
     data = ["Female", "Male", "Female", "Male", "Male"]
     colors = ['#e377c2', '#1f77b4']
 
-# Create a pie chart
-    fig = go.Figure(data=[go.Pie(labels=data, values=[1, 1, 1, 1, 1], colors=colors)])
+    def plot_pie_chart(data, colors):
+        gender_counts = {gender: data.count(gender) for gender in set(data)}
+        labels = list(gender_counts.keys())
+        values = list(gender_counts.values())
 
-# Add a title
-    fig.update_layout(title="Gender Distribution")
+        fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
+        st.plotly_chart(fig)
 
-# Show the plot
-    st.plotly_chart(fig)
+    plot_pie_chart(data, colors)
+
 
     
     st.markdown("")
