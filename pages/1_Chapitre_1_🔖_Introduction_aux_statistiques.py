@@ -36,7 +36,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - a1/ Les données **catégorielles nominales**")
 
-    st.markdown("Les données catégorielles nominales font référence à des **catégories qui ne peuvent pas être mesurées ou comptées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
+    st.markdown("Les données catégorielles nominales font référence à des **catégories qui ne peuvent pas être mesurées, comptées, classées ou ordonnées**. Ce type de données sont souvent descriptives et sont utilisées pour présenter des caractéristiques ou des propriétés qui ne peuvent pas être quantifiées.")
 
 ### Affichage tableau au format tabulaire    
     
@@ -59,7 +59,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - a2/ Les données **catégorielles ordinales**")
 
-    st.markdown("Les données catégorielles ordinales impliquent des **catégories basées sur des caractéristiques qui peuvent traduire une chronologie, une échelle ; et/ou être comptées** par des valeurs discrètes (par exemple 1, 2, 3, etc...).")
+    st.markdown("Les données catégorielles ordinales impliquent des **catégories basées sur des caractéristiques qui peuvent traduire une chronologie, un classement, une échelle. ; Souvent elles peuvent être comptées** par des valeurs discrètes.")
 
     ### Affichage tableau au format tabulaire    
     
@@ -85,19 +85,19 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     
 
-    st.markdown("⚠️Des données **catégorielles** peuvent être **quantitatives** car elles peuvent être quantifiées ou décrites à l'aide de méthodes numériques :") 
+    st.markdown("⚠️Bien que non numériques les données **catégorielles**, aussi appelées données **qualitatives**, peuvent être **quantifiées** ou décrites à l'aide de méthodes numériques :") 
     
-    st.markdown("🌶️ calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser les données ;") 
+    st.markdown("🌶️ calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser ce type de données ;") 
     
-    st.markdown("🌶️ l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans les données.")  
+    st.markdown("🌶️ l'analyse de clustering ou l'analyse factorielle pour identifier des modèles et des relations dans ces données.")  
     
     st.markdown("") 
     
-    st.markdown("Les données catégorielles peuvent ensuite être divisées en données **nominales** et **ordinales**. Les données nominales sont des **données qui ne peuvent pas être classées ou ordonnées**, telles que **le genre** : 👦🏾/👧 ou le **titre du poste**.") 
+    st.markdown("") 
     
-    st.markdown("Les données **ordinales**, en revanche, sont des **données qui peuvent être classées ou ordonnées**, telles que le niveau d'emploi (ex : cadre sup, cadre, agent de maîtrise, etc...) ou le niveau d'éducation (ex: Master, Licence/Bachelor, DUT/BTS, etc...)")
+    st.markdown("")
     
-    st.markdown(" Les données **catégorielles** sont souvent présentées sous forme de **tableaux de fréquence** ou de **diagrammes à barres**. Par exemple, un tableau de fréquence peut montrer le nombre d'employés dans chaque service, tandis qu'un graphique à barres peut montrer la répartition des sexes dans l'organisation.)")
+    st.markdown("")
     
     st.markdown("") 
 
