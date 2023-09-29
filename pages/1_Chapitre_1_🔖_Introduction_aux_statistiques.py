@@ -27,6 +27,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.subheader("📈Chap.1-B/ Types de données et sources de données📉")
     
     st.markdown("En GRH les données jouent un rôle crucial dans la prise de décision. Les données peuvent être classées en deux types principaux : **catégorielles** et **numériques**.")
+
+    st.markdown("")
     
     st.markdown("**a/ Les données catégorielles** (ou données qualitatives)")
                 
