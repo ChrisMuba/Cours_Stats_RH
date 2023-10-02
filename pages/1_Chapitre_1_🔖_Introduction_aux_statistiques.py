@@ -257,6 +257,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
        st.image('dossiers_du personnel_giphy.gif')
 
     with col2:
+       st.markdown("dossiers du personnel")
        image = Image.open('tourniquet_dossiers_rh.gif')
        st.image('tourniquet_dossiers_rh.gif')
 
