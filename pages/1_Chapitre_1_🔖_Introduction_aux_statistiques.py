@@ -184,8 +184,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     data = {
         'Effectif du service': ['Ventes : 12', 'Finance : 5', 'RH : 5', 'IT : 3', 'Marketing : 8', 'Operations : 21'],
         'Nombre d\'évaluations de performances': ['9', '4', '4', '1', '3', '8'],
-        'Nombre de candidatures reçues': ['6', '3', '3', '2', '4', '11'],
-        'Nombre de salariés recrutés': ['2', '1', '1', '0', '1', '4']
+        'Candidatures reçues': ['6', '3', '3', '2', '4', '11'],
+        'Effectifs recrutés': ['2', '1', '1', '0', '1', '4']
 }
 
 # Affichage tableau au format tabulaire   
