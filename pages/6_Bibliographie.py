@@ -47,4 +47,4 @@ st.markdown("")
 st.markdown("")
 
 
-st.title('_Streamlit_ is :blue[cool] :sunglasses:')
+st.title('*Python*🐍 and _Streamlit_ are :blue[cool] :sunglasses:')
