@@ -46,11 +46,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨**Tableau 1** : Exemple de données **catégorielles nominales**")
     
     data_1 = [
-        ["👧🏾 F", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
-        ["👦🏿 H", "Communication", "CDD", "fin de CDD", "Marketing-Ventes"],
-        ["👧 F", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "Fin de mission", "RH"],
-        ["👨‍🦰 H", "Créativité", "Contrat d\'apprentissage", "Démission", "Informatique"],
-        ["👴 H", "Travail d\'équipe", "Contrat de professionnalisation", "Fin de période d’essai", "Administration générale"],
+        ["Femme", "Leadership", "CDI", "Rupture conventionnelle", "Comptabilité-Finances"],
+        ["Homme", "Communication", "CDD", "fin de CDD", "Marketing-Ventes"],
+        ["Femme", "Résolution de problèmes", "Contrat de travail temporaire (intérim)", "Fin de mission", "RH"],
+        ["Homme", "Créativité", "Contrat d\'apprentissage", "Démission", "Informatique"],
+        ["Homme", "Travail d\'équipe", "Contrat de professionnalisation", "Fin de période d’essai", "Administration générale"],
         ["...", "...", "...", "...", "..."]
 ]
 
