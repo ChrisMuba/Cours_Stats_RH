@@ -120,15 +120,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     plot_pie_chart(data, colors, "DataViz : Genre H/F - Tableau 1")
 
-
-    
     st.markdown("")
     
     st.markdown("") 
        
     st.markdown("")   
 
-
+####################################################################################################
     import streamlit as st
     import plotly.express as px
     import pandas as pd
@@ -160,7 +158,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     fig = px.bar(gender_distribution, x='Genre', y='Effectif', color='Genre',
              color_discrete_map=colors, title='Effectif selon le genre')
     st.plotly_chart(fig)
-
+############################################################################################################ portion à supprimer
     
     
     st.markdown("") 
@@ -177,8 +175,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown("") 
 
-
-
+    
     import streamlit as st
     import plotly.express as px
     import pandas as pd
@@ -194,16 +191,21 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data)
     st.write(df)
 
+    #################################################################################################################### portion à supprimer
 # Frequency table: Number of employees in each department
     
     department_counts = df['Service'].value_counts().reset_index()
     department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
+    ####################################################################################################################### portion à supprimer
     
     st.markdown("")
-    
-    st.markdown("Les données **continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une plage, par exemple l'âge, le salaire, l'ancienneté, etc...")
 
+    st.markdown(" - 2/ Les données **quantitatives continues**")
+    
+    st.markdown("Les données **quantitatives continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une plage, ")
+    
+#par exemple l'âge, le salaire, l'ancienneté, etc...
 ### Affichage tableau au format tabulaire    
     
     st.markdown("🚨Exemple de **données numériques continues** dans un service RH :")    
