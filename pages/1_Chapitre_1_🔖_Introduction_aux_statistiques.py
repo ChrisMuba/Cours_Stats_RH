@@ -245,6 +245,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée).")
 
+     st.markdown("")
+
     # Afficher les images
 
     from PIL import Image
@@ -257,8 +259,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
        st.image('dossiers_du personnel_giphy.gif')
 
     with col2:
-       image = Image.open('dossiers_du personnel_giphy.gif')
-       st.image('dossiers_du personnel_giphy.gif')
+       st.markdown("quelques SIRH")
+       image = Image.open('photos_sirh.jpg')
+       st.image(image)
 
     
     
@@ -309,21 +312,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     
 
-# Afficher les images
 
-    from PIL import Image
-    col1, col2 = st.columns(2)
-
-    with col1:
-       st.markdown("dossiers du personnel")
-       image = Image.open('dossiers_du personnel_giphy.gif')
-    # Display a GIF
-       st.image('dossiers_du personnel_giphy.gif')
-
-    with col2:
-       st.markdown("quelques SIRH")
-       image = Image.open('photos_sirh.jpg')
-       st.image(image)
 
     
 
