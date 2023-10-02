@@ -203,12 +203,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - 2/ Les données **quantitatives continues**")
     
-    st.markdown("Les données **quantitatives continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une plage, ")
+    st.markdown("Les données **quantitatives continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une certaine plage. Il n'y a pas d'intervalles ni de ruptures entre les valeurs de données continues et il existe un nombre infini de valeurs possibles qui peuvent être prises.")
     
-#par exemple l'âge, le salaire, l'ancienneté, etc...
 ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨Exemple de **données numériques continues** dans un service RH :")    
+    st.markdown("🚨**Tableau 4** : Exemple de données **quantitatives continues**")    
     
     data_2 = [
         ["001", 32, 50.5, 5.5, 9.5],
