@@ -98,7 +98,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("") 
 #####
-    st.markdown("**3/ Visualisation des données catégorielles**")
+    st.markdown("**- 3/ Visualisation des données catégorielles**")
     
     st.markdown("Les données catégorielles sont souvent présentées sous forme de *graphique en barres*📊 ou de *diagramme circulaire*🥧 ( « camembert »). Par exemple si nous reprenons notre **Tableau 1**, nous pouvons tracer un diagramme circulaire à partir de données catégorielles nominales : ici les données de la colonne **Genre H/F**.")
 
@@ -239,7 +239,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("") 
 #####
-    st.markdown("**3/ Visualisation des données quantitatives**")
+    st.markdown("**- 3/ Visualisation des données quantitatives**")
         
     st.markdown("")
     
