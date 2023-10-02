@@ -185,15 +185,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 # Sample HR dataset
     data = {
-        'Employee ID': ['001', '002', '003', '004', '005', '006'],
         'Service': ['Ventes', 'Finance', 'RH', 'IT', 'Marketing', 'Operations'],
-        'Genre': ['Femme', 'Femme', 'Homme', 'Femme', 'Homme', 'Homme']
+        'Effectif': ['12', '5', '5', '3', '8', '21']
 }
 
-
-    ### Affichage tableau au format tabulaire    
-    
-    #par exemple : le nombre d'employés dans un service.#
+# Affichage tableau au format tabulaire    
 
     df = pd.DataFrame(data)
 
