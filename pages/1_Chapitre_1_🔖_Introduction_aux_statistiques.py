@@ -245,7 +245,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("- les **dossiers du personnel** en **version papier** et / **ou digitale** (dématérialisée).")
 
-     st.markdown("")
+    st.markdown("")
 
     # Afficher les images
 
