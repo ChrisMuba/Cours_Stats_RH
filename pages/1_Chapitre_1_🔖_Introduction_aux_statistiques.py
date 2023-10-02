@@ -177,7 +177,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("🚨**Tableau 3** : Exemple de données **quantitatives discrètes**")
 
-    par exemple : le nombre d'employés dans un service.
+    #par exemple : le nombre d'employés dans un service.#
 
     df = pd.DataFrame(data)
 
