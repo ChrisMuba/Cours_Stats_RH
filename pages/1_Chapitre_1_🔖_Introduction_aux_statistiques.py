@@ -196,9 +196,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     #################################################################################################################### portion à supprimer
 # Frequency table: Number of employees in each department
     
-    department_counts = df['Service'].value_counts().reset_index()
-    department_counts.columns = ['Service', 'Effectif']
-    st.table(department_counts)
+    # department_counts = df['Service'].value_counts().reset_index()
+   #  department_counts.columns = ['Service', 'Effectif']
+   #  st.table(department_counts)
     ####################################################################################################################### portion à supprimer
     
     st.markdown("")
