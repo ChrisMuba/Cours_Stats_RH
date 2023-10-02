@@ -59,7 +59,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data_1, columns=headers)
 
     st.table(df)
-
+#####
     st.markdown(" - 2/ Les données **catégorielles ordinales**")
 
     st.markdown("Les données catégorielles ordinales impliquent des **catégories basées sur des caractéristiques qui peuvent traduire une chronologie, un classement, une échelle. ; Souvent elles peuvent être comptées** par des valeurs discrètes.")
@@ -97,7 +97,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("") 
     
     st.markdown("") 
-
+#####
     st.markdown("**3/ Visualisation des données catégorielles**")
     
     st.markdown("Les données catégorielles sont souvent présentées sous forme de *graphique en barres*📊 ou de *diagramme circulaire*🥧 ( « camembert »). Par exemple si nous reprenons notre **Tableau 1**, nous pouvons tracer un diagramme circulaire à partir de données catégorielles nominales : ici les données de la colonne **Genre H/F**.")
@@ -162,13 +162,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     
     st.markdown("") 
-    
+#####
     st.markdown("**B/ Les données quantitatives**")
     
     st.markdown("Les données **quantitatives** sont des données qui peuvent être **mesurées** ou **comptées**. Ces données peuvent ensuite être classées en données **discrètes** ou **continues**.") 
 
     st.markdown("") 
-
+#####
     st.markdown(" - 1/ Les données **quantitatives discrètes**")
     
     st.markdown("Les données **quantitatives discrètes** sont des données qui ne peuvent prendre que des valeurs entières, c'est à dire sans virgule. Les données discrètes sont souvent représentées à l'aide de chiffres entiers ou de nombres entiers.")
@@ -202,7 +202,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     ####################################################################################################################### portion à supprimer
     
     st.markdown("")
-
+#####
     st.markdown(" - 2/ Les données **quantitatives continues**")
     
     st.markdown("Les données **quantitatives continues**, quant à elles, font référence à sont des données qui peuvent prendre n'importe quelle valeur dans une certaine plage.") 
@@ -213,14 +213,14 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨**Tableau 4** : Exemple de données **quantitatives continues**")    
     
     data_2 = [
-        ["001", 32, 50.5, 5.5, 9.5],
-        ["002", 43.5, 72.3, 12.25, 9.25],
-        ["003", 35.5, 40.1, 7.5, 9.1],
-        ["004", 41, 65.9, 12, 8.9],
-        ["005", 39, 58, 6.5, 7.8]
+        [32, 50.5, 5.5, 9.5],
+        [43.5, 72.3, 12.25, 9.25],
+        [35.5, 40.1, 7.5, 9.1],
+        [41, 65.9, 12, 8.9],
+        [39, 58, 6.5, 7.8]
 ]
 
-    headers_2 = ["⚠️Matricule RH⚠️", "Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
+    headers_2 = ["Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
 
     df_2 = pd.DataFrame(data_2, columns=headers_2)
     
@@ -232,17 +232,14 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df_2["Note de performance"] = df_2["Note de performance"].map(lambda x: "{:.2f}".format(x))
 
     st.table(df_2)
+
+    st.markdown("") 
     
+    st.markdown("") 
+#####
+    st.markdown("**3/ Visualisation des données quantitatives**")
     
-    st.markdown("Comme pour l'exemple précédent concernant les variables catégorielles, le jeu de données suivant comprend **diverses variables numériques liées aux RH**.") 
-    st.markdown("Chaque ligne représente également un employé différent ; les colonnes représentent différents attributs :")
-    
-    st.markdown("⚠️**Matricule RH**⚠️: idem **identifiant unique pour chaque employé**")
-    st.markdown("🎯**Âge**: Variable numérique indiquant l'âge du salarié")
-    st.markdown("🎯**Salaire annuel**: Variable numérique indiquant le salaire annuel du salarié")
-    st.markdown("🎯**Ancienneté**: Variable numérique indiquant le nombre d'années d'expérience professionnelle")
-    st.markdown("🎯**Note de performance**: Variable numérique indiquant le score d'évaluation (échelle de 1 à 10) du rendement du salarié")     
-        
+   
         
     st.markdown("")
     
