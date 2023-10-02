@@ -290,6 +290,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     
     st.markdown("")
+
+    
+
     
     
 # Afficher les images
@@ -299,8 +302,11 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     with col1:
        st.markdown("dossiers du personnel")
-       image = Image.open('cartoon_of_personnel_files.png')
-       st.image(image)
+       #image = Image.open('cartoon_of_personnel_files.png')
+       #st.image(image)
+       image = Image.open('dossiers_du personnel_giphy.gif')
+    # Display a GIF
+       st.image('dossiers_du personnel_giphy.gif', caption='Optional caption')
 
     with col2:
        st.markdown("quelques SIRH")
