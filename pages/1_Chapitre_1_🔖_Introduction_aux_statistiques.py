@@ -253,12 +253,12 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import numpy as np
 
     data_2 = [
-        [32, 50.5, 5.5, 9.5],
-        [43.5, 72.3, 12.25, 9.25],
-        [35.5, 40.1, 7.5, 9.1],
+        [32, 50.5, 5.5, 7.5],
+        [43.5, 72.3, 12.25, 7.25],
+        [35.5, 40.1, 7.5, 7.1],
         [41, 65.9, 12, 8.9],
         [39, 58, 6.5, 7.8]
-]
+    ]
 
     headers_2 = ["Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
 
@@ -267,9 +267,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 # Scatter plot: Age vs. Performance Rating with correlation line
     st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
     correlation_coefficient = np.corrcoef(df_2['Âge'], df_2['Note de performance'])[0, 1]
-    fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='Relation entre l\'âge et la performance au travail.')
-    fig_scatter.add_traces(px.scatter(x=df_2['Âge'], y=df_2['Note de performance']).data_2)
-    fig_scatter.add_traces(px.line(x=df_2['Âge'], y=np.polyval(np.polyfit(df_2['Âge'], df_2['Note de performance'], 1), df_2['Âge'])).data_2)
+    fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='DataViz : Relation entre l\'âge et la performance au travail - Tableau 4')
+    fig_scatter.add_trace(px.scatter(x=df_2['Âge'], y=df_2['Note de performance']).data[0])
+    fig_scatter.add_trace(px.line(x=df_2['Âge'], y=np.polyval(np.polyfit(df_2['Âge'], df_2['Note de performance'], 1), df_2['Âge'])).data[0])
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
