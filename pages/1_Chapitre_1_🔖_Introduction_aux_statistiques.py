@@ -306,7 +306,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
        #st.image(image)
        image = Image.open('dossiers_du personnel_giphy.gif')
     # Display a GIF
-       st.image('dossiers_du personnel_giphy.gif', caption='Optional caption')
+       st.image('dossiers_du personnel_giphy.gif')
 
     with col2:
        st.markdown("quelques SIRH")
