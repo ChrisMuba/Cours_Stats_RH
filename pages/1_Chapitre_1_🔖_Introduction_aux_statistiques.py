@@ -268,23 +268,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
 
-    st.markdown("🚨Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (**Art. L1221-6 du CT**)")
-
-    st.markdown("Ainsi pour assurer la gestion du personnel les données collectées et traitées sont généralement :")
-
-    st.markdown("- copie pièce d'identité pour renseigner nom, prénoms, sexe, date et lieu de naissance")
-
-    st.markdown("- coordonnées : adresse et téléphone")
-
-    st.markdown("- copie carte vitale pour le NIR et attestation de securité sociale pour vérifier l'ouverture des droits à une complémentaire santé (mutuelle)")
-
-    st.markdown("- Dossier de candidature, contrat de travail, documents relatifs à la gestion des arrêts maladie, compte-rendus d'entretiens annuels et autres évaluations, dossier « disciplinaire », etc...")
+    st.markdown("⚠️Le droit du travail ne prévoit aucune information obligatoire à renseigner sur un salarié, en revanche les informations recueillies doivent présenter un lien direct et nécessaire avec l'emploi proposé ou avec l'évaluation des aptitudes professionnelles (**Art. L1221-6 du CT**)")
 
     
     st.markdown("")
 
 
-    st.markdown("🚨Pour certains agents de la fonction publique de l'État, la liste des données à recueillir par les RH est précisée dans l'annexe du **décret n° 2019-612 du 19 juin 2019** portant création d'un traitement automatisé de données à caractère personnel (**RenoiRH**)")
+    st.markdown("⚠️Pour certains agents de la fonction publique de l'État, la liste des données à recueillir par les RH est précisée dans l'annexe du **décret n° 2019-612 du 19 juin 2019** portant création d'un traitement automatisé de données à caractère personnel (**RenoiRH**)")
 
                 
     st.markdown("")
