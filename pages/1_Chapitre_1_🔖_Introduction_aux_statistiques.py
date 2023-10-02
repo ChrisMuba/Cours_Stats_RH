@@ -189,12 +189,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         'Effectif': ['12', '5', '5', '3', '8', '21']
 }
 
-# Affichage tableau au format tabulaire    
+# Affichage tableau au format tabulaire   
+    st.markdown("🚨**Tableau 3** : Exemple de données **quantitatives discrètes**")
     df = pd.DataFrame(data)
     st.write(df)
 
 # Frequency table: Number of employees in each department
-    st.markdown("🚨**Tableau 3** : Exemple de données **quantitatives discrètes**")
+    
     department_counts = df['Service'].value_counts().reset_index()
     department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
