@@ -240,12 +240,10 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("") 
 #####
     st.markdown("**3/ Visualisation des données quantitatives**")
-    
-   
         
     st.markdown("")
     
-    st.markdown("Les données **numériques** sont souvent présentées sous forme **d'histogrammes** ou de **nuages de points**. Par exemple, un histogramme peut montrer la répartition des salaires dans l'organisation, tandis qu'un nuage de points peut montrer la relation entre l'âge et la performance au travail.")
+    st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple, un histogramme peut montrer la répartition des salaires dans l'organisation, tandis qu'un nuage de points peut montrer la relation entre l'âge et la performance au travail.")
     
     st.markdown("")     
         
