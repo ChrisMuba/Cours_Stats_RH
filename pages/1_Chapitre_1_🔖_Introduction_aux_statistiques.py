@@ -125,25 +125,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
     
     st.markdown("") 
-
-
-       
-
-    st.markdown("Dans cet exemple, l'ensemble de données comprend **diverses variables catégorielles liées aux RH**.") 
-    st.markdown("Chaque ligne représente un employé différent et les colonnes représentent différents attributs :")
-    
-    st.markdown("⚠️**Matricule RH**⚠️: identifiant unique pour chaque employé")
-    st.markdown("Le **Matricule RH** (ou « identifiant du salarié ») est une **variable importante à prendre en compte lorsque l'on travaille avec des données RH, qu'elles soient catégorielles ou numériques**. Cet identifiant agit comme un **identifiant clé qui relie les variables catégorielles et numériques à des employés spécifiques**. Il aide à **maintenir l'intégrité des données**, **permet une analyse au niveau individuel** et **permet des comparaisons et des calculs** basés sur différents attributs au sein de l'ensemble de données RH.")
-                             
-    
-    st.markdown("")
-    
-    
-    st.markdown("🎯**Genre H/F**: Variable catégorielle nominale indiquant si le salarié est un homme ou une femme (par exemple **H** ou **F**)")
-    st.markdown("🎯**Poste**: Variable catégorielle nominale indiquant le poste du salarié : par exemple **Responsable formation**, **contrôleur de gestion sociale**, **gestionnaire paie**, etc")
-    st.markdown("🎯**Rattachement**: Variable catégorielle nominale indiquant le domaine d'activité auquel se rattache le poste : par exemple **Développement des RH**, **Administration des RH**, **Direction des RH**")
-    st.markdown("🎯**Diplôme**: Variable catégorielle **ordinale** indiquant le diplôme du salarié : par exemple **BTS / DUT**, **Bachelor**, **Maîtrise**, **Master**")     
-
        
     st.markdown("")   
 
