@@ -182,8 +182,10 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 # Sample HR dataset
     data = {
-        'Service': ['Ventes', 'Finance', 'RH', 'IT', 'Marketing', 'Operations'],
-        'Effectif': ['12', '5', '5', '3', '8', '21']
+        'Effectif du service': ['Ventes : 12', 'Finance : 5', 'RH : 5', 'IT : 3', 'Marketing : 8', 'Operations : 21'],
+        'Nombre d\'évaluations de performances': ['9', '4', '4', '1', '3', '8']
+        'Nombre de candidatures reçues': ['6', '3', '3', '2', '4', '11']
+        'Nombre de salariés recrutés': ['2', '1', '1', '0', '1', '4']
 }
 
 # Affichage tableau au format tabulaire   
@@ -204,7 +206,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown(" - 2/ Les données **quantitatives continues**")
     
     st.markdown("Les données **quantitatives continues**, quant à elles, font référence à sont des données qui peuvent prendre n'importe quelle valeur dans une certaine plage.") 
-    st.markdown("Il n'y a pas d'intervalles ni de ruptures entre les valeurs de données continues et il existe un nombre infini de valeurs possibles qui peuvent être prises, même si par convention on admet seulement un certain nombre de chiffres après la virgule.")
+    st.markdown("Il n'y a pas d'intervalles ni de ruptures entre les valeurs de données continues et il existe un nombre infini de valeurs possibles qui peuvent être prises ; même si par convention on admet seulement un certain nombre de chiffres après la virgule.")
     
 ### Affichage tableau au format tabulaire    
     
