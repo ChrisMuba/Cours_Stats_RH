@@ -30,6 +30,9 @@ st.markdown("🎯Interpréter les données à l'aide de techniques statistiques 
 st.markdown("🎯Évaluer la validité des conclusions statistiques basées sur des données d'échantillon")
 st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux RH")
 
+with st.sidebar:
+    st.image("GIF_loading_data.gif/g/200/200")
+
 
 st.markdown("")
 
