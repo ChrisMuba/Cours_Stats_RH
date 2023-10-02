@@ -7,7 +7,7 @@
 import streamlit as st
 
 
-st.sidebar.success("Selectionner un chapitre ou un quiz")
+st.sidebar.success("choisissez un chapitre ou un quiz")
 
 st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
 
