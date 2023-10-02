@@ -173,7 +173,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - 1/ Les données **quantitatives discrètes**")
     
-    st.markdown("Les données **quantitatives discrètes** sont des données qui ne peuvent prendre que des valeurs entières, c'est à dire sans virgule.")
+    st.markdown("Les données **quantitatives discrètes** sont des données qui ne peuvent prendre que des valeurs entières, c'est à dire sans virgule. Les données discrètes sont souvent représentées à l'aide de chiffres entiers ou de nombres entiers.")
 
     st.markdown("") 
 
