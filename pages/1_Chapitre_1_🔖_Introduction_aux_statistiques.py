@@ -242,7 +242,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         
     st.markdown("")
     
-    st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple si nous reprenons notre **Tableau 4**, nous pouvons tracer un nuages de point à partir de données quantitatives continues : ici les données des colonnes **Âge** et **Note de performance**.")
+    st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple si nous reprenons notre **Tableau 4**, nous pouvons tracer un nuages de point avec droite de régression à partir de données quantitatives continues : ici les données des colonnes **Âge** et **Note de performance**.")
    
     
     st.markdown("")     
@@ -265,7 +265,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df_2 = pd.DataFrame(data_2, columns=headers_2)
 
 # Scatter plot: Age vs. Performance Rating with correlation line
-    st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
+    
     correlation_coefficient = np.corrcoef(df_2['Âge'], df_2['Note de performance'])[0, 1]
     fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='DataViz : Relation entre l\'âge et la performance au travail - Tableau 4')
     fig_scatter.add_trace(px.scatter(x=df_2['Âge'], y=df_2['Note de performance']).data[0])
