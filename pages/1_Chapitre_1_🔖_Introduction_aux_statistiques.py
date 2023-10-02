@@ -87,7 +87,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
     
     
-
     st.markdown("⚠️Bien que non numériques les données **catégorielles**, aussi appelées données **qualitatives**, peuvent être **quantifiées** ou décrites à l'aide de méthodes numériques :") 
     
     st.markdown(" 🌶️ calculs de fréquences, pourcentages, tests du khi-deux, pour résumer et analyser ce type de données ;") 
@@ -243,7 +242,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
         
     st.markdown("")
     
-    st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple, un histogramme peut montrer la répartition des salaires dans l'organisation, tandis qu'un nuage de points peut montrer la relation entre l'âge et la performance au travail.")
+    st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple si nous reprenons notre **Tableau 4**, nous pouvons tracer un nuages de point à partir de données quantitatives continues : ici les données des colonnes **Âge** et **Note de performance**.")
+    relation entre l'âge et la performance au travail.")
     
     st.markdown("")     
         
@@ -252,27 +252,24 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     import pandas as pd
     import numpy as np
 
-# Sample HR dataset
-    data = {
-    'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
-    'Âge': [30, 28, 35, 42, 29, 36, 27, 31, 40, 33],
-    'Salaire (€)': [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000],
-    'Note de performance': [3, 4, 3, 2, 4, 2, 3, 4, 2, 4]
-}
+    data_2 = [
+        [32, 50.5, 5.5, 9.5],
+        [43.5, 72.3, 12.25, 9.25],
+        [35.5, 40.1, 7.5, 9.1],
+        [41, 65.9, 12, 8.9],
+        [39, 58, 6.5, 7.8]
+]
 
-    df = pd.DataFrame(data)
+    headers_2 = ["Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
 
-# Histogram: Distribution of Salaries
-    st.markdown("🚨Exemple d' **histogramme** :")
-    fig_histogram = px.histogram(df, x='Salaire (€)', title='Distribution (répartition) des salaires')
-    st.plotly_chart(fig_histogram)
+    df_2 = pd.DataFrame(data_2, columns=headers_2)
 
 # Scatter plot: Age vs. Performance Rating with correlation line
     st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
-    correlation_coefficient = np.corrcoef(df['Âge'], df['Note de performance'])[0, 1]
-    fig_scatter = px.scatter(df, x='Âge', y='Note de performance', title='Âge vs. Note de performance')
-    fig_scatter.add_traces(px.scatter(x=df['Âge'], y=df['Note de performance']).data)
-    fig_scatter.add_traces(px.line(x=df['Âge'], y=np.polyval(np.polyfit(df['Âge'], df['Note de performance'], 1), df['Âge'])).data)
+    correlation_coefficient = np.corrcoef(df_2['Âge'], df_2['Note de performance'])[0, 1]
+    fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='Âge vs. Note de performance')
+    fig_scatter.add_traces(px.scatter(x=df_2['Âge'], y=df_2['Note de performance']).data_2)
+    fig_scatter.add_traces(px.line(x=df['Âge'], y=np.polyval(np.polyfit(df_2['Âge'], df_2['Note de performance'], 1), df_2['Âge'])).data_2)
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
     st.plotly_chart(fig_scatter)
 
