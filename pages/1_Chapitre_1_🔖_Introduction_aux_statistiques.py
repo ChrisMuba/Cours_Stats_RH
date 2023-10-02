@@ -124,41 +124,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("") 
        
     st.markdown("")   
-
-####################################################################################################
-    import streamlit as st
-    import plotly.express as px
-    import pandas as pd
-
-# Sample HR dataset
-    data = {
-        'Employee ID': ['001', '002', '003', '004', '005', '006'],
-        'Service': ['Ventes', 'Finance', 'RH', 'IT', 'Marketing', 'Operations'],
-        'Genre': ['Femme', 'Femme', 'Homme', 'Femme', 'Homme', 'Homme']
-}
-
-    df = pd.DataFrame(data)
-
-# Frequency table: Number of employees in each department
-    st.markdown("🚨Exemple de **tableau de fréquences** :")
-    department_counts = df['Service'].value_counts().reset_index()
-    department_counts.columns = ['Service', 'Effectif']
-    st.table(department_counts)
-
-# Bar chart: Gender distribution in the organization
-    st.markdown("🚨Exemple de **diagramme à barres**:")
-    gender_distribution = df['Genre'].value_counts().reset_index()
-    gender_distribution.columns = ['Genre', 'Effectif']
-
-# Color mapping
-    colors = {'Homme': 'blue', 'Femme': 'orange'}
-    gender_distribution['Color'] = gender_distribution['Genre'].map(colors)
-
-    fig = px.bar(gender_distribution, x='Genre', y='Effectif', color='Genre',
-             color_discrete_map=colors, title='Effectif selon le genre')
-    st.plotly_chart(fig)
-############################################################################################################ portion à supprimer
-    
     
     st.markdown("") 
 #####
@@ -192,13 +157,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     df = pd.DataFrame(data)
     st.write(df)
 
-    #################################################################################################################### portion à supprimer
-# Frequency table: Number of employees in each department
-    
-    # department_counts = df['Service'].value_counts().reset_index()
-   #  department_counts.columns = ['Service', 'Effectif']
-   #  st.table(department_counts)
-    ####################################################################################################################### portion à supprimer
     
     st.markdown("")
 #####
