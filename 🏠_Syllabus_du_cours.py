@@ -6,6 +6,9 @@
 
 import streamlit as st
 
+
+st.sidebar.success("Selectionner un chapitre ou un quiz")
+
 st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
 
 st.subheader("Formateur : Christian MUBA - Data Analyst RH")
