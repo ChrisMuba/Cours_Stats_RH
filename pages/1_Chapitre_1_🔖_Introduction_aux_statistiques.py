@@ -203,7 +203,8 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     st.markdown(" - 2/ Les données **quantitatives continues**")
     
-    st.markdown("Les données **quantitatives continues**, en revanche, sont des données qui peuvent prendre n'importe quelle valeur dans une certaine plage. Il n'y a pas d'intervalles ni de ruptures entre les valeurs de données continues et il existe un nombre infini de valeurs possibles qui peuvent être prises.")
+    st.markdown("Les données **quantitatives continues**, quant à elles, font référence à sont des données qui peuvent prendre n'importe quelle valeur dans une certaine plage.") 
+    st.markdown("Il n'y a pas d'intervalles ni de ruptures entre les valeurs de données continues et il existe un nombre infini de valeurs possibles qui peuvent être prises, même si par convention on admet seulement un certain nombre de chiffres après la virgule.")
     
 ### Affichage tableau au format tabulaire    
     
