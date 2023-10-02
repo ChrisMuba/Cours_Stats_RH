@@ -243,7 +243,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
     
     st.markdown("Les données **quantitatives** sont souvent présentées sous forme **d'histogrammes**, de **boîtes à moustaches**, de **graphiques linéaires** ou de **nuages de points**. Par exemple si nous reprenons notre **Tableau 4**, nous pouvons tracer un nuages de point à partir de données quantitatives continues : ici les données des colonnes **Âge** et **Note de performance**.")
-    relation entre l'âge et la performance au travail.")
+   
     
     st.markdown("")     
         
@@ -267,7 +267,7 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 # Scatter plot: Age vs. Performance Rating with correlation line
     st.markdown("🚨Exemple de **nuage de points** avec droite de régression :")
     correlation_coefficient = np.corrcoef(df_2['Âge'], df_2['Note de performance'])[0, 1]
-    fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='Âge vs. Note de performance')
+    fig_scatter = px.scatter(df_2, x='Âge', y='Note de performance', title='Relation entre l'âge et la performance au travail.')
     fig_scatter.add_traces(px.scatter(x=df_2['Âge'], y=df_2['Note de performance']).data_2)
     fig_scatter.add_traces(px.line(x=df['Âge'], y=np.polyval(np.polyfit(df_2['Âge'], df_2['Note de performance'], 1), df_2['Âge'])).data_2)
     fig_scatter.update_layout(annotations=[dict(x=35, y=3.2, text=f'Correlation: {correlation_coefficient:.2f}', showarrow=False)])
