@@ -214,12 +214,12 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("🚨**Tableau 4** : Exemple de données **quantitatives continues**")    
     
     data_2 = [
-        [32, 50.5, 5.5, 9.5],
-        [43.5, 72.3, 12.25, 9.25],
-        [35.5, 40.1, 7.5, 9.1],
+        [32, 50.5, 5.5, 7.5],
+        [43.5, 72.3, 12.25, 7.25],
+        [35.5, 40.1, 7.5, 7.1],
         [41, 65.9, 12, 8.9],
         [39, 58, 6.5, 7.8]
-]
+    ]
 
     headers_2 = ["Âge", "Salaire annuel (k€)", "Ancienneté", "Note de performance"]
 
