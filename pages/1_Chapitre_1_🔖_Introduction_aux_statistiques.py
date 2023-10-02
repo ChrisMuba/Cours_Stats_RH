@@ -167,22 +167,24 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("**B/ Les données quantitatives**")
     
-    st.markdown("Les données **quantitatives** sont des données qui peuvent être **mesurées** ou **comptées**. Ces données peuvent ensuite être classées en données **discrètes** et **continues**.") 
+    st.markdown("Les données **quantitatives** sont des données qui peuvent être **mesurées** ou **comptées**. Ces données peuvent ensuite être classées en données **discrètes** ou **continues**.") 
+
+    st.markdown("") 
 
     st.markdown(" - 1/ Les données **quantitatives discrètes**")
     
     st.markdown("Les données **quantitatives discrètes** sont des données qui ne peuvent prendre que des valeurs entières, c'est à dire sans virgule.")
 
+    st.markdown("") 
+
     ### Affichage tableau au format tabulaire    
     
-    st.markdown("🚨**Tableau 3** : Exemple de données **quantitatives discrètes**")
-
     #par exemple : le nombre d'employés dans un service.#
 
     df = pd.DataFrame(data)
 
 # Frequency table: Number of employees in each department
-    st.markdown("🚨Exemple de **données numériques discrètes** :")
+    st.markdown("🚨**Tableau 3** : Exemple de données **quantitatives discrètes**")
     department_counts = df['Service'].value_counts().reset_index()
     department_counts.columns = ['Service', 'Effectif']
     st.table(department_counts)
