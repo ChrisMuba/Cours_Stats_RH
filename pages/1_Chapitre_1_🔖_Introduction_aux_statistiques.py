@@ -375,7 +375,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
 
     layout = go.Layout(
-    title='This is my Pyramid Chart',
+    title='Exemple de Pyramide des âges en pelote de laine',
     yaxis=go.layout.YAxis(title='Âge', tickvals=y, ticktext=age_intervals),
     xaxis=go.layout.XAxis(
         range=[-5000, 5000],
@@ -448,7 +448,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     #st.markdown('**fig.2: Salaire moyen selon le genre**')
     avg_salary = df.groupby('Genre')['Salaire €'].mean().reset_index()
 
-    fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', color='Genre',
+    fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', title='Comparaison du salaire moyen entre H/F', color='Genre',
                      color_discrete_map={'Homme👦🏾': 'blue', 'Femme👧': 'orange'})
     #st.plotly_chart(fig_4)
 
