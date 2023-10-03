@@ -6,11 +6,6 @@
 
 import streamlit as st
 
-# Add the "made with ❤️ by ..." text in the sidebar
-with st.sidebar:
-    st.write("Made with ❤️ by John Doe")
-
-
 st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
 
 st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
@@ -39,6 +34,12 @@ st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux 
 
 with st.sidebar:
     st.image('GIF_loading_data.gif')
+
+st.markdown("")
+
+# Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
 
 
 st.markdown("")
