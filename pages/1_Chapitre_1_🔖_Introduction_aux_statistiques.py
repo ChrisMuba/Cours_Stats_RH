@@ -419,20 +419,24 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Pie Chart
     # Répartition 👦🏿/👩‍🦰
 
+    import streamlit as st
+    import plotly.graph_objects as go
+
     data = ["femme", "homme", "femme", "homme", "homme"]
     colors = ['#e377c2', '#1f77b4']
 
-    def fig(data, colors, title):
+    def fig_3(data, colors, title):
         gender_counts = {gender: data.count(gender) for gender in set(data)}
         labels = list(gender_counts.keys())
         values = list(gender_counts.values())
 
-        fig_3 = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
-        fig_3.update_layout(title=title)
-        return fig_3
+        fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
+        fig.update_layout(title=title)
+        return fig
 
-    fig_3 = fig(data, colors, "dataviz : genre h/f - tableau 1")
+    fig = fig_3(data, colors, "dataviz : genre h/f - tableau 1")
     st.plotly_chart(fig)
+
 
     
 
