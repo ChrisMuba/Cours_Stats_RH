@@ -533,7 +533,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     # Remove leading/trailing spaces from column names
     data.columns = data.columns.str.strip()
 
-    st.markdown("**Analyse des absences des employés**")
+    st.markdown("**Tableau de suivi des absences des employés**")
 
 # Display the data
     st.write(data)
@@ -546,8 +546,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     # Explanation
     with st.expander("🔮Interpretation"):
         st.write("""
-        **Tableau ANOVA** : La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée est de 0.011, ce qui est inférieur au seuil de significativité de 0.05.
-        **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services.
+        **Tableau ANOVA** : La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée est de 0.011, ce qui est inférieur au seuil typique de significativité de *0.05*.
+        **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services**.
 
         ⚠️ Dans notre cas il faut compléter l'analyse à l'aide d'un **test HSD de Tukey** pour identifier quelles paires de services spécifiques ont des jours d'absence moyens significativement différents.
 
@@ -555,7 +555,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     anova_model = ols('Days_of_Absence ~ Department', data=data).fit()
     anova_table = sm.stats.anova_lm(anova_model, typ=2)
-    st.write("Table d'\ANOVA:")
+    st.write("Table d\'ANOVA:")
     st.write(anova_table)
     
 
