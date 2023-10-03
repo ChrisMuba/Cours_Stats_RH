@@ -356,7 +356,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Create an interactive line plot
     #st.header('Payroll Budget Evolution (2021 vs. 2022)')
     fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
-                color=['pink', 'blue'],
                 labels={'value': 'Masse salariale brute (Millions €)'},
                 title='Suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
     #st.plotly_chart(fig_1)
