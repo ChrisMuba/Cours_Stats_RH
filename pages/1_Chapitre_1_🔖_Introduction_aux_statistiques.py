@@ -541,20 +541,22 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig = px.box(data, x='Department', y='Days_of_Absence', title='Box Plot : Jours d\'absence par service')
     st.plotly_chart(fig)
 
-    st.markdown("La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée (PR(>F)) est de 0.011, ce qui est inférieur au seuil de significativité de 0.05. **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services.**")
+    st.markdown("")
+
+    # Explanation
+    with st.expander("🔮Interpretation"):
+        st.write("""
+        **Tableau ANOVA** : La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée est de 0.011, ce qui est inférieur au seuil de significativité de 0.05.
+        **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services.
+
+        ⚠️ Dans notre cas il faut compléter l'analyse à l'aide d'un **test HSD de Tukey** pour identifier quelles paires de services spécifiques ont des jours d'absence moyens significativement différents.
+
+        """)
 
     anova_model = ols('Days_of_Absence ~ Department', data=data).fit()
     anova_table = sm.stats.anova_lm(anova_model, typ=2)
-    st.write("ANOVA Table:")
+    st.write("Table d'\ANOVA:")
     st.write(anova_table)
-
-    if anova_table['PR(>F)']['Department'] < 0.05:
-        tukey_results = pairwise_tukeyhsd(data['Days_of_Absence'], data['Department'])
-        st.write("Tukey's HSD Test Results:")
-        st.write(tukey_results)
-    else:
-        st.write("No significant difference found among departments.")
-
     
 
 
