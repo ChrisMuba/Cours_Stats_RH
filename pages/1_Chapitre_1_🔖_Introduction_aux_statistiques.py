@@ -523,14 +523,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
      # Sample dataset
-    data = {
-    'Employee_ID': ['1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '4', '4', '4', '4', '4'],
-    'Department': ['Sales', 'Sales', 'Sales', 'Sales', 'Sales', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Marketing', 'Finance', 'Finance', 'Finance', 'Finance', 'Finance', 'HR', 'HR', 'HR', 'HR', 'HR'],
-    'Start_Date': ['2023-01-01', '2023-02-15', '2023-03-10', '2023-04-25', '2023-05-15', '2023-01-01', '2023-02-12', '2023-03-18', '2023-04-09', '2023-05-19', '2023-01-01', '2023-02-12', '2023-03-16', '2023-04-14', '2023-05-11', '2023-06-01'],
-    'End_Date': ['2023-01-05', '2023-02-20', '2023-03-15', '2023-04-30', '2023-05-20', '2023-01-03', '2023-02-14', '2023-03-22', '2023-04-13', '2023-05-23', '2023-01-02', '2023-02-14', '2023-03-20', '2023-04-18', '2023-05-15', '2023-06-06'],
-    'Days_of_Absence': ['5', '5', '5', '5', '5', '2', '2', '4', '4', '4', '1', '1', '4', '4', '4', '4', '5']
-    }
-
+    data = pd.read_csv('employee_absence_data.csv')
 
     st.title("HR Data Analysis")
     st.subheader("Employee Absence Analysis")
