@@ -214,7 +214,9 @@ if st.button("Cliquez pour acceder au Chap.5 - **A/ Analyse de corrélation : d�
         En d’autres termes, le salaire annuel qu’un agent reçoit ne semble pas avoir un impact significatif sur sa performance.
         """)
 
-    st.markdown("")
+    # Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
 
 
 if st.button("Continuer vers la suite du Chap.5 - **B/ Régression linéaire simple : prédire les résultats**"):
