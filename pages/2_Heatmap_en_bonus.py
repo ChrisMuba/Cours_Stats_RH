@@ -79,9 +79,10 @@ fig.update_yaxes(title_text='Department')
 # Show the plot in Streamlit
 st.plotly_chart(fig)
 
-
 st.markdown("")
-
+# Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
 
 def redirect_button(url: str, text: str= None, color="#FD504D"):
     st.markdown(
