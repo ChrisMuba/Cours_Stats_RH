@@ -329,9 +329,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 
     st.markdown("")
-
-    
-    st.markdown("")
     
 
 if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques dans les RH**"):
