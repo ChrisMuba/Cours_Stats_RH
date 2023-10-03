@@ -602,6 +602,19 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     #url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
     #st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
 
+    st.markdown("")
+
+
+    st.markdown("")
+
+
+# Add the "made with ❤️ by ..." text in the sidebar
+    with st.sidebar:
+        st.write("Made with ❤️ by Chris MUBA")
+
+
+    st.markdown("")
+
 
     def redirect_button(url: str, text: str= None, color="#FD504D"):
         st.markdown(
