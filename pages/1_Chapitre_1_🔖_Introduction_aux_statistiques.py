@@ -493,17 +493,17 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("")
     
 
-    st.markdown("- **Et enfin remplir les obligations légales**, notamment construire le **bilan social**, préparer et mettre à dsposition les données necessaires à la **négociation annuelle obligatoire** (NAO) ; ") 
+    st.markdown("- **Remplir les obligations légales** : notamment construire le **bilan social**, préparer et mettre à dsposition les **données necessaires à la négociation annuelle obligatoire** (NAO) ; ") 
     
-    st.markdown("- Calculer l'**index égalité** 👦🏾/👧 ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH), etc...") 
+    st.markdown("- Calculer l'**index égalité** H/F ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH), etc...") 
     
-    st.markdown("Tous ces éléments sont basés sur la **collecte et l'analyse de données sociales** issues de la GRH.")
+    st.markdown("🚀**Tous ces éléments sont basés sur la collecte et l'analyse de données sociales, et requièrent donc une excellente compréhension des concepts et méthodes statistiques.🚀")
 
 
     st.markdown("")
     
     
-    st.markdown("Les statistiques appliquées aux RH permettent aussi la mise en place de plans d’action **en vue d’améliorer la gestion des ressources humaines**.")
+    st.markdown("Les statistiques appliquées aux RH permettent aussi la **réalisation d'études ponctuelles**, sur des sujets précis, pouvant conduire à la mise en place de diverses actions correctives.")
     
 
     st.markdown("")
