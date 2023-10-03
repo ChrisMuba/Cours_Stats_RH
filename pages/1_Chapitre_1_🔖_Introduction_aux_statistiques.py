@@ -358,7 +358,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
                 labels={'value': 'Masse salariale brute (Millions €)'},
                 title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
-    st.plotly_chart(fig_1)
+    #st.plotly_chart(fig_1)
     
 
     st.markdown("")
@@ -408,7 +408,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     fig_2 = go.Figure(data=data, layout=layout)
     
-    st.plotly_chart(fig_2)
+    #st.plotly_chart(fig_2)
 
 
     st.markdown("")
@@ -435,7 +435,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         return fig_3
 
     fig_3 = fig_3(data, colors, "dataviz : genre h/f - tableau 1")
-    st.plotly_chart(fig_3)
+    #st.plotly_chart(fig_3)
 
 
 # Bar Chart
@@ -454,7 +454,12 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', color='Genre',
                      color_discrete_map={'Homme👦🏾': 'blue', 'Femme👧': 'orange'})
-    st.plotly_chart(fig_4)
+    #st.plotly_chart(fig_4)
+
+    st.markdown("")
+
+
+    st.markdown("")
     
     
     # Create the tabs
