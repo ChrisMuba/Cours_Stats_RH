@@ -8,7 +8,10 @@ st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
 
 st.markdown("# Quiz du chapitre 4")
 st.sidebar.markdown("# Quiz du chapitre 4")
-
+# Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
+   
 st.title("Statistiques inférentielles")
 
 st.markdown("Ces questions visent à évaluer la compréhension des concepts clés et des sujets abordés dans le cours de **statistiques inférentielles**.")
