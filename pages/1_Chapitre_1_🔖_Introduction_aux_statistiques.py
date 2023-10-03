@@ -323,6 +323,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("")
 
+    st.markdown("- Après avoir collecté des données et défini des indicateurs RH à suivre, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
+
 
     import streamlit as st
     import plotly.express as px
@@ -348,9 +350,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     
     st.markdown("")
-
-    
-    st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que .")
 
 
     st.markdown("")
