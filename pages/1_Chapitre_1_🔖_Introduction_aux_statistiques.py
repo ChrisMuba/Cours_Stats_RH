@@ -546,14 +546,15 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.write("ANOVA Table:")
     st.write(anova_table)
 
-    st.markdonwn("La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée (PR(>F)) est de 0.011, ce qui est inférieur au seuil de significativité de 0.05. **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services.**")
-
     if anova_table['PR(>F)']['Department'] < 0.05:
         tukey_results = pairwise_tukeyhsd(data['Days_of_Absence'], data['Department'])
         st.write("Tukey's HSD Test Results:")
         st.write(tukey_results)
     else:
         st.write("No significant difference found among departments.")
+
+     st.markdonwn("La statistique F (F) est d'environ 4.8257 et la p-value (PR(>F)) associée (PR(>F)) est de 0.011, ce qui est inférieur au seuil de significativité de 0.05. **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services.**")
+
 
 
 
