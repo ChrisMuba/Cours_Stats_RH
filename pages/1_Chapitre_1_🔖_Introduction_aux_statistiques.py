@@ -478,11 +478,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         st.write("## Bar Chart")
         st.plotly_chart(fig_4)
 
-    import streamlit as st
-    import plotly.express as px
-
-
-
     
     st.markdown("")
 
@@ -490,56 +485,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("")
     
 
-    st.markdown("Ci-dessous un exemple de pyramide des âges en **pelote de laine**")
-
-    import streamlit as st
-    import plotly.graph_objs as go
-    import numpy as np
-
-# Define age intervals
-    age_intervals = ['[ < 25]', '[25 - 29]', '[30 - 34]', '[35 - 39]', '[40 - 44]', '[45 - 49]', '[50 - 54]', '[55 - 59]', '[60 et +]']
-
-# Corresponding y values for the intervals
-    y = list(range(len(age_intervals)))
-
-    women_bins = np.array([-1686, -3868, -3463, -2346, -2074, -3037, -3495, -4194, -228])
-    men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
-
-    layout = go.Layout(
-    yaxis=go.layout.YAxis(title='Âge', tickvals=y, ticktext=age_intervals),
-    xaxis=go.layout.XAxis(
-        range=[-5000, 5000],
-        tickvals=[-4000, -2000, 0, 2000, 4000],
-        ticktext=[4000, 2000, 0, 2000, 4000],
-        title='Effectif'
-    ),
-    barmode='overlay',
-    bargap=0.1
-)
-
-    data = [
-    go.Bar(
-        y=y,
-        x=men_bins,
-        orientation='h',
-        name='👦🏿 Homme',
-        hoverinfo='x',
-        marker=dict(color='blue')
-    ),
-    go.Bar(
-        y=y,
-        x=women_bins,
-        orientation='h',
-        name='👩‍🦰 Femme',
-        text=-1 * women_bins.astype('int'),
-        hoverinfo='text',
-        marker=dict(color='pink')
-    )
-]
-
-    fig_2 = go.Figure(data=data, layout=layout)
-    
-    st.plotly_chart(fig_2)
 
 
     st.markdown("- **Et enfin remplir les obligations légales**, notamment construire le **bilan social**, préparer et mettre à dsposition les données necessaires à la **négociation annuelle obligatoire** (NAO) ; ") 
