@@ -342,27 +342,28 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 # Line Plot
     # Monthly payroll data (in thousands of dollars)
-    forecast_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
-    réalisé_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
+    forecast_months_2023 = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+    réalisé_months_2023 = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août']
 
     forecast_2023 = [1154300, 1200010, 1235205, 1305008, 1778120, 1263150, 1208180, 1240000, 1275002, 1299250, 2356280, 1251300]
     réalisé_2023 = [1152003, 1185350, 1113880, 1205008, 1677420, 1121245, 1148000, 1165000]
 
-# Create a DataFrame for plotting
-    df = pd.DataFrame({'Mois': forecast_months_2023 + réalisé_months_2023,
-                   'Forecast 2023 (Prévision)': forecast_2023 + [None] * len(réalisé_months_2023),
-                   'Réalisé 2023': [None] * len(forecast_months_2023) + réalisé_2023})
+# Create a dataframe for plotting
+    df = pd.DataFrame({'mois': forecast_months_2023 + réalisé_months_2023,
+                       'forecast 2023 (prévision)': forecast_2023 + [None] * len(réalisé_months_2023),
+                       'réalisé 2023': [None] * len(forecast_months_2023) + réalisé_2023})
 
 # Create an interactive line plot
-    #st.header('Payroll Budget Evolution (2021 vs. 2022)')
-    fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
-                labels={'value': 'Masse salariale brute (Millions €)'},
-                title='Suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
+    fig_1 = px.line(df, x='mois', y=['forecast 2023 (prévision)', 'réalisé 2023'],
+                    labels={'value': 'masse salariale brute (millions €)'},
+                    title='suivi de la masse salariale (prévision 2023 vs. réalisé 2023)')
 
-    # Customize line colors
+# Customize line colors
     fig_1.update_traces(line_color='red', selector=dict(name='forecast 2023 (prévision)'))
     fig_1.update_traces(line_color='blue', selector=dict(name='réalisé 2023'))
-    #st.plotly_chart(fig_1)
+
+# Display the line plot
+  #st.plotly_chart(fig_1)
     
 
     st.markdown("")
