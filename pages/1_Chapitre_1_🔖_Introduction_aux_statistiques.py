@@ -444,7 +444,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     df = pd.DataFrame(data)
 
     # Average salary by gender
-    st.markdown('**fig.2: Salaire moyen selon le genre**')
+    #st.markdown('**fig.2: Salaire moyen selon le genre**')
     avg_salary = df.groupby('Genre')['Salaire €'].mean().reset_index()
 
     fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', color='Genre',
