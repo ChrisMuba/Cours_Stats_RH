@@ -3,6 +3,8 @@
 
 import streamlit as st
 
+st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
+
 st.markdown("# Chapitre 5")
 st.sidebar.markdown("# Chapitre 5")
 
