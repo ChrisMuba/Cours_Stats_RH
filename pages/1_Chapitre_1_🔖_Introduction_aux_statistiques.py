@@ -334,8 +334,11 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("Exemple de **tableu de bord RH** avec différents onglets :blue[Suivi de la masse salariale, Pyramide des âges, Répartition H/F & Salaire median H/F]")
 
     import streamlit as st
-    import plotly.graph_objs as go
+    import pandas as pd
     import numpy as np
+    import plotly.graph_objs as go
+    import plotly.express as px
+   
 
 # Line Plot
     # Monthly payroll data (in thousands of dollars)
@@ -431,9 +434,28 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("")
     
+
+# Bar Chart
+    # Sample dataset
+    data = {
+    'Employee ID': ['001', '002', '003', '004', '005', '006', '007', '008', '009', '010'],
+    'Genre': ['Homme👦🏾', 'Femme👧', 'Homme👦🏾', 'Femme👧', 'Homme👦🏾', 'Homme👦🏾', 'Femme👧', 'Femme👧', 'Homme👦🏾', 'Femme👧'],
+    'Salaire €': [55000, 60000, 65000, 58000, 70000, 62000, 56000, 59000, 75000, 61000]
+    }
+
+    df = pd.DataFrame(data)
+
+    # Average salary by gender
+    st.markdown('**fig.2: Salaire moyen selon le genre**')
+    avg_salary = df.groupby('Genre')['Salaire €'].mean().reset_index()
+
+    fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', color='Genre',
+                     color_discrete_map={'Homme👦🏾': 'blue', 'Femme👧': 'orange'})
+    st.plotly_chart(fig_4)
+    
     
     # Create the tabs
-    tabs = st.tabs(["Suivi de la masse salariale", "Pyramide des âges", "Répartition H/F", "Salaire median H/F"])
+    tabs = st.tabs(["Suivi de la masse salariale", "Pyramide des âges", "Répartition H/F", "Salaire moyen H/F"])
 
 # Tab 1 - Line Chart
     with tabs[0]:
