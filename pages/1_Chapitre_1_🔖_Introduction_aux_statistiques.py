@@ -19,10 +19,6 @@ st.markdown("**Les statistiques** sont une branche des mathématiques qui **trai
 
 st.markdown("")
 
-
-st.markdown("")
-
-
 # Add the "made with ❤️ by ..." text in the sidebar
 with st.sidebar:
     st.write("Made with ❤️ by Chris MUBA")
