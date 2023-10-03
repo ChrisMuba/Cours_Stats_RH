@@ -19,9 +19,7 @@ st.markdown("**Les statistiques** sont une branche des mathématiques qui **trai
 
 st.markdown("")
 
-# Add the "made with ❤️ by ..." text in the sidebar
-with st.sidebar:
-    st.write("Made with ❤️ by Chris MUBA")
+st.markdown("")
 
 if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs inférentielles**"):
     st.subheader("📈Chap.1-A/ Statistiques descriptives vs inférentielles📉")
