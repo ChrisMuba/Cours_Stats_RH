@@ -525,6 +525,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
      # Sample dataset
     data = pd.read_csv('employee_absence_data.csv')
 
+    # Remove leading/trailing spaces from column names
+    data.columns = data.columns.str.strip()
+
     st.title("HR Data Analysis")
     st.subheader("Employee Absence Analysis")
 
