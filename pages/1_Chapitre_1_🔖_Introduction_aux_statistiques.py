@@ -573,7 +573,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("📌 *Les possibilités de sujets d'études statistiques sont très nombreuses en RH et dépendent des problématiques et objectifs propres à chaque entreprises* :")
 
-    st.markdown("1. :blue[**Engagement des employés** :] Mesurer et analyser les niveaux d'engagement des employés peut aider les entreprises à identifier les domaines dans lesquels elles peuvent **améliorer la satisfaction et la productivité des employés**.
+    st.markdown("1. :blue[**Engagement des employés** :] Mesurer et analyser les niveaux d'engagement des employés peut aider les entreprises à identifier les domaines dans lesquels elles peuvent **améliorer la satisfaction et la productivité des employés**.")
 
     st.markdown("2. :blue[**Acquisition de talents** :] Les études RH peuvent aider les entreprises à comprendre leur processus d'embauche et à identifier les domaines dans lesquels il peut être amélioré. Cela peut inclure des études sur l'efficacité des différents canaux de recrutement, le temps qu'il faut pour embaucher pour différents postes, le coût de l'embauche de nouveaux employés, etc...")
                 
