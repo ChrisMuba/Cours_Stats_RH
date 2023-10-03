@@ -326,7 +326,12 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("")
 
 
-    st.markdown("Exemple de **tableu de bord RH** avec différents onglets :blue[Suivi de la masse salariale, Pyramide des âges, Répartition H/F & Salaire median H/F]")
+    st.markdown("Ci-dessous un exemple de **tableu de bord RH** à 4 onglets :") 
+    
+    st.markdown("- Suivi de la masse salariale") 
+    st.markdown("- Pyramide des âges") 
+    st.markdown("- Répartition H/F")
+    st.markdown("- Salaire moyen H/F")
 
     import streamlit as st
     import pandas as pd
@@ -484,8 +489,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("")
     
-
-
 
     st.markdown("- **Et enfin remplir les obligations légales**, notamment construire le **bilan social**, préparer et mettre à dsposition les données necessaires à la **négociation annuelle obligatoire** (NAO) ; ") 
     
