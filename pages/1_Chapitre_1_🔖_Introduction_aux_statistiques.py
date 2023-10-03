@@ -23,8 +23,6 @@ st.markdown("")
 with st.sidebar:
     st.write("Made with ❤️ by Chris MUBA")
 
-st.markdown("")
-
 if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs inférentielles**"):
     st.subheader("📈Chap.1-A/ Statistiques descriptives vs inférentielles📉")
     
