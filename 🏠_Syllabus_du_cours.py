@@ -35,7 +35,12 @@ st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux 
 with st.sidebar:
     st.image('GIF_loading_data.gif')
 
+
 st.markdown("")
+
+
+st.markdown("")
+
 
 # Add the "made with ❤️ by ..." text in the sidebar
 with st.sidebar:
