@@ -604,20 +604,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("Ce ne sont là que quelques exemples d’études RH qui peuvent être menées en entreprise. Les études spécifiques les plus pertinentes dépendront des besoins de l’entreprise.")
 
-    
-    st.markdown("")
-
-    
     st.markdown("")
 
     #url = "https://cours-stats-rh.streamlit.app/Quiz_1_-_Introduction_aux_Statistiques📉"
     #st.write("Acceder au quiz du chapitre 1 [ici](%s)" % url)
-
-    st.markdown("")
-
-
-    st.markdown("")
-
 
 # Add the "made with ❤️ by ..." text in the sidebar
     with st.sidebar:
