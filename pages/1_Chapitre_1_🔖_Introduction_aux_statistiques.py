@@ -394,7 +394,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         orientation='h',
         name='👦🏿 Homme',
         hoverinfo='x',
-        marker=dict(color='blue')
+        marker=dict(color='#1f77b4')
     ),
     go.Bar(
         y=y,
@@ -403,7 +403,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         name='👩‍🦰 Femme',
         text=-1 * women_bins.astype('int'),
         hoverinfo='text',
-        marker=dict(color='pink')
+        marker=dict(color='#e377c2')
     )
 ]
 
@@ -449,7 +449,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     avg_salary = df.groupby('Genre')['Salaire €'].mean().reset_index()
 
     fig_4 = px.bar(avg_salary, x='Genre', y='Salaire €', title='Comparaison du salaire moyen entre H/F', color='Genre',
-                     color_discrete_map={'Homme👦🏾': 'blue', 'Femme👧': 'orange'})
+                     color_discrete_map={'Homme👦🏾': '#1f77b4', 'Femme👧': '#e377c2'})
     #st.plotly_chart(fig_4)
 
     st.markdown("")
