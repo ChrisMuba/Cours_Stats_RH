@@ -497,7 +497,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("- Calculer l'**index égalité** H/F ; effectuer la **déclaration annuelle obligatoire d’emploi des travailleurs handicapés** (DOETH), etc...") 
     
-    st.markdown("🚀**Tous ces éléments sont basés sur la collecte et l'analyse de données sociales, et requièrent donc une excellente compréhension des concepts et méthodes statistiques.🚀")
+    st.markdown("🚀**Tous ces éléments sont basés sur la collecte et l'analyse de données sociales, et requièrent donc une excellente compréhension des concepts et méthodes statistiques**.🚀")
 
 
     st.markdown("")
@@ -566,6 +566,41 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.write("Table d\'ANOVA:")
     st.write(anova_table)
+
+    st.markdown("")
+
+    st.markdown("")
+
+    st.markdown("📌 *Les possibilités de sujets d'études statistiques sont très nombreuses en RH et dépendent des problématiques et objectifs propres à chaque entreprises* :")
+
+    st.markdown("1. :blue[**Engagement des employés** :] Mesurer et analyser les niveaux d'engagement des employés peut aider les entreprises à identifier les domaines dans lesquels elles peuvent **améliorer la satisfaction et la productivité des employés**.
+
+    st.markdown("2. :blue[**Acquisition de talents** :] Les études RH peuvent aider les entreprises à comprendre leur processus d'embauche et à identifier les domaines dans lesquels il peut être amélioré. Cela peut inclure des études sur l'efficacité des différents canaux de recrutement, le temps qu'il faut pour embaucher pour différents postes, le coût de l'embauche de nouveaux employés, etc...")
+                
+    st.markdown("3. :blue[**Fidélisation des employés** :] Les études RH peuvent également aider les entreprises à comprendre pourquoi les employés quittent leur emploi et à **identifier des moyens pour réduire le turnover**. Cela peut inclure des études sur les différentes raisons de départ, **le coût du turnover, l'impact du turnover sur les résultats financiers de l'entreprise**, etc...")
+
+    st.markdown("4. :blue[**Rémunération et avantages sociaux** :] Les études RH peuvent aider les entreprises à s'assurer qu'elles offrent des packages de rémunération et avantages sociaux compétitifs. Cela peut inclure des études sur les salaires et les avantages sociaux du marché, la satisfaction des employés à l'égard de la rémunération et des avantages sociaux, et **l'impact de la rémunération et des avantages sociaux sur la fidélisation des employés**, etc...")
+
+    st.markdown("5. :blue[**Formation et développement des compétences** :] Les études RH peuvent aider les entreprises à évaluer l'efficacité de leurs programmes de formation et de développement des compétences. Cela peut inclure des études sur la satisfaction des employés à l'égard des programmes de formation et de développement des compétences, **l'impact de ces programmes sur les performances des employés et le retour sur investissement des programmes de formation et de développement**.")
+
+    st.markdown("6. :blue[**Commentaires et communication des employés** :] Examiner l'efficacité des canaux de rétroaction et de communication au sein de l'entreprise et identifier les opportunités d'amélioration en favorisant un environnement de travail transparent et collaboratif.")
+
+    st.markdown("7. :blue[etc...]")
+
+    st.markdown("")
+
+    st.markdown("Ce ne sont là que quelques exemples d’études RH qui peuvent être menées en entreprise. Les études spécifiques les plus pertinentes dépendront des besoins de l’entreprise.")
+                
+
+
+                
+                
+
+    
+
+
+
+    
     
 
 
