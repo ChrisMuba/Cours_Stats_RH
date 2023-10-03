@@ -19,8 +19,6 @@ st.markdown("**Les statistiques** sont une branche des mathématiques qui **trai
 
 st.markdown("")
 
-st.markdown("")
-
 if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs inférentielles**"):
     st.subheader("📈Chap.1-A/ Statistiques descriptives vs inférentielles📉")
     
