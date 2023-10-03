@@ -538,6 +538,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Display the data
     st.write(data)
 
+    st.markdown("Nous visualisons la répartition des jours d'absence à l'aide de Box Plot, qui montrent des variations d'absence selon les différents services.")
+
+    st.markdown("")
+
     fig = px.box(data, x='Department', y='Days_of_Absence', title='Box Plot : Jours d\'absence par service')
     st.plotly_chart(fig)
 
@@ -555,6 +559,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     anova_model = ols('Days_of_Absence ~ Department', data=data).fit()
     anova_table = sm.stats.anova_lm(anova_model, typ=2)
+
+    st.markdown("Nous effectuons un test d'ANOVA unidirectionnel pour vérifier s'il existe des différences significatives dans les jours d'absence entre les départements. Si la valeur p est inférieure à 0.05, on peut conclure qu’au moins un service est significativement différent des autres.")
+    
     st.write("Table d\'ANOVA:")
     st.write(anova_table)
     
