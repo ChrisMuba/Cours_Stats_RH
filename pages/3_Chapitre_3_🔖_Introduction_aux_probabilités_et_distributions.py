@@ -254,9 +254,10 @@ if st.button("Cliquez pour acceder au Chap.3 - **A/ Concepts de clés**"):
     st.latex(f"P(A) = {p_A}")
     st.latex(f"P(\neg A) = {p_not_A}")
 
-    
     st.markdown("")
-    
+    # Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
 
 if st.button("Continuer vers la suite du Chap.3 - **B/ Distributions de probabilité discrète**"):
     
