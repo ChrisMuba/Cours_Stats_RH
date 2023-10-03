@@ -417,9 +417,6 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Pie Chart
     # Répartition 👦🏿/👩‍🦰
 
-    import streamlit as st
-    import plotly.graph_objects as go
-
     data = ["femme", "homme", "femme", "homme", "homme"]
     colors = ['#e377c2', '#1f77b4']
 
