@@ -375,6 +375,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
 
     layout = go.Layout(
+    title='This is my Pyramid Chart',
     yaxis=go.layout.YAxis(title='Âge', tickvals=y, ticktext=age_intervals),
     xaxis=go.layout.XAxis(
         range=[-5000, 5000],
