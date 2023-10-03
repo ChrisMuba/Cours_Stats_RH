@@ -514,7 +514,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("**🏀Application 1**")
 
-    st.markdown("Nous souhaitons comparer le nombre de jours d'absence au sein de différents services sur une période donnée, et ainsi déceler d'éventuels problèmes de climat social au sein de certaines équipes.")
+    st.markdown("Nous menons une étude dans laquelle nous souhaitons comparer le nombre de jours d'absence au sein de différents services sur une période donnée ; et ainsi déceler d'éventuels problèmes de climat social au sein de certaines équipes.")
     
     st.markdown("Ci-dessous un échantillon données : ")
     
