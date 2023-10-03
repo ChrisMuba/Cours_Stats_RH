@@ -299,6 +299,20 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("Un autre avantage du SIRH est qu’il peut automatiser de nombreux processus RH, ce qui peut permettre de gagner du temps et de réduire les erreurs, améliorant ainsi l'efficacité globale d'un service RH.")
     
+
+    st.markdown("")
+
+
+    st.markdown("")
+
+
+# Add the "made with ❤️ by ..." text in the sidebar
+    with st.sidebar:
+        st.write("Made with ❤️ by Chris MUBA")
+
+
+    st.markdown("")
+
     
     st.markdown("")
 
