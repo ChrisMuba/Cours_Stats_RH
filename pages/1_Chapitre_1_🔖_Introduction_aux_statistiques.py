@@ -263,13 +263,13 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
     with col1:
        st.markdown("dossiers du personnel")
-       image = Image.open('dossiers_du personnel_giphy.gif')
+       image = Image.open('GIF/dossiers_du personnel_giphy.gif')
     # Display a GIF
-       st.image('dossiers_du personnel_giphy.gif')
+       st.image('GIF/dossiers_du personnel_giphy.gif')
 
     with col2:
        st.markdown("quelques SIRH")
-       image = Image.open('photos_sirh.jpg')
+       image = Image.open('GIF/photos_sirh.jpg')
        st.image(image)
 
     
