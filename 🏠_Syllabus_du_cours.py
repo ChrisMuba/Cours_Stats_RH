@@ -33,7 +33,7 @@ st.markdown("🎯Évaluer la validité des conclusions statistiques basées sur 
 st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux RH")
 
 with st.sidebar:
-    st.image('GIF_loading_data.gif')
+    st.image('GIF/GIF_loading_data.gif')
 
 
 st.markdown("")
