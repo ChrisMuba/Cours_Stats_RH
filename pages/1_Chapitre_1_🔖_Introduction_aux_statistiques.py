@@ -430,15 +430,13 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         labels = list(gender_counts.keys())
         values = list(gender_counts.values())
 
-        fig = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
-        fig.update_layout(title=title)
-        return fig
+        fig_3 = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
+        fig_3.update_layout(title=title)
+        return fig_3
 
-    fig = fig_3(data, colors, "dataviz : genre h/f - tableau 1")
-    st.plotly_chart(fig)
+    fig_3 = fig_3(data, colors, "dataviz : genre h/f - tableau 1")
+    st.plotly_chart(fig_3)
 
-
-    
 
 # Bar Chart
     # Sample dataset
