@@ -17,6 +17,20 @@ st.title("Introduction aux statistiques")
 
 st.markdown("**Les statistiques** sont une branche des mathématiques qui **traitent de la collecte, de l'analyse, de l'interprétation, de la présentation et de l'organisation des données**. Deux grandes branches des statistiques sont les **statistiques descriptives** et les **statistiques inférentielles**.")
 
+st.markdown("")
+
+
+st.markdown("")
+
+
+# Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
+
+
+st.markdown("")
+
+
 if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs inférentielles**"):
     st.subheader("📈Chap.1-A/ Statistiques descriptives vs inférentielles📉")
     
