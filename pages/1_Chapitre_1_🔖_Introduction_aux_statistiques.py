@@ -31,8 +31,6 @@ with st.sidebar:
 with st.sidebar:
         st.image('GIF/GIF_Chap1B.gif')
 
-st.markdown("")
-
 if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sources de données**"):
     
     st.subheader("📈Chap.1-B/ Types de données et sources de données📉")
