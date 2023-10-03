@@ -28,6 +28,8 @@ if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs
 # Add the "made with ❤️ by ..." text in the sidebar
 with st.sidebar:
     st.write("Made with ❤️ by Chris MUBA")
+with st.sidebar:
+        st.image('GIF/GIF_Chap1B.gif')
 
     st.markdown("")
 
@@ -309,9 +311,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("")
 
     st.markdown("")
-    
-    with st.sidebar:
-        st.image('GIF/GIF_Chap1B.gif')
 
 
     
