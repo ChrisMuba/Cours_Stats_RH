@@ -24,6 +24,21 @@ if st.button("Cliquez pour acceder au Chap.1 - **A/ Statistiques descriptives vs
     
     st.markdown("- Les **statistiques inférentielles**, quant à elles, **consistent à tirer des inférences ou des conclusions sur une population à partir d'un échantillon de données**. Ils comprennent **l'estimation des paramètres de la population et des tests d'hypothèses pour évaluer la validité des affirmations statistiques**.")
 
+    st.markdown("")
+
+
+    st.markdown("")
+
+
+# Add the "made with ❤️ by ..." text in the sidebar
+    with st.sidebar:
+        st.write("Made with ❤️ by Chris MUBA")
+
+
+    st.markdown("")
+
+
+
 if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sources de données**"):
     
     st.subheader("📈Chap.1-B/ Types de données et sources de données📉")
