@@ -406,7 +406,9 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     )
 ]
 
-    fig_2 = go.Figure(data=data, layout=layout)
+    #fig_2 = go.Figure(data=data, layout=layout)
+    fig_2 = go.Figure(data=data, layout=go.Layout(
+        title=go.layout.Title(text="A Figure Specified By A Graph Object")))
     
     #st.plotly_chart(fig_2)
 
