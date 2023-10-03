@@ -326,12 +326,19 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("- **Créer des tableaux de bord** : après avoir défini les indicateurs RH à suivre et collecté les données appropriées, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
 
     st.markdown("📌*Les outils pour créer des tableaux de bords RH sont nombreux : parmi les solutions « presse-bouton » mais peu flexibles certaines bien rodées sont Power BI, Tableau, Qlik ou Looker Studio ; en revanche si on sait écrire du code, les possibilités sont presque sans limites avec Streamlit (framework Python🐍), Flexdashboard (framework R), Shiny (R / Python🐍), etc... .*")
-    
+
+
+    st.markdown("")
+
+
+    st.markdown("Exemple de **tableu de bord RH** avec différents onglets :blue[Suivi de la masse salariale, Pyramide des âges, Répartition H/F & Salaire median H/F]")
 
     import streamlit as st
-    import plotly.express as px
+    import plotly.graph_objs as go
+    import numpy as np
 
-# Monthly payroll data (in thousands of dollars)
+# Line Plot
+    # Monthly payroll data (in thousands of dollars)
     forecast_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
     réalisé_months_2023 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août']
 
@@ -349,6 +356,109 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
                 labels={'value': 'Masse salariale brute (Millions €)'},
                 title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
     st.plotly_chart(fig_1)
+    
+
+    st.markdown("")
+
+
+# Age Pyramid
+# Define age intervals
+    age_intervals = ['[ < 25]', '[25 - 29]', '[30 - 34]', '[35 - 39]', '[40 - 44]', '[45 - 49]', '[50 - 54]', '[55 - 59]', '[60 et +]']
+
+# Corresponding y values for the intervals
+    y = list(range(len(age_intervals)))
+
+    women_bins = np.array([-1686, -3868, -3463, -2346, -2074, -3037, -3495, -4194, -228])
+    men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
+
+    layout = go.Layout(
+    yaxis=go.layout.YAxis(title='Âge', tickvals=y, ticktext=age_intervals),
+    xaxis=go.layout.XAxis(
+        range=[-5000, 5000],
+        tickvals=[-4000, -2000, 0, 2000, 4000],
+        ticktext=[4000, 2000, 0, 2000, 4000],
+        title='Effectif'
+    ),
+    barmode='overlay',
+    bargap=0.1
+)
+
+    data = [
+    go.Bar(
+        y=y,
+        x=men_bins,
+        orientation='h',
+        name='👦🏿 Homme',
+        hoverinfo='x',
+        marker=dict(color='blue')
+    ),
+    go.Bar(
+        y=y,
+        x=women_bins,
+        orientation='h',
+        name='👩‍🦰 Femme',
+        text=-1 * women_bins.astype('int'),
+        hoverinfo='text',
+        marker=dict(color='pink')
+    )
+]
+
+    fig_2 = go.Figure(data=data, layout=layout)
+    
+    st.plotly_chart(fig_2)
+
+
+    st.markdown("")
+
+
+# Pie Chart
+    # Répartition 👦🏿/👩‍🦰
+
+    data = ["Femme", "Homme", "Femme", "Homme", "Homme"]
+    colors = ['#e377c2', '#1f77b4']
+
+    def plot_pie_chart(data, colors, title):
+        gender_counts = {gender: data.count(gender) for gender in set(data)}
+        labels = list(gender_counts.keys())
+        values = list(gender_counts.values())
+
+        fig_3 = go.Figure(data=[go.Pie(labels=labels, values=values, marker=dict(colors=colors))])
+        fig_3.update_layout(title=title)
+        st.plotly_chart(fig_3)
+
+    plot_pie_chart(data, colors, "DataViz : Genre H/F - Tableau 1")
+    
+
+    st.markdown("")
+    
+    
+    # Create the tabs
+    tabs = st.tabs(["Suivi de la masse salariale", "Pyramide des âges", "Répartition H/F", "Salaire median H/F"])
+
+# Tab 1 - Line Chart
+    with tabs[0]:
+        st.write("## Line Chart")
+        st.plotly_chart(fig_1)
+
+# Tab 2 - Histogram
+    with tabs[1]:
+        st.write("## Histogram")
+        st.plotly_chart(fig_2)
+
+# Tab 3 - Pie Chart
+    with tabs[2]:
+        st.write("## Pie Chart")
+        st.plotly_chart(fig_3)
+
+# Tab 4 - Bar Chart
+    with tabs[3]:
+        st.write("## Bar Chart")
+        st.plotly_chart(fig_bar)
+
+    import streamlit as st
+    import plotly.express as px
+
+
 
     
     st.markdown("")
