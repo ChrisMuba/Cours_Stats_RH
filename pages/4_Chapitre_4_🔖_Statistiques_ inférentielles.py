@@ -156,8 +156,9 @@ if st.button("Cliquez pour acceder au Chap.4 - **A/ Estimation**"):
         L'intervalle de confiance (surlignage vert), basé sur notre échantillon, est d'environ [7.02 ; 8.08] ans. Cela signifie que nous sommes sûrs à 95 % que le nombre moyen d'années d'expérience dans l'entreprise situe dans cette fourchette.
         """)
 
-
-    st.markdown("")
+    # Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
     
 
 if st.button("Continuer vers la suite du Chap.4 - **B/ Tests d'hypothèses**"):
