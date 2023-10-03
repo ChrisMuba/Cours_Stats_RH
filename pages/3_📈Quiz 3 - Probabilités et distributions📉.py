@@ -8,6 +8,9 @@ st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
 
 st.markdown("# Quiz du chapitre 3")
 st.sidebar.markdown("# Quiz du chapitre 3")
+# Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
 
 st.title("Probabilités et distributions")
 
