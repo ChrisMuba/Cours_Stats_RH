@@ -319,13 +319,13 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
                 
     st.markdown("- **Créer des indicateurs** : concernant par exemple le **suivi des effectifs**, la **pyramide des âges**, la **pyramide des anciennetés**, le **suivi de la masse salariale**, le **suivi du turn-over**, le **suivi de l'absentéisme**, la **qualité du recrutement**, le **climat interne**, etc...") 
 
-    st.markdown("*Les possibilités de création d'indicateurs RH sont nombreuses et dépendent des objectifs suivis par l'entreprise et des données à disposition.*")
+    st.markdown("*📌Les possibilités de création d'indicateurs RH sont nombreuses et dépendent des objectifs suivis par l'entreprise et des données à disposition.*")
 
     st.markdown("")
 
     st.markdown("- **Créer un tableau de bord** : après avoir défini les indicateurs RH à suivre et collecté les données appropriées, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
 
-    st.markdown("*Les outils pour créer des tableaux de bords RH sont nombreux : parmi les solutions « presse-bouton » mais peu flexibles certaines bien rodées sont Power BI, Tableau, Qlik ou Looker Studio ; en revanche si on sait écrire du code, les possibilités sont presque sans limites avec Streamlit (framework Python🐍), Flexdashboard (framework R), Shiny (R / Python🐍), etc... .*")
+    st.markdown("📌*Les outils pour créer des tableaux de bords RH sont nombreux : parmi les solutions « presse-bouton » mais peu flexibles certaines bien rodées sont Power BI, Tableau, Qlik ou Looker Studio ; en revanche si on sait écrire du code, les possibilités sont presque sans limites avec Streamlit (framework Python🐍), Flexdashboard (framework R), Shiny (R / Python🐍), etc... .*")
     
 
     import streamlit as st
