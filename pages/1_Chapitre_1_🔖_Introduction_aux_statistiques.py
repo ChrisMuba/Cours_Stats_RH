@@ -538,14 +538,14 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Display the data
     st.write(data)
 
-    st.markdown("Nous visualisons la répartition des jours d'absence à l'aide de Box Plot, qui montrent des variations d'absence selon les différents services.")
-
     st.markdown("")
 
+    st.markdown("Nous visualisons la répartition des jours d'absence à l'aide de Box Plot, qui montrent des variations d'absence selon les différents services.")
+
+    
     fig = px.box(data, x='Department', y='Days_of_Absence', title='Box Plot : Jours d\'absence par service')
     st.plotly_chart(fig)
 
-    st.markdown("")
 
     # Explanation
     with st.expander("🔮Interpretation"):
@@ -556,6 +556,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         ⚠️ Dans notre cas il faut compléter l'analyse à l'aide d'un **test HSD de Tukey** pour identifier quelles paires de services spécifiques ont des jours d'absence moyens significativement différents.
 
         """)
+
+    st.markdown("")
 
     anova_model = ols('Days_of_Absence ~ Department', data=data).fit()
     anova_table = sm.stats.anova_lm(anova_model, typ=2)
