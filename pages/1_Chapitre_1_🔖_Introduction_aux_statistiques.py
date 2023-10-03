@@ -300,6 +300,9 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     
     st.markdown("")
 
+
+    st.markdown("")
+
     
 
 
@@ -314,7 +317,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("Pour y arriver ils peuvent : ") 
                 
-    st.markdown("- **Créer des indicateurs**, concernant par exemple le **suivi de la masse salariale**, le **turn-over**, **l'absentéisme**, la **qualité du recrutement**, le **climat interne**, etc...") 
+    st.markdown("- **Créer des indicateurs**, concernant par exemple le **suivi des effectifs**, la **pyramide des âges**, la **pyramide des anciennetés**, le **suivi de la masse salariale**, le **suivi du turn-over**, le **suivi de l'absentéisme**, la **qualité du recrutement**, le **climat interne**, etc...") 
 
     st.markdown("")
 
@@ -345,7 +348,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     st.markdown("")
 
     
-    st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que les **effectifs**, la **pyramide des âges** et **l'ancienneté**.")
+    st.markdown("- Ils peuvent aussi **créer des tableaux de bord mensuels sur plusieurs indicateurs sociaux** tels que .")
 
 
     st.markdown("")
