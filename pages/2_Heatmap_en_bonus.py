@@ -1,6 +1,8 @@
 
 import streamlit as st
 
+st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
+
 st.subheader("📈Suite Chap.2-C/ Techniques graphiques📉")
 
 st.subheader("Suite Données qualitatives et quantitatives")
