@@ -317,13 +317,13 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     
     st.markdown("Pour y arriver ils peuvent : ") 
                 
-    st.markdown("- **Créer des indicateurs**, concernant par exemple le **suivi des effectifs**, la **pyramide des âges**, la **pyramide des anciennetés**, le **suivi de la masse salariale**, le **suivi du turn-over**, le **suivi de l'absentéisme**, la **qualité du recrutement**, le **climat interne**, etc...") 
+    st.markdown("- **Créer des indicateurs** : concernant par exemple le **suivi des effectifs**, la **pyramide des âges**, la **pyramide des anciennetés**, le **suivi de la masse salariale**, le **suivi du turn-over**, le **suivi de l'absentéisme**, la **qualité du recrutement**, le **climat interne**, etc...") 
 
     st.markdown("*Les possibilités de création d'indicateurs RH sont nombreuses et dépendent des objectifs suivis par l'entreprise et des données à disposition.*")
 
     st.markdown("")
 
-    st.markdown("- Après avoir collecté des données et défini des indicateurs RH à suivre, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
+    st.markdown("- **Créer un tableau de bord** : après avoir collecté des données et défini des indicateurs RH à suivre, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
 
 
     import streamlit as st
