@@ -325,6 +325,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("- **Créer un tableau de bord** : après avoir collecté des données et défini des indicateurs RH à suivre, nous pouvons créer un tableau de bord automatisé qui rassemblera et facilitera le suivi en temps réel de nos indicateurs.")
 
+    st.markdown("*Les outils pour créer des tableaux de bords RH sont nombreux : si on ne sait pas écrire du code alors on s'orientera vers une solution « presse-bouton » et peu flexible tel que Power BI, Tableau ou Qlik ; en revanche si on sait coder, les possibilités sont presque sans limites avec Streamlit (framework Python🐍), Flexdashboard (framework R), Shiny (R / Python🐍), etc... .*")
 
     import streamlit as st
     import plotly.express as px
