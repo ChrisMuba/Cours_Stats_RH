@@ -305,10 +305,15 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
     st.markdown("Le SIRH fournit également des données RH en temps réel, permettant de prendre rapidement des décisions éclairées.") 
     
     st.markdown("Un autre avantage du SIRH est qu’il peut automatiser de nombreux processus RH, ce qui peut permettre de gagner du temps et de réduire les erreurs, améliorant ainsi l'efficacité globale d'un service RH.")
-    
+
     st.markdown("")
 
     st.markdown("")
+    
+    with st.sidebar:
+    st.image('GIF/GIF_Chap1B.gif')
+
+
     
 if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques dans les RH**"):
     
