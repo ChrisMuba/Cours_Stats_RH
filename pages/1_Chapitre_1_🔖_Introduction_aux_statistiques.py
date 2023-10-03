@@ -358,6 +358,10 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
                 labels={'value': 'Masse salariale brute (Millions €)'},
                 title='Suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
+
+    # Customize line colors
+    fig_1.update_traces(line_color='red', selector=dict(name='forecast 2023 (prévision)'))
+    fig_1.update_traces(line_color='blue', selector=dict(name='réalisé 2023'))
     #st.plotly_chart(fig_1)
     
 
