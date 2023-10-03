@@ -357,7 +357,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     #st.header('Payroll Budget Evolution (2021 vs. 2022)')
     fig_1 = px.line(df, x='Mois', y=['Forecast 2023 (Prévision)', 'Réalisé 2023'],
                 labels={'value': 'Masse salariale brute (Millions €)'},
-                title='Exemple de suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
+                title='Suivi de la masse salariale (Prévision 2023 vs. Réalisé 2023)')
     #st.plotly_chart(fig_1)
     
 
@@ -375,7 +375,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
 
     layout = go.Layout(
-    title='Exemple de Pyramide des âges en pelote de laine',
+    title='Pyramide des âges en pelote de laine',
     yaxis=go.layout.YAxis(title='Âge', tickvals=y, ticktext=age_intervals),
     xaxis=go.layout.XAxis(
         range=[-5000, 5000],
@@ -430,7 +430,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         fig_3.update_layout(title=title)
         return fig_3
 
-    fig_3 = fig_3(data, colors, "dataviz : genre h/f - tableau 1")
+    fig_3 = fig_3(data, colors, "Répartition H/F")
     #st.plotly_chart(fig_3)
 
 
@@ -463,22 +463,22 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 # Tab 1 - Line Chart
     with tabs[0]:
-        st.write("## Line Chart")
+        #st.write("## Line Chart")
         st.plotly_chart(fig_1)
 
 # Tab 2 - Histogram
     with tabs[1]:
-        st.write("## Histogram")
+        #st.write("## Histogram")
         st.plotly_chart(fig_2)
 
 # Tab 3 - Pie Chart
     with tabs[2]:
-        st.write("## Pie Chart")
+        #st.write("## Pie Chart")
         st.plotly_chart(fig_3)
 
 # Tab 4 - Bar Chart
     with tabs[3]:
-        st.write("## Bar Chart")
+        #st.write("## Bar Chart")
         st.plotly_chart(fig_4)
 
     
