@@ -420,7 +420,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     data = ["Femme", "Homme", "Femme", "Homme", "Homme"]
     colors = ['#e377c2', '#1f77b4']
 
-    def plot_pie_chart(data, colors, title):
+    def fig_3(data, colors, title):
         gender_counts = {gender: data.count(gender) for gender in set(data)}
         labels = list(gender_counts.keys())
         values = list(gender_counts.values())
@@ -429,7 +429,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         fig_3.update_layout(title=title)
         st.plotly_chart(fig_3)
 
-    plot_pie_chart(data, colors, "DataViz : Genre H/F - Tableau 1")
+    fig_3(data, colors, "DataViz : Genre H/F - Tableau 1")
     
 
     st.markdown("")
@@ -475,7 +475,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Tab 4 - Bar Chart
     with tabs[3]:
         st.write("## Bar Chart")
-        st.plotly_chart(fig_bar)
+        st.plotly_chart(fig_4)
 
     import streamlit as st
     import plotly.express as px
