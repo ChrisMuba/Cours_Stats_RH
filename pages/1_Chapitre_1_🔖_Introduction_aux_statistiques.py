@@ -514,6 +514,11 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
     st.markdown("**🏀Application 1**")
 
+    st.markdown("Nous souhaitons comparer le nombre de jours d'absence au sein de différents services sur une période donnée, et ainsi déceler d'éventuels problèmes de climat social au sein de certaines équipes.")
+    
+     st.markdown("Ci-dessous un échantillon données suivantes : ")
+    
+
     import streamlit as st
     import pandas as pd
     import plotly.express as px
@@ -528,13 +533,12 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     # Remove leading/trailing spaces from column names
     data.columns = data.columns.str.strip()
 
-    st.title("HR Data Analysis")
-    st.subheader("Employee Absence Analysis")
+    st.markdown("**Analyse des absences des employés**")
 
 # Display the data
     st.write(data)
 
-    fig = px.box(data, x='Department', y='Days_of_Absence', title='Absence Days by Department')
+    fig = px.box(data, x='Department', y='Days_of_Absence', title='Jours d\'absence par service')
     st.plotly_chart(fig)
 
     anova_model = ols('Days_of_Absence ~ Department', data=data).fit()
