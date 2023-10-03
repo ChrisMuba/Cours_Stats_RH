@@ -302,11 +302,6 @@ if st.button("Continuer vers la suite du Chap.1 - **B/ Types de données et sour
 
 
     st.markdown("")
-
-    
-
-
-
     
 
 if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques dans les RH**"):
@@ -412,9 +407,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 
 
     st.markdown("")
-
-    import streamlit as st
-    import plotly.graph_objects as go
+    
 
 # Pie Chart
     # Répartition 👦🏿/👩‍🦰
