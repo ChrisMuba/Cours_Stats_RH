@@ -16,6 +16,10 @@ st.markdown("Elles vont fournir aux professionnels RH des outils pour décrire e
 if st.button("Cliquez pour acceder au Chap.2 - **A/ Mesures de tendance centrale**"):
     
     st.subheader("📈Chap.2-A/ Mesures de tendance centrale📉")
+
+    # Add the "made with ❤️ by ..." text in the sidebar
+with st.sidebar:
+    st.write("Made with ❤️ by Chris MUBA")
     
     st.markdown("Les **mesures de tendance centrale** sont utilisées pour définir le centre d'une distribution ou d'un ensemble de données.") 
     st.markdown("En statistique, une **distribution** fait référence au modèle de variation dans un ensemble de données numériques.") 
