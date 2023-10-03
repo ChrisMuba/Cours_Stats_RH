@@ -1,6 +1,8 @@
 
 import streamlit as st
 
+st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
+
 st.title('Bibliographie / Webographie')
 
 st.markdown("*A faster way to build and share data apps* https://streamlit.io")
