@@ -54,7 +54,7 @@ st.markdown("A la fin de ce cours, les étudiants seront capables de :")
 st.markdown("🎯Analyser des données RH à l'aide de statistiques descriptives et de techniques de visualisation")
 st.markdown("🎯Saisir les bases de la probabilité et des distributions")
 st.markdown("🎯Appliquer des statistiques inférentielles pour tirer des conclusions à partir de données RH")
-st.markdown("🎯Utiliser la corrélation et la régression pour identifier les tendances et les modèles dans des données RH")
+st.markdown("🎯Utiliser la corrélation et régression pour identifier les tendances et modèles dans des données RH")
 
 with st.sidebar:
     st.image('GIF/GIF_loading_data.gif')
