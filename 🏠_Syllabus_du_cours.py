@@ -51,11 +51,10 @@ st.subheader("🚀Objectifs d'apprentissage🚀")
 
 st.markdown("A la fin de ce cours, les étudiants seront capables de :")
 
-st.markdown("🎯Comprendre comment les données statistiques peuvent éclairer les décisions liées aux RH")
-st.markdown("🎯Recueillir, résumer et analyser des données à l'aide de statistiques descriptives")
-st.markdown("🎯Interpréter les données à l'aide de techniques statistiques inférentielles")
-st.markdown("🎯Évaluer la validité des conclusions statistiques basées sur des données d'échantillon")
-st.markdown("🎯Appliquer des techniques statistiques aux problèmes liés aux RH")
+st.markdown("🎯Analyser des données RH à l'aide de statistiques descriptives et de techniques de visualisation")
+st.markdown("🎯Saisir les bases de la probabilité et des distributions")
+st.markdown("🎯Appliquer des statistiques inférentielles pour tirer des conclusions à partir de données RH")
+st.markdown("🎯Utiliser la corrélation et la régression pour identifier les tendances et les modèles dans des données RH")
 
 with st.sidebar:
     st.image('GIF/GIF_loading_data.gif')
