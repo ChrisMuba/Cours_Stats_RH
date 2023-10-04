@@ -16,7 +16,8 @@ st.caption("*Master Gestion & Master Sciences (IAE Dijon & UB Dijon)*")
 
 st.caption("*Ancien coordinateur apprentissage CFA académique / Académie de Dijon*")
 
-st.caption("Vous souhaitez faire analyser vos data RH ou bénéficier d'un tutorat personnalisé ? parlons-en 📧https://www.linkedin.com/in/chris-muba-io 🌍")
+st.caption("Vous souhaitez faire analyser vos data RH, ou bénéficier d'un tutorat personnalisé ?") 
+st.caption("parlons-en 📧 : https://www.linkedin.com/in/chris-muba-io 🌍")
 
 # Explanation
 with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
