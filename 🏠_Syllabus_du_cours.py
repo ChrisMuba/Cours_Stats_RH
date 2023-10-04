@@ -21,13 +21,24 @@ st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions é
 # Explanation
 with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
     st.write("""
-    L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
-        
-    La plupart des salaires se situent dans les fourchettes de **[55 k€ - 59 k€]** et **[60 k€ - 64 k€]**, ces 2 catégories ayant les fréquences les plus élevées.
-        
-    Dans cet échantillon de données, les salaires minimum et maximum sont respectivement 55 000 € et 75 000 €.
-        
-    La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian.
+    Êtes-vous un professionnel RH cherchant à exploiter la puissance de l’analyse des données pour une meilleure prise de décision ? 
+    Vous avez du mal à trouver des ressources pédagogiques adaptées au contexte RH ?
+
+    Bienvenue dans notre cours sur mesure en Statistiques appliquées aux RH !
+
+    **Conçu sur mesure pour les professionnels des RH** : nous comprenons les défis uniques auxquels les RH sont confrontés en matière d'analyse de données. Bien qu'il existe de nombreux cours de statistiques en ligne, ils sont souvent trop généraux ou déconnectés du contexte RH. Notre cours est conçu spécifiquement en pensant aux profils RH, vous garantissant d'acquérir les connaissances dont vous avez besoin sans complexité inutile.
+
+    **Libérez le potentiel de vos données** : avec notre cours, vous n'aurez pas à vous battre avec des formules mathématiques abstraites ou des exercices scientifiques sans rapport. Nous comblons le fossé entre les statistiques et les RH, rendant l'analyse des données accessible, pertinente et pratique pour vos tâches RH quotidiennes.
+
+    **Prenez des décisions éclairées** : ne vous fiez pas uniquement à votre intuition. Apprenez à fonder vos décisions RH sur des informations solides basées sur des données. Notre cours couvre tout, des statistiques descriptives aux statistiques inférentielles, en passant par les probabilités, les distributions, la corrélation et la régression. Mais ce qui nous distingue, c'est que nous proposons des exemples d'applications en RH pour chaque sujet, garantissant ainsi que vous puissiez immédiatement appliquer vos nouvelles compétences à votre travail. 
+
+    Notre cours est conçu pour être convivial, avec des exercices commentés et des quiz pour vous aider à renforcer votre compréhension des concepts statistiques utiles dans votre travail ! 
+    
+
+    Ne laissez pas l’analyse des données devenir un défi de taille. Dotez-vous des compétences nécessaires pour prendre des décisions RH éclairées qui profitent à votre organisation.
+    
+
+    Prêt à vous lancer dans votre voyage vers l’excellence RH basée sur les données ? Commencez le cours maintenant et améliorez vos compétences en analyse de données RH !
     """)
 
 st.subheader("Description du cours")
