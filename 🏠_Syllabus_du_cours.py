@@ -40,7 +40,7 @@ with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
     Ne laissez pas l’analyse des données devenir un défi de taille. Dotez-vous des compétences nécessaires pour prendre des décisions RH éclairées qui profitent à votre organisation.
     
 
-    Prêt à vous lancer dans votre voyage vers l’excellence RH basée sur les données ? Commencez le cours maintenant et améliorez vos compétences en analyse de données RH !
+    Prêt à vous lancer dans votre voyage vers l’excellence RH basée sur les données ? :blue[Commencez le cours maintenant et améliorez vos compétences en analyse de données RH !]
     """)
 
 st.subheader("Description du cours")
