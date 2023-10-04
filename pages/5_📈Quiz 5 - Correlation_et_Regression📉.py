@@ -11,6 +11,8 @@ st.sidebar.markdown("# Quiz du chapitre 5")
 # Add the "made with ❤️ by ..." text in the sidebar
 with st.sidebar:
     st.write("Made with ❤️ by Chris MUBA")
+with st.sidebar:
+        st.image('GIF/analyze_this.gif')
 
 st.title("Correlation et Regression")
 
