@@ -19,7 +19,7 @@ st.caption("*Ancien coordinateur apprentissage CFA académique / Académie de Di
 st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions éclairées ou bénéficier d'un tutorat personnalisé ? parlons-en 📧https://www.linkedin.com/in/chris-muba-io 🌍")
 
 # Explanation
-with st.expander("🚀**Pourquoi ce cours ?**🚀"):
+with st.expander("🚀:blue[Pourquoi ce cours ?]🚀"):
     st.write("""
     L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
         
