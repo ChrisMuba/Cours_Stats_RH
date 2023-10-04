@@ -27,7 +27,7 @@ st.markdown("*Simple and efficient tools for predictive data analysis* https://s
 
 st.markdown("*The Python Imaging Library* https://pillow.readthedocs.io")
 
-st.markdown("*Les statistiques : le pouvoir des données !* https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-fra.htm")
+st.markdown("*Statistics: Power from Data !* https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-eng.htm")
 
 st.balloons()
 
