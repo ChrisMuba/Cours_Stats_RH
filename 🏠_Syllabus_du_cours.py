@@ -32,7 +32,7 @@ with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
 
     ✨**Libérez le potentiel de vos données** : avec notre cours, vous n'aurez pas à vous battre avec des formules mathématiques abstraites ou des exercices scientifiques sans rapport. Nous comblons le fossé entre les statistiques et les RH, rendant l'analyse des données accessible, pertinente et pratique pour vos tâches RH quotidiennes.
 
-    ✨**Prenez des décisions éclairées** : ne vous fiez pas uniquement à votre intuition. Apprenez à fonder vos décisions RH sur des informations solides basées sur des données. Notre cours couvre tout, des statistiques descriptives aux statistiques inférentielles, en passant par les probabilités, les distributions, la corrélation et la régression. **Mais ce qui nous distingue, c'est que nous proposons des exemples d'applications en RH pour chaque sujet, garantissant ainsi que vous puissiez immédiatement appliquer vos nouvelles compétences à votre travail**. 
+    ✨**Prenez des décisions éclairées** : ne vous fiez pas uniquement à votre intuition. Apprenez à fonder vos décisions RH sur des informations solides basées sur des données. Notre cours couvre tout, des statistiques descriptives aux statistiques inférentielles, en passant par les probabilités, les distributions, la corrélation et la régression. :blue[**Mais ce qui nous distingue, c'est que nous proposons des exemples d'applications en RH pour chaque sujet, garantissant ainsi que vous puissiez immédiatement appliquer vos nouvelles compétences à votre travail**]. 
 
     Notre cours est conçu pour être convivial, avec des exercices commentés et des quiz pour vous aider à renforcer votre compréhension des concepts statistiques utiles dans votre travail ! 
     
