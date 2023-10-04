@@ -18,6 +18,18 @@ st.caption("*Ancien coordinateur apprentissage CFA académique / Académie de Di
 
 st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions éclairées ou bénéficier d'un tutorat personnalisé ? parlons-en 📧https://www.linkedin.com/in/chris-muba-io 🌍")
 
+# Explanation
+    with st.expander("🔮Pourquoi ce cours ?"):
+        st.write("""
+        L'histogramme de répartition des salaires représente la **fréquence des différentes échelles** de salaire au sein de l'ensemble de données.
+        
+        La plupart des salaires se situent dans les fourchettes de **[55 k€ - 59 k€]** et **[60 k€ - 64 k€]**, ces 2 catégories ayant les fréquences les plus élevées.
+        
+        Dans cet échantillon de données, les salaires minimum et maximum sont respectivement 55 000 € et 75 000 €.
+        
+        La répartition est **légèrement asymétrique vers la gauche**, ce qui indique qu'il y a relativement plus d'employés dont le salaire est inférieur au salaire médian.
+        """)
+
 st.subheader("Description du cours")
 
 st.markdown("Ce cours offre une introduction aux statistiques pour les professionnels des ressources humaines. L'accent est mis sur la compréhension de la façon d'analyser et d'interpréter les données statistiques pour prendre des décisions éclairées. Les sujets couverts comprennent la collecte de données, les mesures de la tendance centrale et de la variabilité, la probabilité, les tests d'hypothèses, la corrélation et la régression.")
