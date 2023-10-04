@@ -562,7 +562,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
         **Cela indique qu’il existe une différence statistiquement significative dans les jours d’absence entre au moins certains services**.
 
         ⚠️ Dans notre cas il faut compléter l'analyse à l'aide d'un **test HSD de Tukey** pour identifier quelles paires de services spécifiques ont des jours d'absence moyens significativement différents,
-        ce qui permettra d'orientier la mise en place d'actions correctives vers ces services.
+        ce qui permettra d'orientier de façon efficiente la mise en place d'actions correctives.
 
         """)
 
