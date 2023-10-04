@@ -22,6 +22,7 @@ st.caption("Vous souhaitez faire analyser vos data RH, prendre des décisions é
 with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
     st.write("""
     Êtes-vous un professionnel RH cherchant à exploiter la puissance de l’analyse des données pour une meilleure prise de décision ? 
+    
     Vous avez du mal à trouver des ressources pédagogiques adaptées au contexte RH ?
 
     Bienvenue dans notre cours sur mesure en Statistiques appliquées aux RH !
