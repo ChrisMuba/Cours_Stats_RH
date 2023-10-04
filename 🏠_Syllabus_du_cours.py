@@ -27,7 +27,8 @@ with st.expander("✨:blue[Pourquoi ce cours ?]✨"):
 
     *Bienvenue dans notre cours sur mesure en Statistiques appliquées aux RH !*
 
-    ✨**Conçu sur mesure pour les professionnels des RH** : nous comprenons les défis uniques auxquels les RH sont confrontés en matière d'analyse de données. Bien qu'il existe de nombreux cours de statistiques en ligne, ils sont souvent trop généraux ou déconnectés du contexte RH. Notre cours est conçu spécifiquement en pensant aux profils RH, vous garantissant d'acquérir les connaissances dont vous avez besoin sans complexité inutile.
+    ✨**Conçu sur mesure pour les professionnels des RH** : nous comprenons les défis uniques auxquels les RH sont confrontés en matière d'analyse de données. Bien qu'il existe de nombreux cours de statistiques en ligne, ils sont souvent trop généraux ou déconnectés du contexte RH. 
+    Notre cours est conçu spécifiquement en pensant aux profils RH, vous garantissant d'acquérir les connaissances dont vous avez besoin sans complexité inutile.
 
     ✨**Libérez le potentiel de vos données** : avec notre cours, vous n'aurez pas à vous battre avec des formules mathématiques abstraites ou des exercices scientifiques sans rapport. Nous comblons le fossé entre les statistiques et les RH, rendant l'analyse des données accessible, pertinente et pratique pour vos tâches RH quotidiennes.
 
