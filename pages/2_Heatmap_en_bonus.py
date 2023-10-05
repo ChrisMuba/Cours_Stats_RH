@@ -53,7 +53,7 @@ import streamlit as st
 import plotly.express as px
 
 # Create the Streamlit app
-st.title('Employee Absences and Vacations Heatmap')
+st.title('Carte thermique des absences et vacances des employés')
 
 # Create filters for department and month
 selected_department = st.selectbox('Select Department:', ['HR', 'Sales', 'IT'])
