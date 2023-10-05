@@ -10,11 +10,11 @@ st.sidebar.success("Cliquez sur un :blue[chapitre] ou un :blue[quiz]")
 
 st.title("Cours de Statistiques :blue[appliquées aux Ressources Humaines]")
 
-st.subheader("Formateur : Christian MUBA - Data Analyst RH")
-
-st.caption("*Master Gestion & Master Sciences (IAE Dijon & UB Dijon)*")
+st.subheader("Formateur : Christian MUBA.")
 
 st.caption("*Ancien coordinateur apprentissage CFA académique / Académie de Dijon*")
+
+st.caption("*Diplômé des Master Gestion & Master Sciences (IAE Dijon & UB Dijon)*")
 
 st.caption("Vous souhaitez faire analyser vos data RH ? 📧 : https://www.linkedin.com/in/chris-muba-io 🌍")
 
