@@ -536,7 +536,7 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
     from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
      # Sample dataset
-    data = pd.read_csv('employee_absence_data.csv')
+    data = pd.read_csv('csv_files/employee_absence_data.csv')
 
     # Remove leading/trailing spaces from column names
     data.columns = data.columns.str.strip()
