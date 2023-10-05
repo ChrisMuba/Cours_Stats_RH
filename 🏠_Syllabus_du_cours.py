@@ -49,7 +49,7 @@ st.markdown("Ce cours offre une introduction aux statistiques pour les professio
 
 st.subheader("🚀Objectifs d'apprentissage🚀")
 
-st.markdown("A la fin de ce cours, vous serez capables de :")
+st.markdown("A la fin de ce cours, vous serez capable de :")
 
 st.markdown("🎯Analyser des données RH à l'aide de statistiques descriptives et de techniques de visualisation")
 st.markdown("🎯Saisir les bases de la probabilité et des distributions")
