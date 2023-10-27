@@ -384,8 +384,8 @@ if st.button("Continuer vers la suite du Chap.1 - **C/ Rôle des statistiques da
 # Corresponding y values for the intervals
     y = list(range(len(age_intervals)))
 
-    women_bins = np.array([-1686, -3868, -3463, -2346, -2074, -3037, -3495, -4194, -228])
-    men_bins = np.array([887, 2013, 2323, 1842, 1645, 2270, 3115, 3891, 493])
+    women_bins = np.array([1686, 3868, 3463, 2346, 2074, 3037, 3495, 4194, 228])
+    men_bins = np.array([-887, -2013, -2323, -1842, -1645, -2270, -3115, -3891, -493])
 
     layout = go.Layout(
     title='Pyramide des âges en pelote de laine',
